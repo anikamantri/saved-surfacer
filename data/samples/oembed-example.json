@@ -1,0 +1,24 @@
+{
+  "_note": "Real TikTok oEmbed response captured 2026-08-23 from Anika's saved posts. Proves the endpoint is public + keyless. NOTE: thumbnail_url is signed and expired 2026-08-25T19:00:00Z — download thumbnails locally. Trailing fields truncated when captured; the `html` blockquote was omitted here for readability.",
+  "_source_url": "https://www.tiktok.com/@izia.line/video/7645972278043364630",
+  "version": "1.0",
+  "type": "video",
+  "title": "Oslo-guide: Spend a day in Majorstuen; a cute, central and less touristy spot in Oslo!📍 🛍️ad Go shopping at @Moniker in @VALKYRIEN OSLO, where you can find lots of Scandinavian and luxury brands! Clothes, accessories & interior for men and women 💖 🏘️Some of the cutest streets in Oslo, is located around Majorstuen. Some of my favorites are Jacob Aals gate & Sorgenfrigata. ☕️ Finally, go for a coffee at a super-local cafe; Havens Café. Their coffees and matchas are delicious, and they also serve the best desserts (which are also gluten free?!). Across the street, you can also visit their little shop, with international delicacies! 💖 Save this for your next trip to Oslo! #oslotips #guide #recommendation #cafe #shopping",
+  "author_url": "https://www.tiktok.com/@izia.line",
+  "author_name": "izia.line",
+  "author_unique_id": "izia.line",
+  "embed_product_id": "7645972278043364630",
+  "thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/o0zEZibPivTY1AhIhABQPpCABmaBAk5IyE8VA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787684400&x-signature=7g2hpG4SvjlMbOfLElPoTPjyeEU%3D",
+  "thumbnail_width": 576,
+  "thumbnail_height": 1024,
+  "provider_url": "https://www.tiktok.com",
+  "provider_name": "TikTok",
+  "_entities_extractable": [
+    "Havens Café — coffee, matcha, gluten-free desserts, Majorstuen",
+    "Havens shop (across the street) — international delicacies",
+    "Moniker — Scandinavian & luxury fashion, inside Valkyrien Oslo (#ad)",
+    "Jacob Aals gate — scenic street",
+    "Sorgenfrigata — scenic street"
+  ],
+  "_finding": "One save yielded five entities. Data model must be post -> many entities."
+}
