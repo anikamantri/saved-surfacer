@@ -1,6 +1,7 @@
-# Cue
+# saved-surfacer
 
-**A personal tool that resurfaces saved posts at the moment they become useful.**
+**A personal tool that resurfaces saved posts at the moment they become useful.**  
+*Working product name: Cue.*
 
 > A saved post isn't content to be organized. It's an intention with a missing trigger.
 
