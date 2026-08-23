@@ -1,0 +1,27 @@
+# secrets — never commit API keys (Places, OpenAI/Anthropic, etc.)
+.env
+.env.*
+*.key
+secrets.json
+
+# downloaded media (regenerable, and thumbnail URLs expire anyway)
+data/thumbnails/*
+!data/thumbnails/.gitkeep
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# node
+node_modules/
+npm-debug.log*
+package-lock.json.bak
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
