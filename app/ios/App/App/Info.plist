@@ -39,6 +39,8 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
@@ -46,6 +48,8 @@
 	<string>Cue reads today’s events to know when a saved workout is about to matter, and to stay quiet while you are in a meeting. It never writes to your calendar.</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Cue reads today’s events so a saved workout can surface before the gym, and so it stays quiet mid-meeting.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Cue sends a shared TikTok link to the Mac on your network to hydrate it — yt-dlp and ffmpeg cannot run on iOS. Nothing else leaves the phone.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>So Cue can nudge you while walking past a saved place with your phone in your pocket. Location never leaves your phone.</string>
 	<key>NSLocationAlwaysUsageDescription</key>

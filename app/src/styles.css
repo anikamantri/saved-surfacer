@@ -126,7 +126,13 @@ body {
 .btn {
   padding: 9px 12px; border-radius: 9px; border: 1px solid var(--line);
   background: var(--panel-2); color: var(--text); font-size: 13px;
+  transition: transform .06s ease, background .12s ease;
 }
+/* `-webkit-tap-highlight-color: transparent` on * removes iOS's default tap
+   flash, so without this a working button and a dead one look identical. */
+.btn:active { background: var(--accent); color: #17110a; transform: scale(.96); }
+.verdicts button:active { background: var(--accent); color: #17110a; }
+.btn[disabled] { opacity: .5; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: #17110a; font-weight: 600; }
 
 input.host {

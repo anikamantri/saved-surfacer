@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-24T00:07:27.876Z",
+  "generated_at": "2026-08-24T01:34:50.452Z",
   "totals": {
-    "posts": 14,
-    "entities": 53,
-    "nudge_eligible": 26,
-    "geocoded": 38,
-    "with_hours": 25
+    "posts": 16,
+    "entities": 56,
+    "nudge_eligible": 27,
+    "geocoded": 41,
+    "with_hours": 27
   },
   "hydration": {
-    "generated_at": "2026-08-24T00:06:43.918Z",
+    "generated_at": "2026-08-24T01:34:09.461Z",
     "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
     "totals": {
-      "posts": 2,
-      "oembed_ok": 2,
-      "ytdlp_ok": 2
+      "posts": 16,
+      "oembed_ok": 7,
+      "ytdlp_ok": 16
     },
     "posts": [
       {
@@ -29,15 +29,183 @@
         "audio_kind": "music"
       },
       {
-        "id": "7645972278043364630",
-        "url": "https://www.tiktok.com/@izia.line/video/7645972278043364630",
+        "id": "7649063171847638294",
+        "url": "https://www.tiktok.com/@ebbas.diary/photo/7649063171847638294",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 169,
+        "has_video": false,
+        "audio_seconds": 54,
+        "audio_kind": "narration"
+      },
+      {
+        "id": "7629768609082002710",
+        "url": "https://www.tiktok.com/@norwegianbackroad/photo/7629768609082002710",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 1112,
+        "has_video": false,
+        "audio_seconds": 9,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7646794537930657056",
+        "url": "https://www.tiktok.com/@planetsecretw/photo/7646794537930657056",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 288,
+        "has_video": false,
+        "audio_seconds": 145,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7652947896815455510",
+        "url": "https://www.tiktok.com/@jassetgo/photo/7652947896815455510",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 57,
+        "has_video": false,
+        "audio_seconds": 37,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7413407442161110305",
+        "url": "https://www.tiktok.com/@thegingerwanderlust/video/7413407442161110305",
         "kind": "video",
         "oembed": "ok",
         "ytdlp": "ok",
         "caption_source": "yt-dlp.description",
-        "caption_chars": 733,
+        "caption_chars": 606,
         "has_video": true,
-        "audio_seconds": 18,
+        "audio_seconds": 30,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7644138021582818581",
+        "url": "https://www.tiktok.com/@abbeysadleir/video/7644138021582818581",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 294,
+        "has_video": true,
+        "audio_seconds": 30,
+        "audio_kind": "narration"
+      },
+      {
+        "id": "7662261740402494733",
+        "url": "https://www.tiktok.com/@elizlovesfood/video/7662261740402494733",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 63,
+        "has_video": true,
+        "audio_seconds": 36,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7660592980708871437",
+        "url": "https://www.tiktok.com/@sensitive.vtg/video/7660592980708871437",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 216,
+        "has_video": true,
+        "audio_seconds": 13,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7652702090954935574",
+        "url": "https://www.tiktok.com/@atelierbrochman/photo/7652702090954935574",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 502,
+        "has_video": false,
+        "audio_seconds": 17,
+        "audio_kind": "narration"
+      },
+      {
+        "id": "7673673926156881166",
+        "url": "https://www.tiktok.com/@rajandroh/video/7673673926156881166",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 116,
+        "has_video": true,
+        "audio_seconds": 28,
+        "audio_kind": "narration"
+      },
+      {
+        "id": "7662423778449837342",
+        "url": "https://www.tiktok.com/@spotsyoumissed/photo/7662423778449837342",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 194,
+        "has_video": false,
+        "audio_seconds": 13,
+        "audio_kind": "narration"
+      },
+      {
+        "id": "7654368777370373406",
+        "url": "https://www.tiktok.com/@szesze.fertitta/video/7654368777370373406",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 67,
+        "has_video": true,
+        "audio_seconds": 22,
+        "audio_kind": "narration"
+      },
+      {
+        "id": "7648532889188994335",
+        "url": "https://www.tiktok.com/@smallbellybigworld/photo/7648532889188994335",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 625,
+        "has_video": false,
+        "audio_seconds": 60,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7637582878204808478",
+        "url": "https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 97,
+        "has_video": false,
+        "audio_seconds": 56,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7515944299708681518",
+        "url": "https://www.tiktok.com/@ssimoneangelica/photo/7515944299708681518",
+        "kind": "photo",
+        "oembed": "fail (400)",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 146,
+        "has_video": false,
+        "audio_seconds": 16,
         "audio_kind": "music"
       }
     ]
@@ -5017,6 +5185,389 @@
               }
             ],
             "rating": 4.6,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7637582878204808478",
+      "source": {
+        "url": "https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478",
+        "kind": "photo",
+        "author": "tiffanyfoodreview",
+        "author_url": "https://www.tiktok.com/@tiffanyfoodreview",
+        "saved_at": "2026-05-08",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7637582878204808478.jpg",
+        "caption": "i’ve tried way more places i just don’t have pics #usc #uscfood #uscvillage #laeats #collegefood "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "Baby, please get off the gram. I like you better in the stands. I upgrade my OnlyFans. It do it don't need a cam. This right here my new modern jam. I'm on fire, new burning man. She paid the view, that's a hard demand. He keep man, brought him on for friends. This shit punk, put it on the Bible. I like a bad girl on a bad cycle. Then I bought a car, now she feeling entitled. I dig so hard, poking like the Eiffel. But this new world ain't hard to please. Where I keep the knowledge, think I'm Socrates. I got 'em levitating way off the knees. The way I make it jump, I make it hard to breathe. It's like... Denial, forever favor. True upgrader. You a shaker. Club breaker. Baby, don't you know I got to go? Got the glow and it got to show. Know it's been a year since I seen the road. Had me inside like I'm on parole."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-24T01:34:44.324Z",
+        "usage": {
+          "prompt_tokens": 4801,
+          "completion_tokens": 283,
+          "total_tokens": 5084,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 94,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7637582878204808478-0",
+          "type": "place",
+          "name": "University of Southern California (USC) campus food spots",
+          "category": "campus dining",
+          "hook": "A ranking of food options on USC's campus.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.41 below 0.7",
+          "confidence": {
+            "extraction": 0.82,
+            "geocode": 0.5,
+            "overall": 0.41
+          },
+          "place": {
+            "place_id": "ChIJ_WDnaOXHwoARdSx3xACgThk",
+            "resolved_name": "USC Village Honors Dining Hall",
+            "address": "3122-3168 McClintock Ave, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0256626,
+              -118.2862265
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 10:00 PM",
+              "Tuesday: 7:00 AM – 10:00 PM",
+              "Wednesday: 7:00 AM – 10:00 PM",
+              "Thursday: 7:00 AM – 10:00 PM",
+              "Friday: 7:00 AM – 10:00 PM",
+              "Saturday: 9:00 AM – 10:00 PM",
+              "Sunday: 9:00 AM – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-1",
+          "type": "place",
+          "name": "USC Fryft Zone",
+          "category": "campus dining area",
+          "hook": "Food spots in the USC Fryft Zone, included in the creator's ranking.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.24 below 0.7",
+          "confidence": {
+            "extraction": 0.48,
+            "geocode": 0.5,
+            "overall": 0.24
+          },
+          "place": {
+            "place_id": "ChIJ8dohd-HHwoARTZ8NClJFZ94",
+            "resolved_name": "USCTransportation",
+            "address": "620 USC McCarthy Way, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.0205212,
+              -118.28246209999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:30 AM – 3:00 PM",
+              "Tuesday: 8:30 AM – 3:00 PM",
+              "Wednesday: 8:30 AM – 3:00 PM",
+              "Thursday: 8:30 AM – 3:00 PM",
+              "Friday: 8:30 AM – 3:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 15,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 3.6,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7515944299708681518",
+      "source": {
+        "url": "https://www.tiktok.com/@ssimoneangelica/photo/7515944299708681518",
+        "kind": "photo",
+        "author": "ssimoneangelica",
+        "author_url": "https://www.tiktok.com/@ssimoneangelica",
+        "saved_at": "2025-06-14",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7515944299708681518.jpg",
+        "caption": "what i eat as a college student at usc!! 🍽️😋 #usc #trojan #losangeles #fighton #dininghall #whatieatinaday #whatieat #uscfood #lafoodie #larecs "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "I can see it in your eyes. Know you feel the same. Million dollar bitch, dripping on it like brown."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-24T01:34:46.389Z",
+        "usage": {
+          "prompt_tokens": 3496,
+          "completion_tokens": 117,
+          "total_tokens": 3613,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7515944299708681518-0",
+          "type": "place",
+          "name": "University of Southern California (USC)",
+          "category": "university campus dining",
+          "hook": "Food options within walking distance of USC, including dessert, onigiri, tacos, soup, salad, pancakes, and sushi.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.88,
+            "geocode": 0.8,
+            "overall": 0.7
+          },
+          "place": {
+            "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+            "resolved_name": "University of Southern California",
+            "address": "Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0223519,
+              -118.285117
+            ],
+            "granularity": "venue",
+            "hours": null,
+            "periods": null,
+            "rating": 4.7,
             "source": "google-places"
           }
         }

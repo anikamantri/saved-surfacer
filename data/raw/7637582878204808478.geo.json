@@ -1,0 +1,211 @@
+{
+  "id": "7637582878204808478",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJ_WDnaOXHwoARdSx3xACgThk",
+      "resolved_name": "USC Village Honors Dining Hall",
+      "address": "3122-3168 McClintock Ave, Los Angeles, CA 90007, USA",
+      "coords": [
+        34.0256626,
+        -118.2862265
+      ],
+      "primary_type": "cafeteria",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 7:00 AM – 10:00 PM",
+        "Tuesday: 7:00 AM – 10:00 PM",
+        "Wednesday: 7:00 AM – 10:00 PM",
+        "Thursday: 7:00 AM – 10:00 PM",
+        "Friday: 7:00 AM – 10:00 PM",
+        "Saturday: 9:00 AM – 10:00 PM",
+        "Sunday: 9:00 AM – 10:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.2,
+      "source": "google-places",
+      "confidence": 0.5,
+      "city_match": true,
+      "alias_suspected": true,
+      "candidates_considered": 3
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJ8dohd-HHwoARTZ8NClJFZ94",
+      "resolved_name": "USCTransportation",
+      "address": "620 USC McCarthy Way, Los Angeles, CA 90089, USA",
+      "coords": [
+        34.0205212,
+        -118.28246209999999
+      ],
+      "primary_type": "transportation_service",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 8:30 AM – 3:00 PM",
+        "Tuesday: 8:30 AM – 3:00 PM",
+        "Wednesday: 8:30 AM – 3:00 PM",
+        "Thursday: 8:30 AM – 3:00 PM",
+        "Friday: 8:30 AM – 3:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 3.6,
+      "source": "google-places",
+      "confidence": 0.5,
+      "city_match": true,
+      "alias_suspected": true,
+      "candidates_considered": 3
+    }
+  ]
+}

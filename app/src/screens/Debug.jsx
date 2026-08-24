@@ -25,11 +25,24 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
   const [reach, setReach] = useState(null);
   const [host, setHost] = useState(server.serverHost());
   const [busy, setBusy] = useState('');
+  const [checking, setChecking] = useState(false);
+  const [checkedAt, setCheckedAt] = useState(null);
 
   const refresh = async () => {
-    setP(await perms.readPermissions());
-    setRegions(await geofences.monitored());
-    setReach(await server.health());
+    // Test what is in the field, not what was saved earlier — typing a host and
+    // pressing refresh without pressing save otherwise silently tests the old one.
+    if (host && host !== server.serverHost()) setHost(server.setServerHost(host));
+    setChecking(true);
+    try {
+      setP(await perms.readPermissions());
+      setRegions(await geofences.monitored());
+      setReach(await server.health());
+    } finally {
+      // Always stamp the time, even on failure: seeing the clock move is how you
+      // know the button worked at all, which "reachable: false" alone never tells you.
+      setCheckedAt(new Date());
+      setChecking(false);
+    }
   };
   useEffect(() => { refresh(); }, []);
 
@@ -86,13 +99,30 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
         <input className="host" value={host} onChange={(e) => setHost(e.target.value)}
                placeholder="http://100.x.y.z:4321  (Tailscale)" autoCapitalize="off" autoCorrect="off" />
       </div>
+      {/* "localhost" on a phone means the phone itself, which is the single most
+          likely reason this ever reads false. Say so rather than making it a puzzle. */}
+      {p?.native && /localhost|127\.0\.0\.1/.test(host) && (
+        <div className="note" style={{ color: 'var(--bad)' }}>
+          localhost is <i>this phone</i>, not the Mac. Use the Mac's Tailscale (100.x) or
+          Wi-Fi address here.
+        </div>
+      )}
       <div className="kv">
+        <span className="k">saved host</span><span className="v" style={{ fontSize: 11 }}>{server.serverHost()}</span>
+        <span className="k">last checked</span>
+        <span className="v">{checking ? 'checking…' : checkedAt ? checkedAt.toLocaleTimeString('en-GB') : 'never'}</span>
         <span className="k">reachable</span><span className={`v ${reach?.reachable ? 'ok' : 'no'}`}>{reach ? String(reach.reachable) : '…'}</span>
+        {reach && !reach.reachable && <>
+          <span className="k">why not</span><span className="v no">{reach.error || 'unknown'}</span>
+        </>}
         <span className="k">corpus on Mac</span><span className="v">{reach?.corpus ? `${reach.corpus.posts} posts · ${reach.corpus.entities} entities` : reach?.error || '—'}</span>
         <span className="k">corpus on phone</span><span className="v">{corpusSource} · {cue.entities.length} entities</span>
       </div>
       <div className="btnrow">
-        <button className="btn" onClick={() => { server.setServerHost(host); refresh(); }}>save host</button>
+        <button className="btn" disabled={checking}
+                onClick={() => { setHost(server.setServerHost(host)); refresh(); }}>
+          {checking ? 'testing…' : 'save host + test'}
+        </button>
         <button className="btn" onClick={onSync}>sync corpus</button>
         <button className="btn" onClick={() => onIngest(prompt('TikTok URL (share links work):'))}>ingest a URL</button>
       </div>

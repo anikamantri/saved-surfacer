@@ -73,4 +73,18 @@ export const SERVER = {
   host: process.env.CUE_SERVER_HOST || '0.0.0.0',
 };
 
+/**
+ * Extra places to bake street tiles for, beyond where entities already are.
+ *
+ * Tiles are baked in a box around each *entity* cluster, which is right — you
+ * only need street detail where saves exist. But the demo is filmed at USC and
+ * the corpus has zero LA entities yet, so the map would be blank in exactly the
+ * place the camera is pointed. A filming location is a real anchor even before
+ * its posts are harvested; once LA saves land, this becomes redundant rather
+ * than wrong.
+ */
+export const DEMO_ANCHORS = [
+  { name: 'USC campus, Los Angeles', coords: [34.0224, -118.2851] },
+];
+
 export const USER_AGENT = 'cue-prototype/0.1 (personal design-challenge tool)';

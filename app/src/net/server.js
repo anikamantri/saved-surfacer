@@ -12,10 +12,36 @@
  */
 
 const KEY = 'cue.server.host';
-const DEFAULT = 'http://localhost:4321';
+
+/**
+ * The Mac's Tailscale address, baked in as the default.
+ *
+ * `localhost` was the old default, which on a phone means *the phone* — the
+ * single most confusing way this can fail. A 100.x tailnet address is stable
+ * across networks (campus Wi-Fi, home, cellular) and needs no DHCP lookup, so
+ * the app can simply find the Mac on launch with nothing typed.
+ *
+ * Overridable in Debug, and `VITE_CUE_SERVER` overrides it at build time for
+ * anyone whose tailnet differs.
+ */
+const DEFAULT = import.meta.env.VITE_CUE_SERVER || 'http://100.73.98.7:4321';
 
 export const serverHost = () => localStorage.getItem(KEY) || DEFAULT;
-export const setServerHost = (h) => localStorage.setItem(KEY, h.replace(/\/$/, ''));
+
+/**
+ * Normalise before storing.
+ *
+ * Typing "10.25.204.70:4321" without a scheme is the obvious thing to do and
+ * produces a relative URL that fetch resolves against the app's own origin —
+ * failing in a way indistinguishable from an unreachable server. Add the scheme
+ * rather than making that a puzzle.
+ */
+export function setServerHost(h) {
+  let host = String(h || '').trim().replace(/\/+$/, '');
+  if (host && !/^https?:\/\//i.test(host)) host = `http://${host}`;
+  localStorage.setItem(KEY, host);
+  return host;
+}
 
 export async function health(timeoutMs = 2500) {
   const ctrl = new AbortController();

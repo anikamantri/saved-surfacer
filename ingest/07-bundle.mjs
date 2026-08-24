@@ -10,7 +10,7 @@ import { existsSync, copyFileSync } from 'node:fs';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { resolve } from 'node:path';
-import { PATHS } from './lib/config.mjs';
+import { PATHS, DEMO_ANCHORS } from './lib/config.mjs';
 import { readUrls, rawPath, readJson, writeJson, ensureDir, log, banner } from './lib/util.mjs';
 import { fetchTiles } from './lib/tiles.mjs';
 
@@ -127,8 +127,10 @@ export default async function bundle() {
   // Bake tiles only around coordinates we actually trust, so one bad geocode does
   // not cost 400 tiles of the wrong continent.
   const trusted = all.filter((e) => e.place?.coords && e.confidence.overall >= 0.5).map((e) => e.place.coords);
-  log('07', `baking tiles around ${trusted.length} trusted coordinates`);
-  await fetchTiles(trusted);
+  const anchors = DEMO_ANCHORS.map((a) => a.coords);
+  log('07', `baking tiles around ${trusted.length} trusted coordinates`
+    + (anchors.length ? ` + ${anchors.length} demo anchor(s): ${DEMO_ANCHORS.map((a) => a.name).join(', ')}` : ''));
+  await fetchTiles([...trusted, ...anchors]);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) await bundle();

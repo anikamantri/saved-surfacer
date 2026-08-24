@@ -4517,5 +4517,557 @@
       "primaryType": "coffee_shop",
       "_source": "google-places"
     }
+  ],
+  "University of Southern California (USC) campus food spots, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ_WDnaOXHwoARdSx3xACgThk",
+      "types": [
+        "cafeteria",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3122-3168 McClintock Ave, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0256626,
+        "longitude": -118.2862265
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 10:00 PM",
+          "Tuesday: 7:00 AM – 10:00 PM",
+          "Wednesday: 7:00 AM – 10:00 PM",
+          "Thursday: 7:00 AM – 10:00 PM",
+          "Friday: 7:00 AM – 10:00 PM",
+          "Saturday: 9:00 AM – 10:00 PM",
+          "Sunday: 9:00 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Village Honors Dining Hall",
+        "languageCode": "en"
+      },
+      "primaryType": "cafeteria",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJndgeXPzHwoAReI7iEd05Lh4",
+      "types": [
+        "cafeteria",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3771 McClintock Ave, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0193849,
+        "longitude": -118.29050470000001
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 10:00 PM",
+          "Tuesday: 7:00 AM – 10:00 PM",
+          "Wednesday: 7:00 AM – 10:00 PM",
+          "Thursday: 7:00 AM – 10:00 PM",
+          "Friday: 7:00 AM – 10:00 PM",
+          "Saturday: 8:30 AM – 10:00 PM",
+          "Sunday: 8:30 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Parkside Restaurant and Grill",
+        "languageCode": "en"
+      },
+      "primaryType": "cafeteria",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJTUtPz1bHwoARxfhZXhvzisU",
+      "types": [
+        "american_restaurant",
+        "hamburger_restaurant",
+        "sports_bar",
+        "catering_service",
+        "food_delivery",
+        "cocktail_bar",
+        "vegetarian_restaurant",
+        "breakfast_restaurant",
+        "meal_takeaway",
+        "chicken_wings_restaurant",
+        "bar",
+        "restaurant",
+        "food",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3201 S Hoover St, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.024279199999995,
+        "longitude": -118.2841299
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:30 AM – 11:00 PM",
+          "Tuesday: 10:30 AM – 11:00 PM",
+          "Wednesday: 10:30 AM – 12:00 AM",
+          "Thursday: 10:30 AM – 12:00 AM",
+          "Friday: 10:30 AM – 12:00 AM",
+          "Saturday: 10:30 AM – 12:00 AM",
+          "Sunday: 10:30 AM – 11:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Rock & Reilly's USC - Restaurant and Bar",
+        "languageCode": "en"
+      },
+      "primaryType": "american_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "USC Fryft Zone, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ8dohd-HHwoARTZ8NClJFZ94",
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "620 USC McCarthy Way, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0205212,
+        "longitude": -118.28246209999999
+      },
+      "rating": 3.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 15,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:30 AM – 3:00 PM",
+          "Tuesday: 8:30 AM – 3:00 PM",
+          "Wednesday: 8:30 AM – 3:00 PM",
+          "Thursday: 8:30 AM – 3:00 PM",
+          "Friday: 8:30 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USCTransportation",
+        "languageCode": "en"
+      },
+      "primaryType": "transportation_service",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJt-O9ZPvHwoARRdCb4wMLs2U",
+      "types": [
+        "academic_department",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3667 McClintock Ave, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020856099999996,
+        "longitude": -118.28997330000001
+      },
+      "rating": 3.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Department of Public Safety",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0223519,
+        "longitude": -118.285117
+      },
+      "rating": 4.7,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "University of Southern California",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    }
+  ],
+  "University of Southern California (USC), University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0223519,
+        "longitude": -118.285117
+      },
+      "rating": 4.7,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "University of Southern California",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    }
   ]
 }

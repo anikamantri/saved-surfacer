@@ -1,0 +1,55 @@
+{
+  "id": "7515944299708681518",
+  "entities": [
+    {
+      "type": "place",
+      "name": "University of Southern California (USC)",
+      "category": "university campus dining",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Food options within walking distance of USC, including dessert, onigiri, tacos, soup, salad, pancakes, and sushi.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.88,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+        "resolved_name": "University of Southern California",
+        "address": "Los Angeles, CA 90007, USA",
+        "coords": [
+          34.0223519,
+          -118.285117
+        ],
+        "primary_type": "university",
+        "granularity": "venue",
+        "hours": null,
+        "periods": null,
+        "business_status": "OPERATIONAL",
+        "rating": 4.7,
+        "source": "google-places",
+        "confidence": 0.8,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.7
+    }
+  ]
+}

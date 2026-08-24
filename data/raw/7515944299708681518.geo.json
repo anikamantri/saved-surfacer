@@ -1,0 +1,27 @@
+{
+  "id": "7515944299708681518",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+      "resolved_name": "University of Southern California",
+      "address": "Los Angeles, CA 90007, USA",
+      "coords": [
+        34.0223519,
+        -118.285117
+      ],
+      "primary_type": "university",
+      "granularity": "venue",
+      "hours": null,
+      "periods": null,
+      "business_status": "OPERATIONAL",
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 0.8,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    }
+  ]
+}

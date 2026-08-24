@@ -28,3 +28,5 @@ https://www.tiktok.com/@rajandroh/video/7673673926156881166
 https://www.tiktok.com/@spotsyoumissed/photo/7662423778449837342
 https://www.tiktok.com/@szesze.fertitta/video/7654368777370373406
 https://www.tiktok.com/@smallbellybigworld/photo/7648532889188994335
+https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478?q=usc%20recommendations%20&t=1787530231721
+https://www.tiktok.com/@ssimoneangelica/photo/7515944299708681518?q=usc%20recommendations%20&t=1787530231721

@@ -1,0 +1,45 @@
+{
+  "id": "7515944299708681518",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3496,
+    "completion_tokens": 117,
+    "total_tokens": 3613,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-24T01:34:46.389Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "University of Southern California (USC)",
+      "category": "university campus dining",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Food options within walking distance of USC, including dessert, onigiri, tacos, soup, salad, pancakes, and sushi.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.88,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}
