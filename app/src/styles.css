@@ -1,0 +1,141 @@
+/* Cue on the phone. Dark, dense, and built around the safe areas — this is a
+   real app on a real device, not a phone-shaped div on a laptop. */
+
+:root {
+  --bg: #0b0b0d;
+  --panel: #151519;
+  --panel-2: #1d1d23;
+  --line: #2a2a32;
+  --text: #f2f2f4;
+  --dim: #8b8b96;
+  --accent: #ff8a3d;
+  --good: #4ade80;
+  --bad: #f87171;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body, #root { height: 100%; margin: 0; background: var(--bg); }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.45 -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  overscroll-behavior: none;
+}
+
+.app {
+  display: flex; flex-direction: column;
+  /* dvh, not %: the webview's reported height excludes the home-indicator area,
+     which left a white band under the tab bar on device. */
+  height: 100dvh; background: var(--bg);
+}
+
+.head {
+  padding: calc(var(--safe-top) + 12px) 16px 10px;
+  border-bottom: 1px solid var(--line);
+  display: flex; align-items: baseline; gap: 10px;
+}
+.head h1 { font-size: 17px; margin: 0; letter-spacing: -0.01em; }
+.head .sub { color: var(--dim); font-size: 12px; }
+
+.body { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+
+/* Tab bar — thumb-reachable, four surfaces, no hamburger. */
+.tabs {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+  padding-bottom: var(--safe-bottom);
+}
+.tabs button {
+  background: none; border: 0; color: var(--dim);
+  padding: 10px 4px 12px; font-size: 11px; font-weight: 500;
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+}
+.tabs button .glyph { display: flex; line-height: 0; }
+.tabs button.on { color: var(--accent); }
+.tabs button .badge {
+  position: absolute; transform: translate(14px, -4px);
+  background: var(--accent); color: #000; border-radius: 8px;
+  font-size: 10px; font-weight: 700; padding: 0 5px;
+}
+
+/* Library — the graveyard. Reverse-chron, undifferentiated, on purpose. */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; padding: 2px; }
+.tile { position: relative; aspect-ratio: 9 / 16; background: var(--panel-2); overflow: hidden; }
+.tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tile .when {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
+  color: #ddd; font-size: 10px; padding: 12px 5px 4px;
+}
+.tile .count {
+  position: absolute; top: 4px; right: 4px;
+  background: rgba(0,0,0,.7); border-radius: 9px; font-size: 10px; padding: 1px 6px;
+}
+
+.note { color: var(--dim); font-size: 12px; padding: 12px 16px; }
+
+/* Cards */
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; margin: 10px 12px; overflow: hidden; }
+.card .pad { padding: 12px 14px; }
+.card h3 { margin: 0 0 2px; font-size: 16px; }
+.card .why {
+  font-size: 12px; color: var(--accent);
+  background: rgba(255,138,61,.1); border-top: 1px solid var(--line);
+  padding: 8px 14px;
+}
+.prov { display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
+.prov img { width: 44px; height: 58px; object-fit: cover; border-radius: 6px; }
+.prov .meta { font-size: 11px; color: var(--dim); line-height: 1.4; }
+
+.verdicts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px 14px; }
+.verdicts button {
+  padding: 11px 6px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--panel-2); color: var(--text); font-size: 13px; font-weight: 500;
+}
+.verdicts button.went { border-color: var(--good); color: var(--good); }
+.verdicts button.never { border-color: var(--bad); color: var(--bad); }
+
+.chip {
+  display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 20px;
+  border: 1px solid var(--line); color: var(--dim); margin-right: 5px;
+}
+
+/* Map */
+.map { height: 100%; width: 100%; background: #0b0b0d; }
+.leaflet-container { background: #0b0b0d; font-family: inherit; }
+
+/* Debug — deliberately ugly and information-dense. It is instrumentation. */
+.kv { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 10px 14px; font-size: 13px; }
+.kv .k { color: var(--dim); }
+.kv .v { font-variant-numeric: tabular-nums; text-align: right; }
+.kv .v.ok { color: var(--good); }
+.kv .v.no { color: var(--bad); }
+
+.trace {
+  font: 11px/1.5 ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--dim); padding: 8px 14px; white-space: pre-wrap; word-break: break-word;
+}
+.trace b { color: var(--text); font-weight: 400; }
+
+.btnrow { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 14px; }
+.btn {
+  padding: 9px 12px; border-radius: 9px; border: 1px solid var(--line);
+  background: var(--panel-2); color: var(--text); font-size: 13px;
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #17110a; font-weight: 600; }
+
+input.host {
+  width: 100%; padding: 10px 12px; border-radius: 9px;
+  border: 1px solid var(--line); background: var(--panel-2); color: var(--text);
+  font: 13px ui-monospace, monospace;
+}
+
+h4.section {
+  margin: 18px 14px 4px; font-size: 11px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--dim); font-weight: 600;
+}

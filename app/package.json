@@ -1,0 +1,32 @@
+{
+  "name": "@cue/app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Cue on the phone — Capacitor + React over the same trigger engine.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sync": "npm run build && cap sync ios",
+    "ios": "npm run sync && cap open ios",
+    "cap": "cap"
+  },
+  "dependencies": {
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/ios": "^8.5.0",
+    "@capacitor/local-notifications": "^8.3.1",
+    "@capacitor/preferences": "^8.0.1",
+    "@capgo/background-geolocation": "^8.4.3",
+    "@cue/engine": "*",
+    "@ebarooni/capacitor-calendar": "^8.3.0",
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

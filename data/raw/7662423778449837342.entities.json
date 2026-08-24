@@ -1,0 +1,45 @@
+{
+  "id": "7662423778449837342",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "narration",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 2782,
+    "completion_tokens": 107,
+    "total_tokens": 2889,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:10:07.745Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Rise and Set",
+      "category": "Thai-Australian brunch restaurant",
+      "neighborhood": "Lower Nob Hill",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Thai-Australian brunch; order the shakshuka and brûlée French toast together.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

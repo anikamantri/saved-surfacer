@@ -1,0 +1,77 @@
+{
+  "id": "7413407442161110305",
+  "model": "gpt-5.6-terra",
+  "frames_used": 5,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3919,
+    "completion_tokens": 454,
+    "total_tokens": 4373,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 169,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:09:45.088Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Flåm Zipline",
+      "category": "zipline adventure",
+      "neighborhood": null,
+      "city": "Flåm",
+      "country": "Norway",
+      "hook": "Zipline through a fjord valley; described as Scandinavia's longest zipline, with prices from 800 NOK.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Flåmsbana",
+      "category": "scenic railway",
+      "neighborhood": null,
+      "city": "Flåm",
+      "country": "Norway",
+      "hook": "Take the scenic Flåm Railway toward Myrdal through waterfalls and towering mountain scenery.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "other",
+      "name": "Myrdal to Flåm downhill bike ride",
+      "category": "cycling route",
+      "neighborhood": null,
+      "city": "Flåm",
+      "country": "Norway",
+      "hook": "Finish the adventure by cycling the remaining 16 km downhill back to Flåm.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    }
+  ]
+}

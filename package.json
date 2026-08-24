@@ -1,0 +1,21 @@
+{
+  "name": "saved-surfacer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cue — resurfaces saved social posts at the moment they become useful.",
+  "engines": { "node": ">=20.12" },
+  "workspaces": ["engine", "ingest", "prototype", "app"],
+  "scripts": {
+    "setup": "bash ingest/setup.sh",
+    "ingest": "node ingest/run.mjs",
+    "ingest:force": "node ingest/run.mjs --force",
+    "geocode": "node ingest/05-geocode.mjs",
+    "server": "node ingest/server.mjs",
+    "dev": "npm --workspace prototype run dev",
+    "build": "npm --workspace prototype run build",
+    "app": "npm --workspace app run dev",
+    "app:sync": "npm --workspace app run sync",
+    "test": "npm --workspace @cue/engine run test"
+  }
+}

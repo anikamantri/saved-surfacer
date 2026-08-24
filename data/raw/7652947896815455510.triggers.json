@@ -1,0 +1,30 @@
+{
+  "id": "7652947896815455510",
+  "entities": [
+    {
+      "type": "other",
+      "name": "Norway travel planning guide",
+      "category": "travel advice",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Six mistakes to avoid when planning a Norway trip in 2026",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.86,
+      "trigger_class": "calendar",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "calendar",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "calendar triggers are modelled but not wired in this build",
+      "overall": 0.86
+    }
+  ]
+}

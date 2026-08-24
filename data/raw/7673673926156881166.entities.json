@@ -1,0 +1,109 @@
+{
+  "id": "7673673926156881166",
+  "model": "gpt-5.6-terra",
+  "frames_used": 14,
+  "transcript_kind": "narration",
+  "transcript_was_useful": true,
+  "signals": [
+    "audio",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 8928,
+    "completion_tokens": 528,
+    "total_tokens": 9456,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 105,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:11:21.924Z",
+  "entities": [
+    {
+      "type": "workout",
+      "name": "Lat pulldown",
+      "category": "strength-training exercise technique",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Pull the bar to chin level rather than all the way to the chest to better target the lats.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "workout",
+      "name": "Biceps curl",
+      "category": "strength-training exercise technique",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Keep the elbows slightly forward rather than behind the body to emphasize the biceps.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "workout",
+      "name": "Rope triceps extension",
+      "category": "strength-training exercise technique",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Extend the rope down toward the floor rather than directing it toward the body.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "workout",
+      "name": "Dumbbell lateral raise",
+      "category": "strength-training exercise technique",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Raise dumbbells only to shoulder height rather than higher for shoulder-focused lateral raises.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "workout",
+      "name": "Seated cable row",
+      "category": "strength-training exercise technique",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Pull the handle toward the waist rather than the chest to target the lats.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    }
+  ]
+}

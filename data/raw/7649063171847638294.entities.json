@@ -1,0 +1,45 @@
+{
+  "id": "7649063171847638294",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "narration",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3850,
+    "completion_tokens": 254,
+    "total_tokens": 4104,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 155,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:09:22.055Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Oslo",
+      "category": "city",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Weekend Oslo guide featuring the creator's favorites and local tips.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.78,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

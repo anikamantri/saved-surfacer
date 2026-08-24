@@ -4,6 +4,14 @@
 
 ---
 
+## 0. The one-liner
+
+> **My saved folder is a list of promises I made to myself. This is the thing that keeps them.**
+
+Not a bookmark manager. Not a recommender. A **follow-through engine** for intentions I've already formed and then lost.
+
+---
+
 ## 1. The problem
 
 **Saving and needing are two different moments, and the save captures only one of them.**
@@ -29,19 +37,61 @@ Saved posts are a **write-only archive**. The inbox has no outbox.
 - Recall rate: near zero, and decaying — each new save pushes the old ones further down a reverse-chronological feed with no search, no filter, and no notion of relevance.
 - The only successful retrievals are ones where the post hit me hard enough that I went hunting. That's maybe 1 in 50.
 
-### The reframe
+### The reframe, in three steps
 
-> **A saved post isn't content to be organized. It's an intention with a missing trigger.**
+Each level is true; each one is a better problem statement than the last.
 
-Every save is a latent intention — *I want to go here / try this / make that.* An intention becomes an action only when three things line up:
+**Level 1 — the annoyance.** *I save things and never see them again.* True, but it's a complaint, not a problem statement.
 
-| | Provided by |
+**Level 2 — the diagnosis.** *This is a surfacing problem, not an organization problem.* Better. It rules out the obvious wrong solution (folders) and points at the right mechanism (something has to come find me).
+
+**Level 3 — the actual thing.** *Every save is a goal intention that has been stripped of its implementation intention.*
+
+That third one is the one worth building on, and it's not a metaphor — it's the most replicated finding in the behavioral science of follow-through.
+
+### The research spine
+
+Peter Gollwitzer's distinction:
+
+- A **goal intention** is *"I intend to reach outcome Z."* It names the what and leaves the when and where undecided.
+- An **implementation intention** is *"if situation X occurs, then I will do Y."* It pre-commits the trigger along with the behavior.
+
+Gollwitzer & Sheeran's 2006 meta-analysis — 94 independent tests, 8,000+ participants — found that converting a goal intention into an if-then plan produced a **medium-to-large effect on goal attainment (d = 0.65)**. Specifying *when and where* is close to the single most reliable intervention in the field for closing the intention–action gap.
+
+Now look at what the save button actually does:
+
+| | |
 |---|---|
-| **The content** — what to do | ✅ the platform |
-| **The context** — where/when it's actionable | ❌ nobody |
-| **The nudge** — a prompt at that moment | ❌ nobody |
+| Captures the goal intention | ✅ perfectly, in two-tenths of a second |
+| Captures the implementation intention | ❌ not at all |
 
-Social platforms solve exactly one third of this and call it a feature.
+**The save button is a machine for generating goal intentions with the if-then deliberately removed** — because asking "when will you use this?" at save time would slow the save down, and the save is what the platform is optimizing for.
+
+So the product isn't "help me find my saves." It's: **manufacture the missing implementation intention automatically, from content I already saved, without asking me anything.**
+
+There's also direct HCI precedent. Bradley Rhodes and Pattie Maes at the MIT Media Lab named this class of system a **just-in-time information retrieval agent** — software that proactively surfaces relevant information based on local context, without the user issuing a query. The idea is decades old. What's never been done is pointing it at *the corpus of things you saved yourself*, because until very recently nobody could structure that corpus without making you tag it by hand.
+
+### Why "more than the right recommendation at the right time"
+
+The recommendation framing undersells it in three ways.
+
+**The corpus is different.** Every other recommender draws from someone else's catalog and serves someone else's agenda — engagement, ad load, inventory. This one draws from a corpus that is 100% self-selected. It isn't an algorithm recommending to you. **It's you, recommending to you.** That's a trust asymmetry no feed can copy, and it means the product has no incentive to be noisy.
+
+**The job is different.** A recommender answers *"what might you like?"* This answers *"what did you already decide you wanted, and when does it become possible?"* One is discovery. The other is **execution**.
+
+**The stakes are different.** Failing to see a recommendation costs you nothing — there's another one behind it. Failing to act on your own saved intention costs you the thing you already decided you wanted: the coffee shop you were 300 feet from, the internship whose window closed, the workout you meant to try.
+
+The sharpest version: **the feed is optimized to make you save. Nothing is optimized to make you act.** The save is the last honest signal you give a platform — unperformed, unshared, purely for future-you — and it's the one signal nobody builds on.
+
+### Why this matters more than convenience
+
+Look at what's actually in a saved folder. Gym posts. Internship listings. Recipes that take real time. Portfolio references. Places worth flying to.
+
+**A saved folder is a portrait of who someone is trying to become.** The gym saves are the version of me that trains. The internship saves are the version that gets the job. The baking saves are the version with time and care to spend.
+
+Right now that portrait is locked in a reverse-chronological feed I never open. So the gap between saving and doing isn't a UX inconvenience — it's the gap between who I intend to be and who I actually am, and it's being widened by a button designed to feel like progress.
+
+That's why this is worth three hours. It isn't about coffee in Oslo.
 
 ---
 
@@ -75,6 +125,81 @@ You need both. Pure push is fragile — miss the notification and it's gone. Pur
 | Reminders / Apple location alerts | Right *mechanism* | You have to author every trigger by hand |
 
 Nothing occupies the middle. The wedge is **automatic context extraction feeding automatic trigger creation.**
+
+---
+
+## 2b. The general model — why this isn't a travel app
+
+Travel is the demo, not the product. The model generalizes because of one bet:
+
+> **The trigger is inferrable from the content itself.**
+
+A post about a café implies proximity. A post about an internship implies a deadline. A post about a shoulder circuit implies a gym. Nobody has to specify the if-then, because the content already contains it — and a multimodal model can now read it out.
+
+Everything a person saves can be sorted on two axes. This is the taxonomy the product is actually built on.
+
+### Axis 1 — what wakes it up
+
+| Trigger class | Fires when | Example save |
+|---|---|---|
+| **Spatial** | You're near it, or you arrive in its city | Coffee shop, viewpoint, restaurant |
+| **Calendar** | An event matches its type | Workout before a *Gym* block |
+| **Deadline** | A closing window approaches | Internship apps, ticket sales, tax tips |
+| **Activity** | You start doing the thing | Design references when you open Figma |
+| **Commerce** | You're near the store, or the price moves | Groceries for a recipe, a jacket |
+| **Social** | You're with a specific person | "This is so Priya," date ideas |
+| **Temporal** | Season, recurrence, time of day | Fall recipes, Sunday meal planning |
+| **State change** | Your life situation changes | Moving, new semester, new job, injury |
+
+### Axis 2 — how the value decays
+
+This axis is the one people miss, and it changes the design completely.
+
+| Decay profile | Behavior | If missed |
+|---|---|---|
+| **Perishable** | Has an expiry date. Value drops to zero when the window closes. | *Gone permanently* |
+| **Contextual** | Waits indefinitely. Value is latent until conditions align. | Costs you that occasion only |
+| **Evergreen** | No natural trigger. Value is in reflection, not action. | Nothing — but it clutters everything else |
+
+**Perishable content deserves a fundamentally different treatment from contextual content**, and no existing save system distinguishes them. A café can wait three years. A summer internship posting saved in August is worthless by November — and the failure mode isn't "I didn't get around to it," it's *"the window closed while it sat in my folder."* That's a countdown, not a geofence, and it's higher-stakes than anything in the travel case.
+
+Evergreen content is the third answer: some saves should never fire a notification at all. Recognizing that is what keeps the product quiet.
+
+### The domain map
+
+| Domain | Trigger | Decay | The specific failure today |
+|---|---|---|---|
+| **Career / internships** | Deadline + application calendar | Perishable | You save "Summer 2027 apps are open," and find it in December. The window is shut. |
+| **Travel** | Spatial | Contextual | You're 300 feet from the place you saved and have no idea. |
+| **Fitness** | Calendar + activity | Contextual | You're at the gym with no plan, so you do what you always do. |
+| **Cooking / baking** | Commerce + temporal | Contextual | You're at the store without the ingredients; the bread needed a starter 24h ago. |
+| **Creative / portfolio** | Activity | Evergreen→activity | Inspiration saved at 1am, needed at 2pm, never bridges the gap. |
+| **Gifts** | Social + deadline | Perishable | "This is so Priya" saved in March. Her birthday is in November. |
+| **Shopping** | Commerce | Contextual | You re-research from scratch, or buy worse, because the good pick is buried. |
+| **Home / DIY** | Spatial + free time | Contextual | At the hardware store without the list. Again. |
+| **Reading / learning** | State + context | Evergreen | The long article never has a right moment. A flight is a right moment. |
+| **Health** | State change | Contextual | The stretch you saved for your knee resurfaces only after it hurts again. |
+| **Local events** | Deadline + spatial | Perishable | Sold out. You saved it the week it was announced. |
+
+The pattern that makes this a *product* rather than a list of features: **every row is the same engine.** Extract entities, infer the trigger class, watch the corresponding signal, surface once. Only the signal source changes.
+
+### The category
+
+There isn't an existing name for this, which is usually a good sign. The closest honest description:
+
+> **An execution layer for self-directed intent.**
+
+Bookmark managers store intent. Recommenders manufacture intent. Task managers require you to author intent by hand. This is the only one that takes intent you already expressed, for free, and does the work of making it actionable.
+
+### Why AI is load-bearing, not decorative
+
+This product was impossible three years ago, and not because of geofencing — that's been a commodity for a decade.
+
+It was impossible because the only way to structure a saved post was to make the user tag it. And tagging at save time is precisely the friction that kills the save. Every previous attempt at this died in that loop: *to get the structure, ask the user; asking the user destroys the behavior you're building on.*
+
+Multimodal extraction breaks the loop. A model watches the video, reads the on-screen text, parses the caption and the comments, and produces the structured entity and the trigger — with zero user input, preserving the two-tenths-of-a-second save.
+
+**The AI isn't a feature bolted onto a bookmarks app. The AI is the reason the bookmarks app can finally be something else.**
 
 ---
 
@@ -183,7 +308,7 @@ Platforms treat these completely differently. The index is broadly obtainable. *
 
 #### Four doors, ranked
 
-**1. Screenshots → vision model.** *Best for a 3-hour build, and underrated as a product.* Read the Screenshots album with Photos permission, run each image through a vision model. No auth, no ToS question, no waiting, no platform dependency — and it works across every app, including ones with no export at all. The screenshot *is* the payload: caption, handle, and on-screen text are all rendered right there. Plenty of people already screenshot instead of saving, which means for some users this is zero new behavior. If you want real extraction running on stage in your demo instead of seeded data, this is how you get it in under an hour.
+**1. Screenshots → vision model.** *Underrated as a product, and now wired into the pipeline as the fallback door.* Anything dropped in `data/manual/<id>/` is picked up as extra frames — which is how the one genuinely unreachable post (a carousel whose recommendations live on the last slide) gets recovered. Read the Screenshots album with Photos permission, run each image through a vision model. No auth, no ToS question, no waiting, no platform dependency — and it works across every app, including ones with no export at all. The screenshot *is* the payload: caption, handle, and on-screen text are all rendered right there. Plenty of people already screenshot instead of saving, which means for some users this is zero new behavior. If you want real extraction running on stage in your demo instead of seeded data, this is how you get it in under an hour.
 
 **2. Share-sheet extension.** *Best long-term product answer.* An iOS Share Extension (or Android intent filter) that accepts URLs; the user taps Share → Cue. Costs a per-post gesture, but it's one they already make, it's fully within platform ToS, and the extension can capture the caption text alongside the link. This is what you'd ship.
 
@@ -197,11 +322,32 @@ Platforms treat these completely differently. The index is broadly obtainable. *
 
 An export hands you `instagram.com/p/ABC123/` and nothing else. Between the index and the extraction sits a step that has to turn that string into content:
 
-- **TikTok:** `https://www.tiktok.com/oembed?url=<url>` → caption, author, thumbnail. Public, keyless, works today.
+- **TikTok:** `https://www.tiktok.com/oembed?url=<url>` → caption, author, thumbnail. Public, keyless, works today — *for videos.* See the measurement below.
 - **Instagram:** no clean path. This is the real reason to lean on the share extension (which carries the caption with it) or screenshots.
 - **X:** the bookmarks endpoint returns text inline — no hydration needed.
 
 Practical consequence: **hydration quality, not extraction quality, is what limits accuracy.** Worth saying out loud, because it's the non-obvious insight.
+
+#### Measured, not assumed: what hydration actually returned
+
+This stopped being a prediction once the pipeline ran against 14 real saves. `data/hydration-report.json` is the pipeline's own record of it:
+
+| Door | Reached | Notes |
+|---|---|---|
+| **oEmbed** (public, keyless) | **7 / 14** | HTTP 400 on *every* `/photo/` carousel. Also truncates: `title` caps at ~73 characters. |
+| **yt-dlp** (local fetch) | **14 / 14** | Only source of the untruncated caption, via `description`. |
+
+Three findings worth keeping, because each one contradicts a reasonable assumption:
+
+1. **The keyless path fails on exactly half a real corpus.** Photo carousels are not an edge case — they were 7 of my 14 saves. Any product built only on oEmbed silently loses half the library. This is the single strongest piece of evidence for the thesis that *ingest is a permissions and hydration problem, not an intelligence problem.*
+2. **`/photo/` URLs are refused, but the same id under `/video/` is accepted.** oEmbed rejects both; yt-dlp rejects `/photo/` and accepts the rewrite. A one-line substitution recovers the entire carousel half of the corpus.
+3. **Carousels still lose their payload.** yt-dlp exposes the caption, the audio and the *first* slide — not the remaining images. For a post captioned "recommendations on the last slide", the content is genuinely unreachable. That is the honest residue, and it is what the screenshot door is for.
+
+There is a matching finding on the audio side. TikTok reports creator-recorded audio as `original sound`, so that metadata looks like a clean narration-vs-music signal — and it isn't. Two posts tagged `original sound` transcribed to song lyrics (one of them Taylor Swift). Gating on the metadata alone would have fed lyrics to the extractor, which would cheerfully invent places out of them. The working answer is to let the model read the transcript and judge it; the pipeline records that judgement as `transcript_was_useful`, and it came back true for exactly the two posts with genuine narration.
+
+#### On yt-dlp specifically
+
+Downloading my own saved posts, locally, to extract from them once, is a different act from scraping an index — but it is close enough that it deserves naming rather than burying. It is a **build-time convenience, not the shipping architecture.** The product answer remains the share extension (which carries the caption and media legitimately, within ToS) and the official data export (which is guaranteed by GDPR Art. 20). yt-dlp is how a personal prototype gets frames and audio today without waiting 1–4 days for an export.
 
 #### Why "personal tool" isn't just a scoping excuse
 
@@ -227,7 +373,16 @@ Ingest is the only expensive operation and it happens once per post. A heavy use
 
 ---
 
-## 7. Build plan for the next 3 hours
+## 7. Build plan
+
+> **Superseded — kept as a record of the original scoping.** This section planned to fake the
+> ingest and simulate location. In the event, ingest was built for real (§6 has the measured
+> results), and the deliverable then became a real iOS app with genuine CoreLocation, native
+> geofences and EventKit. Current plan: [`native-plan.md`](native-plan.md).
+>
+> Worth noting what the original scoping got wrong, since the brief rewards showing the path:
+> **"real geofencing" was cut as too hard, and turned out to be the single thing the idea most
+> needed to be true.** Simulating it would have left the central claim untested.
 
 **Scope ruthlessly. Fake the ingest, build the surfacing.** Nobody judging this expects a live TikTok integration; they want to see the idea *work.* State the assumption in the first 15 seconds of your video and move on.
 

@@ -1,0 +1,12 @@
+{
+  "name": "@cue/ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The 7-stage hydration pipeline, plus the on-demand server the phone calls.",
+  "main": "run.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "pipeline": "node run.mjs"
+  }
+}

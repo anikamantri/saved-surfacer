@@ -1,0 +1,992 @@
+{
+  "id": "7648532889188994335",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJLWA0dIt9j4AR3g3Oo_CocNc",
+      "resolved_name": "Khao Tiew",
+      "address": "272 Claremont Blvd, San Francisco, CA 94127, USA",
+      "coords": [
+        37.741087199999996,
+        -122.46506790000001
+      ],
+      "primary_type": "thai_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 4:00 – 8:30 PM",
+        "Tuesday: Closed",
+        "Wednesday: 4:00 – 8:30 PM",
+        "Thursday: 4:00 – 8:30 PM",
+        "Friday: 4:00 – 8:30 PM",
+        "Saturday: 4:00 – 8:30 PM",
+        "Sunday: 4:00 – 8:30 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 30
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJ-XUKKQB_j4ARrDajQ_NArOg",
+      "resolved_name": "Bones Bagels",
+      "address": "741 Diamond St, San Francisco, CA 94114, USA",
+      "coords": [
+        37.751337,
+        -122.43621750000001
+      ],
+      "primary_type": "bakery",
+      "granularity": "venue",
+      "hours": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 8:00 AM – 2:00 PM",
+        "Friday: 8:00 AM – 2:00 PM",
+        "Saturday: 8:00 AM – 2:00 PM",
+        "Sunday: 8:00 AM – 2:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 2,
+      "geocoded": true,
+      "place_id": "ChIJjdYi_4SAhYAR0sl58U1jsLk",
+      "resolved_name": "Tú Lan",
+      "address": "8 6th St, San Francisco, CA 94103, USA",
+      "coords": [
+        37.7818928,
+        -122.410091
+      ],
+      "primary_type": "vietnamese_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 11:00 AM – 8:00 PM",
+        "Tuesday: 11:00 AM – 8:00 PM",
+        "Wednesday: 11:00 AM – 8:00 PM",
+        "Thursday: 11:00 AM – 8:00 PM",
+        "Friday: 11:00 AM – 8:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 3,
+      "geocoded": true,
+      "place_id": "ChIJi9BhDKCAhYARRUYq_9pI45w",
+      "resolved_name": "Kantine",
+      "address": "1906 Market St, San Francisco, CA 94102, USA",
+      "coords": [
+        37.7707222,
+        -122.42532179999999
+      ],
+      "primary_type": "scandinavian_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: Closed",
+        "Tuesday: 8:00 AM – 2:00 PM",
+        "Wednesday: 8:00 AM – 2:00 PM",
+        "Thursday: 8:00 AM – 2:00 PM",
+        "Friday: 8:00 AM – 2:00 PM",
+        "Saturday: 9:00 AM – 3:00 PM",
+        "Sunday: 9:00 AM – 3:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 4,
+      "geocoded": true,
+      "place_id": "ChIJ-9w17zmBhYAR1m6Gby5quto",
+      "resolved_name": "Aji Kiji",
+      "address": "359 Kearny St, San Francisco, CA 94108, USA",
+      "coords": [
+        37.7915405,
+        -122.40439690000001
+      ],
+      "primary_type": "meal_takeaway",
+      "granularity": "venue",
+      "hours": [
+        "Monday: Closed",
+        "Tuesday: 11:00 AM – 4:00 PM",
+        "Wednesday: 11:00 AM – 4:00 PM",
+        "Thursday: 11:00 AM – 4:00 PM",
+        "Friday: 11:00 AM – 4:00 PM",
+        "Saturday: 11:00 AM – 4:00 PM",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 5,
+      "geocoded": true,
+      "place_id": "ChIJX9FnLOqAhYARMWD0m8kYud4",
+      "resolved_name": "Cafe Réveille",
+      "address": "1998 Polk St, San Francisco, CA 94109, USA",
+      "coords": [
+        37.794945,
+        -122.42145330000001
+      ],
+      "primary_type": "cafe",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 7:30 AM – 5:00 PM",
+        "Tuesday: 7:30 AM – 5:00 PM",
+        "Wednesday: 7:30 AM – 5:00 PM",
+        "Thursday: 7:30 AM – 5:00 PM",
+        "Friday: 7:30 AM – 5:00 PM",
+        "Saturday: 7:30 AM – 5:00 PM",
+        "Sunday: 7:30 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 3
+    },
+    {
+      "index": 6,
+      "geocoded": true,
+      "place_id": "ChIJu9EujzB-j4ARoyuqElfT14g",
+      "resolved_name": "Tartine Manufactory",
+      "address": "595 Alabama St, San Francisco, CA 94110, USA",
+      "coords": [
+        37.7618278,
+        -122.41189720000001
+      ],
+      "primary_type": "bakery",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 9:00 PM",
+        "Wednesday: 8:00 AM – 9:00 PM",
+        "Thursday: 8:00 AM – 9:00 PM",
+        "Friday: 8:00 AM – 9:00 PM",
+        "Saturday: 8:00 AM – 9:00 PM",
+        "Sunday: 8:00 AM – 9:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 7,
+      "geocoded": true,
+      "place_id": "ChIJ-0oK-amHhYARzNhyX0KQcEg",
+      "resolved_name": "Dalida Restaurant",
+      "address": "101 Montgomery St Ste 100, San Francisco, CA 94129, USA",
+      "coords": [
+        37.8000327,
+        -122.4595791
+      ],
+      "primary_type": "mediterranean_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: Closed",
+        "Tuesday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Wednesday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Thursday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Friday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Saturday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Sunday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 8,
+      "geocoded": true,
+      "place_id": "ChIJW9lMewCBhYARGtYJ4W3N27k",
+      "resolved_name": "Ebiko",
+      "address": "526 Columbus Ave, San Francisco, CA 94133, USA",
+      "coords": [
+        37.7999765,
+        -122.409318
+      ],
+      "primary_type": "japanese_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 11:00 AM – 5:00 PM",
+        "Tuesday: 11:00 AM – 5:00 PM",
+        "Wednesday: 11:00 AM – 5:00 PM",
+        "Thursday: 11:00 AM – 5:00 PM",
+        "Friday: 11:00 AM – 5:00 PM",
+        "Saturday: 11:00 AM – 5:00 PM",
+        "Sunday: 11:00 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 3
+    }
+  ]
+}

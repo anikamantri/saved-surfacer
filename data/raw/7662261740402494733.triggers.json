@@ -1,0 +1,148 @@
+{
+  "id": "7662261740402494733",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Hardware Coffee",
+      "category": "café",
+      "neighborhood": "West Portal",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Study café with free Wi‑Fi, outlets, plenty of seating, and a $6.25 iced latte",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJs-d3JSR9j4ARMzwQoiIugCg",
+        "resolved_name": "Hardware Coffee Co.",
+        "address": "32 W Portal Ave, San Francisco, CA 94127, USA",
+        "coords": [
+          37.740580099999995,
+          -122.4664748
+        ],
+        "primary_type": "cafe",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 7:00 AM – 6:00 PM",
+          "Tuesday: 7:00 AM – 6:00 PM",
+          "Wednesday: 7:00 AM – 6:00 PM",
+          "Thursday: 7:00 AM – 6:00 PM",
+          "Friday: 7:00 AM – 6:00 PM",
+          "Saturday: 7:00 AM – 6:00 PM",
+          "Sunday: 7:00 AM – 6:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
+    }
+  ]
+}

@@ -1,12 +1,18 @@
 # secrets — never commit API keys (Places, OpenAI/Anthropic, etc.)
 .env
 .env.*
+!.env.example
 *.key
 secrets.json
 
-# downloaded media (regenerable, and thumbnail URLs expire anyway)
+# downloaded media — large and fully regenerable from the pipeline
 data/thumbnails/*
 !data/thumbnails/.gitkeep
+data/media/
+
+# node
+prototype/node_modules/
+prototype/dist/
 
 # python
 __pycache__/
@@ -25,3 +31,17 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# yt-dlp standalone binary (37MB, re-downloadable via ingest/setup.sh)
+ingest/bin/
+ingest/.venv/
+
+# app build output — regenerable from `npm run app:sync`
+app/dist/
+app/ios/App/App/public/
+app/ios/App/.build/
+app/ios/App/App.xcodeproj/project.xcworkspace/xcuserdata/
+app/ios/App/App.xcodeproj/xcuserdata/
+app/ios/DerivedData/
+DerivedData/
+*.xcuserstate

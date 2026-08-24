@@ -1,0 +1,45 @@
+{
+  "id": "7660592980708871437",
+  "model": "gpt-5.6-terra",
+  "frames_used": 5,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3828,
+    "completion_tokens": 115,
+    "total_tokens": 3943,
+    "prompt_tokens_details": {
+      "cached_tokens": 3200,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:11:17.539Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Sensitive Vintage",
+      "category": "Italian designer vintage shop",
+      "neighborhood": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Vintage shop carrying Italian designer pieces, including Moschino, Fendi, Fiorucci, Blumarine, Roberto Cavalli, and Miss Sixty.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

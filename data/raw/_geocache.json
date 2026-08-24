@@ -1,0 +1,4521 @@
+{
+  "Majorstuen, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJ157s-dptQUYRbXmZAWfcmXk",
+      "types": [
+        "sublocality_level_1",
+        "sublocality",
+        "political"
+      ],
+      "formattedAddress": "Majorstuen, Oslo, Norway",
+      "location": {
+        "latitude": 59.9267742,
+        "longitude": 10.7161672
+      },
+      "displayName": {
+        "text": "Majorstuen",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Valkyrien, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJ3Z5unZBtQUYRMrqqqdoz9Cs",
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Valkyriegata 3, 0366 Oslo, Norway",
+      "location": {
+        "latitude": 59.928295500000004,
+        "longitude": 10.7186062
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 7:00 PM",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 7:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Valkyrien",
+        "languageCode": "no"
+      },
+      "primaryType": "shopping_mall",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ2wRgrNttQUYRmRYrJjB2mYU",
+      "types": [
+        "pub",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Valkyriegata 15B, 0366 Oslo, Norway",
+      "location": {
+        "latitude": 59.9295708,
+        "longitude": 10.716927
+      },
+      "rating": 3.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 1:00 PM – 12:00 AM",
+          "Tuesday: 1:00 PM – 12:00 AM",
+          "Wednesday: 1:00 PM – 12:00 AM",
+          "Thursday: 1:00 PM – 12:00 AM",
+          "Friday: 1:00 PM – 12:00 AM",
+          "Saturday: 1:00 PM – 12:00 AM",
+          "Sunday: 1:00 PM – 12:00 AM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Valkyrien Restaurant",
+        "languageCode": "en"
+      },
+      "primaryType": "pub",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJReG0PtptQUYRH4ETNF0aMBw",
+      "types": [
+        "fast_food_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Bogstadveien 71B, 0366 Oslo, Norway",
+      "location": {
+        "latitude": 59.9281091,
+        "longitude": 10.7182874
+      },
+      "rating": 3.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 4,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 4,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 4,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 4,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 4,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 4,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 4,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 PM – 4:00 AM",
+          "Tuesday: 12:00 PM – 4:00 AM",
+          "Wednesday: 12:00 PM – 4:00 AM",
+          "Thursday: 12:00 PM – 4:00 AM",
+          "Friday: 12:00 PM – 4:00 AM",
+          "Saturday: 12:00 PM – 4:00 AM",
+          "Sunday: 12:00 PM – 4:00 AM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Valkyrien Grill (Burger)",
+        "languageCode": "en"
+      },
+      "primaryType": "fast_food_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Jacob Aalls gate, Majorstuen, Oslo, Norway": [
+    {
+      "id": "Eh5KYWNvYiBBYWxscyBnYXRlLCBPc2xvLCBOb3J3YXkiLiosChQKEgkzYHws2m1BRhHAW0gYH7gUQRIUChIJ157s-dptQUYRbXmZAWfcmXk",
+      "types": [
+        "route"
+      ],
+      "formattedAddress": "Jacob Aalls gate, Oslo, Norway",
+      "location": {
+        "latitude": 59.9285078,
+        "longitude": 10.7171572
+      },
+      "displayName": {
+        "text": "Jacob Aalls gate",
+        "languageCode": "no"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Sorgenfrigata, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJpaH-htltQUYRD5GHYD2f0-Q",
+      "types": [
+        "route"
+      ],
+      "formattedAddress": "Sorgenfrigata, Oslo, Norway",
+      "location": {
+        "latitude": 59.9284618,
+        "longitude": 10.7206532
+      },
+      "displayName": {
+        "text": "Sorgenfrigata",
+        "languageCode": "no"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Oslo, Oslo, Norway": [
+    {
+      "id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "formattedAddress": "Oslo, Norway",
+      "location": {
+        "latitude": 59.9121746,
+        "longitude": 10.7312704
+      },
+      "displayName": {
+        "text": "Oslo",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Bergen, Bergen, Norway": [
+    {
+      "id": "ChIJd312ZkkNOUYRCAretD6gQp4",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "formattedAddress": "Bergen, Norway",
+      "location": {
+        "latitude": 60.39126279999999,
+        "longitude": 5.3220544
+      },
+      "displayName": {
+        "text": "Bergen",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Fløyen, Bergen, Norway": [
+    {
+      "id": "ChIJ9zAxcrv-PEYR6IYfhqg9zjM",
+      "types": [
+        "mountain_peak",
+        "natural_feature",
+        "establishment"
+      ],
+      "formattedAddress": "Fløyen, Bergen, Norway",
+      "location": {
+        "latitude": 60.398251,
+        "longitude": 5.3458518999999995
+      },
+      "rating": 4.8,
+      "displayName": {
+        "text": "Fløyen",
+        "languageCode": "en"
+      },
+      "primaryType": "mountain_peak",
+      "_source": "google-places"
+    }
+  ],
+  "Løvstakken, Bergen, Norway": [
+    {
+      "id": "ChIJ9xAKDFf5PEYRSU_YMRFe0u4",
+      "types": [
+        "mountain_peak",
+        "natural_feature",
+        "establishment"
+      ],
+      "formattedAddress": "Løvstakken, Bergen, Norway",
+      "location": {
+        "latitude": 60.3730556,
+        "longitude": 5.3236111
+      },
+      "rating": 4.7,
+      "displayName": {
+        "text": "Løvstakken",
+        "languageCode": "en"
+      },
+      "primaryType": "mountain_peak",
+      "_source": "google-places"
+    }
+  ],
+  "Sandviken, Sandviken, Bergen, Norway": [
+    {
+      "id": "ChIJc-b8tCD8PEYR42VormIx87U",
+      "types": [
+        "sublocality_level_2",
+        "sublocality",
+        "political"
+      ],
+      "formattedAddress": "Sandviken, Bergen, Norway",
+      "location": {
+        "latitude": 60.412023000000005,
+        "longitude": 5.325294899999999
+      },
+      "displayName": {
+        "text": "Sandviken",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Nordnes, Nordnes, Bergen, Norway": [
+    {
+      "id": "ChIJY5P7YRr8PEYRaJEM-fgpw-E",
+      "types": [
+        "sublocality_level_2",
+        "sublocality",
+        "political"
+      ],
+      "formattedAddress": "Nordnes, Bergen, Norway",
+      "location": {
+        "latitude": 60.3988385,
+        "longitude": 5.3075798
+      },
+      "displayName": {
+        "text": "Nordnes",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Kaigaten Deli, Bergen, Norway": [
+    {
+      "id": "ChIJDW3Lruf_PEYROfOOwGOTEvw",
+      "types": [
+        "brunch_restaurant",
+        "food_store",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Kaigaten 20, 5016 Bergen, Norway",
+      "location": {
+        "latitude": 60.39084609999999,
+        "longitude": 5.330585999999999
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 6:00 PM",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 8:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Kaigaten Deli",
+        "languageCode": "no"
+      },
+      "primaryType": "brunch_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Bryggen, Bergen, Norway": [
+    {
+      "id": "ChIJ4TG-gB38PEYRLiN1fX1lePI",
+      "types": [
+        "historical_place",
+        "historical_landmark",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "5003 Bergen, Norway",
+      "location": {
+        "latitude": 60.397567200000005,
+        "longitude": 5.3245493999999995
+      },
+      "rating": 4.7,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Bryggen",
+        "languageCode": "en"
+      },
+      "primaryType": "historical_place",
+      "_source": "google-places"
+    }
+  ],
+  "Magnat Kaffehus, Oslo, Norway": [
+    {
+      "id": "ChIJUX1t87O0RkYR5uM960J85Do",
+      "types": [
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Kirkegata 5, 0153 Oslo, Norway",
+      "location": {
+        "latitude": 59.909228899999995,
+        "longitude": 10.742585499999999
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 4:00 PM",
+          "Tuesday: 8:00 AM – 4:00 PM",
+          "Wednesday: 8:00 AM – 4:00 PM",
+          "Thursday: 8:00 AM – 4:00 PM",
+          "Friday: 8:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Magnat Coffee House AS",
+        "languageCode": "en"
+      },
+      "primaryType": "food_store",
+      "_source": "google-places"
+    }
+  ],
+  "Flåmsbana, Flåm, Norway": [
+    {
+      "id": "ChIJAc8DGn8RPkYR6pLP-2YVQ5E",
+      "types": [
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "A-Feltvegen 11, 5743 Flåm, Norway",
+      "location": {
+        "latitude": 60.862921500000006,
+        "longitude": 7.114559300000001
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 45
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 6,
+              "minute": 45
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 6,
+              "minute": 45
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 6,
+              "minute": 45
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 6,
+              "minute": 45
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 6,
+              "minute": 45
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 45
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 6:45 AM – 6:30 PM",
+          "Tuesday: 6:45 AM – 6:30 PM",
+          "Wednesday: 6:45 AM – 6:30 PM",
+          "Thursday: 6:45 AM – 6:30 PM",
+          "Friday: 6:45 AM – 6:30 PM",
+          "Saturday: 7:45 AM – 6:30 PM",
+          "Sunday: 7:45 AM – 6:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Flåmsbana",
+        "languageCode": "en"
+      },
+      "primaryType": "tourist_attraction",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJixNomGttPkYRu6MrFG7wdkY",
+      "types": [
+        "adventure_sports_center",
+        "sports_complex",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Vatnahalsen, 5740 Myrdal, Norway",
+      "location": {
+        "latitude": 60.74231859999999,
+        "longitude": 7.1274684
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:30 AM – 6:00 PM",
+          "Tuesday: 9:30 AM – 6:00 PM",
+          "Wednesday: 9:30 AM – 6:00 PM",
+          "Thursday: 9:30 AM – 6:00 PM",
+          "Friday: 9:30 AM – 5:00 PM",
+          "Saturday: 9:30 AM – 6:00 PM",
+          "Sunday: 9:30 AM – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Flåm Zipline",
+        "languageCode": "no"
+      },
+      "primaryType": "adventure_sports_center",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJaeoDqn8RPkYR83ldSWoaXqI",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Stasjonsvegen 8, 5742 Flåm, Norway",
+      "location": {
+        "latitude": 60.86264560000001,
+        "longitude": 7.1132604
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 9:00 AM – 6:00 PM",
+          "Sunday: 9:00 AM – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Flåm Railway Museum",
+        "languageCode": "en"
+      },
+      "primaryType": "museum",
+      "_source": "google-places"
+    }
+  ],
+  "Dolomites, Italy": [
+    {
+      "id": "ChIJMRTS-V9DeEcRu9n4gwcnT2c",
+      "types": [
+        "natural_feature",
+        "establishment"
+      ],
+      "formattedAddress": "Dolomites, 32023 Rocca Pietore, Province of Belluno, Italy",
+      "location": {
+        "latitude": 46.4102117,
+        "longitude": 11.8440351
+      },
+      "rating": 4.8,
+      "displayName": {
+        "text": "Dolomites",
+        "languageCode": "en"
+      },
+      "primaryType": "natural_feature",
+      "_source": "google-places"
+    }
+  ],
+  "Lago di Braies, Braies, Italy": [
+    {
+      "id": "ChIJ5-06In4veEcR9cJfTfG0Lb0",
+      "types": [
+        "lake",
+        "natural_feature",
+        "establishment"
+      ],
+      "formattedAddress": "Pragser Wildsee, 39030 Prags, Autonomous Province of Bolzano – South Tyrol, Italy",
+      "location": {
+        "latitude": 46.694333,
+        "longitude": 12.0854273
+      },
+      "rating": 4.7,
+      "displayName": {
+        "text": "Pragser Wildsee",
+        "languageCode": "en"
+      },
+      "primaryType": "lake",
+      "_source": "google-places"
+    }
+  ],
+  "Hardware Coffee, West Portal, San Francisco, United States": [
+    {
+      "id": "ChIJs-d3JSR9j4ARMzwQoiIugCg",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "32 W Portal Ave, San Francisco, CA 94127, USA",
+      "location": {
+        "latitude": 37.740580099999995,
+        "longitude": -122.4664748
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 6:00 PM",
+          "Tuesday: 7:00 AM – 6:00 PM",
+          "Wednesday: 7:00 AM – 6:00 PM",
+          "Thursday: 7:00 AM – 6:00 PM",
+          "Friday: 7:00 AM – 6:00 PM",
+          "Saturday: 7:00 AM – 6:00 PM",
+          "Sunday: 7:00 AM – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Hardware Coffee Co.",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Crêperie de Marie, Grünerløkka, Oslo, Norway": [
+    {
+      "id": "ChIJecsFNmZuQUYRp2skVv90r3g",
+      "types": [
+        "dessert_shop",
+        "meal_takeaway",
+        "confectionery",
+        "food_store",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Thorvald Meyers gate 63-67, 0552 Oslo, Norway",
+      "location": {
+        "latitude": 59.921526500000006,
+        "longitude": 10.759141300000001
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 9:30 PM",
+          "Saturday: 11:00 AM – 9:30 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Crêperie de Mari",
+        "languageCode": "en"
+      },
+      "primaryType": "dessert_shop",
+      "_source": "google-places"
+    }
+  ],
+  "Sunt og Godt, Grünerløkka, Oslo, Norway": [
+    {
+      "id": "ChIJu9zTWmluQUYRQdCZYVcuz5c",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Thorvald Meyers gate 18, 0555 Oslo, Norway",
+      "location": {
+        "latitude": 59.9281643,
+        "longitude": 10.7592783
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:30 AM – 5:30 PM",
+          "Tuesday: 9:30 AM – 5:30 PM",
+          "Wednesday: 9:30 AM – 5:30 PM",
+          "Thursday: 9:30 AM – 5:30 PM",
+          "Friday: 9:30 AM – 5:30 PM",
+          "Saturday: 10:00 AM – 5:30 PM",
+          "Sunday: 10:00 AM – 5:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Sunt og Godt",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Khao Tiew, San Francisco, United States": [
+    {
+      "id": "ChIJLWA0dIt9j4AR3g3Oo_CocNc",
+      "types": [
+        "thai_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "272 Claremont Blvd, San Francisco, CA 94127, USA",
+      "location": {
+        "latitude": 37.741087199999996,
+        "longitude": -122.46506790000001
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 4:00 – 8:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: 4:00 – 8:30 PM",
+          "Thursday: 4:00 – 8:30 PM",
+          "Friday: 4:00 – 8:30 PM",
+          "Saturday: 4:00 – 8:30 PM",
+          "Sunday: 4:00 – 8:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Khao Tiew",
+        "languageCode": "en"
+      },
+      "primaryType": "thai_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Bones Bagels, Noe Valley, San Francisco, United States": [
+    {
+      "id": "ChIJ-XUKKQB_j4ARrDajQ_NArOg",
+      "types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "741 Diamond St, San Francisco, CA 94114, USA",
+      "location": {
+        "latitude": 37.751337,
+        "longitude": -122.43621750000001
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 14,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 8:00 AM – 2:00 PM",
+          "Friday: 8:00 AM – 2:00 PM",
+          "Saturday: 8:00 AM – 2:00 PM",
+          "Sunday: 8:00 AM – 2:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Bones Bagels",
+        "languageCode": "en"
+      },
+      "primaryType": "bakery",
+      "_source": "google-places"
+    }
+  ],
+  "Tu Lan, Tenderloin, San Francisco, United States": [
+    {
+      "id": "ChIJjdYi_4SAhYAR0sl58U1jsLk",
+      "types": [
+        "vietnamese_restaurant",
+        "noodle_shop",
+        "soup_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "8 6th St, San Francisco, CA 94103, USA",
+      "location": {
+        "latitude": 37.7818928,
+        "longitude": -122.410091
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 8:00 PM",
+          "Tuesday: 11:00 AM – 8:00 PM",
+          "Wednesday: 11:00 AM – 8:00 PM",
+          "Thursday: 11:00 AM – 8:00 PM",
+          "Friday: 11:00 AM – 8:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Tú Lan",
+        "languageCode": "en"
+      },
+      "primaryType": "vietnamese_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Aji Kiji, SoMa, San Francisco, United States": [
+    {
+      "id": "ChIJ-9w17zmBhYAR1m6Gby5quto",
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "359 Kearny St, San Francisco, CA 94108, USA",
+      "location": {
+        "latitude": 37.7915405,
+        "longitude": -122.40439690000001
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 11:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Aji Kiji",
+        "languageCode": "en"
+      },
+      "primaryType": "meal_takeaway",
+      "_source": "google-places"
+    }
+  ],
+  "Cafe Reveille, Nob Hill, San Francisco, United States": [
+    {
+      "id": "ChIJX9FnLOqAhYARMWD0m8kYud4",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "1998 Polk St, San Francisco, CA 94109, USA",
+      "location": {
+        "latitude": 37.794945,
+        "longitude": -122.42145330000001
+      },
+      "rating": 4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:30 AM – 5:00 PM",
+          "Tuesday: 7:30 AM – 5:00 PM",
+          "Wednesday: 7:30 AM – 5:00 PM",
+          "Thursday: 7:30 AM – 5:00 PM",
+          "Friday: 7:30 AM – 5:00 PM",
+          "Saturday: 7:30 AM – 5:00 PM",
+          "Sunday: 7:30 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Cafe Réveille",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJsU3K7vSAhYARv8bNtVUBHYo",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "200 Columbus Ave, San Francisco, CA 94133, USA",
+      "location": {
+        "latitude": 37.797272199999995,
+        "longitude": -122.40557779999999
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:30 AM – 4:00 PM",
+          "Tuesday: 7:30 AM – 4:00 PM",
+          "Wednesday: 7:30 AM – 4:00 PM",
+          "Thursday: 7:30 AM – 4:00 PM",
+          "Friday: 7:30 AM – 4:00 PM",
+          "Saturday: 7:30 AM – 4:00 PM",
+          "Sunday: 7:30 AM – 4:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Réveille Coffee Co.",
+        "languageCode": "en"
+      },
+      "primaryType": "coffee_shop",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ74VF-qaAhYARb0YeIN1ZqEA",
+      "types": [
+        "cafe",
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "201 Steiner St, San Francisco, CA 94117, USA",
+      "location": {
+        "latitude": 37.7710697,
+        "longitude": -122.4320952
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 7:30 PM",
+          "Tuesday: 7:00 AM – 7:30 PM",
+          "Wednesday: 7:00 AM – 7:30 PM",
+          "Thursday: 7:00 AM – 7:30 PM",
+          "Friday: 7:00 AM – 7:30 PM",
+          "Saturday: 7:00 AM – 7:30 PM",
+          "Sunday: 7:00 AM – 7:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Cafe Réveille",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Tartine Manufactory, San Francisco, United States": [
+    {
+      "id": "ChIJu9EujzB-j4ARoyuqElfT14g",
+      "types": [
+        "bakery",
+        "american_restaurant",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "595 Alabama St, San Francisco, CA 94110, USA",
+      "location": {
+        "latitude": 37.7618278,
+        "longitude": -122.41189720000001
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 4:00 PM",
+          "Tuesday: 8:00 AM – 9:00 PM",
+          "Wednesday: 8:00 AM – 9:00 PM",
+          "Thursday: 8:00 AM – 9:00 PM",
+          "Friday: 8:00 AM – 9:00 PM",
+          "Saturday: 8:00 AM – 9:00 PM",
+          "Sunday: 8:00 AM – 9:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Tartine Manufactory",
+        "languageCode": "en"
+      },
+      "primaryType": "bakery",
+      "_source": "google-places"
+    }
+  ],
+  "Dalida, San Francisco, United States": [
+    {
+      "id": "ChIJ-0oK-amHhYARzNhyX0KQcEg",
+      "types": [
+        "mediterranean_restaurant",
+        "cocktail_bar",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "101 Montgomery St Ste 100, San Francisco, CA 94129, USA",
+      "location": {
+        "latitude": 37.8000327,
+        "longitude": -122.4595791
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+          "Wednesday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+          "Thursday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+          "Friday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+          "Saturday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+          "Sunday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Dalida Restaurant",
+        "languageCode": "en"
+      },
+      "primaryType": "mediterranean_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Ebiko, San Francisco, United States": [
+    {
+      "id": "ChIJW9lMewCBhYARGtYJ4W3N27k",
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "526 Columbus Ave, San Francisco, CA 94133, USA",
+      "location": {
+        "latitude": 37.7999765,
+        "longitude": -122.409318
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 5:00 PM",
+          "Tuesday: 11:00 AM – 5:00 PM",
+          "Wednesday: 11:00 AM – 5:00 PM",
+          "Thursday: 11:00 AM – 5:00 PM",
+          "Friday: 11:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Ebiko",
+        "languageCode": "en"
+      },
+      "primaryType": "japanese_restaurant",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJHxbKLgCBhYARQmhEc8Me4zs",
+      "types": [
+        "japanese_restaurant",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "100 1st St Ste 160, San Francisco, CA 94105, USA",
+      "location": {
+        "latitude": 37.7893939,
+        "longitude": -122.3978253
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 15,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 3:00 PM",
+          "Tuesday: 11:00 AM – 3:00 PM",
+          "Wednesday: 11:00 AM – 3:00 PM",
+          "Thursday: 11:00 AM – 3:00 PM",
+          "Friday: 11:00 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Ebiko",
+        "languageCode": "en"
+      },
+      "primaryType": "meal_takeaway",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ0xkpGHmBhYARy_3Q2nk5T0Q",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "217 Montgomery St, San Francisco, CA 94104, USA",
+      "location": {
+        "latitude": 37.7911937,
+        "longitude": -122.40262499999999
+      },
+      "rating": 5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 15,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 3:00 PM",
+          "Tuesday: 11:00 AM – 3:00 PM",
+          "Wednesday: 11:00 AM – 3:00 PM",
+          "Thursday: 11:00 AM – 3:00 PM",
+          "Friday: 11:00 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Ebiko",
+        "languageCode": "en"
+      },
+      "primaryType": "meal_takeaway",
+      "_source": "google-places"
+    }
+  ],
+  "Moniker, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJy-SDu2ptQUYRBaBk-kTFWrI",
+      "types": [
+        "womens_clothing_store",
+        "clothing_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Valkyriegata 3, 0366 Oslo, Norway",
+      "location": {
+        "latitude": 59.928295500000004,
+        "longitude": 10.7186062
+      },
+      "rating": 4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 7:00 PM",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 7:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Moniker Oslo",
+        "languageCode": "no"
+      },
+      "primaryType": "womens_clothing_store",
+      "_source": "google-places"
+    }
+  ],
+  "Cornelius, Bergen, Norway": [
+    {
+      "id": "ChIJkYL6auT6PEYRoQk6M3OJt5w",
+      "types": [
+        "seafood_restaurant",
+        "deli",
+        "food_store",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Katlavika 14, 5177 Bjørøyhamn, Norway",
+      "location": {
+        "latitude": 60.3297497,
+        "longitude": 5.1696238
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 6:00 – 10:30 PM",
+          "Tuesday: 6:00 – 10:30 PM",
+          "Wednesday: 6:00 – 10:30 PM",
+          "Thursday: 6:00 – 10:30 PM",
+          "Friday: 6:00 – 10:30 PM",
+          "Saturday: 6:00 – 10:30 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Cornelius Sjømatrestaurant",
+        "languageCode": "no"
+      },
+      "primaryType": "seafood_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Flåm Zipline, Flåm, Norway": [
+    {
+      "id": "ChIJixNomGttPkYRu6MrFG7wdkY",
+      "types": [
+        "adventure_sports_center",
+        "sports_complex",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Vatnahalsen, 5740 Myrdal, Norway",
+      "location": {
+        "latitude": 60.74231859999999,
+        "longitude": 7.1274684
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:30 AM – 6:00 PM",
+          "Tuesday: 9:30 AM – 6:00 PM",
+          "Wednesday: 9:30 AM – 6:00 PM",
+          "Thursday: 9:30 AM – 6:00 PM",
+          "Friday: 9:30 AM – 5:00 PM",
+          "Saturday: 9:30 AM – 6:00 PM",
+          "Sunday: 9:30 AM – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Flåm Zipline",
+        "languageCode": "no"
+      },
+      "primaryType": "adventure_sports_center",
+      "_source": "google-places"
+    }
+  ],
+  "Oslo Raw, Frogner/Adamstuen, Oslo, Norway": [
+    {
+      "id": "ChIJu4XaAeVtQUYROHaHnmziJB0",
+      "types": [
+        "cafeteria",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Skovveien 16, 0257 Oslo, Norway",
+      "location": {
+        "latitude": 59.917471899999995,
+        "longitude": 10.7173977
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Oslo Raw Frogner",
+        "languageCode": "en"
+      },
+      "primaryType": "cafeteria",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJmXbevHVuQUYRdqhC7MyD5VY",
+      "types": [
+        "cafe",
+        "vegan_restaurant",
+        "vegetarian_restaurant",
+        "bakery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Ullevålsveien 82, 0454 Oslo, Norway",
+      "location": {
+        "latitude": 59.932935,
+        "longitude": 10.7343242
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "OSLO RAW Adamstuen",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Happy Foods, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJMZj4j2htQUYRBf6eLxzwj9s",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Neuberggata 2A, 0367 Oslo, Norway",
+      "location": {
+        "latitude": 59.924783399999995,
+        "longitude": 10.713116
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Happy Foods",
+        "languageCode": "no"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Rise and Set, Lower Nob Hill, San Francisco, United States": [
+    {
+      "id": "ChIJz4BFC2mBhYARYAcuIa_bhS0",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "1247 Polk St, San Francisco, CA 94109, USA",
+      "location": {
+        "latitude": 37.788457,
+        "longitude": -122.42051239999999
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+          "Friday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+          "Saturday: 9:00 AM – 3:00 PM, 5:00 – 8:30 PM",
+          "Sunday: 9:00 AM – 3:00 PM, 5:00 – 8:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Rise & Set",
+        "languageCode": "en"
+      },
+      "primaryType": "restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Kantine, San Francisco, United States": [
+    {
+      "id": "ChIJi9BhDKCAhYARRUYq_9pI45w",
+      "types": [
+        "scandinavian_restaurant",
+        "danish_restaurant",
+        "pastry_shop",
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "dessert_shop",
+        "bakery",
+        "confectionery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "1906 Market St, San Francisco, CA 94102, USA",
+      "location": {
+        "latitude": 37.7707222,
+        "longitude": -122.42532179999999
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 15,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Closed",
+          "Tuesday: 8:00 AM – 2:00 PM",
+          "Wednesday: 8:00 AM – 2:00 PM",
+          "Thursday: 8:00 AM – 2:00 PM",
+          "Friday: 8:00 AM – 2:00 PM",
+          "Saturday: 9:00 AM – 3:00 PM",
+          "Sunday: 9:00 AM – 3:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Kantine",
+        "languageCode": "en"
+      },
+      "primaryType": "scandinavian_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Havens Café's delicacy shop, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJSSAc2KhtQUYRtZQgpxjFNok",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Jacob Aalls gate 54, 0364 Oslo, Norway",
+      "location": {
+        "latitude": 59.931685300000005,
+        "longitude": 10.7252043
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 4:00 PM",
+          "Tuesday: 8:00 AM – 4:00 PM",
+          "Wednesday: 8:00 AM – 4:00 PM",
+          "Thursday: 8:00 AM – 4:00 PM",
+          "Friday: 8:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Havens Kafe",
+        "languageCode": "en"
+      },
+      "primaryType": "coffee_shop",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJR1w-tGltQUYRZr6-LveQxs4",
+      "types": [
+        "grocery_store",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Jacob Aalls gate 59, 0364 Oslo, Norway",
+      "location": {
+        "latitude": 59.93136089999999,
+        "longitude": 10.7251057
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Havens Kolonial",
+        "languageCode": "en"
+      },
+      "primaryType": "grocery_store",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJb7Ya29ltQUYR6KVNbYYKq6o",
+      "types": [
+        "restaurant",
+        "tapas_restaurant",
+        "bar",
+        "spanish_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Vibes gate 8A, 0356 Oslo, Norway",
+      "location": {
+        "latitude": 59.926452999999995,
+        "longitude": 10.722589
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 13,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 10:00 PM",
+          "Tuesday: 12:00 – 10:00 PM",
+          "Wednesday: 12:00 – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 12:00 – 11:00 PM",
+          "Saturday: 12:00 – 11:00 PM",
+          "Sunday: 1:00 – 9:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Delicatessen Majorstuen",
+        "languageCode": "no"
+      },
+      "primaryType": "restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Nordnes Park, Nordnes, Bergen, Norway": [
+    {
+      "id": "ChIJg-BWjhD8PEYRPcE_Laj_4T0",
+      "types": [
+        "route"
+      ],
+      "formattedAddress": "Nordnesparken, 5005 Bergen, Norway",
+      "location": {
+        "latitude": 60.3984327,
+        "longitude": 5.3041742
+      },
+      "displayName": {
+        "text": "Nordnes Park",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "Sensitive Vintage, San Francisco, United States": [
+    {
+      "id": "ChIJzUJWfACBhYAR99eO6yemBzI",
+      "types": [
+        "clothing_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "802 Divisadero St, San Francisco, CA 94117, USA",
+      "location": {
+        "latitude": 37.777068799999995,
+        "longitude": -122.43809300000001
+      },
+      "rating": 5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 12:00 – 6:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 12:00 – 6:00 PM",
+          "Friday: 12:00 – 6:00 PM",
+          "Saturday: 12:00 – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Sensitive Vintage Divisadero",
+        "languageCode": "en"
+      },
+      "primaryType": "clothing_store",
+      "_source": "google-places"
+    }
+  ],
+  "Havens Café, Majorstuen, Oslo, Norway": [
+    {
+      "id": "ChIJSSAc2KhtQUYRtZQgpxjFNok",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Jacob Aalls gate 54, 0364 Oslo, Norway",
+      "location": {
+        "latitude": 59.931685300000005,
+        "longitude": 10.7252043
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 4:00 PM",
+          "Tuesday: 8:00 AM – 4:00 PM",
+          "Wednesday: 8:00 AM – 4:00 PM",
+          "Thursday: 8:00 AM – 4:00 PM",
+          "Friday: 8:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Havens Kafe",
+        "languageCode": "en"
+      },
+      "primaryType": "coffee_shop",
+      "_source": "google-places"
+    }
+  ]
+}

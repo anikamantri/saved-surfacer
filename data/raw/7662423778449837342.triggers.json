@@ -1,0 +1,180 @@
+{
+  "id": "7662423778449837342",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Rise and Set",
+      "category": "Thai-Australian brunch restaurant",
+      "neighborhood": "Lower Nob Hill",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Thai-Australian brunch; order the shakshuka and brûlée French toast together.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJz4BFC2mBhYARYAcuIa_bhS0",
+        "resolved_name": "Rise & Set",
+        "address": "1247 Polk St, San Francisco, CA 94109, USA",
+        "coords": [
+          37.788457,
+          -122.42051239999999
+        ],
+        "primary_type": "restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+          "Friday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+          "Saturday: 9:00 AM – 3:00 PM, 5:00 – 8:30 PM",
+          "Sunday: 9:00 AM – 3:00 PM, 5:00 – 8:30 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 14,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 20,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 20,
+              "minute": 30
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "source": "google-places",
+        "confidence": 0.67,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.66 below 0.7",
+      "overall": 0.66
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "id": "7645972278043364630",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJ157s-dptQUYRbXmZAWfcmXk",
+      "resolved_name": "Majorstuen",
+      "address": "Majorstuen, Oslo, Norway",
+      "coords": [
+        59.9267742,
+        10.7161672
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJy-SDu2ptQUYRBaBk-kTFWrI",
+      "resolved_name": "Moniker Oslo",
+      "address": "Valkyriegata 3, 0366 Oslo, Norway",
+      "coords": [
+        59.928295500000004,
+        10.7186062
+      ],
+      "primary_type": "womens_clothing_store",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 10:00 AM – 7:00 PM",
+        "Tuesday: 10:00 AM – 7:00 PM",
+        "Wednesday: 10:00 AM – 7:00 PM",
+        "Thursday: 10:00 AM – 8:00 PM",
+        "Friday: 10:00 AM – 7:00 PM",
+        "Saturday: 10:00 AM – 6:00 PM",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 2,
+      "geocoded": true,
+      "place_id": "ChIJ3Z5unZBtQUYRMrqqqdoz9Cs",
+      "resolved_name": "Valkyrien",
+      "address": "Valkyriegata 3, 0366 Oslo, Norway",
+      "coords": [
+        59.928295500000004,
+        10.7186062
+      ],
+      "primary_type": "shopping_mall",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 10:00 AM – 7:00 PM",
+        "Tuesday: 10:00 AM – 7:00 PM",
+        "Wednesday: 10:00 AM – 7:00 PM",
+        "Thursday: 10:00 AM – 8:00 PM",
+        "Friday: 10:00 AM – 7:00 PM",
+        "Saturday: 10:00 AM – 6:00 PM",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.2,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 3
+    },
+    {
+      "index": 3,
+      "geocoded": true,
+      "place_id": "Eh5KYWNvYiBBYWxscyBnYXRlLCBPc2xvLCBOb3J3YXkiLiosChQKEgkzYHws2m1BRhHAW0gYH7gUQRIUChIJ157s-dptQUYRbXmZAWfcmXk",
+      "resolved_name": "Jacob Aalls gate",
+      "address": "Jacob Aalls gate, Oslo, Norway",
+      "coords": [
+        59.9285078,
+        10.7171572
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 4,
+      "geocoded": true,
+      "place_id": "ChIJpaH-htltQUYRD5GHYD2f0-Q",
+      "resolved_name": "Sorgenfrigata",
+      "address": "Sorgenfrigata, Oslo, Norway",
+      "coords": [
+        59.9284618,
+        10.7206532
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 5,
+      "geocoded": true,
+      "place_id": "ChIJSSAc2KhtQUYRtZQgpxjFNok",
+      "resolved_name": "Havens Kafe",
+      "address": "Jacob Aalls gate 54, 0364 Oslo, Norway",
+      "coords": [
+        59.931685300000005,
+        10.7252043
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 9:00 AM – 5:00 PM",
+        "Sunday: 9:00 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 6,
+      "geocoded": true,
+      "place_id": "ChIJSSAc2KhtQUYRtZQgpxjFNok",
+      "resolved_name": "Havens Kafe",
+      "address": "Jacob Aalls gate 54, 0364 Oslo, Norway",
+      "coords": [
+        59.931685300000005,
+        10.7252043
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 9:00 AM – 5:00 PM",
+        "Sunday: 9:00 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 0.5,
+      "city_match": true,
+      "alias_suspected": true,
+      "candidates_considered": 3
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "id": "7644138021582818581",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Dolomites",
+      "category": "mountain region / hiking destination",
+      "neighborhood": null,
+      "city": null,
+      "country": "Italy",
+      "hook": "Hiking-trip outfit inspiration for the Italian Dolomites.",
+      "found_in": [
+        "caption",
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJMRTS-V9DeEcRu9n4gwcnT2c",
+        "resolved_name": "Dolomites",
+        "address": "Dolomites, 32023 Rocca Pietore, Province of Belluno, Italy",
+        "coords": [
+          46.4102117,
+          11.8440351
+        ],
+        "primary_type": "natural_feature",
+        "granularity": "area",
+        "hours": null,
+        "periods": null,
+        "business_status": null,
+        "rating": 4.8,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+      "overall": 0.96
+    },
+    {
+      "type": "place",
+      "name": "Lago di Braies",
+      "category": "lake / landmark",
+      "neighborhood": null,
+      "city": "Braies",
+      "country": "Italy",
+      "hook": "Scenic Dolomites lake mentioned as part of the Italy hiking trip.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.88,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 1,
+        "geocoded": true,
+        "place_id": "ChIJ5-06In4veEcR9cJfTfG0Lb0",
+        "resolved_name": "Pragser Wildsee",
+        "address": "Pragser Wildsee, 39030 Prags, Autonomous Province of Bolzano – South Tyrol, Italy",
+        "coords": [
+          46.694333,
+          12.0854273
+        ],
+        "primary_type": "lake",
+        "granularity": "area",
+        "hours": null,
+        "periods": null,
+        "business_status": null,
+        "rating": 4.7,
+        "source": "google-places",
+        "confidence": 0.4,
+        "city_match": false,
+        "alias_suspected": true,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+      "overall": 0.35
+    },
+    {
+      "type": "product",
+      "name": "Arc'teryx jackets",
+      "category": "outdoor jacket",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Core Dolomites hiking-girl outerwear piece, styled in neutral earth tones.",
+      "found_in": [
+        "audio"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.94
+    },
+    {
+      "type": "product",
+      "name": "The North Face fleeces",
+      "category": "outdoor fleece",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Fleece layer recommended for the Dolomites hiking look.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.96
+    },
+    {
+      "type": "product",
+      "name": "Jaded London parachute cargo pants",
+      "category": "cargo pants",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Trendy parachute cargos suggested as an alternative to bike shorts for a hiking outfit.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.93
+    },
+    {
+      "type": "product",
+      "name": "Bike shorts with white crew socks",
+      "category": "hiking outfit combination",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Sporty alternative base outfit for the Dolomites look.",
+      "found_in": [
+        "audio"
+      ],
+      "extraction_confidence": 0.85,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.85
+    },
+    {
+      "type": "product",
+      "name": "Oakley silver-frame wraparound sunglasses",
+      "category": "sport sunglasses",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Y2K-style wraparound sunglasses with a silver frame.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.94
+    },
+    {
+      "type": "product",
+      "name": "Colorful hiking beanie",
+      "category": "outdoor headwear",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "A pop-of-color beanie paired with otherwise neutral, earth-tone hiking clothes.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.8,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.8
+    },
+    {
+      "type": "product",
+      "name": "Hiking headwear: headband, cap, or bandana",
+      "category": "outdoor headwear",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Finish the hiking look with a headband, cap, or bandana.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.86,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.86
+    }
+  ]
+}

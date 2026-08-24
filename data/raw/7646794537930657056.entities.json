@@ -1,0 +1,43 @@
+{
+  "id": "7646794537930657056",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 8566,
+    "completion_tokens": 167,
+    "total_tokens": 8733,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:09:36.394Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Magnat Kaffehus",
+      "category": "café",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Coffeehouse on Kirkegata in central Oslo.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

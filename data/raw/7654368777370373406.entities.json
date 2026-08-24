@@ -1,0 +1,45 @@
+{
+  "id": "7654368777370373406",
+  "model": "gpt-5.6-terra",
+  "frames_used": 14,
+  "transcript_kind": "narration",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 8840,
+    "completion_tokens": 122,
+    "total_tokens": 8962,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:11:24.196Z",
+  "entities": [
+    {
+      "type": "workout",
+      "name": "Drop-set weighted knee crunches",
+      "category": "ab/core workout",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Perform 8 weighted knee crunches at 40 lb, reduce to 20 lb for 8 more, then do 8 bodyweight reps and hold the top position to failure.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "7644138021582818581",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJMRTS-V9DeEcRu9n4gwcnT2c",
+      "resolved_name": "Dolomites",
+      "address": "Dolomites, 32023 Rocca Pietore, Province of Belluno, Italy",
+      "coords": [
+        46.4102117,
+        11.8440351
+      ],
+      "primary_type": "natural_feature",
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": 4.8,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJ5-06In4veEcR9cJfTfG0Lb0",
+      "resolved_name": "Pragser Wildsee",
+      "address": "Pragser Wildsee, 39030 Prags, Autonomous Province of Bolzano – South Tyrol, Italy",
+      "coords": [
+        46.694333,
+        12.0854273
+      ],
+      "primary_type": "lake",
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 0.4,
+      "city_match": false,
+      "alias_suspected": true,
+      "candidates_considered": 1
+    },
+    {
+      "index": 2,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 3,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 4,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 5,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 6,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 7,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 8,
+      "geocoded": false,
+      "reason": "not a place"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "id": "7629768609082002710",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJd312ZkkNOUYRCAretD6gQp4",
+      "resolved_name": "Bergen",
+      "address": "Bergen, Norway",
+      "coords": [
+        60.39126279999999,
+        5.3220544
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJ9zAxcrv-PEYR6IYfhqg9zjM",
+      "resolved_name": "Fløyen",
+      "address": "Fløyen, Bergen, Norway",
+      "coords": [
+        60.398251,
+        5.3458518999999995
+      ],
+      "primary_type": "mountain_peak",
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": 4.8,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 2,
+      "geocoded": true,
+      "place_id": "ChIJ9xAKDFf5PEYRSU_YMRFe0u4",
+      "resolved_name": "Løvstakken",
+      "address": "Løvstakken, Bergen, Norway",
+      "coords": [
+        60.3730556,
+        5.3236111
+      ],
+      "primary_type": "mountain_peak",
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 3,
+      "geocoded": true,
+      "place_id": "ChIJc-b8tCD8PEYR42VormIx87U",
+      "resolved_name": "Sandviken",
+      "address": "Sandviken, Bergen, Norway",
+      "coords": [
+        60.412023000000005,
+        5.325294899999999
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 4,
+      "geocoded": true,
+      "place_id": "ChIJY5P7YRr8PEYRaJEM-fgpw-E",
+      "resolved_name": "Nordnes",
+      "address": "Nordnes, Bergen, Norway",
+      "coords": [
+        60.3988385,
+        5.3075798
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 5,
+      "geocoded": true,
+      "place_id": "ChIJg-BWjhD8PEYRPcE_Laj_4T0",
+      "resolved_name": "Nordnes Park",
+      "address": "Nordnesparken, 5005 Bergen, Norway",
+      "coords": [
+        60.3984327,
+        5.3041742
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 6,
+      "geocoded": true,
+      "place_id": "ChIJDW3Lruf_PEYROfOOwGOTEvw",
+      "resolved_name": "Kaigaten Deli",
+      "address": "Kaigaten 20, 5016 Bergen, Norway",
+      "coords": [
+        60.39084609999999,
+        5.330585999999999
+      ],
+      "primary_type": "brunch_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: Closed",
+        "Tuesday: 11:00 AM – 6:00 PM",
+        "Wednesday: 11:00 AM – 6:00 PM",
+        "Thursday: 11:00 AM – 8:00 PM",
+        "Friday: 11:00 AM – 10:00 PM",
+        "Saturday: 11:00 AM – 10:00 PM",
+        "Sunday: 11:00 AM – 6:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.4,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 7,
+      "geocoded": true,
+      "place_id": "ChIJkYL6auT6PEYRoQk6M3OJt5w",
+      "resolved_name": "Cornelius Sjømatrestaurant",
+      "address": "Katlavika 14, 5177 Bjørøyhamn, Norway",
+      "coords": [
+        60.3297497,
+        5.1696238
+      ],
+      "primary_type": "seafood_restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 6:00 – 10:30 PM",
+        "Tuesday: 6:00 – 10:30 PM",
+        "Wednesday: 6:00 – 10:30 PM",
+        "Thursday: 6:00 – 10:30 PM",
+        "Friday: 6:00 – 10:30 PM",
+        "Saturday: 6:00 – 10:30 PM",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.4,
+      "source": "google-places",
+      "confidence": 0.6,
+      "city_match": false,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 8,
+      "geocoded": true,
+      "place_id": "ChIJ4TG-gB38PEYRLiN1fX1lePI",
+      "resolved_name": "Bryggen",
+      "address": "5003 Bergen, Norway",
+      "coords": [
+        60.397567200000005,
+        5.3245493999999995
+      ],
+      "primary_type": "historical_place",
+      "granularity": "venue",
+      "hours": null,
+      "periods": null,
+      "business_status": "OPERATIONAL",
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    }
+  ]
+}

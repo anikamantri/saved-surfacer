@@ -1,0 +1,45 @@
+{
+  "id": "7652947896815455510",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3471,
+    "completion_tokens": 310,
+    "total_tokens": 3781,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 207,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:09:40.554Z",
+  "entities": [
+    {
+      "type": "other",
+      "name": "Norway travel planning guide",
+      "category": "travel advice",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Six mistakes to avoid when planning a Norway trip in 2026",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.86,
+      "trigger_class": "calendar",
+      "decay": "contextual"
+    }
+  ]
+}

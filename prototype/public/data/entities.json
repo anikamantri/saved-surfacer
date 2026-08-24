@@ -1,0 +1,5026 @@
+{
+  "generated_at": "2026-08-24T00:07:27.876Z",
+  "totals": {
+    "posts": 14,
+    "entities": 53,
+    "nudge_eligible": 26,
+    "geocoded": 38,
+    "with_hours": 25
+  },
+  "hydration": {
+    "generated_at": "2026-08-24T00:06:43.918Z",
+    "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
+    "totals": {
+      "posts": 2,
+      "oembed_ok": 2,
+      "ytdlp_ok": 2
+    },
+    "posts": [
+      {
+        "id": "7645972278043364630",
+        "url": "https://www.tiktok.com/@izia.line/video/7645972278043364630",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 733,
+        "has_video": true,
+        "audio_seconds": 18,
+        "audio_kind": "music"
+      },
+      {
+        "id": "7645972278043364630",
+        "url": "https://www.tiktok.com/@izia.line/video/7645972278043364630",
+        "kind": "video",
+        "oembed": "ok",
+        "ytdlp": "ok",
+        "caption_source": "yt-dlp.description",
+        "caption_chars": 733,
+        "has_video": true,
+        "audio_seconds": 18,
+        "audio_kind": "music"
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "7645972278043364630",
+      "source": {
+        "url": "https://www.tiktok.com/@izia.line/video/7645972278043364630",
+        "kind": "video",
+        "author": "izia.line",
+        "author_url": "https://www.tiktok.com/@izia.line",
+        "saved_at": "2026-05-31",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7645972278043364630.jpg",
+        "caption": "Oslo-guide: Spend a day in Majorstuen; a cute, central and less touristy spot in Oslo!📍 🛍️ad Go shopping at @Moniker in @VALKYRIEN OSLO, where you can find lots of Scandinavian and luxury brands! Clothes, accessories & interior for men and women 💖 🏘️Some of the cutest streets in Oslo, is located around Majorstuen. Some of my favorites are Jacob Aals gate & Sorgenfrigata. ☕️ Finally, go for a coffee at a super-local cafe; Havens Café. Their coffees and matchas are delicious, and they also serve the best desserts (which are also gluten free?!). Across the street, you can also visit their little shop, with international delicacies!  💖 Save this for your next trip to Oslo!  #oslotips #guide #recommendation #cafe #shopping "
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "I'm on the verge of getting in our own back to the top. Now I'm the sticker, it's my fucking Pablo Escobar. My friends are saying, ‘Chill up, Jenny, just get in the car.’ I just wanna be right where you are. In the end, I hope it's you and me. In the darkness, I would never leave. It's hardest moment coming from my heart. Now here we are, run from the sunlight, Dracula. Run from the sunlight, Dracula. Run from the sunlight, Dracula. Isn't the view spectacular?"
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:17.176Z",
+        "usage": {
+          "prompt_tokens": 4046,
+          "completion_tokens": 870,
+          "total_tokens": 4916,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 272,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7645972278043364630-0",
+          "type": "place",
+          "name": "Majorstuen",
+          "category": "neighborhood",
+          "hook": "Cute, central, less-touristy area for a day of shopping, street wandering, and coffee.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJ157s-dptQUYRbXmZAWfcmXk",
+            "resolved_name": "Majorstuen",
+            "address": "Majorstuen, Oslo, Norway",
+            "coords": [
+              59.9267742,
+              10.7161672
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7645972278043364630-1",
+          "type": "place",
+          "name": "Moniker",
+          "category": "fashion and lifestyle store",
+          "hook": "Scandinavian and luxury clothing, accessories, and interiors for men and women; carries brands including Ganni, Holzweiler, Rotate, Adidas, Acne, Cala Jade, and Adoore.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJy-SDu2ptQUYRBaBk-kTFWrI",
+            "resolved_name": "Moniker Oslo",
+            "address": "Valkyriegata 3, 0366 Oslo, Norway",
+            "coords": [
+              59.928295500000004,
+              10.7186062
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 7:00 PM",
+              "Tuesday: 10:00 AM – 7:00 PM",
+              "Wednesday: 10:00 AM – 7:00 PM",
+              "Thursday: 10:00 AM – 8:00 PM",
+              "Friday: 10:00 AM – 7:00 PM",
+              "Saturday: 10:00 AM – 6:00 PM",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7645972278043364630-2",
+          "type": "place",
+          "name": "Valkyrien",
+          "category": "shopping destination",
+          "hook": "The Majorstuen shopping destination where Moniker is located.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.84,
+            "geocode": 1,
+            "overall": 0.84
+          },
+          "place": {
+            "place_id": "ChIJ3Z5unZBtQUYRMrqqqdoz9Cs",
+            "resolved_name": "Valkyrien",
+            "address": "Valkyriegata 3, 0366 Oslo, Norway",
+            "coords": [
+              59.928295500000004,
+              10.7186062
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 7:00 PM",
+              "Tuesday: 10:00 AM – 7:00 PM",
+              "Wednesday: 10:00 AM – 7:00 PM",
+              "Thursday: 10:00 AM – 8:00 PM",
+              "Friday: 10:00 AM – 7:00 PM",
+              "Saturday: 10:00 AM – 6:00 PM",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7645972278043364630-3",
+          "type": "place",
+          "name": "Jacob Aalls gate",
+          "category": "street",
+          "hook": "One of the creator's favorite cute streets to wander in the Majorstuen area.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": 1,
+            "overall": 0.96
+          },
+          "place": {
+            "place_id": "Eh5KYWNvYiBBYWxscyBnYXRlLCBPc2xvLCBOb3J3YXkiLiosChQKEgkzYHws2m1BRhHAW0gYH7gUQRIUChIJ157s-dptQUYRbXmZAWfcmXk",
+            "resolved_name": "Jacob Aalls gate",
+            "address": "Jacob Aalls gate, Oslo, Norway",
+            "coords": [
+              59.9285078,
+              10.7171572
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7645972278043364630-4",
+          "type": "place",
+          "name": "Sorgenfrigata",
+          "category": "street",
+          "hook": "A favorite cute street around Majorstuen for a neighborhood walk.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.97,
+            "geocode": 1,
+            "overall": 0.97
+          },
+          "place": {
+            "place_id": "ChIJpaH-htltQUYRD5GHYD2f0-Q",
+            "resolved_name": "Sorgenfrigata",
+            "address": "Sorgenfrigata, Oslo, Norway",
+            "coords": [
+              59.9284618,
+              10.7206532
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7645972278043364630-5",
+          "type": "place",
+          "name": "Havens Café",
+          "category": "cafe",
+          "hook": "Super-local coffee and matcha stop with notably good gluten-free desserts.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJSSAc2KhtQUYRtZQgpxjFNok",
+            "resolved_name": "Havens Kafe",
+            "address": "Jacob Aalls gate 54, 0364 Oslo, Norway",
+            "coords": [
+              59.931685300000005,
+              10.7252043
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 4:00 PM",
+              "Tuesday: 8:00 AM – 4:00 PM",
+              "Wednesday: 8:00 AM – 4:00 PM",
+              "Thursday: 8:00 AM – 4:00 PM",
+              "Friday: 8:00 AM – 4:00 PM",
+              "Saturday: 9:00 AM – 5:00 PM",
+              "Sunday: 9:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7645972278043364630-6",
+          "type": "place",
+          "name": "Havens Café's delicacy shop",
+          "category": "specialty food shop",
+          "hook": "Little shop across from Havens Café selling international delicacies.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.35 below 0.7",
+          "confidence": {
+            "extraction": 0.7,
+            "geocode": 0.5,
+            "overall": 0.35
+          },
+          "place": {
+            "place_id": "ChIJSSAc2KhtQUYRtZQgpxjFNok",
+            "resolved_name": "Havens Kafe",
+            "address": "Jacob Aalls gate 54, 0364 Oslo, Norway",
+            "coords": [
+              59.931685300000005,
+              10.7252043
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 4:00 PM",
+              "Tuesday: 8:00 AM – 4:00 PM",
+              "Wednesday: 8:00 AM – 4:00 PM",
+              "Thursday: 8:00 AM – 4:00 PM",
+              "Friday: 8:00 AM – 4:00 PM",
+              "Saturday: 9:00 AM – 5:00 PM",
+              "Sunday: 9:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7649063171847638294",
+      "source": {
+        "url": "https://www.tiktok.com/@ebbas.diary/photo/7649063171847638294",
+        "kind": "photo",
+        "author": "ebbas.diary",
+        "author_url": "https://www.tiktok.com/@ebbas.diary",
+        "saved_at": "2026-06-08",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7649063171847638294.jpg",
+        "caption": "my favorites from a weekend in oslo 💌⭐️ give @mathea sande a follow for her local recommendations on the last slide 💘 #oslotips #oslo #girlstrip #oslocity #norway🇳🇴 "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "narration",
+        "transcript_was_useful": false,
+        "transcript": "Someday we will dream about today. Look back, wonder how it slipped away. Driving out of L.A., skin is young and gold, '60 Chevrolet. Thinking on the past makes me wonder what would happen if we would have stayed. Someday we will dream about today."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:22.055Z",
+        "usage": {
+          "prompt_tokens": 3850,
+          "completion_tokens": 254,
+          "total_tokens": 4104,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 155,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7649063171847638294-0",
+          "type": "place",
+          "name": "Oslo",
+          "category": "city",
+          "hook": "Weekend Oslo guide featuring the creator's favorites and local tips.",
+          "neighborhood": null,
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.78,
+            "geocode": 1,
+            "overall": 0.78
+          },
+          "place": {
+            "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+            "resolved_name": "Oslo",
+            "address": "Oslo, Norway",
+            "coords": [
+              59.9121746,
+              10.7312704
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7629768609082002710",
+      "source": {
+        "url": "https://www.tiktok.com/@norwegianbackroad/photo/7629768609082002710",
+        "kind": "photo",
+        "author": "norwegianbackroad",
+        "author_url": "https://www.tiktok.com/@norwegianbackroad",
+        "saved_at": "2026-04-17",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7629768609082002710.jpg",
+        "caption": "Mini guide to Bergen 🇳🇴 If you’re heading to Bergen, here are some spots you can't miss: - Go for a hike: reach new heights on the trails of Fløyen or challenge yourself on Løvstakken to enjoy spectacular panoramas of the surrounding fjords. -Walk around the neighbourhoods: lose yourself in the streets of Sandviken and Nordnes to discover the authentic charm of the city's iconic white wooden houses. -Watch the sunset: head up to the Fløyen viewpoints or find a spot by the water at Nordnes Park to watch the sky catch fire. -Try the local food: an unforgettable culinary experience, whether it's fresh local finds at Kaigaten Deli or exceptional seafood at Cornelius. -Cultural visits: step back in time among the leaning wooden warehouses of Bryggen, a UNESCO World Heritage site that tells the story of Bergen's ancient trading history. -Take a break: whether you want a chill spot, a cosy place or just a great cup of coffee (or chocolate!) Bergen’s cafés have you covered! 💙 Would you visit Bergen ? Save this guide for your next visit to Bergen! #bergen #visitnorway #visitbergen #norwaytrip #fjords "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": ""
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:33.388Z",
+        "usage": {
+          "prompt_tokens": 3003,
+          "completion_tokens": 1175,
+          "total_tokens": 4178,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 499,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7629768609082002710-0",
+          "type": "place",
+          "name": "Bergen",
+          "category": "city destination",
+          "hook": "Mini guide covering hikes, historic neighbourhoods, seafood, cafés, and fjord views.",
+          "neighborhood": null,
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJd312ZkkNOUYRCAretD6gQp4",
+            "resolved_name": "Bergen",
+            "address": "Bergen, Norway",
+            "coords": [
+              60.39126279999999,
+              5.3220544
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-1",
+          "type": "place",
+          "name": "Fløyen",
+          "category": "mountain, hiking trails and viewpoints",
+          "hook": "Hike for panoramic fjord views; also recommended for sunset viewpoints.",
+          "neighborhood": null,
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJ9zAxcrv-PEYR6IYfhqg9zjM",
+            "resolved_name": "Fløyen",
+            "address": "Fløyen, Bergen, Norway",
+            "coords": [
+              60.398251,
+              5.3458518999999995
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": 4.8,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-2",
+          "type": "place",
+          "name": "Løvstakken",
+          "category": "mountain hiking trail",
+          "hook": "A more challenging hike with spectacular panoramas of the surrounding fjords.",
+          "neighborhood": null,
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJ9xAKDFf5PEYRSU_YMRFe0u4",
+            "resolved_name": "Løvstakken",
+            "address": "Løvstakken, Bergen, Norway",
+            "coords": [
+              60.3730556,
+              5.3236111
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-3",
+          "type": "place",
+          "name": "Sandviken",
+          "category": "neighborhood",
+          "hook": "Wander streets lined with Bergen's iconic white wooden houses.",
+          "neighborhood": "Sandviken",
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJc-b8tCD8PEYR42VormIx87U",
+            "resolved_name": "Sandviken",
+            "address": "Sandviken, Bergen, Norway",
+            "coords": [
+              60.412023000000005,
+              5.325294899999999
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-4",
+          "type": "place",
+          "name": "Nordnes",
+          "category": "neighborhood",
+          "hook": "Explore the historic streets and white wooden houses.",
+          "neighborhood": "Nordnes",
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJY5P7YRr8PEYRaJEM-fgpw-E",
+            "resolved_name": "Nordnes",
+            "address": "Nordnes, Bergen, Norway",
+            "coords": [
+              60.3988385,
+              5.3075798
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-5",
+          "type": "place",
+          "name": "Nordnes Park",
+          "category": "waterfront park and viewpoint",
+          "hook": "A waterside spot to watch the sunset.",
+          "neighborhood": "Nordnes",
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "temporal",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJg-BWjhD8PEYRPcE_Laj_4T0",
+            "resolved_name": "Nordnes Park",
+            "address": "Nordnesparken, 5005 Bergen, Norway",
+            "coords": [
+              60.3984327,
+              5.3041742
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": null,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-6",
+          "type": "place",
+          "name": "Kaigaten Deli",
+          "category": "deli",
+          "hook": "Fresh local food finds.",
+          "neighborhood": null,
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJDW3Lruf_PEYROfOOwGOTEvw",
+            "resolved_name": "Kaigaten Deli",
+            "address": "Kaigaten 20, 5016 Bergen, Norway",
+            "coords": [
+              60.39084609999999,
+              5.330585999999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Closed",
+              "Tuesday: 11:00 AM – 6:00 PM",
+              "Wednesday: 11:00 AM – 6:00 PM",
+              "Thursday: 11:00 AM – 8:00 PM",
+              "Friday: 11:00 AM – 10:00 PM",
+              "Saturday: 11:00 AM – 10:00 PM",
+              "Sunday: 11:00 AM – 6:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-7",
+          "type": "place",
+          "name": "Cornelius",
+          "category": "seafood restaurant",
+          "hook": "Exceptional seafood experience.",
+          "neighborhood": null,
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.59 below 0.7",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 0.6,
+            "overall": 0.59
+          },
+          "place": {
+            "place_id": "ChIJkYL6auT6PEYRoQk6M3OJt5w",
+            "resolved_name": "Cornelius Sjømatrestaurant",
+            "address": "Katlavika 14, 5177 Bjørøyhamn, Norway",
+            "coords": [
+              60.3297497,
+              5.1696238
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 6:00 – 10:30 PM",
+              "Tuesday: 6:00 – 10:30 PM",
+              "Wednesday: 6:00 – 10:30 PM",
+              "Thursday: 6:00 – 10:30 PM",
+              "Friday: 6:00 – 10:30 PM",
+              "Saturday: 6:00 – 10:30 PM",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 18,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7629768609082002710-8",
+          "type": "place",
+          "name": "Bryggen",
+          "category": "UNESCO World Heritage waterfront district",
+          "hook": "Leaning wooden warehouses and Bergen's ancient trading history.",
+          "neighborhood": null,
+          "city": "Bergen",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJ4TG-gB38PEYRLiN1fX1lePI",
+            "resolved_name": "Bryggen",
+            "address": "5003 Bergen, Norway",
+            "coords": [
+              60.397567200000005,
+              5.3245493999999995
+            ],
+            "granularity": "venue",
+            "hours": null,
+            "periods": null,
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7646794537930657056",
+      "source": {
+        "url": "https://www.tiktok.com/@planetsecretw/photo/7646794537930657056",
+        "kind": "photo",
+        "author": "planetsecretw",
+        "author_url": "https://www.tiktok.com/@planetsecretw",
+        "saved_at": "2026-06-02",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7646794537930657056.jpg",
+        "caption": "🇳🇴 10 Places You Must Visit in Oslo, Norway Oslo is where modern architecture, Viking history, stunning fjords, and Nordic culture come together. From iconic landmarks to breathtaking viewpoints, this city has something for every traveler. ✨ #oslo #norway #nature #traveltok #algorithm "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "Baby, my Valentine. Can I get the making with somebody? If you leave me, I go die. I swear, you are like the oxygen I need to survive, I'll be honest. Your loving dey totori me, I am so obsessed. I want to chop your nkwobi. Abeg, dey carry my simi. Open am, make I see. Give me love, want. Make I bad man sing. ... Baby, no follow. ... Without you, I go feel lose my mind. Without you, I go feel fall and die. Without you, I go give up my life. Without you. ... To me, you don ... to me. Your violent things fascinate me. I, I, I, I love you. I, I, I, no one above you. ... You just love nobody. ... I wanna be your lover forever, forever. Yeah, yeah, yeah."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:36.394Z",
+        "usage": {
+          "prompt_tokens": 8566,
+          "completion_tokens": 167,
+          "total_tokens": 8733,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 68,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7646794537930657056-0",
+          "type": "place",
+          "name": "Magnat Kaffehus",
+          "category": "café",
+          "hook": "Coffeehouse on Kirkegata in central Oslo.",
+          "neighborhood": null,
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.48 below 0.7",
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": 0.5,
+            "overall": 0.48
+          },
+          "place": {
+            "place_id": "ChIJUX1t87O0RkYR5uM960J85Do",
+            "resolved_name": "Magnat Coffee House AS",
+            "address": "Kirkegata 5, 0153 Oslo, Norway",
+            "coords": [
+              59.909228899999995,
+              10.742585499999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 4:00 PM",
+              "Tuesday: 8:00 AM – 4:00 PM",
+              "Wednesday: 8:00 AM – 4:00 PM",
+              "Thursday: 8:00 AM – 4:00 PM",
+              "Friday: 8:00 AM – 4:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7652947896815455510",
+      "source": {
+        "url": "https://www.tiktok.com/@jassetgo/photo/7652947896815455510",
+        "kind": "photo",
+        "author": "jassetgo",
+        "author_url": "https://www.tiktok.com/@jassetgo",
+        "saved_at": "2026-06-19",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7652947896815455510.jpg",
+        "caption": "#norway #visitnorway #norwaytravel #travelguide #lofoten "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "The world is not in your books and maps. It's out there. Can you promise that I will come back? No. And if you do, you will not be the same."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:40.554Z",
+        "usage": {
+          "prompt_tokens": 3471,
+          "completion_tokens": 310,
+          "total_tokens": 3781,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 207,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7652947896815455510-0",
+          "type": "other",
+          "name": "Norway travel planning guide",
+          "category": "travel advice",
+          "hook": "Six mistakes to avoid when planning a Norway trip in 2026",
+          "neighborhood": null,
+          "city": null,
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "calendar",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "calendar triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.86,
+            "geocode": null,
+            "overall": 0.86
+          },
+          "place": null
+        }
+      ]
+    },
+    {
+      "id": "7413407442161110305",
+      "source": {
+        "url": "https://www.tiktok.com/@thegingerwanderlust/video/7413407442161110305",
+        "kind": "video",
+        "author": "thegingerwanderlust",
+        "author_url": "https://www.tiktok.com/@thegingerwanderlust",
+        "saved_at": "2024-09-11",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7413407442161110305.jpg",
+        "caption": "SAVE THIS to add to your Norway bucket list 🇳🇴😍 …. Zipline through a fjord! Make a day of it and catch the Flamsbana train towards Myrdal, then speed down the valley, before picking up a bike 🚴 to cycling the remaining 16km back to Flåm 😍✌️ …. 🎟️ prices start from 800 Kr for just the zipline and go up from there depending on which package you want to do . . . . #norwaytravel #visitnorway #flåm #fjord #adventuretravel #uktravelblogger #travelvlog #zipline #tiktoktravel  Top things to do in Norway | adventure travel itinerary in Norway | road trip ideas near Fläm | longest zipline in Scandinavia"
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": ""
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:45.088Z",
+        "usage": {
+          "prompt_tokens": 3919,
+          "completion_tokens": 454,
+          "total_tokens": 4373,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 169,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7413407442161110305-0",
+          "type": "place",
+          "name": "Flåm Zipline",
+          "category": "zipline adventure",
+          "hook": "Zipline through a fjord valley; described as Scandinavia's longest zipline, with prices from 800 NOK.",
+          "neighborhood": null,
+          "city": "Flåm",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.59 below 0.7",
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 0.6,
+            "overall": 0.59
+          },
+          "place": {
+            "place_id": "ChIJixNomGttPkYRu6MrFG7wdkY",
+            "resolved_name": "Flåm Zipline",
+            "address": "Vatnahalsen, 5740 Myrdal, Norway",
+            "coords": [
+              60.74231859999999,
+              7.1274684
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 9:30 AM – 6:00 PM",
+              "Tuesday: 9:30 AM – 6:00 PM",
+              "Wednesday: 9:30 AM – 6:00 PM",
+              "Thursday: 9:30 AM – 6:00 PM",
+              "Friday: 9:30 AM – 5:00 PM",
+              "Saturday: 9:30 AM – 6:00 PM",
+              "Sunday: 9:30 AM – 6:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7413407442161110305-1",
+          "type": "place",
+          "name": "Flåmsbana",
+          "category": "scenic railway",
+          "hook": "Take the scenic Flåm Railway toward Myrdal through waterfalls and towering mountain scenery.",
+          "neighborhood": null,
+          "city": "Flåm",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJAc8DGn8RPkYR6pLP-2YVQ5E",
+            "resolved_name": "Flåmsbana",
+            "address": "A-Feltvegen 11, 5743 Flåm, Norway",
+            "coords": [
+              60.862921500000006,
+              7.114559300000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 6:45 AM – 6:30 PM",
+              "Tuesday: 6:45 AM – 6:30 PM",
+              "Wednesday: 6:45 AM – 6:30 PM",
+              "Thursday: 6:45 AM – 6:30 PM",
+              "Friday: 6:45 AM – 6:30 PM",
+              "Saturday: 7:45 AM – 6:30 PM",
+              "Sunday: 7:45 AM – 6:30 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 18,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 6,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 6,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 6,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 6,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 6,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 18,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 45
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7413407442161110305-2",
+          "type": "other",
+          "name": "Myrdal to Flåm downhill bike ride",
+          "category": "cycling route",
+          "hook": "Finish the adventure by cycling the remaining 16 km downhill back to Flåm.",
+          "neighborhood": null,
+          "city": "Flåm",
+          "country": "Norway",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "activity",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "activity triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.93,
+            "geocode": null,
+            "overall": 0.93
+          },
+          "place": null
+        }
+      ]
+    },
+    {
+      "id": "7644138021582818581",
+      "source": {
+        "url": "https://www.tiktok.com/@abbeysadleir/video/7644138021582818581",
+        "kind": "video",
+        "author": "abbeysadleir",
+        "author_url": "https://www.tiktok.com/@abbeysadleir",
+        "saved_at": "2026-05-26",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7644138021582818581.jpg",
+        "caption": "oh so you wanna know what the girls are wearing in the Dolomites? photo credit to @trina thomas and others if you lmk who hehe x 🇮🇹 The girls in the Dolomites! Welcome to Italy! 🇮🇹🏔️ #dolomites #Hiking #italy #hikingtrip #travel  Dolomites Lago Di braise Dolomites hotel  Dolomites outfit "
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "narration",
+        "transcript_was_useful": true,
+        "transcript": "The girls and the Dolomites are wearing Arc'teryx jackets and North Face fleeces. They're either in bike shorts with white crew socks, or they are wearing parachute cargo pants. You can get them from Jaded London. I think they have a really trendy one like these. They're in neutral earth tones, and they're adding a pop of color from their beanies that they got at the hiking shop. They're wearing wraparound sunglasses with a silver frame. It's very Y2K vibes, usually Oakley. And they're wearing a headband or a cap, sometimes a bandana. They look gorgeous all the time."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "audio",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:09:54.743Z",
+        "usage": {
+          "prompt_tokens": 3967,
+          "completion_tokens": 1069,
+          "total_tokens": 5036,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 349,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7644138021582818581-0",
+          "type": "place",
+          "name": "Dolomites",
+          "category": "mountain region / hiking destination",
+          "hook": "Hiking-trip outfit inspiration for the Italian Dolomites.",
+          "neighborhood": null,
+          "city": null,
+          "country": "Italy",
+          "found_in": [
+            "caption",
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": 1,
+            "overall": 0.96
+          },
+          "place": {
+            "place_id": "ChIJMRTS-V9DeEcRu9n4gwcnT2c",
+            "resolved_name": "Dolomites",
+            "address": "Dolomites, 32023 Rocca Pietore, Province of Belluno, Italy",
+            "coords": [
+              46.4102117,
+              11.8440351
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": 4.8,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7644138021582818581-1",
+          "type": "place",
+          "name": "Lago di Braies",
+          "category": "lake / landmark",
+          "hook": "Scenic Dolomites lake mentioned as part of the Italy hiking trip.",
+          "neighborhood": null,
+          "city": "Braies",
+          "country": "Italy",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+          "confidence": {
+            "extraction": 0.88,
+            "geocode": 0.4,
+            "overall": 0.35
+          },
+          "place": {
+            "place_id": "ChIJ5-06In4veEcR9cJfTfG0Lb0",
+            "resolved_name": "Pragser Wildsee",
+            "address": "Pragser Wildsee, 39030 Prags, Autonomous Province of Bolzano – South Tyrol, Italy",
+            "coords": [
+              46.694333,
+              12.0854273
+            ],
+            "granularity": "area",
+            "hours": null,
+            "periods": null,
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7644138021582818581-2",
+          "type": "product",
+          "name": "Arc'teryx jackets",
+          "category": "outdoor jacket",
+          "hook": "Core Dolomites hiking-girl outerwear piece, styled in neutral earth tones.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.94,
+            "geocode": null,
+            "overall": 0.94
+          },
+          "place": null
+        },
+        {
+          "id": "7644138021582818581-3",
+          "type": "product",
+          "name": "The North Face fleeces",
+          "category": "outdoor fleece",
+          "hook": "Fleece layer recommended for the Dolomites hiking look.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": null,
+            "overall": 0.96
+          },
+          "place": null
+        },
+        {
+          "id": "7644138021582818581-4",
+          "type": "product",
+          "name": "Jaded London parachute cargo pants",
+          "category": "cargo pants",
+          "hook": "Trendy parachute cargos suggested as an alternative to bike shorts for a hiking outfit.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.93,
+            "geocode": null,
+            "overall": 0.93
+          },
+          "place": null
+        },
+        {
+          "id": "7644138021582818581-5",
+          "type": "product",
+          "name": "Bike shorts with white crew socks",
+          "category": "hiking outfit combination",
+          "hook": "Sporty alternative base outfit for the Dolomites look.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.85,
+            "geocode": null,
+            "overall": 0.85
+          },
+          "place": null
+        },
+        {
+          "id": "7644138021582818581-6",
+          "type": "product",
+          "name": "Oakley silver-frame wraparound sunglasses",
+          "category": "sport sunglasses",
+          "hook": "Y2K-style wraparound sunglasses with a silver frame.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.94,
+            "geocode": null,
+            "overall": 0.94
+          },
+          "place": null
+        },
+        {
+          "id": "7644138021582818581-7",
+          "type": "product",
+          "name": "Colorful hiking beanie",
+          "category": "outdoor headwear",
+          "hook": "A pop-of-color beanie paired with otherwise neutral, earth-tone hiking clothes.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.8,
+            "geocode": null,
+            "overall": 0.8
+          },
+          "place": null
+        },
+        {
+          "id": "7644138021582818581-8",
+          "type": "product",
+          "name": "Hiking headwear: headband, cap, or bandana",
+          "category": "outdoor headwear",
+          "hook": "Finish the hiking look with a headband, cap, or bandana.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.86,
+            "geocode": null,
+            "overall": 0.86
+          },
+          "place": null
+        }
+      ]
+    },
+    {
+      "id": "7662261740402494733",
+      "source": {
+        "url": "https://www.tiktok.com/@elizlovesfood/video/7662261740402494733",
+        "kind": "video",
+        "author": "elizlovesfood",
+        "author_url": "https://www.tiktok.com/@elizlovesfood",
+        "saved_at": "2026-07-14",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7662261740402494733.jpg",
+        "caption": "soo many new cafes in sf #sfhiddengems #sanfrancisco #sffoodie "
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 14,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": ""
+      },
+      "extraction": {
+        "model": "gpt-5.6-sol",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:11:41.154Z",
+        "usage": {
+          "prompt_tokens": 8780,
+          "completion_tokens": 192,
+          "total_tokens": 8972,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 80,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7662261740402494733-0",
+          "type": "place",
+          "name": "Hardware Coffee",
+          "category": "café",
+          "hook": "Study café with free Wi‑Fi, outlets, plenty of seating, and a $6.25 iced latte",
+          "neighborhood": "West Portal",
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJs-d3JSR9j4ARMzwQoiIugCg",
+            "resolved_name": "Hardware Coffee Co.",
+            "address": "32 W Portal Ave, San Francisco, CA 94127, USA",
+            "coords": [
+              37.740580099999995,
+              -122.4664748
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 6:00 PM",
+              "Tuesday: 7:00 AM – 6:00 PM",
+              "Wednesday: 7:00 AM – 6:00 PM",
+              "Thursday: 7:00 AM – 6:00 PM",
+              "Friday: 7:00 AM – 6:00 PM",
+              "Saturday: 7:00 AM – 6:00 PM",
+              "Sunday: 7:00 AM – 6:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7660592980708871437",
+      "source": {
+        "url": "https://www.tiktok.com/@sensitive.vtg/video/7660592980708871437",
+        "kind": "video",
+        "author": "sensitive.vtg",
+        "author_url": "https://www.tiktok.com/@sensitive.vtg",
+        "saved_at": "2026-07-09",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7660592980708871437.jpg",
+        "caption": "⭐️ Things in Shop ⭐️ Moschino, Fendi, Fiorucci, Blumarine, Roberto Cavalli, Miss Sixty etc. !  #italianvintage #designervintagesanfrancisco #sanfranciscovintageshop #myfavoritevintageshopinsf #yournewfavvintageshopsf"
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": ""
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:11:17.539Z",
+        "usage": {
+          "prompt_tokens": 3828,
+          "completion_tokens": 115,
+          "total_tokens": 3943,
+          "prompt_tokens_details": {
+            "cached_tokens": 3200,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7660592980708871437-0",
+          "type": "place",
+          "name": "Sensitive Vintage",
+          "category": "Italian designer vintage shop",
+          "hook": "Vintage shop carrying Italian designer pieces, including Moschino, Fendi, Fiorucci, Blumarine, Roberto Cavalli, and Miss Sixty.",
+          "neighborhood": null,
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJzUJWfACBhYAR99eO6yemBzI",
+            "resolved_name": "Sensitive Vintage Divisadero",
+            "address": "802 Divisadero St, San Francisco, CA 94117, USA",
+            "coords": [
+              37.777068799999995,
+              -122.43809300000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 12:00 – 6:00 PM",
+              "Tuesday: Closed",
+              "Wednesday: Closed",
+              "Thursday: 12:00 – 6:00 PM",
+              "Friday: 12:00 – 6:00 PM",
+              "Saturday: 12:00 – 6:00 PM",
+              "Sunday: 12:00 – 6:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 5,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7652702090954935574",
+      "source": {
+        "url": "https://www.tiktok.com/@atelierbrochman/photo/7652702090954935574",
+        "kind": "photo",
+        "author": "atelierbrochman",
+        "author_url": "https://www.tiktok.com/@atelierbrochman",
+        "saved_at": "2026-06-18",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7652702090954935574.jpg",
+        "caption": "If you’re looking for cosy spots with delicious vegan and gluten-free options, these are four places I keep coming back to 🤍 📍 Oslo Raw (Frogner/Adamstuen) 📍 Crêperie de Marie (Grünerløkka) 📍 Happy Foods (Majorstuen) 📍 Sunt og Godt (Grünerløkka) Perfect for breakfast, lunch, coffee dates or a slow afternoon in the city ☕️ Save this for your next weekend in Oslo 🇳🇴✨ 📸 @atelierbrochmann First picture taken by @pernillemarkussen  #VisitOslo #veganoslo #GlutenFreeOslo #vegantravel #veganeurope"
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "narration",
+        "transcript_was_useful": false,
+        "transcript": ""
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption"
+        ],
+        "run_at": "2026-08-23T21:10:02.560Z",
+        "usage": {
+          "prompt_tokens": 1551,
+          "completion_tokens": 377,
+          "total_tokens": 1928,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7652702090954935574-0",
+          "type": "place",
+          "name": "Oslo Raw",
+          "category": "vegan-friendly café",
+          "hook": "Cosy café with vegan and gluten-free options for breakfast, lunch, coffee dates, or a slow afternoon.",
+          "neighborhood": "Frogner/Adamstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJu4XaAeVtQUYROHaHnmziJB0",
+            "resolved_name": "Oslo Raw Frogner",
+            "address": "Skovveien 16, 0257 Oslo, Norway",
+            "coords": [
+              59.917471899999995,
+              10.7173977
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 9:00 AM – 5:00 PM",
+              "Tuesday: 9:00 AM – 5:00 PM",
+              "Wednesday: 9:00 AM – 5:00 PM",
+              "Thursday: 9:00 AM – 5:00 PM",
+              "Friday: 9:00 AM – 5:00 PM",
+              "Saturday: 10:00 AM – 5:00 PM",
+              "Sunday: 10:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7652702090954935574-1",
+          "type": "place",
+          "name": "Crêperie de Marie",
+          "category": "vegan-friendly crêperie/café",
+          "hook": "Cosy Grünerløkka spot with vegan and gluten-free options, especially for a coffee date or lunch.",
+          "neighborhood": "Grünerløkka",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.66 below 0.7",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 0.67,
+            "overall": 0.66
+          },
+          "place": {
+            "place_id": "ChIJecsFNmZuQUYRp2skVv90r3g",
+            "resolved_name": "Crêperie de Mari",
+            "address": "Thorvald Meyers gate 63-67, 0552 Oslo, Norway",
+            "coords": [
+              59.921526500000006,
+              10.759141300000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 9:00 PM",
+              "Tuesday: 11:00 AM – 9:00 PM",
+              "Wednesday: 11:00 AM – 9:00 PM",
+              "Thursday: 11:00 AM – 9:00 PM",
+              "Friday: 11:00 AM – 9:30 PM",
+              "Saturday: 11:00 AM – 9:30 PM",
+              "Sunday: 11:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7652702090954935574-2",
+          "type": "place",
+          "name": "Happy Foods",
+          "category": "vegan-friendly café",
+          "hook": "Cosy Majorstuen café with vegan and gluten-free options for breakfast or lunch.",
+          "neighborhood": "Majorstuen",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJMZj4j2htQUYRBf6eLxzwj9s",
+            "resolved_name": "Happy Foods",
+            "address": "Neuberggata 2A, 0367 Oslo, Norway",
+            "coords": [
+              59.924783399999995,
+              10.713116
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 6:00 PM",
+              "Tuesday: 10:00 AM – 6:00 PM",
+              "Wednesday: 10:00 AM – 6:00 PM",
+              "Thursday: 10:00 AM – 6:00 PM",
+              "Friday: 10:00 AM – 6:00 PM",
+              "Saturday: 10:00 AM – 5:00 PM",
+              "Sunday: 11:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7652702090954935574-3",
+          "type": "place",
+          "name": "Sunt og Godt",
+          "category": "vegan-friendly café",
+          "hook": "Cosy Grünerløkka spot with vegan and gluten-free options for breakfast, lunch, or coffee.",
+          "neighborhood": "Grünerløkka",
+          "city": "Oslo",
+          "country": "Norway",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJu9zTWmluQUYRQdCZYVcuz5c",
+            "resolved_name": "Sunt og Godt",
+            "address": "Thorvald Meyers gate 18, 0555 Oslo, Norway",
+            "coords": [
+              59.9281643,
+              10.7592783
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 9:30 AM – 5:30 PM",
+              "Tuesday: 9:30 AM – 5:30 PM",
+              "Wednesday: 9:30 AM – 5:30 PM",
+              "Thursday: 9:30 AM – 5:30 PM",
+              "Friday: 9:30 AM – 5:30 PM",
+              "Saturday: 10:00 AM – 5:30 PM",
+              "Sunday: 10:00 AM – 5:30 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 9,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7673673926156881166",
+      "source": {
+        "url": "https://www.tiktok.com/@rajandroh/video/7673673926156881166",
+        "kind": "video",
+        "author": "rajandroh",
+        "author_url": "https://www.tiktok.com/@rajandroh",
+        "saved_at": "2026-08-14",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7673673926156881166.jpg",
+        "caption": "Small changes for the biggest difference 🔥 Video cred: @maurofialho  #gym#fitness#gymmotivation#workouttips#explore"
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 14,
+        "transcript_kind": "narration",
+        "transcript_was_useful": true,
+        "transcript": "When you understand that the lat pulldown goes to the chin and not the chest, the lats will come. When you understand that the elbows and the biceps are not behind but a little bit forward, the biceps will grow. When you understand that the rope tricep extensions don't go to the body but to the floor, the triceps will come. When you understand that for the lateral raise, you don't have to go all the way up here but to shoulder height, the shoulders will pop. When you understand that your seated cable row doesn't go to your chest but to your waist, the lats will come. And most importantly, when you follow me, your muscles will grow."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "audio",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:11:21.924Z",
+        "usage": {
+          "prompt_tokens": 8928,
+          "completion_tokens": 528,
+          "total_tokens": 9456,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 105,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7673673926156881166-0",
+          "type": "workout",
+          "name": "Lat pulldown",
+          "category": "strength-training exercise technique",
+          "hook": "Pull the bar to chin level rather than all the way to the chest to better target the lats.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "event_match",
+            "match": [
+              "gym",
+              "workout",
+              "lift",
+              "training"
+            ],
+            "requires": []
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": null,
+            "overall": 0.99
+          },
+          "place": null
+        },
+        {
+          "id": "7673673926156881166-1",
+          "type": "workout",
+          "name": "Biceps curl",
+          "category": "strength-training exercise technique",
+          "hook": "Keep the elbows slightly forward rather than behind the body to emphasize the biceps.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "event_match",
+            "match": [
+              "gym",
+              "workout",
+              "lift",
+              "training"
+            ],
+            "requires": []
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": null,
+            "overall": 0.96
+          },
+          "place": null
+        },
+        {
+          "id": "7673673926156881166-2",
+          "type": "workout",
+          "name": "Rope triceps extension",
+          "category": "strength-training exercise technique",
+          "hook": "Extend the rope down toward the floor rather than directing it toward the body.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "event_match",
+            "match": [
+              "gym",
+              "workout",
+              "lift",
+              "training"
+            ],
+            "requires": []
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": null,
+            "overall": 0.99
+          },
+          "place": null
+        },
+        {
+          "id": "7673673926156881166-3",
+          "type": "workout",
+          "name": "Dumbbell lateral raise",
+          "category": "strength-training exercise technique",
+          "hook": "Raise dumbbells only to shoulder height rather than higher for shoulder-focused lateral raises.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "event_match",
+            "match": [
+              "gym",
+              "workout",
+              "lift",
+              "training"
+            ],
+            "requires": []
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": null,
+            "overall": 0.99
+          },
+          "place": null
+        },
+        {
+          "id": "7673673926156881166-4",
+          "type": "workout",
+          "name": "Seated cable row",
+          "category": "strength-training exercise technique",
+          "hook": "Pull the handle toward the waist rather than the chest to target the lats.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "audio",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "event_match",
+            "match": [
+              "gym",
+              "workout",
+              "lift",
+              "training"
+            ],
+            "requires": []
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": null,
+            "overall": 0.99
+          },
+          "place": null
+        }
+      ]
+    },
+    {
+      "id": "7662423778449837342",
+      "source": {
+        "url": "https://www.tiktok.com/@spotsyoumissed/photo/7662423778449837342",
+        "kind": "photo",
+        "author": "spotsyoumissed",
+        "author_url": "https://www.tiktok.com/@spotsyoumissed",
+        "saved_at": "2026-07-14",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7662423778449837342.jpg",
+        "caption": "Rise and Set in Lower Nob Hill is serving Thai-Australian brunch and it's unreal. Get the shakshuka + brulée french toast combo - trust me!! #sfeats #sffoodie #brunchspots #bayareafoodies #thai "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "narration",
+        "transcript_was_useful": false,
+        "transcript": ""
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:10:07.745Z",
+        "usage": {
+          "prompt_tokens": 2782,
+          "completion_tokens": 107,
+          "total_tokens": 2889,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7662423778449837342-0",
+          "type": "place",
+          "name": "Rise and Set",
+          "category": "Thai-Australian brunch restaurant",
+          "hook": "Thai-Australian brunch; order the shakshuka and brûlée French toast together.",
+          "neighborhood": "Lower Nob Hill",
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.66 below 0.7",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 0.67,
+            "overall": 0.66
+          },
+          "place": {
+            "place_id": "ChIJz4BFC2mBhYARYAcuIa_bhS0",
+            "resolved_name": "Rise & Set",
+            "address": "1247 Polk St, San Francisco, CA 94109, USA",
+            "coords": [
+              37.788457,
+              -122.42051239999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+              "Tuesday: Closed",
+              "Wednesday: Closed",
+              "Thursday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+              "Friday: 10:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+              "Saturday: 9:00 AM – 3:00 PM, 5:00 – 8:30 PM",
+              "Sunday: 9:00 AM – 3:00 PM, 5:00 – 8:30 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 20,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7654368777370373406",
+      "source": {
+        "url": "https://www.tiktok.com/@szesze.fertitta/video/7654368777370373406",
+        "kind": "video",
+        "author": "szesze.fertitta",
+        "author_url": "https://www.tiktok.com/@szesze.fertitta",
+        "saved_at": "2026-06-22",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7654368777370373406.jpg",
+        "caption": "we love a drop set🙂‍↕️ #abs #corework #abroutine #gymgirls #gymtok"
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 14,
+        "transcript_kind": "narration",
+        "transcript_was_useful": false,
+        "transcript": "Got a long list of ex-lovers, they'll tell you I'm insane, 'cause you know I love the players, and you love the game. 'Cause we're young and we're reckless, we'll take this way too far, it'll leave you breathless, or with a nasty scar."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-23T21:11:24.196Z",
+        "usage": {
+          "prompt_tokens": 8840,
+          "completion_tokens": 122,
+          "total_tokens": 8962,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7654368777370373406-0",
+          "type": "workout",
+          "name": "Drop-set weighted knee crunches",
+          "category": "ab/core workout",
+          "hook": "Perform 8 weighted knee crunches at 40 lb, reduce to 20 lb for 8 more, then do 8 bodyweight reps and hold the top position to failure.",
+          "neighborhood": null,
+          "city": null,
+          "country": null,
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "calendar",
+            "scope": "event_match",
+            "match": [
+              "gym",
+              "workout",
+              "lift",
+              "training"
+            ],
+            "requires": []
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": null,
+            "overall": 0.98
+          },
+          "place": null
+        }
+      ]
+    },
+    {
+      "id": "7648532889188994335",
+      "source": {
+        "url": "https://www.tiktok.com/@smallbellybigworld/photo/7648532889188994335",
+        "kind": "photo",
+        "author": "smallbellybigworld",
+        "author_url": "https://www.tiktok.com/@smallbellybigworld",
+        "saved_at": "2026-06-07",
+        "saved_at_is_estimate": true,
+        "thumbnail": "thumbnails/7648532889188994335.jpg",
+        "caption": "the best restaurants in san francisco: khao tiew: best thai food in the city and my favorite restaurant! bones bagels: sourdough open faced bagels in noe valley tu lan: affordable and delicious vietnamese in the tenderloin kantine: scandinavian inspired cafe and so underrated aji kiji: the best takeout sushi in sf in soma cafe reveille: prettiest cafe for acai bowls and coffee in nob hill tartine manufactory: brunch spot and bakery  dalida: mediterranean small plates perfect for a date night ebiko: omakase sushi save this before your next sf dinner plan 🫶 #sanfrancisco #sfrestaurants #sffoodie #bayareafoodies #sftok "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 1,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "Goodbye is just know that I will find my way from you. Like flowers from a tunnel, you decide who you are, and I can see right through. Ooh, like shadows on the moon, I saw bad news. Yeah, I, I, I hate that I made you love me. Sorry if I made me type, yeah, I, I hate that I made you love me, 'cause I barely tried. Yeah, I, I, I. What's happening now? You studied my ground and borrowed my body. One kiss by the sun and called like a wind, a beast that..."
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption"
+        ],
+        "run_at": "2026-08-23T21:10:15.494Z",
+        "usage": {
+          "prompt_tokens": 5411,
+          "completion_tokens": 733,
+          "total_tokens": 6144,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 75,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7648532889188994335-0",
+          "type": "place",
+          "name": "Khao Tiew",
+          "category": "Thai restaurant",
+          "hook": "Creator's favorite restaurant and pick for the best Thai food in the city.",
+          "neighborhood": null,
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJLWA0dIt9j4AR3g3Oo_CocNc",
+            "resolved_name": "Khao Tiew",
+            "address": "272 Claremont Blvd, San Francisco, CA 94127, USA",
+            "coords": [
+              37.741087199999996,
+              -122.46506790000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 4:00 – 8:30 PM",
+              "Tuesday: Closed",
+              "Wednesday: 4:00 – 8:30 PM",
+              "Thursday: 4:00 – 8:30 PM",
+              "Friday: 4:00 – 8:30 PM",
+              "Saturday: 4:00 – 8:30 PM",
+              "Sunday: 4:00 – 8:30 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 20,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-1",
+          "type": "place",
+          "name": "Bones Bagels",
+          "category": "Bagel shop",
+          "hook": "Sourdough open-faced bagels.",
+          "neighborhood": "Noe Valley",
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJ-XUKKQB_j4ARrDajQ_NArOg",
+            "resolved_name": "Bones Bagels",
+            "address": "741 Diamond St, San Francisco, CA 94114, USA",
+            "coords": [
+              37.751337,
+              -122.43621750000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Closed",
+              "Tuesday: Closed",
+              "Wednesday: Closed",
+              "Thursday: 8:00 AM – 2:00 PM",
+              "Friday: 8:00 AM – 2:00 PM",
+              "Saturday: 8:00 AM – 2:00 PM",
+              "Sunday: 8:00 AM – 2:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 14,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-2",
+          "type": "place",
+          "name": "Tu Lan",
+          "category": "Vietnamese restaurant",
+          "hook": "Affordable and delicious Vietnamese food.",
+          "neighborhood": "Tenderloin",
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJjdYi_4SAhYAR0sl58U1jsLk",
+            "resolved_name": "Tú Lan",
+            "address": "8 6th St, San Francisco, CA 94103, USA",
+            "coords": [
+              37.7818928,
+              -122.410091
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 8:00 PM",
+              "Tuesday: 11:00 AM – 8:00 PM",
+              "Wednesday: 11:00 AM – 8:00 PM",
+              "Thursday: 11:00 AM – 8:00 PM",
+              "Friday: 11:00 AM – 8:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-3",
+          "type": "place",
+          "name": "Kantine",
+          "category": "Scandinavian-inspired cafe",
+          "hook": "Underrated Scandinavian-inspired cafe.",
+          "neighborhood": null,
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.97,
+            "geocode": 1,
+            "overall": 0.97
+          },
+          "place": {
+            "place_id": "ChIJi9BhDKCAhYARRUYq_9pI45w",
+            "resolved_name": "Kantine",
+            "address": "1906 Market St, San Francisco, CA 94102, USA",
+            "coords": [
+              37.7707222,
+              -122.42532179999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Closed",
+              "Tuesday: 8:00 AM – 2:00 PM",
+              "Wednesday: 8:00 AM – 2:00 PM",
+              "Thursday: 8:00 AM – 2:00 PM",
+              "Friday: 8:00 AM – 2:00 PM",
+              "Saturday: 9:00 AM – 3:00 PM",
+              "Sunday: 9:00 AM – 3:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 15,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 15,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-4",
+          "type": "place",
+          "name": "Aji Kiji",
+          "category": "Sushi restaurant",
+          "hook": "Recommended as the best takeout sushi in San Francisco.",
+          "neighborhood": "SoMa",
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.97,
+            "geocode": 1,
+            "overall": 0.97
+          },
+          "place": {
+            "place_id": "ChIJ-9w17zmBhYAR1m6Gby5quto",
+            "resolved_name": "Aji Kiji",
+            "address": "359 Kearny St, San Francisco, CA 94108, USA",
+            "coords": [
+              37.7915405,
+              -122.40439690000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Closed",
+              "Tuesday: 11:00 AM – 4:00 PM",
+              "Wednesday: 11:00 AM – 4:00 PM",
+              "Thursday: 11:00 AM – 4:00 PM",
+              "Friday: 11:00 AM – 4:00 PM",
+              "Saturday: 11:00 AM – 4:00 PM",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 16,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-5",
+          "type": "place",
+          "name": "Cafe Reveille",
+          "category": "Cafe",
+          "hook": "Pretty cafe for acai bowls and coffee.",
+          "neighborhood": "Nob Hill",
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJX9FnLOqAhYARMWD0m8kYud4",
+            "resolved_name": "Cafe Réveille",
+            "address": "1998 Polk St, San Francisco, CA 94109, USA",
+            "coords": [
+              37.794945,
+              -122.42145330000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:30 AM – 5:00 PM",
+              "Tuesday: 7:30 AM – 5:00 PM",
+              "Wednesday: 7:30 AM – 5:00 PM",
+              "Thursday: 7:30 AM – 5:00 PM",
+              "Friday: 7:30 AM – 5:00 PM",
+              "Saturday: 7:30 AM – 5:00 PM",
+              "Sunday: 7:30 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-6",
+          "type": "place",
+          "name": "Tartine Manufactory",
+          "category": "Bakery and brunch restaurant",
+          "hook": "Brunch spot and bakery.",
+          "neighborhood": null,
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJu9EujzB-j4ARoyuqElfT14g",
+            "resolved_name": "Tartine Manufactory",
+            "address": "595 Alabama St, San Francisco, CA 94110, USA",
+            "coords": [
+              37.7618278,
+              -122.41189720000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 4:00 PM",
+              "Tuesday: 8:00 AM – 9:00 PM",
+              "Wednesday: 8:00 AM – 9:00 PM",
+              "Thursday: 8:00 AM – 9:00 PM",
+              "Friday: 8:00 AM – 9:00 PM",
+              "Saturday: 8:00 AM – 9:00 PM",
+              "Sunday: 8:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-7",
+          "type": "place",
+          "name": "Dalida",
+          "category": "Mediterranean restaurant",
+          "hook": "Mediterranean small plates suited to a date night.",
+          "neighborhood": null,
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJ-0oK-amHhYARzNhyX0KQcEg",
+            "resolved_name": "Dalida Restaurant",
+            "address": "101 Montgomery St Ste 100, San Francisco, CA 94129, USA",
+            "coords": [
+              37.8000327,
+              -122.4595791
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Closed",
+              "Tuesday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+              "Wednesday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+              "Thursday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+              "Friday: 11:30 AM – 2:00 PM, 5:00 – 9:00 PM",
+              "Saturday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+              "Sunday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 14,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7648532889188994335-8",
+          "type": "place",
+          "name": "Ebiko",
+          "category": "Omakase sushi restaurant",
+          "hook": "Omakase sushi.",
+          "neighborhood": null,
+          "city": "San Francisco",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.97,
+            "geocode": 1,
+            "overall": 0.97
+          },
+          "place": {
+            "place_id": "ChIJW9lMewCBhYARGtYJ4W3N27k",
+            "resolved_name": "Ebiko",
+            "address": "526 Columbus Ave, San Francisco, CA 94133, USA",
+            "coords": [
+              37.7999765,
+              -122.409318
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 5:00 PM",
+              "Tuesday: 11:00 AM – 5:00 PM",
+              "Wednesday: 11:00 AM – 5:00 PM",
+              "Thursday: 11:00 AM – 5:00 PM",
+              "Friday: 11:00 AM – 5:00 PM",
+              "Saturday: 11:00 AM – 5:00 PM",
+              "Sunday: 11:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        }
+      ]
+    }
+  ]
+}

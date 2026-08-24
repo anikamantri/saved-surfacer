@@ -1,0 +1,30 @@
+{
+  "id": "7673673926156881166",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 1,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 2,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 3,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 4,
+      "geocoded": false,
+      "reason": "not a place"
+    }
+  ]
+}

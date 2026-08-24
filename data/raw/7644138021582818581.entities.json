@@ -1,0 +1,172 @@
+{
+  "id": "7644138021582818581",
+  "model": "gpt-5.6-terra",
+  "frames_used": 5,
+  "transcript_kind": "narration",
+  "transcript_was_useful": true,
+  "signals": [
+    "caption",
+    "audio",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3967,
+    "completion_tokens": 1069,
+    "total_tokens": 5036,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 349,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:09:54.743Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Dolomites",
+      "category": "mountain region / hiking destination",
+      "neighborhood": null,
+      "city": null,
+      "country": "Italy",
+      "hook": "Hiking-trip outfit inspiration for the Italian Dolomites.",
+      "found_in": [
+        "caption",
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Lago di Braies",
+      "category": "lake / landmark",
+      "neighborhood": null,
+      "city": "Braies",
+      "country": "Italy",
+      "hook": "Scenic Dolomites lake mentioned as part of the Italy hiking trip.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.88,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Arc'teryx jackets",
+      "category": "outdoor jacket",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Core Dolomites hiking-girl outerwear piece, styled in neutral earth tones.",
+      "found_in": [
+        "audio"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "The North Face fleeces",
+      "category": "outdoor fleece",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Fleece layer recommended for the Dolomites hiking look.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Jaded London parachute cargo pants",
+      "category": "cargo pants",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Trendy parachute cargos suggested as an alternative to bike shorts for a hiking outfit.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Bike shorts with white crew socks",
+      "category": "hiking outfit combination",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Sporty alternative base outfit for the Dolomites look.",
+      "found_in": [
+        "audio"
+      ],
+      "extraction_confidence": 0.85,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Oakley silver-frame wraparound sunglasses",
+      "category": "sport sunglasses",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Y2K-style wraparound sunglasses with a silver frame.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Colorful hiking beanie",
+      "category": "outdoor headwear",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "A pop-of-color beanie paired with otherwise neutral, earth-tone hiking clothes.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.8,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Hiking headwear: headband, cap, or bandana",
+      "category": "outdoor headwear",
+      "neighborhood": null,
+      "city": null,
+      "country": null,
+      "hook": "Finish the hiking look with a headband, cap, or bandana.",
+      "found_in": [
+        "audio",
+        "frames"
+      ],
+      "extraction_confidence": 0.86,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    }
+  ]
+}

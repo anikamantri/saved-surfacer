@@ -1,0 +1,163 @@
+{
+  "id": "7648532889188994335",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption"
+  ],
+  "usage": {
+    "prompt_tokens": 5411,
+    "completion_tokens": 733,
+    "total_tokens": 6144,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:10:15.494Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Khao Tiew",
+      "category": "Thai restaurant",
+      "neighborhood": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Creator's favorite restaurant and pick for the best Thai food in the city.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Bones Bagels",
+      "category": "Bagel shop",
+      "neighborhood": "Noe Valley",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Sourdough open-faced bagels.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Tu Lan",
+      "category": "Vietnamese restaurant",
+      "neighborhood": "Tenderloin",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Affordable and delicious Vietnamese food.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Kantine",
+      "category": "Scandinavian-inspired cafe",
+      "neighborhood": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Underrated Scandinavian-inspired cafe.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Aji Kiji",
+      "category": "Sushi restaurant",
+      "neighborhood": "SoMa",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Recommended as the best takeout sushi in San Francisco.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Cafe Reveille",
+      "category": "Cafe",
+      "neighborhood": "Nob Hill",
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Pretty cafe for acai bowls and coffee.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Tartine Manufactory",
+      "category": "Bakery and brunch restaurant",
+      "neighborhood": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Brunch spot and bakery.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Dalida",
+      "category": "Mediterranean restaurant",
+      "neighborhood": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Mediterranean small plates suited to a date night.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Ebiko",
+      "category": "Omakase sushi restaurant",
+      "neighborhood": null,
+      "city": "San Francisco",
+      "country": "United States",
+      "hook": "Omakase sushi.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

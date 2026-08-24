@@ -1,0 +1,240 @@
+{
+  "id": "7413407442161110305",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJixNomGttPkYRu6MrFG7wdkY",
+      "resolved_name": "Flåm Zipline",
+      "address": "Vatnahalsen, 5740 Myrdal, Norway",
+      "coords": [
+        60.74231859999999,
+        7.1274684
+      ],
+      "primary_type": "adventure_sports_center",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 9:30 AM – 6:00 PM",
+        "Tuesday: 9:30 AM – 6:00 PM",
+        "Wednesday: 9:30 AM – 6:00 PM",
+        "Thursday: 9:30 AM – 6:00 PM",
+        "Friday: 9:30 AM – 5:00 PM",
+        "Saturday: 9:30 AM – 6:00 PM",
+        "Sunday: 9:30 AM – 6:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 0.6,
+      "city_match": false,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJAc8DGn8RPkYR6pLP-2YVQ5E",
+      "resolved_name": "Flåmsbana",
+      "address": "A-Feltvegen 11, 5743 Flåm, Norway",
+      "coords": [
+        60.862921500000006,
+        7.114559300000001
+      ],
+      "primary_type": "tourist_attraction",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 6:45 AM – 6:30 PM",
+        "Tuesday: 6:45 AM – 6:30 PM",
+        "Wednesday: 6:45 AM – 6:30 PM",
+        "Thursday: 6:45 AM – 6:30 PM",
+        "Friday: 6:45 AM – 6:30 PM",
+        "Saturday: 7:45 AM – 6:30 PM",
+        "Sunday: 7:45 AM – 6:30 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 45
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 45
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 45
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 45
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 45
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 45
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 45
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 30
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 3
+    },
+    {
+      "index": 2,
+      "geocoded": false,
+      "reason": "not a place"
+    }
+  ]
+}

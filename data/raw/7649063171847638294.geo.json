@@ -1,0 +1,27 @@
+{
+  "id": "7649063171847638294",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJOfBn8mFuQUYRmh4j019gkn4",
+      "resolved_name": "Oslo",
+      "address": "Oslo, Norway",
+      "coords": [
+        59.9121746,
+        10.7312704
+      ],
+      "primary_type": null,
+      "granularity": "area",
+      "hours": null,
+      "periods": null,
+      "business_status": null,
+      "rating": null,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    }
+  ]
+}

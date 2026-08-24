@@ -1,0 +1,165 @@
+{
+  "id": "7629768609082002710",
+  "model": "gpt-5.6-terra",
+  "frames_used": 1,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3003,
+    "completion_tokens": 1175,
+    "total_tokens": 4178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 499,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-23T21:09:33.388Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Bergen",
+      "category": "city destination",
+      "neighborhood": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Mini guide covering hikes, historic neighbourhoods, seafood, cafés, and fjord views.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Fløyen",
+      "category": "mountain, hiking trails and viewpoints",
+      "neighborhood": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Hike for panoramic fjord views; also recommended for sunset viewpoints.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Løvstakken",
+      "category": "mountain hiking trail",
+      "neighborhood": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "A more challenging hike with spectacular panoramas of the surrounding fjords.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Sandviken",
+      "category": "neighborhood",
+      "neighborhood": "Sandviken",
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Wander streets lined with Bergen's iconic white wooden houses.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Nordnes",
+      "category": "neighborhood",
+      "neighborhood": "Nordnes",
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Explore the historic streets and white wooden houses.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Nordnes Park",
+      "category": "waterfront park and viewpoint",
+      "neighborhood": "Nordnes",
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "A waterside spot to watch the sunset.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "temporal",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Kaigaten Deli",
+      "category": "deli",
+      "neighborhood": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Fresh local food finds.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Cornelius",
+      "category": "seafood restaurant",
+      "neighborhood": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Exceptional seafood experience.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Bryggen",
+      "category": "UNESCO World Heritage waterfront district",
+      "neighborhood": null,
+      "city": "Bergen",
+      "country": "Norway",
+      "hook": "Leaning wooden warehouses and Bergen's ancient trading history.",
+      "found_in": [
+        "caption"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}
