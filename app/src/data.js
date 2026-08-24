@@ -8,7 +8,7 @@
  * app already knows still works, and it says so plainly.
  */
 
-import baked from '../../prototype/public/data/entities.json';
+import baked from '../public/data/entities.json';
 import { fetchCorpus, serverHost } from './net/server.js';
 
 /** Which posts shipped inside this build — everything else needs the Mac for media. */

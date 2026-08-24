@@ -1,14 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { resolve } from 'node:path';
 
-// The corpus, thumbnails, frames and 21MB of map tiles are committed once, under
-// prototype/public. Pointing publicDir there means the phone app serves the exact
-// same bytes the web narrative does — one copy in the repo, no sync step, and the
-// app still makes zero network calls at runtime.
+// The corpus, thumbnails, frames and ~4k map tiles live in public/ and are
+// committed. That is what lets the app run with zero network calls at runtime
+// and with no API keys — the map works on a plane.
 export default defineConfig({
   plugins: [react()],
   base: './',
-  publicDir: resolve(__dirname, '../prototype/public'),
   build: { outDir: 'dist', assetsInlineLimit: 0 },
 });

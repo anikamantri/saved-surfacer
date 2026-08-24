@@ -69,17 +69,22 @@ docs/brief.md          Problem / opportunity / feasibility — source of truth f
 docs/native-plan.md    The iOS handoff + the build log of what is done and what blocks
 docs/submission-notes.md  What the challenge asks for, video structure, what to be honest about
 docs/saved-posts.md    The harvest list (14 URLs) — the pipeline's single input
-engine/                @cue/engine — triggers, geo, hours, ranking, region-arming + 23 tests
+engine/                @cue/engine — triggers, geo, hours, ranking, region-arming + 24 tests
 ingest/                7-stage pipeline (Node 24 ESM, zero deps) + server.mjs, the on-demand HTTP door
 data/raw/              Per-post artifacts: oEmbed, yt-dlp info, transcript, entities, geocode
-data/entities.json     Pipeline output — 14 posts, 53 entities
+data/entities.json     Pipeline output — 16 posts, 116 entities
 data/hydration-report.json  Which door reached which post. A deliverable, not a log
-prototype/             Vite + React web narrative. Video beat 3 and the filming fallback
-app/                   Capacitor + React phone app — Library / Map / Nudges / Debug
-app/ios/               Generated Xcode project. SPM, not CocoaPods
+app/                   Capacitor + React phone app — Library / Map / Nudges / Debug / Add
+app/public/            Committed assets: corpus, thumbnails, frames, ~4k map tiles
+app/ios/               Xcode project + Share Extension. SPM, not CocoaPods
 ```
 
-Run it: `npm run setup` → `npm run ingest` → `npm run dev`. Tests: `npm test` (23/23).
+**The web walkthrough is gone.** `prototype/` was the six-screen narrative with a
+simulated location, and the pivot made it redundant: the phone app does all of it for real,
+on real GPS. Its `public/` assets — the corpus, thumbnails, frames and tiles — moved to
+`app/public/`, which is why the app still runs with no network and no API keys.
+
+Run it: `npm run setup` → `npm run ingest`. Tests: `npm test` (24/24).
 The phone: `npm run server` on the Mac, then `npm run app:sync` and open `app/ios` in Xcode.
 
 **Current numbers:** 14 posts → 53 entities (38 places, 7 products, 6 workouts, 2 other) →
@@ -96,7 +101,7 @@ docs/saved-posts.md
   04-extract    gpt-5.6-terra + vision     -> typed entities, strict JSON schema
   05-geocode    Google Places              -> coords, opening hours, computed confidence
   06-triggers   assign wake-up condition   -> spatial / calendar / 6 more modelled
-  07-bundle     thumbnails, frames, tiles  -> prototype/public
+  07-bundle     thumbnails, frames, tiles  -> app/public
 ```
 
 Every stage caches and is independently resumable; `--force` recomputes. Stage 05 additionally
@@ -198,7 +203,9 @@ Most of this now happens **on the phone**; the laptop appears only for the pipel
 | 6. The card | phone | Provenance plus the explicit reason it fired, and *went / not now / never.* "Never" is the only way the archive shrinks |
 | 7. Gym | phone | Real "Gym" calendar event cross-referenced at Lyon Center. Proves the engine generalizes |
 
-The six-screen web app in `prototype/` is retained for beat 3 and as a fallback.
+Beat 3 is the pipeline itself on the laptop — `npm run ingest`, or the live SSE stream the
+phone triggers through **Add a save**. There is no longer a web app to fall back to, which is
+deliberate: everything in the arc now happens on the device, for real.
 
 ## Out of scope
 
@@ -211,10 +218,11 @@ see `docs/native-plan.md` for how that risk is managed instead.
 
 ## Conventions
 
-- **The prototype is a Vite + React app in `prototype/`, not a single HTML file.** That earlier
-  convention was dropped deliberately: a genuinely interactive world map needs Leaflet plus a
-  local tile cache (~21MB), which cannot be inlined. It still makes **zero network calls at
-  runtime** — tiles, thumbnails, frames and data are all committed and served locally.
+- **The phone app is the only front-end.** The web walkthrough was deleted once the native
+  app did every beat for real; keeping a simulated version of the thing you are demonstrating
+  live is a liability, not a fallback. The app still makes **zero network calls to render** —
+  tiles, thumbnails, frames and data are committed under `app/public/` and served locally.
+  The only network call is ingesting a NEW post, which needs the Mac.
 - **The engine must stay real, and stays in JavaScript.** It does actual haversine distance,
   actual opening-hours evaluation against Places data, actual calendar matching, actual budget
   ranking. If a screen needs something the engine cannot produce, fix the engine — do not
@@ -224,10 +232,10 @@ see `docs/native-plan.md` for how that risk is managed instead.
   confidence, budget) still runs in the engine and usually says no. Even *which* venues get
   watched is engine logic (`engine/src/arming.js`), because it decides what may interrupt.
 - Secrets go in `.env`, which is gitignored. Never commit an API key.
-- **Location is real on the phone, simulated on the web.** `prototype/src/sim/` stays as the
-  laptop-side simulator and as a filming fallback, but the phone app uses genuine CoreLocation
-  via Capacitor. The old "don't build real CoreLocation anything" rule is reversed.
-- `data/media/` is gitignored (57MB of mp4s, regenerable). Tiles, frames and thumbnails under
-  `prototype/public/` **are committed**, so the repo runs without API keys.
+- **Location is real.** The phone app uses genuine CoreLocation via Capacitor; the old
+  laptop-side simulator went with the walkthrough. Debug's force-fire is the filming
+  insurance instead, and it skips the walk, not the gate.
+- `data/media/` is gitignored (mp4s and audio, regenerable). Tiles, frames and thumbnails
+  under `app/public/` **are committed**, so the repo runs without API keys.
 - Unwired trigger classes stay visible rather than hidden: the schema carries all 8, the UI
   labels the 6 that aren't wired. That is what lets the video claim generality honestly.

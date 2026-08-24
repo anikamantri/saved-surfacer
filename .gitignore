@@ -11,8 +11,8 @@ data/thumbnails/*
 data/media/
 
 # node
-prototype/node_modules/
-prototype/dist/
+app/node_modules/
+app/dist/
 
 # python
 __pycache__/

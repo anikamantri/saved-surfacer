@@ -9,11 +9,11 @@
 The pipeline and the web prototype are **built and working**. Nothing below is planned-but-unbuilt unless it says so.
 
 ```
-prototype/src/engine/   trigger engine + 12 passing tests
+engine/src/             trigger engine + 24 passing tests
 ingest/                 7-stage pipeline, Node 24 ESM, zero npm dependencies
 data/entities.json      14 posts → 53 entities
 data/hydration-report.json   which ingest door reached which post
-prototype/              Vite + React, 6 screens, runs fully offline
+app/                    Capacitor + React, runs fully offline on the phone
 ```
 
 | Metric | Value |
@@ -116,7 +116,8 @@ package.json     workspaces: ["engine", "ingest", "prototype", "app"]
 engine/          @cue/engine — triggers, geo, hours, ranking + the 12 tests
                  (moved from prototype/src/engine/, logic unchanged)
 ingest/          the 7-stage pipeline, unchanged + NEW server.mjs
-prototype/       existing web narrative — laptop-side, video beat 3
+(prototype/ deleted — the phone app does every beat for real; its committed
+                 assets moved to app/public/)
 app/             NEW Capacitor + React product app — the phone
 ```
 
@@ -298,7 +299,7 @@ If phase 5 fights Xcode signing, everything else is already recorded.
 | `ingest/lib/config.mjs` | server port, Tailscale host |
 | `app/` | **new** — Capacitor + React, four surfaces, native plugins |
 | `app/ios/` | Xcode project, Info.plist keys, Share Extension target |
-| `prototype/` | import `@cue/engine`; otherwise unchanged |
+| ~~`prototype/`~~ | **deleted** — assets moved to `app/public/` |
 | `CLAUDE.md`, `README.md`, `docs/brief.md` §6, `docs/submission-notes.md` | architecture change, the iOS background-location finding, revised video arc |
 
 ---

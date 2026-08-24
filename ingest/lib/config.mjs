@@ -20,10 +20,14 @@ export const PATHS = {
   entities:  resolve(ROOT, 'data/entities.json'),
   report:    resolve(ROOT, 'data/hydration-report.json'),
   ytdlp:     resolve(ROOT, 'ingest/bin/yt-dlp'),
-  thumbs:    resolve(ROOT, 'prototype/public/thumbnails'),
-  frames:    resolve(ROOT, 'prototype/public/frames'),
-  tiles:     resolve(ROOT, 'prototype/public/tiles'),
-  bundled:   resolve(ROOT, 'prototype/public/data'),
+  // The phone app is the only front-end now, so the pipeline bakes straight
+  // into its public directory. These are committed on purpose: the app runs
+  // with no network and no API keys because the corpus, thumbnails, frames and
+  // 3947 map tiles all ship inside it.
+  thumbs:    resolve(ROOT, 'app/public/thumbnails'),
+  frames:    resolve(ROOT, 'app/public/frames'),
+  tiles:     resolve(ROOT, 'app/public/tiles'),
+  bundled:   resolve(ROOT, 'app/public/data'),
 };
 
 export const KEYS = {
@@ -92,4 +96,4 @@ export const DEMO_ANCHORS = [
   { name: 'USC campus, Los Angeles', coords: [34.0224, -118.2851] },
 ];
 
-export const USER_AGENT = 'cue-prototype/0.1 (personal design-challenge tool)';
+export const USER_AGENT = 'cue/0.1 (personal design-challenge tool)';

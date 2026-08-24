@@ -52,7 +52,23 @@ export async function start({ onPosition, onError = () => {}, background = false
     } : {}),
     requestPermissions: true,
     stale: false,
-    distanceFilter: background ? 5 : 15,
+
+    /**
+     * distanceFilter MUST be 0.
+     *
+     * A non-zero value suppresses updates while the device is stationary — the
+     * plugin's own docs say so, using a parked vehicle as the example. That is
+     * fine for tracking a journey and completely wrong here: a phone sitting on
+     * a desk delivered no position at all, forever, even with Always granted.
+     * The app then sat on "waiting for GPS" with nothing wrong that any
+     * permission screen could show.
+     *
+     * Rate is bounded by minIntervalMs instead, which still yields periodic
+     * points when nothing is moving. Faster in demo mode, where JavaScript is
+     * alive through the walk and the engine re-evaluates on every update.
+     */
+    distanceFilter: 0,
+    minIntervalMs: background ? 2000 : 10000,
   }, (position, error) => {
     if (error) return onError(new Error(error.message || String(error)));
     if (!position) return;
