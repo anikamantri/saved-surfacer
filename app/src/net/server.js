@@ -43,17 +43,44 @@ export function setServerHost(h) {
   return host;
 }
 
-export async function health(timeoutMs = 2500) {
+async function probe(host, timeoutMs) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
-    const res = await fetch(`${serverHost()}/health`, { signal: ctrl.signal });
-    return { reachable: res.ok, ...(await res.json()) };
+    const res = await fetch(`${host}/health`, { signal: ctrl.signal });
+    if (!res.ok) return { reachable: false, error: `HTTP ${res.status}` };
+    return { reachable: true, ...(await res.json()) };
   } catch (err) {
     return { reachable: false, error: err.name === 'AbortError' ? 'timed out' : err.message };
   } finally {
     clearTimeout(t);
   }
+}
+
+/**
+ * Reachability, with self-healing.
+ *
+ * A host saved in Debug lives in localStorage, which survives rebuilds — so a
+ * LAN address typed once keeps being used long after DHCP has moved the Mac,
+ * and no amount of reinstalling fixes it. That is a guaranteed way to lose a
+ * morning, and worse, a take.
+ *
+ * So when the saved host fails, the baked-in tailnet default is tried before
+ * giving up, and adopted if it answers. A stale address heals itself instead of
+ * quietly reading "false" forever.
+ */
+export async function health(timeoutMs = 2500) {
+  const saved = serverHost();
+  const first = await probe(saved, timeoutMs);
+  if (first.reachable || saved === DEFAULT) return { ...first, host: saved };
+
+  const fallback = await probe(DEFAULT, timeoutMs);
+  if (!fallback.reachable) {
+    return { ...first, host: saved, triedFallback: DEFAULT, fallbackError: fallback.error };
+  }
+
+  localStorage.setItem(KEY, DEFAULT);
+  return { ...fallback, host: DEFAULT, healedFrom: saved };
 }
 
 export async function fetchCorpus() {

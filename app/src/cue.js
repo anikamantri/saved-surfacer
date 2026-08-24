@@ -18,6 +18,7 @@ import * as geofences from './native/geofences.js';
 import * as notify from './native/notify.js';
 import * as calendar from './native/calendar.js';
 import * as location from './native/location.js';
+import * as perms from './native/permissions.js';
 
 const listeners = new Set();
 
@@ -30,6 +31,7 @@ export const state = {
   armed: [],
   trace: [],
   lastEval: null,
+  blocked: null,   // why there is still no position, once that stops being normal
 };
 
 export const subscribe = (fn) => { listeners.add(fn); return () => listeners.delete(fn); };
@@ -158,11 +160,38 @@ export async function start({ entities, background = false }) {
 
 function startLocation(background) {
   trace('requesting location…');
+
+  /**
+   * "waiting for GPS" is only honest for a few seconds. Past that it is hiding
+   * one of several very different problems — permission downgraded to Denied,
+   * Precise Location switched off, or the plugin's start() never settling — and
+   * they need different fixes. So if no fix arrives, say which.
+   */
+  const watchdog = setTimeout(async () => {
+    if (state.position) return;
+    const p = await perms.readPermissions().catch(() => null);
+    if (!p) return trace('no fix after 15s and permissions unreadable');
+    const loc = p.location, bg = p.background;
+    if (loc !== 'granted') {
+      state.blocked = `location permission is "${loc}" — grant it in Settings`;
+    } else if (bg !== 'granted' && bg !== 'always') {
+      state.blocked = `only foreground location ("${bg}") — Always is needed for the pocket walk`;
+    } else {
+      state.blocked = 'permission is granted but no fix in 15s — check Precise Location is on';
+    }
+    trace(state.blocked);
+    emit();
+  }, 15000);
+
+  const clearWatchdog = () => clearTimeout(watchdog);
+
   return location.start({
     background,
     onError: (err) => trace(`location error: ${err.message}`),
     onPosition: async (position, meta) => {
       const first = !state.position;
+      clearWatchdog();
+      state.blocked = null;
       state.position = position;
       state.accuracy = meta.accuracy;
       state.source = meta.source;
@@ -179,7 +208,12 @@ function startLocation(background) {
         await evaluateNow({ reason: 'position update' });
       }
     },
-  }).catch((err) => trace(`location.start threw: ${err.message}`));
+  }).catch((err) => {
+    clearWatchdog();
+    state.blocked = `location failed to start: ${err.message}`;
+    trace(state.blocked);
+    emit();
+  });
 }
 
 export const stop = () => location.stop();

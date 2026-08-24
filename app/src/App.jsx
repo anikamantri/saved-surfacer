@@ -20,6 +20,7 @@ import Library from './screens/Library.jsx';
 import MapView from './screens/MapView.jsx';
 import Nudges from './screens/Nudges.jsx';
 import Debug from './screens/Debug.jsx';
+import Add from './screens/Add.jsx';
 
 /**
  * Tab icons are inline SVG, not glyphs.
@@ -47,6 +48,7 @@ export default function App() {
   const [corpus, setCorpus] = useState(() => loadCorpus());
   const [snapshot, setSnapshot] = useState({ ...cue.state });
   const [ingesting, setIngesting] = useState(null);
+  const [shared, setShared] = useState(null);   // url handed over by the share sheet
 
   const posts = corpus.bundle.posts;
 
@@ -64,21 +66,40 @@ export default function App() {
     // "Share -> Cue" from inside TikTok arrives here as cue://share?url=...
     // The extension deliberately avoids App Groups (restricted under free
     // provisioning) and carries the payload in the URL instead.
-    CapApp.addListener('appUrlOpen', ({ url }) => {
-      const shared = new URL(url).searchParams.get('url');
-      if (shared) { setTab('debug'); ingest(shared); }
-    });
+    // "Share -> Cue" from inside TikTok arrives as cue://share?url=...
+    // The extension deliberately avoids App Groups (restricted under free
+    // provisioning) and carries the payload in the URL instead.
+    const handleUrl = (url) => {
+      let incoming = null;
+      try { incoming = new URL(url).searchParams.get('url'); } catch { /* not ours */ }
+      if (!incoming) return;
+      setShared(incoming);
+      setTab('add');
+      ingest(incoming);   // no second tap: sharing IS the intent
+    };
+
+    // Two paths, and BOTH are needed. `appUrlOpen` only fires when the app was
+    // already running; sharing from TikTok usually cold-launches it, and that
+    // URL is only retrievable via getLaunchUrl(). Handling one and not the other
+    // is the difference between working on a warm app and doing nothing at all
+    // in the case that actually matters.
+    CapApp.addListener('appUrlOpen', ({ url }) => handleUrl(url));
+    CapApp.getLaunchUrl()
+      .then((res) => { if (res?.url) handleUrl(res.url); })
+      .catch(() => { /* no launch url: an ordinary open */ });
 
     return () => { unsub(); cue.stop(); };
   }, []);
 
   async function ingest(url) {
     if (!url) return;
-    setIngesting({ url, stages: [], lines: [] });
+    setIngesting({ url, stages: [], lines: [], resolved: null });
+    setTab('add');
     try {
       const done = await server.ingest(url, (event, payload) => {
         setIngesting((prev) => ({
           ...prev,
+          resolved: event === 'resolved' ? payload : prev.resolved,
           stages: event === 'stage' ? [...prev.stages.filter((s) => s.name !== payload.name), payload] : prev.stages,
           lines: event === 'log' ? [...prev.lines, payload.line].slice(-12) : prev.lines,
         }));
@@ -87,10 +108,9 @@ export default function App() {
       setCorpus({ bundle, source: 'synced' });
       cue.state.entities = flatten(bundle);
       await cue.rearm({ force: true });
-      setIngesting({ url, done });
-      setTab('map');   // the new pin landing is the payoff
+      setIngesting((prev) => ({ ...prev, done }));
     } catch (err) {
-      setIngesting({ url, error: err.message });
+      setIngesting((prev) => ({ ...(prev || { url }), error: err.message }));
     }
   }
 
@@ -122,22 +142,24 @@ export default function App() {
             reports the last thing the runtime actually did, so a stall is legible. */}
         <span className="sub">
           {isNative()
-            ? (snapshot.source || snapshot.trace[0]?.line?.slice(0, 34) || 'starting…')
+            ? (snapshot.source || snapshot.blocked || (snapshot.trace.length ? 'waiting for GPS…' : 'starting…'))
             : 'web — no background location'}
           {snapshot.position && ` · ±${Math.round(snapshot.accuracy || 0)}m`}
         </span>
+        <button className="addbtn" onClick={() => setTab('add')} aria-label="add a save">+</button>
       </header>
 
       <main className="body">
         {tab === 'library' && <Library posts={posts} />}
         {tab === 'map' && <MapView entities={snapshot.entities} position={snapshot.position} armed={snapshot.armed} />}
         {tab === 'nudges' && <Nudges evaluation={snapshot.lastEval} onVerdict={verdict} />}
+        {tab === 'add' && (
+          <Add initialUrl={shared} state={ingesting} onIngest={ingest}
+               onClose={(to) => { setTab(to || 'library'); if (to) setIngesting(null); }} />
+        )}
         {tab === 'debug' && (
-          <>
-            {ingesting && <Ingesting state={ingesting} onClose={() => setIngesting(null)} />}
-            <Debug cue={snapshot} corpusSource={corpus.source}
-                   onEvaluate={(o) => cue.evaluateNow(o)} onIngest={ingest} onSync={sync} />
-          </>
+          <Debug cue={snapshot} corpusSource={corpus.source}
+                 onEvaluate={(o) => cue.evaluateNow(o)} onIngest={() => setTab('add')} onSync={sync} />
         )}
       </main>
 
@@ -150,35 +172,6 @@ export default function App() {
           </button>
         ))}
       </nav>
-    </div>
-  );
-}
-
-/** Live pipeline progress. The real stages, streamed — a spinner would be a lie. */
-function Ingesting({ state, onClose }) {
-  return (
-    <div className="card">
-      <div className="pad">
-        <h3>{state.done ? 'ingested' : state.error ? 'ingest failed' : 'ingesting…'}</h3>
-        <div style={{ fontSize: 11, color: 'var(--dim)', wordBreak: 'break-all' }}>{state.url}</div>
-      </div>
-      {state.error && <div className="why" style={{ color: 'var(--bad)' }}>{state.error}</div>}
-      {state.done && (
-        <div className="kv">
-          <span className="k">took</span><span className="v">{state.done.seconds}s</span>
-          <span className="k">entities</span><span className="v">{state.done.entities}</span>
-          <span className="k">nudge-eligible</span><span className="v">{state.done.nudge_eligible}</span>
-        </div>
-      )}
-      {!state.done && !state.error && (
-        <div className="trace">
-          {(state.stages || []).map((s) => (
-            <div key={s.name}>{s.status === 'done' ? '✓' : '·'} <b>{s.name}</b> — {s.what}</div>
-          ))}
-          {(state.lines || []).map((l, i) => <div key={i} style={{ opacity: .6 }}>{l}</div>)}
-        </div>
-      )}
-      <div className="btnrow"><button className="btn" onClick={onClose}>close</button></div>
     </div>
   );
 }

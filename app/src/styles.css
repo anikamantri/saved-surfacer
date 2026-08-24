@@ -39,7 +39,19 @@ body {
   display: flex; align-items: baseline; gap: 10px;
 }
 .head h1 { font-size: 17px; margin: 0; letter-spacing: -0.01em; }
-.head .sub { color: var(--dim); font-size: 12px; }
+.head .sub { flex: 1; }
+/* Capture is one tap from anywhere: sharing a save is the app's whole input. */
+.addbtn {
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
+  width: 30px; height: 30px; border-radius: 15px; font-size: 19px; line-height: 1;
+  padding: 0; flex: none;
+}
+.addbtn:active { background: var(--accent); color: #17110a; }
+.head .sub {
+  color: var(--dim); font-size: 12px;
+  /* Status must never push the + off screen, and never wrap the header. */
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
 
 .body { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 

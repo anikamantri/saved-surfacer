@@ -67,6 +67,9 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
       </div>
 
       <h4 className="section">position</h4>
+      {cue.blocked && (
+        <div className="note" style={{ color: 'var(--bad)', paddingTop: 0 }}>{cue.blocked}</div>
+      )}
       <div className="kv">
         <span className="k">source</span><span className="v">{cue.source || 'none'}</span>
         <span className="k">coords</span><span className="v">{cue.position ? cue.position.map((n) => n.toFixed(5)).join(', ') : '—'}</span>
@@ -114,6 +117,14 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
         <span className="k">reachable</span><span className={`v ${reach?.reachable ? 'ok' : 'no'}`}>{reach ? String(reach.reachable) : '…'}</span>
         {reach && !reach.reachable && <>
           <span className="k">why not</span><span className="v no">{reach.error || 'unknown'}</span>
+          {reach.triedFallback && <>
+            <span className="k">also tried</span>
+            <span className="v no" style={{ fontSize: 11 }}>{reach.triedFallback} — {reach.fallbackError}</span>
+          </>}
+        </>}
+        {reach?.healedFrom && <>
+          <span className="k">switched host</span>
+          <span className="v ok" style={{ fontSize: 11 }}>{reach.healedFrom} was dead → using the tailnet address</span>
         </>}
         <span className="k">corpus on Mac</span><span className="v">{reach?.corpus ? `${reach.corpus.posts} posts · ${reach.corpus.entities} entities` : reach?.error || '—'}</span>
         <span className="k">corpus on phone</span><span className="v">{corpusSource} · {cue.entities.length} entities</span>
