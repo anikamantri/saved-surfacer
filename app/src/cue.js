@@ -35,6 +35,22 @@ export const state = {
 export const subscribe = (fn) => { listeners.add(fn); return () => listeners.delete(fn); };
 const emit = () => listeners.forEach((fn) => fn(state));
 
+/**
+ * No native call may wedge startup.
+ *
+ * A hung plugin promise never rejects — it simply never settles — so an `await`
+ * on one blocks everything after it with no error and no log. That is exactly
+ * how the app came to sit on "starting…" forever: the calendar and geofence
+ * setup were awaited BEFORE location, so either one stalling meant the position
+ * never arrived, and the only symptom was a word in the header.
+ */
+function withTimeout(promise, ms, label) {
+  return Promise.race([
+    Promise.resolve(promise),
+    new Promise((resolve) => setTimeout(() => resolve({ __timedOut: label }), ms)),
+  ]);
+}
+
 /** The Debug surface's engine trace. Kept short; this is a phone. */
 export function trace(line) {
   state.trace = [{ at: new Date().toISOString(), line }, ...state.trace].slice(0, 60);
@@ -117,16 +133,32 @@ export async function rearm({ force = false } = {}) {
  */
 export async function start({ entities, background = false }) {
   state.entities = entities;
-  state.calendar = await calendar.today();
-  trace(`calendar: ${state.calendar.length} events (${state.calendar[0]?.source || 'none'})`);
+  trace(`boot: ${entities.length} entities`);
 
-  await geofences.listen({
-    onEnter: onGeofenceEnter,
-    onRearm: rearm,
-    log: trace,
-  });
+  // Location goes FIRST and is never gated behind anything else. It is the
+  // feature the whole pivot exists for, and the two calls that used to precede
+  // it are both optional to getting a fix.
+  const locating = startLocation(background);
 
-  await location.start({
+  // Calendar and geofence setup then run concurrently, each on a leash. A
+  // failure here degrades one feature; it must never cost the position.
+  withTimeout(calendar.today(), 8000, 'calendar').then((r) => {
+    if (r?.__timedOut) return trace('calendar timed out after 8s — continuing without it');
+    state.calendar = r || [];
+    trace(`calendar: ${state.calendar.length} events (${state.calendar[0]?.source || 'none'})`);
+    emit();
+  }).catch((e) => trace(`calendar failed: ${e.message}`));
+
+  withTimeout(geofences.listen({ onEnter: onGeofenceEnter, onRearm: rearm, log: trace }), 8000, 'geofences')
+    .then((r) => trace(r?.__timedOut ? 'geofence setup timed out after 8s' : 'geofence listener ready'))
+    .catch((e) => trace(`geofence setup failed: ${e.message}`));
+
+  return locating;
+}
+
+function startLocation(background) {
+  trace('requesting location…');
+  return location.start({
     background,
     onError: (err) => trace(`location error: ${err.message}`),
     onPosition: async (position, meta) => {
@@ -147,7 +179,7 @@ export async function start({ entities, background = false }) {
         await evaluateNow({ reason: 'position update' });
       }
     },
-  });
+  }).catch((err) => trace(`location.start threw: ${err.message}`));
 }
 
 export const stop = () => location.stop();

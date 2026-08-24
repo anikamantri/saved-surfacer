@@ -1,41 +1,176 @@
 {
   "id": "7646794537930657056",
   "model": "gpt-5.6-terra",
-  "frames_used": 1,
+  "frames_used": 11,
   "transcript_kind": "music",
   "transcript_was_useful": false,
   "signals": [
     "frames"
   ],
   "usage": {
-    "prompt_tokens": 8566,
-    "completion_tokens": 167,
-    "total_tokens": 8733,
+    "prompt_tokens": 31469,
+    "completion_tokens": 961,
+    "total_tokens": 32430,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0
     },
     "completion_tokens_details": {
-      "reasoning_tokens": 68,
+      "reasoning_tokens": 148,
       "audio_tokens": 0,
       "accepted_prediction_tokens": 0,
       "rejected_prediction_tokens": 0
     }
   },
-  "run_at": "2026-08-23T21:09:36.394Z",
+  "run_at": "2026-08-24T01:57:32.651Z",
   "entities": [
     {
       "type": "place",
-      "name": "Magnat Kaffehus",
-      "category": "café",
-      "neighborhood": null,
+      "name": "Holmenkollen Ski Museum",
+      "category": "ski museum and ski-jump viewpoint",
+      "neighborhood": "Holmenkollen",
       "city": "Oslo",
       "country": "Norway",
-      "hook": "Coffeehouse on Kirkegata in central Oslo.",
+      "hook": "Ski-jump tower with panoramic views over Oslo.",
       "found_in": [
         "frames"
       ],
-      "extraction_confidence": 0.96,
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Oslo City Hall",
+      "category": "historic civic building",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Monumental brick city hall with a clock tower, fountain, and mural-filled interior.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Akershus Fortress",
+      "category": "historic fortress and castle",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Medieval castle complex overlooking the waterfront, including courtyards and gardens.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Vigeland Sculpture Park",
+      "category": "sculpture park",
+      "neighborhood": "Frogner",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Gustav Vigeland's dramatic granite and bronze sculptures, centered on the Monolith.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Bygdøy Museums",
+      "category": "museum area",
+      "neighborhood": "Bygdøy",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Bygdøy's museums, including Viking ships, stave-church architecture, and open-air heritage buildings.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "MUNCH",
+      "category": "art museum",
+      "neighborhood": "Bjørvika",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Edvard Munch museum for viewing The Scream and other Munch works.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Aker Brygge",
+      "category": "waterfront district",
+      "neighborhood": "Aker Brygge",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Canalside waterfront promenade with restaurants, boats, and evening lights.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Tusenfryd",
+      "category": "amusement park",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Theme park with roller coasters and thrill rides.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Royal Palace",
+      "category": "royal residence and landmark",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Norway's royal palace, with its grand neoclassical façade and palace grounds.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Oslo Opera House",
+      "category": "opera house and architectural landmark",
+      "neighborhood": "Bjørvika",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Angular waterfront opera house whose sloping white roof can be walked on.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
       "trigger_class": "spatial",
       "decay": "contextual"
     }

@@ -1,43 +1,461 @@
 {
   "id": "7649063171847638294",
   "model": "gpt-5.6-terra",
-  "frames_used": 1,
+  "frames_used": 10,
   "transcript_kind": "narration",
   "transcript_was_useful": false,
   "signals": [
-    "caption",
     "frames"
   ],
   "usage": {
-    "prompt_tokens": 3850,
-    "completion_tokens": 254,
-    "total_tokens": 4104,
+    "prompt_tokens": 34501,
+    "completion_tokens": 2566,
+    "total_tokens": 37067,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0
     },
     "completion_tokens_details": {
-      "reasoning_tokens": 155,
+      "reasoning_tokens": 490,
       "audio_tokens": 0,
       "accepted_prediction_tokens": 0,
       "rejected_prediction_tokens": 0
     }
   },
-  "run_at": "2026-08-23T21:09:22.055Z",
+  "run_at": "2026-08-24T01:58:03.929Z",
   "entities": [
     {
       "type": "place",
-      "name": "Oslo",
-      "category": "city",
+      "name": "Grød",
+      "category": "cafe",
       "neighborhood": null,
       "city": "Oslo",
       "country": "Norway",
-      "hook": "Weekend Oslo guide featuring the creator's favorites and local tips.",
+      "hook": "Best bun with cheese and rødgrød med fløde; acai is also recommended.",
       "found_in": [
-        "caption",
         "frames"
       ],
-      "extraction_confidence": 0.78,
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Oslo Opera House",
+      "category": "landmark and viewpoint",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Watch the sunset from the roof.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "temporal",
+      "decay": "contextual"
+    },
+    {
+      "type": "other",
+      "name": "Oslo Tram 12 to Majorstuen",
+      "category": "public-transit sightseeing route",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Route 12 passes the water and the Opera House for pretty city views; use the Entur app.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Majorstuen",
+      "category": "neighborhood and shopping area",
+      "neighborhood": "Majorstuen",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended area for shopping.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Markveien",
+      "category": "shopping street",
+      "neighborhood": "Grünerløkka",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended shopping street in Grünerløkka.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Karl Johans gate",
+      "category": "shopping street",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended for shopping.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Mitt Lille Hjem",
+      "category": "homewares store",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Colorful homewares shop; one of the creator's shopping favorites.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Flexwear",
+      "category": "clothing store",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "One of the creator's favorite Oslo shops.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Holzweiler",
+      "category": "fashion store",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "One of the creator's favorite Oslo shops.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Brandy Melville",
+      "category": "clothing store",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "One of the creator's favorite Oslo shops.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "ARKET",
+      "category": "clothing and homewares store",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "One of the creator's favorite Oslo shops.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Frogner Park",
+      "category": "park",
+      "neighborhood": "Frogner",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Visit together with the Vigeland Sculpture Park.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Vigeland Sculpture Park",
+      "category": "sculpture park",
+      "neighborhood": "Frogner",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Sculpture installation within Frogner Park.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Damstredet",
+      "category": "historic street",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Walk for cute, colorful houses.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Telthusbakken",
+      "category": "historic street",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Walk for cute, colorful houses.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Royal Palace, Oslo",
+      "category": "palace and landmark",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Watch the daily guard change at 1:30 PM.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "temporal",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Grünerløkka",
+      "category": "neighborhood",
+      "neighborhood": "Grünerløkka",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended for Babbo Collective, vintage shopping, and parks.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Babbo Collective",
+      "category": "store",
+      "neighborhood": "Grünerløkka",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended stop while visiting Grünerløkka.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Rugantino",
+      "category": "Italian restaurant",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Amazing Italian food.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Hakone Coffee",
+      "category": "cafe",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended for matcha; marked as a local recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "W.B. Samson",
+      "category": "bakery",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Best Norwegian pastries; marked as a local recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Kumi",
+      "category": "brunch restaurant",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended for brunch; marked as a local recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Oslo Raw",
+      "category": "cafe",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Marked as a local food recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Happy Foods",
+      "category": "cafe",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Marked as a local food recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Skovveien Pizza & Bar",
+      "category": "pizza restaurant and bar",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Marked as a local food recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Anne På Landet",
+      "category": "cafe",
+      "neighborhood": "Frogner",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Café in Frogner Park; marked as a local recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Manci",
+      "category": "restaurant",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Marked as a local food recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Fåbro Gård",
+      "category": "bakery and scenic venue",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Pretty scenery and a great bakery; marked as a local recommendation.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Oslo Botanical Garden",
+      "category": "botanical garden",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Recommended garden visit.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
       "trigger_class": "spatial",
       "decay": "contextual"
     }

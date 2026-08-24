@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T01:34:09.461Z",
+  "generated_at": "2026-08-24T01:59:36.081Z",
   "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
   "totals": {
     "posts": 16,

@@ -68,9 +68,23 @@ test('re-arm is needed across cities but not for a step down the street', () => 
   assert.equal(needsRearm(ids, ENTITIES, [OSLO[0], OSLO[1] + 0.0005]), false);
 });
 
-test('a city with no saves arms whatever is nearest rather than nothing', () => {
-  // USC has zero entities in this corpus — the cold-start case the map answers.
-  const armed = armable(ENTITIES, USC);
+test('somewhere with no saves still arms rather than arming nothing', () => {
+  // The cold-start case the world map answers: standing somewhere the corpus has
+  // never heard of, the nearest saves are still armed — honestly, at real range.
+  // Deliberately NOT USC: this test used to assert USC was empty, and correctly
+  // failed the moment LA posts were harvested. The property under test is about
+  // empty geography, so it should not depend on which cities happen to be saved.
+  const NOWHERE = [-30.0, -140.0];   // South Pacific, thousands of km from anything
+  const armed = armable(ENTITIES, NOWHERE);
   assert.ok(armed.length > 0, 'should still arm the globally-nearest venues');
-  assert.ok(armed[0].metres > 100000, 'and they should be honestly far away');
+  assert.ok(armed[0].metres > 1000000, 'and they should be honestly far away');
+});
+
+test('harvesting saves near you changes what gets armed', () => {
+  // USC now has entities, so standing there must arm something local — this is
+  // the assertion that would have caught the LA cluster silently failing to land.
+  const armed = armable(ENTITIES, USC);
+  assert.ok(armed.length > 0);
+  assert.ok(armed[0].metres < 5000,
+    `nearest armed venue at USC was ${armed[0].metres}m — the LA cluster is missing`);
 });

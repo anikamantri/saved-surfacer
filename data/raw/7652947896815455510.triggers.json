@@ -3,17 +3,16 @@
   "entities": [
     {
       "type": "other",
-      "name": "Norway travel planning guide",
-      "category": "travel advice",
+      "name": "Register a Norwegian rental car for automated tolls",
+      "category": "road-trip preparation",
       "neighborhood": null,
       "city": null,
       "country": "Norway",
-      "hook": "Six mistakes to avoid when planning a Norway trip in 2026",
+      "hook": "Register the rental with AutoPASS or EPASS24 before passing toll cameras to avoid rental-agency administration fees.",
       "found_in": [
-        "caption",
         "frames"
       ],
-      "extraction_confidence": 0.86,
+      "extraction_confidence": 0.94,
       "trigger_class": "calendar",
       "decay": "contextual",
       "geo": null,
@@ -24,7 +23,258 @@
       },
       "nudge_eligible": false,
       "why_not": "calendar triggers are modelled but not wired in this build",
-      "overall": 0.86
+      "overall": 0.94
+    },
+    {
+      "type": "other",
+      "name": "Observe average-speed enforcement in Norwegian tunnels",
+      "category": "driving rule",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Tunnel cameras can measure point-to-point average speed over miles, with automatic fines for exceeding it.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "activity",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "activity",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "activity triggers are modelled but not wired in this build",
+      "overall": 0.91
+    },
+    {
+      "type": "product",
+      "name": "FerryPay",
+      "category": "ferry payment app",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Download before a Norwegian road trip to receive the stated automatic 50% ferry-crossing discount rather than paying onboard.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "calendar",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "calendar",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "calendar triggers are modelled but not wired in this build",
+      "overall": 0.93
+    },
+    {
+      "type": "other",
+      "name": "Norway wild-camping and overnight parking restrictions",
+      "category": "camping rule",
+      "neighborhood": "Lofoten",
+      "city": null,
+      "country": "Norway",
+      "hook": "The Right to Roam does not permit parking a car or camper within 150 metres of an inhabited house; some Lofoten zones ban overnight car parking.",
+      "found_in": [
+        "frames",
+        "caption"
+      ],
+      "extraction_confidence": 0.92,
+      "trigger_class": "activity",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "activity",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "activity triggers are modelled but not wired in this build",
+      "overall": 0.92
+    },
+    {
+      "type": "other",
+      "name": "Park with the direction of traffic in Norway",
+      "category": "parking rule",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Parking facing against traffic is described as illegal even in a marked bay or quiet rural side street and can result in a local fine.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "activity",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "activity",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "activity triggers are modelled but not wired in this build",
+      "overall": 0.9
+    },
+    {
+      "type": "place",
+      "name": "Vinmonopolet",
+      "category": "government-run alcohol retailer",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "For alcohol above 4.7% ABV; the post emphasizes its limited, strict opening hours.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": {
+        "index": 5,
+        "geocoded": true,
+        "place_id": "ChIJm4mMxwL8PEYRmwy_Zi7DKIc",
+        "resolved_name": "Vinmonopolet",
+        "address": "Valkendorfsgaten 6, 5012 Bergen, Norway",
+        "coords": [
+          60.3940274,
+          5.3206318999999995
+        ],
+        "primary_type": "liquor_store",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 3
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.9
+    },
+    {
+      "type": "other",
+      "name": "Norway alcohol-purchase hours",
+      "category": "shopping restriction",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "The post says grocery stores stop selling wine or beer after 6 PM, or 3 PM on Saturdays.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.88,
+      "trigger_class": "temporal",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "temporal",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "temporal triggers are modelled but not wired in this build",
+      "overall": 0.88
     }
   ]
 }

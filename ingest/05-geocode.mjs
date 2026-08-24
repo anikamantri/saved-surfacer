@@ -16,6 +16,7 @@
  */
 
 import { resolve } from 'node:path';
+import { statSync } from 'node:fs';
 import { KEYS, PATHS, USER_AGENT } from './lib/config.mjs';
 import { readUrls, rawPath, readJson, writeJson, isCached, log, banner, sleep } from './lib/util.mjs';
 
@@ -130,9 +131,25 @@ export default async function geocode() {
 
   for (const { id } of readUrls()) {
     const out = rawPath(id, 'geo.json');
-    if (isCached(out)) { log('05', `${id} cached`); continue; }
+    const src = rawPath(id, 'entities.json');
 
-    const ex = readJson(rawPath(id, 'entities.json'));
+    /**
+     * The cache is keyed on the post, but the INPUT is the entity list — so a
+     * re-extraction that finds new places must invalidate it. It did not, and
+     * the failure was silent and expensive: recovering the carousel slides took
+     * five posts from 5 entities to 66, and every one of the new ones came back
+     * "not geocoded" because stage 05 saw a cached geo.json and skipped.
+     *
+     * Comparing mtimes keeps the per-query cache underneath doing its job, so
+     * re-running still costs nothing for entities already resolved.
+     */
+    const stale = (() => {
+      try { return statSync(src).mtimeMs > statSync(out).mtimeMs; } catch { return false; }
+    })();
+    if (isCached(out) && !stale) { log('05', `${id} cached`); continue; }
+    if (stale) log('05', `${id} entities changed since last geocode — re-resolving`);
+
+    const ex = readJson(src);
     if (!ex) continue;
     const results = [];
 

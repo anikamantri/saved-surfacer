@@ -51,8 +51,13 @@ export const TUNING = {
   framesThinCaption: 14,  // when the caption says nothing, the frames ARE the payload
   thinCaptionChars: 150,  // below this, treat the caption as uninformative
   frameWidth: 512,        // vision input width; larger buys little for on-screen text
-  tileZoomWorld: [0, 4],  // the pannable globe
-  tileZoomCity: [12, 15], // street detail around each cluster
+  maxCarouselSlides: 14,  // a 17-slide post is real; cap the vision cost but keep the ends
+  tileZoomWorld: [0, 4],  // the pannable globe, baked for the entire planet
+  // Street detail around each cluster. This starts at 5, not 12, on purpose:
+  // z0-4 is global and z12-15 was local, which left SEVEN zoom levels with no
+  // tiles anywhere — zooming out from a venue hit black at z11 and stayed black
+  // until z4. The box is sub-tile at low zoom, so closing the gap is nearly free.
+  tileZoomCity: [5, 15],
   tileConcurrency: 6,     // parallel tile fetches — bounded, one-off bake
   tileGapMs: 120,         // politeness gap per worker
 };

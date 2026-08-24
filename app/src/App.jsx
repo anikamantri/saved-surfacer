@@ -118,8 +118,12 @@ export default function App() {
     <div className="app">
       <header className="head">
         <h1>Cue</h1>
+        {/* "starting…" was an opaque state that could last forever. The header now
+            reports the last thing the runtime actually did, so a stall is legible. */}
         <span className="sub">
-          {isNative() ? (snapshot.source || 'starting…') : 'web — no background location'}
+          {isNative()
+            ? (snapshot.source || snapshot.trace[0]?.line?.slice(0, 34) || 'starting…')
+            : 'web — no background location'}
           {snapshot.position && ` · ±${Math.round(snapshot.accuracy || 0)}m`}
         </span>
       </header>

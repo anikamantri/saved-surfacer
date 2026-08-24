@@ -1,8 +1,17 @@
 {
   "id": "7649063171847638294",
-  "via": "yt-dlp",
+  "via": "yt-dlp+embed-carousel",
   "frames": [
-    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/cover.jpg"
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-01.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-02.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-03.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-04.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-05.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-06.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-07.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-08.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-09.jpg",
+    "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/slide-10.jpg"
   ],
   "audio": "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/audio.mp3",
   "cover": "/Users/24anikama/Documents/saved-surfacer/data/media/7649063171847638294/cover.jpg"

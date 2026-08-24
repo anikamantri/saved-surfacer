@@ -1,44 +1,134 @@
 {
   "id": "7652947896815455510",
   "model": "gpt-5.6-terra",
-  "frames_used": 1,
+  "frames_used": 7,
   "transcript_kind": "music",
   "transcript_was_useful": false,
   "signals": [
-    "caption",
-    "frames"
+    "frames",
+    "caption"
   ],
   "usage": {
-    "prompt_tokens": 3471,
-    "completion_tokens": 310,
-    "total_tokens": 3781,
+    "prompt_tokens": 19646,
+    "completion_tokens": 950,
+    "total_tokens": 20596,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0
     },
     "completion_tokens_details": {
-      "reasoning_tokens": 207,
+      "reasoning_tokens": 321,
       "audio_tokens": 0,
       "accepted_prediction_tokens": 0,
       "rejected_prediction_tokens": 0
     }
   },
-  "run_at": "2026-08-23T21:09:40.554Z",
+  "run_at": "2026-08-24T01:57:42.934Z",
   "entities": [
     {
       "type": "other",
-      "name": "Norway travel planning guide",
-      "category": "travel advice",
+      "name": "Register a Norwegian rental car for automated tolls",
+      "category": "road-trip preparation",
       "neighborhood": null,
       "city": null,
       "country": "Norway",
-      "hook": "Six mistakes to avoid when planning a Norway trip in 2026",
+      "hook": "Register the rental with AutoPASS or EPASS24 before passing toll cameras to avoid rental-agency administration fees.",
       "found_in": [
-        "caption",
         "frames"
       ],
-      "extraction_confidence": 0.86,
+      "extraction_confidence": 0.94,
       "trigger_class": "calendar",
+      "decay": "contextual"
+    },
+    {
+      "type": "other",
+      "name": "Observe average-speed enforcement in Norwegian tunnels",
+      "category": "driving rule",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Tunnel cameras can measure point-to-point average speed over miles, with automatic fines for exceeding it.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "FerryPay",
+      "category": "ferry payment app",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Download before a Norwegian road trip to receive the stated automatic 50% ferry-crossing discount rather than paying onboard.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "calendar",
+      "decay": "contextual"
+    },
+    {
+      "type": "other",
+      "name": "Norway wild-camping and overnight parking restrictions",
+      "category": "camping rule",
+      "neighborhood": "Lofoten",
+      "city": null,
+      "country": "Norway",
+      "hook": "The Right to Roam does not permit parking a car or camper within 150 metres of an inhabited house; some Lofoten zones ban overnight car parking.",
+      "found_in": [
+        "frames",
+        "caption"
+      ],
+      "extraction_confidence": 0.92,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "other",
+      "name": "Park with the direction of traffic in Norway",
+      "category": "parking rule",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "Parking facing against traffic is described as illegal even in a marked bay or quiet rural side street and can result in a local fine.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Vinmonopolet",
+      "category": "government-run alcohol retailer",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "For alcohol above 4.7% ABV; the post emphasizes its limited, strict opening hours.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "other",
+      "name": "Norway alcohol-purchase hours",
+      "category": "shopping restriction",
+      "neighborhood": null,
+      "city": null,
+      "country": "Norway",
+      "hook": "The post says grocery stores stop selling wine or beer after 6 PM, or 3 PM on Saturdays.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.88,
+      "trigger_class": "temporal",
       "decay": "contextual"
     }
   ]

@@ -1,59 +1,222 @@
 {
   "id": "7637582878204808478",
   "model": "gpt-5.6-terra",
-  "frames_used": 1,
+  "frames_used": 14,
   "transcript_kind": "music",
   "transcript_was_useful": false,
   "signals": [
-    "caption",
     "frames"
   ],
   "usage": {
-    "prompt_tokens": 4801,
-    "completion_tokens": 283,
-    "total_tokens": 5084,
+    "prompt_tokens": 76428,
+    "completion_tokens": 1335,
+    "total_tokens": 77763,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0
     },
     "completion_tokens_details": {
-      "reasoning_tokens": 94,
+      "reasoning_tokens": 232,
       "audio_tokens": 0,
       "accepted_prediction_tokens": 0,
       "rejected_prediction_tokens": 0
     }
   },
-  "run_at": "2026-08-24T01:34:44.324Z",
+  "run_at": "2026-08-24T01:57:15.503Z",
   "entities": [
     {
       "type": "place",
-      "name": "University of Southern California (USC) campus food spots",
-      "category": "campus dining",
-      "neighborhood": "University Park",
+      "name": "USC Gould School of Law",
+      "category": "campus café",
+      "neighborhood": null,
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "A ranking of food options on USC's campus.",
+      "hook": "Salmon bowl; healthy but a little sauce-heavy and pricey (8.3/10).",
       "found_in": [
-        "caption",
         "frames"
       ],
-      "extraction_confidence": 0.82,
+      "extraction_confidence": 0.93,
       "trigger_class": "spatial",
       "decay": "contextual"
     },
     {
       "type": "place",
-      "name": "USC Fryft Zone",
-      "category": "campus dining area",
-      "neighborhood": "University Park",
+      "name": "Seeds Marketplace",
+      "category": "salad café",
+      "neighborhood": null,
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Food spots in the USC Fryft Zone, included in the creator's ranking.",
+      "hook": "Chicken Caesar salad with cilantro sauce and small toppings; highly rated 9.1/10.",
       "found_in": [
         "frames"
       ],
-      "extraction_confidence": 0.48,
+      "extraction_confidence": 0.9,
       "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "CAVA",
+      "category": "fast-casual Mediterranean restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Kids' meal bowls are worth it, though the chicken can include an unappealing stringy piece (7.2/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "USC Village Dining Hall",
+      "category": "university dining hall",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Decent rotating variety; desserts are the highlight (6.1/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Parkside Restaurant and Grill",
+      "category": "university dining hall",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Rotating food selection, ice cream machine, and desserts; reviewer says the food is fire (8.6/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Rock & Reilly's USC",
+      "category": "pub and restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Iced matcha latte and everything bagel with cream cheese; overall good but bagels can be stale (7.7/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Central Kitchen at Lorenzo",
+      "category": "campus café",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Breakfast burrito is especially good despite an otherwise just-okay rating (7.0/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.92,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Fertitta Café",
+      "category": "campus café",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Dumplings, but the reviewer is not a fan of the food overall (5.5/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Thai by Trio",
+      "category": "Thai restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Chicken pad see ew is a repeat order and rated 9.2/10.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Egg Tuck",
+      "category": "breakfast sandwich restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Classic egg sandwich is savory but has watery eggs (5.1/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Yogurtland",
+      "category": "frozen yogurt shop",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Affordable self-serve frozen yogurt; a personal favorite (9.0/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Softies",
+      "category": "bakery and café",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Chocolate chip cookie plus a notably good, affordable breakfast burrito (8.3/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "sweetgreen",
+      "category": "fast-casual salad restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Build-your-own grain-and-salad bowls; sometimes has really good deals (8.0/10).",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "commerce",
       "decay": "contextual"
     }
   ]

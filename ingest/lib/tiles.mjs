@@ -47,12 +47,26 @@ export function planTiles(coords) {
     for (let x = 0; x < 2 ** z; x++) for (let y = 0; y < 2 ** z; y++) wanted.push([z, x, y]);
 
   const [cz0, cz1] = TUNING.tileZoomCity;
-  const pad = 0.035; // ~4km box around each cluster — enough to pan around a neighbourhood
+
+  /**
+   * The padding box widens as you zoom OUT, which is the opposite of the obvious
+   * thing and the reason the map stops going black when you pan.
+   *
+   * A fixed ~4km box is right at street level: detail is expensive and you only
+   * need to walk around a neighbourhood. But that same box at z6 is a fraction
+   * of one tile, so zooming out left a column of coverage one tile wide with
+   * black either side. Low-zoom tiles are cheap — one z6 tile spans hundreds of
+   * kilometres — so the box grows to a regional span there for almost nothing.
+   */
+  const padFor = (z) => (z >= 12 ? 0.035 : Math.min(12, 0.035 * 2 ** ((12 - z) * 0.78)));
+
   for (const c of clusterCoords(coords)) {
     const lats = c.points.map((p) => p[0]), lons = c.points.map((p) => p[1]);
-    for (let z = cz0; z <= cz1; z++)
+    for (let z = cz0; z <= cz1; z++) {
+      const pad = padFor(z);
       wanted.push(...tilesForBox(Math.min(...lats) - pad, Math.max(...lats) + pad,
                                  Math.min(...lons) - pad, Math.max(...lons) + pad, z));
+    }
   }
   return [...new Map(wanted.map((t) => [t.join('/'), t])).values()];
 }

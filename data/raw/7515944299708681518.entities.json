@@ -1,43 +1,131 @@
 {
   "id": "7515944299708681518",
   "model": "gpt-5.6-terra",
-  "frames_used": 1,
+  "frames_used": 8,
   "transcript_kind": "music",
   "transcript_was_useful": false,
   "signals": [
-    "caption",
     "frames"
   ],
   "usage": {
-    "prompt_tokens": 3496,
-    "completion_tokens": 117,
-    "total_tokens": 3613,
+    "prompt_tokens": 29812,
+    "completion_tokens": 639,
+    "total_tokens": 30451,
     "prompt_tokens_details": {
       "cached_tokens": 0,
       "audio_tokens": 0
     },
     "completion_tokens_details": {
-      "reasoning_tokens": 0,
+      "reasoning_tokens": 87,
       "audio_tokens": 0,
       "accepted_prediction_tokens": 0,
       "rejected_prediction_tokens": 0
     }
   },
-  "run_at": "2026-08-24T01:34:46.389Z",
+  "run_at": "2026-08-24T01:57:22.337Z",
   "entities": [
     {
       "type": "place",
-      "name": "University of Southern California (USC)",
-      "category": "university campus dining",
-      "neighborhood": "University Park",
+      "name": "Little Pan USC",
+      "category": "Chinese restaurant",
+      "neighborhood": null,
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Food options within walking distance of USC, including dessert, onigiri, tacos, soup, salad, pancakes, and sushi.",
+      "hook": "Try any of the juicy pan-fried buns and the Thai tea.",
       "found_in": [
-        "caption",
         "frames"
       ],
-      "extraction_confidence": 0.88,
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Cafe Dulce USC",
+      "category": "cafe and bakery",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Blueberry matcha plus good-value food and pastries.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Ebae's",
+      "category": "Asian fusion restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Asian-fusion options; the sushi boat is the creator's personal favorite.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Bacari W. Adams",
+      "category": "tapas restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Tapas-style menu with something for everyone; the Margherita pizza was described as divine.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Jack's N Joe",
+      "category": "breakfast restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Classic breakfast joint; especially recommended for French toast.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Northern Cafe",
+      "category": "Chinese restaurant",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Many options; staple order is beef roll, mapo tofu, and spicy wontons.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Yogurtland USC",
+      "category": "frozen yogurt shop",
+      "neighborhood": null,
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Go-to spot for sweet-treat runs near USC.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
       "trigger_class": "spatial",
       "decay": "contextual"
     }

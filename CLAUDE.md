@@ -117,9 +117,19 @@ carousels. oEmbed refuses both.
 `title` truncate at ~73 chars. `description` is the only untruncated source, and it is where
 the 1112-character Bergen guide (9 entities) actually lives.
 
-**Carousels still lose their later slides.** yt-dlp exposes caption, audio and the *first*
-image only. A post captioned "recommendations on the last slide" is genuinely unreachable —
-that is what Door B (`data/manual/<id>/`, hand-dropped screenshots) exists for.
+**Carousels still lose their later slides, and it is not a yt-dlp bug.** Verified twice:
+yt-dlp models a photo post as an audio track plus a cover — a direct dump returns **1 format
+(audio mp3) and 2 thumbnails, both the same first slide**. And the web page's data blob is
+stripped for unauthenticated requests: `__UNIVERSAL_DATA_FOR_REHYDRATION__` is present but
+carries **no `webapp.video-detail` scope at all** and zero `imageURL` occurrences. The slides
+sit behind login, so reaching them means authenticating as the user.
+
+**Door B therefore accepts a screen RECORDING, not just screenshots.** Swipe through the
+carousel once with the iOS recorder, drop the `.mov` in `data/manual/<id>/`, and stage 02
+pulls one frame per slide out by itself — a swipe is a scene change, which is exactly what
+ffmpeg's scene detection looks for, with uniform sampling as the fallback when a slow swipe
+registers no cut. The capture is manual because the pixels only exist on a screen that has
+displayed them; the *extraction* stays automatic.
 
 **`original sound` does NOT mean narration.** Creators upload licensed music under that tag.
 Two posts marked `original sound` transcribed to song lyrics (one was Taylor Swift). Gating on

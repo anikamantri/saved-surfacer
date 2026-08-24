@@ -3,44 +3,198 @@
   "entities": [
     {
       "type": "place",
-      "name": "Magnat Kaffehus",
-      "category": "café",
-      "neighborhood": null,
+      "name": "Holmenkollen Ski Museum",
+      "category": "ski museum and ski-jump viewpoint",
+      "neighborhood": "Holmenkollen",
       "city": "Oslo",
       "country": "Norway",
-      "hook": "Coffeehouse on Kirkegata in central Oslo.",
+      "hook": "Ski-jump tower with panoramic views over Oslo.",
       "found_in": [
         "frames"
       ],
-      "extraction_confidence": 0.96,
+      "extraction_confidence": 0.99,
       "trigger_class": "spatial",
       "decay": "contextual",
       "geo": {
         "index": 0,
         "geocoded": true,
-        "place_id": "ChIJUX1t87O0RkYR5uM960J85Do",
-        "resolved_name": "Magnat Coffee House AS",
-        "address": "Kirkegata 5, 0153 Oslo, Norway",
+        "place_id": "ChIJAVYeCn9tQUYR-b71kdo6ySs",
+        "resolved_name": "Holmenkollen Ski Museum",
+        "address": "Kongeveien 5, 0787 Oslo, Norway",
         "coords": [
-          59.909228899999995,
-          10.742585499999999
+          59.964089699999995,
+          10.666414099999999
         ],
-        "primary_type": "food_store",
+        "primary_type": "museum",
         "granularity": "venue",
         "hours": [
-          "Monday: 8:00 AM – 4:00 PM",
-          "Tuesday: 8:00 AM – 4:00 PM",
-          "Wednesday: 8:00 AM – 4:00 PM",
-          "Thursday: 8:00 AM – 4:00 PM",
-          "Friday: 8:00 AM – 4:00 PM",
-          "Saturday: Closed",
-          "Sunday: Closed"
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
         ],
         "periods": [
           {
             "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
               "day": 1,
-              "hour": 8,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
+    },
+    {
+      "type": "place",
+      "name": "Oslo City Hall",
+      "category": "historic civic building",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Monumental brick city hall with a clock tower, fountain, and mural-filled interior.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 1,
+        "geocoded": true,
+        "place_id": "ChIJpaMsOYduQUYRvIhIclNW9lI",
+        "resolved_name": "Oslo City Hall",
+        "address": "Rådhusplassen 1, 0037 Oslo, Norway",
+        "coords": [
+          59.912284,
+          10.733875099999999
+        ],
+        "primary_type": "city_hall",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 9:00 AM – 4:00 PM",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: 9:00 AM – 4:00 PM",
+          "Sunday: 9:00 AM – 4:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
               "minute": 0
             },
             "close": {
@@ -52,7 +206,7 @@
           {
             "open": {
               "day": 2,
-              "hour": 8,
+              "hour": 9,
               "minute": 0
             },
             "close": {
@@ -64,7 +218,7 @@
           {
             "open": {
               "day": 3,
-              "hour": 8,
+              "hour": 9,
               "minute": 0
             },
             "close": {
@@ -76,7 +230,7 @@
           {
             "open": {
               "day": 4,
-              "hour": 8,
+              "hour": 9,
               "minute": 0
             },
             "close": {
@@ -88,12 +242,369 @@
           {
             "open": {
               "day": 5,
-              "hour": 8,
+              "hour": 9,
               "minute": 0
             },
             "close": {
               "day": 5,
               "hour": 16,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
+    },
+    {
+      "type": "place",
+      "name": "Akershus Fortress",
+      "category": "historic fortress and castle",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Medieval castle complex overlooking the waterfront, including courtyards and gardens.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 2,
+        "geocoded": true,
+        "place_id": "ChIJ035kbYZuQUYRuu0uM9oMKao",
+        "resolved_name": "Akershus Fortress",
+        "address": "0150 Oslo, Norway",
+        "coords": [
+          59.907585999999995,
+          10.737084099999999
+        ],
+        "primary_type": null,
+        "granularity": "venue",
+        "hours": [
+          "Monday: 6:00 AM – 9:00 PM",
+          "Tuesday: 6:00 AM – 9:00 PM",
+          "Wednesday: 6:00 AM – 9:00 PM",
+          "Thursday: 6:00 AM – 9:00 PM",
+          "Friday: 6:00 AM – 9:00 PM",
+          "Saturday: 6:00 AM – 9:00 PM",
+          "Sunday: 6:00 AM – 9:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 6,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
+    },
+    {
+      "type": "place",
+      "name": "Vigeland Sculpture Park",
+      "category": "sculpture park",
+      "neighborhood": "Frogner",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Gustav Vigeland's dramatic granite and bronze sculptures, centered on the Monolith.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 3,
+        "geocoded": true,
+        "place_id": "ChIJsV__us5tQUYRlsdVNqT4Ywg",
+        "resolved_name": "The Vigeland Park",
+        "address": "0268 Oslo, Norway",
+        "coords": [
+          59.927029,
+          10.700865
+        ],
+        "primary_type": "park",
+        "granularity": "venue",
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.7,
+        "source": "google-places",
+        "confidence": 0.67,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 3
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.66 below 0.7",
+      "overall": 0.66
+    },
+    {
+      "type": "place",
+      "name": "Bygdøy Museums",
+      "category": "museum area",
+      "neighborhood": "Bygdøy",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Bygdøy's museums, including Viking ships, stave-church architecture, and open-air heritage buildings.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 4,
+        "geocoded": true,
+        "place_id": "ChIJbcQbpTdsQUYRcPVxnHOFQy4",
+        "resolved_name": "The Norwegian Museum of Cultural History",
+        "address": "Museumsveien 10, 0287 Oslo, Norway",
+        "coords": [
+          59.907491500000006,
+          10.6867036
+        ],
+        "primary_type": "history_museum",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
               "minute": 0
             }
           }
@@ -102,6 +613,193 @@
         "rating": 4.7,
         "source": "google-places",
         "confidence": 0.5,
+        "city_match": true,
+        "alias_suspected": true,
+        "candidates_considered": 3
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.47 below 0.7",
+      "overall": 0.47
+    },
+    {
+      "type": "place",
+      "name": "MUNCH",
+      "category": "art museum",
+      "neighborhood": "Bjørvika",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Edvard Munch museum for viewing The Scream and other Munch works.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 5,
+        "geocoded": true,
+        "place_id": "ChIJJ0uE7VtuQUYRGxJdLJL1PmU",
+        "resolved_name": "Munch",
+        "address": "Edvard Munchs Plass 1, 0194 Oslo, Norway",
+        "coords": [
+          59.905903699999996,
+          10.7552605
+        ],
+        "primary_type": "art_museum",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 9:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 3
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.98
+    },
+    {
+      "type": "place",
+      "name": "Aker Brygge",
+      "category": "waterfront district",
+      "neighborhood": "Aker Brygge",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Canalside waterfront promenade with restaurants, boats, and evening lights.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 6,
+        "geocoded": true,
+        "place_id": "ChIJ-eTqvIFuQUYRdUY2f_X-j-Y",
+        "resolved_name": "Aker Brygge",
+        "address": "Aker Brygge, Oslo, Norway",
+        "coords": [
+          59.90995840000001,
+          10.7258052
+        ],
+        "primary_type": null,
+        "granularity": "area",
+        "hours": null,
+        "periods": null,
+        "business_status": null,
+        "rating": null,
+        "source": "google-places",
+        "confidence": 1,
         "city_match": true,
         "alias_suspected": false,
         "candidates_considered": 1
@@ -112,8 +810,244 @@
         "requires": []
       },
       "nudge_eligible": false,
-      "why_not": "confidence 0.48 below 0.7",
-      "overall": 0.48
+      "why_not": "area, not a venue — cannot be \"4 minutes away\"",
+      "overall": 0.99
+    },
+    {
+      "type": "place",
+      "name": "Tusenfryd",
+      "category": "amusement park",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Theme park with roller coasters and thrill rides.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 7,
+        "geocoded": true,
+        "place_id": "ChIJodA_TrhCQUYRv1twKZtwHpM",
+        "resolved_name": "Tusenfryd",
+        "address": "Fryds Vei 25, 1407 Vinterbro, Norway",
+        "coords": [
+          59.7482371,
+          10.779176999999999
+        ],
+        "primary_type": "amusement_park",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:30 AM – 7:00 PM",
+          "Tuesday: 10:30 AM – 7:00 PM",
+          "Wednesday: 10:30 AM – 7:00 PM",
+          "Thursday: 10:30 AM – 7:00 PM",
+          "Friday: 10:30 AM – 7:00 PM",
+          "Saturday: 10:30 AM – 7:00 PM",
+          "Sunday: 10:30 AM – 7:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.2,
+        "source": "google-places",
+        "confidence": 0.6,
+        "city_match": false,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.59 below 0.7",
+      "overall": 0.59
+    },
+    {
+      "type": "place",
+      "name": "Royal Palace",
+      "category": "royal residence and landmark",
+      "neighborhood": null,
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Norway's royal palace, with its grand neoclassical façade and palace grounds.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 8,
+        "geocoded": true,
+        "place_id": "ChIJezW6eddtQUYRHFnCrMk4cGc",
+        "resolved_name": "The Royal Palace",
+        "address": "Slottsplassen 1, 0010 Oslo, Norway",
+        "coords": [
+          59.917148,
+          10.7275613
+        ],
+        "primary_type": "castle",
+        "granularity": "venue",
+        "hours": null,
+        "periods": null,
+        "business_status": "CLOSED_TEMPORARILY",
+        "rating": 4.5,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
+    },
+    {
+      "type": "place",
+      "name": "Oslo Opera House",
+      "category": "opera house and architectural landmark",
+      "neighborhood": "Bjørvika",
+      "city": "Oslo",
+      "country": "Norway",
+      "hook": "Angular waterfront opera house whose sloping white roof can be walked on.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 9,
+        "geocoded": true,
+        "place_id": "ChIJFfcho4tuQUYREdaiosanthw",
+        "resolved_name": "Oslo Opera House",
+        "address": "Kirsten Flagstads plass 1, 0150 Oslo, Norway",
+        "coords": [
+          59.90748850000001,
+          10.7531275
+        ],
+        "primary_type": "opera_house",
+        "granularity": "venue",
+        "hours": null,
+        "periods": null,
+        "business_status": "OPERATIONAL",
+        "rating": 4.7,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
     }
   ]
 }

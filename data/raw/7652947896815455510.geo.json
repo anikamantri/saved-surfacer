@@ -5,6 +5,134 @@
       "index": 0,
       "geocoded": false,
       "reason": "not a place"
+    },
+    {
+      "index": 1,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 2,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 3,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 4,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 5,
+      "geocoded": true,
+      "place_id": "ChIJm4mMxwL8PEYRmwy_Zi7DKIc",
+      "resolved_name": "Vinmonopolet",
+      "address": "Valkendorfsgaten 6, 5012 Bergen, Norway",
+      "coords": [
+        60.3940274,
+        5.3206318999999995
+      ],
+      "primary_type": "liquor_store",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 10:00 AM – 6:00 PM",
+        "Tuesday: 10:00 AM – 6:00 PM",
+        "Wednesday: 10:00 AM – 6:00 PM",
+        "Thursday: 10:00 AM – 6:00 PM",
+        "Friday: 10:00 AM – 6:00 PM",
+        "Saturday: 10:00 AM – 4:00 PM",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.4,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 3
+    },
+    {
+      "index": 6,
+      "geocoded": false,
+      "reason": "not a place"
     }
   ]
 }
