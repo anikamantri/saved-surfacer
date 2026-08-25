@@ -88,3 +88,29 @@ test('harvesting saves near you changes what gets armed', () => {
   assert.ok(armed[0].metres < 5000,
     `nearest armed venue at USC was ${armed[0].metres}m — the LA cluster is missing`);
 });
+
+test('a venue switched on by hand can take one of the nineteen slots', () => {
+  const silent = ENTITIES.find((e) => !e.nudge_eligible && e.place?.coords);
+  const near = silent.place.coords;
+  const without = armable(ENTITIES, near).map((a) => a.entity.id);
+  assert.ok(!without.includes(silent.id), 'precondition: it is not armed by default');
+
+  const with_ = armable(ENTITIES, near, { overrides: { [silent.id]: { mode: 'nearby' } } });
+  assert.equal(with_[0].entity.id, silent.id, 'it is the nearest thing to itself, so it arms first');
+  assert.ok(with_.length <= VENUE_SLOTS, 'and the cap still holds');
+});
+
+test('"off" gives up a slot the same way "never" does', () => {
+  const armed = armable(ENTITIES, OSLO);
+  const first = armed[0].entity.id;
+  const after = armable(ENTITIES, OSLO, { overrides: { [first]: { mode: 'off' } } });
+  assert.ok(!after.map((a) => a.entity.id).includes(first));
+});
+
+test('somewhere you have been gives up its geofence slot', () => {
+  const armed = armable(ENTITIES, OSLO);
+  const first = armed[0].entity.id;
+  const after = armable(ENTITIES, OSLO, { feedback: { [first]: 'went' } });
+  assert.ok(!after.map((a) => a.entity.id).includes(first),
+    'a slot is one of nineteen — a save that is finished must not hold one');
+});

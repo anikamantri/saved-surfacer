@@ -12,6 +12,7 @@
  */
 
 import { haversine } from './geo.js';
+import { applyOverride, RETIRING } from './triggers.js';
 
 export const IOS_REGION_LIMIT = 20;
 
@@ -21,14 +22,22 @@ export const VENUE_SLOTS = IOS_REGION_LIMIT - 1;
 /**
  * The nearest armable venues, nearest first.
  *
- * Feedback is honoured here as well as at fire time: an entity marked "never"
- * should not occupy one of nineteen scarce slots. That is the difference
- * between "never" meaning "do not tell me" and meaning "forget this".
+ * Feedback is honoured here as well as at fire time: an entity the user has
+ * retired — said "never" to, or been to — should not occupy one of nineteen
+ * scarce slots. That is the difference between a verdict meaning "do not tell
+ * me" and meaning "forget this".
+ *
+ * Overrides are honoured for the mirror-image reason: a venue the user switched
+ * on by hand must be able to take a slot from one the extractor happened to
+ * like, or the setting would only ever apply to an app that was never woken.
  */
-export function armable(entities, position, { limit = VENUE_SLOTS, feedback = {} } = {}) {
+export function armable(entities, position, { limit = VENUE_SLOTS, feedback = {}, overrides = {} } = {}) {
   if (!position) return [];
   return entities
-    .filter((e) => e.nudge_eligible && e.place?.coords && feedback[e.id] !== 'never')
+    // A venue switched on by hand has to be able to WIN a slot, or the setting
+    // would be honoured at fire time by an app that was never woken up.
+    .map((e) => applyOverride(e, overrides[e.id]))
+    .filter((e) => e.nudge_eligible && e.place?.coords && !RETIRING[feedback[e.id]])
     .map((e) => ({ entity: e, metres: Math.round(haversine(position, e.place.coords)) }))
     .sort((a, b) => a.metres - b.metres)
     .slice(0, limit);
