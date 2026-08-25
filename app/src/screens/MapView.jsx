@@ -249,7 +249,7 @@ function PinCard({ entity, position, onOpenPost, onEdit, onVerdict, onClose }) {
   );
 }
 
-function MapView({ entities, position, armed, retiredKey = '', status, hidden = false,
+function MapView({ entities, position, armed, retiredKey = '', overridesKey = '', status, hidden = false,
                    onOpenPost, onVerdict, onChanged, onOpenSettings }) {
   const [selectedId, setSelectedId] = useState(null);
   const [editing, setEditing] = useState(null);
@@ -393,20 +393,27 @@ function MapView({ entities, position, armed, retiredKey = '', status, hidden = 
     };
   }, []);
 
-  // The corpus. Rebuilt only when the saves or the armed set actually change —
-  // not on every GPS fix.
+  // The corpus. Rebuilt only when the saves, the armed set, or the user's own
+  // rules actually change — not on every GPS fix. `retiredKey` and
+  // `overridesKey` are strings for the memo's sake; what they stand for is read
+  // back out of the store here.
   useEffect(() => {
     if (!layer.current) return;
     layer.current.clearLayers();
     const armedIds = new Set(armed.map((a) => a.id));
-    const retired = new Set(retiredKey.split(',').filter(Boolean));
+    // Asked of the engine, never read off the corpus: a trigger set by hand
+    // makes a mute save eligible or an eligible one quiet, and this pin drew
+    // `nudge_eligible` as the pipeline left it — so setting a trigger changed
+    // the card, the library row and the geofence, and not the dot on the map.
+    const ctx = { overrides: store.loadOverrides(), feedback: store.loadFeedback() };
 
     for (const e of entities) {
       if (!e.place?.coords) continue;
+      const state = nudgeState(e, ctx);
       // Somewhere you have been — or said never to — stays on the map but goes
       // grey: it is a memory now, not a prospect, and the colour has to say so
       // before the card does.
-      if (retired.has(e.id)) {
+      if (state.key === 'silent') {
         L.circleMarker(e.place.coords, {
           renderer: renderer.current,
           radius: 4.5, color: '#a9a9b0', weight: 1.4, fillColor: '#c7c7cc', fillOpacity: 0.7,
@@ -414,7 +421,7 @@ function MapView({ entities, position, armed, retiredKey = '', status, hidden = 
         }).addTo(layer.current);
         continue;
       }
-      const eligible = e.nudge_eligible;
+      const eligible = state.key === 'live';
       // Drawing only. Interactivity is off because the map's own click handler
       // above does the hit-testing, and a layer that claims to be interactive
       // but is never asked is just per-marker bookkeeping on every pan.
@@ -436,7 +443,7 @@ function MapView({ entities, position, armed, retiredKey = '', status, hidden = 
         }).addTo(layer.current);
       }
     }
-  }, [entities, armed, retiredKey]);
+  }, [entities, armed, retiredKey, overridesKey]);
 
   // The ring around the selected pin. Its own layer, so selecting something
   // costs two circles rather than a rebuild of the whole corpus.

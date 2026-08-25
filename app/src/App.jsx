@@ -308,11 +308,15 @@ export default function App() {
   /**
    * Something changed what the engine is allowed to do — a hand-set trigger, or
    * a general setting. Both change WHICH venues deserve one of the nineteen
-   * geofence slots, so re-arm before re-evaluating, or the new rule would only
-   * apply while the app happens to be open.
+   * geofence slots, so re-arm as well as re-evaluate, or the new rule would
+   * only apply while the app happens to be open.
    */
-  const rulesChanged = useCallback(async () => {
-    await cue.rearm({ force: true });
+  const rulesChanged = useCallback(() => {
+    // Not awaited, for the same reason `verdict` does not: evaluateNow emits
+    // synchronously, so every dot repaints the moment the sheet closes, while
+    // native arming — which takes a while, and can hang — catches up behind it.
+    // Evaluation reads the store, not the armed set, so the order is safe.
+    cue.rearm({ force: true });
     cue.evaluateNow({ deliver: false, reason: 'nudge settings changed' });
   }, []);
 
@@ -374,6 +378,10 @@ export default function App() {
   // which emits, so this recomputes exactly when it can have changed.
   const fb = store.loadFeedback();
   const retiredKey = Object.keys(fb).filter((id) => RETIRING[fb[id]]).sort().join(',');
+  // The hand-set triggers, the same way and for the same reason: a trigger can
+  // make a pin eligible or quiet, so the map has to repaint when one changes.
+  // Every rule change runs evaluateNow, which emits, so this is fresh in time.
+  const overridesKey = JSON.stringify(store.loadOverrides());
 
   // "starting…" was an opaque state that could last forever, so the status says
   // the last thing the runtime actually did — a stall stays legible.
@@ -401,7 +409,7 @@ export default function App() {
             not changed — the most visible stutter in the app. */}
         {(tab === 'map' || visitedMap.current) && (
           <MapView entities={snapshot.entities} position={snapshot.position} armed={snapshot.armed}
-                   retiredKey={retiredKey}
+                   retiredKey={retiredKey} overridesKey={overridesKey}
                    status={status} hidden={tab !== 'map'}
                    onOpenPost={openPost} onVerdict={verdict} onChanged={rulesChanged}
                    onOpenSettings={openSettings} />
