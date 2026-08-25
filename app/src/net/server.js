@@ -128,6 +128,10 @@ export async function ingest(url, onEvent, opts = {}) {
       const payload = JSON.parse(data);
       onEvent(event, payload);
       if (event === 'done') result = payload;
+      // The Mac recognised the post and ran nothing. Not an error — the save
+      // is there — so it comes back as a result the caller can put in front
+      // of the user, rather than as a red line under an empty pipeline.
+      if (event === 'duplicate') result = { duplicate: payload };
       if (event === 'error') throw new Error(payload.message);
     }
   }

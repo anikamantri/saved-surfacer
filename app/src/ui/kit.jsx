@@ -353,6 +353,41 @@ export function ActionSheet({ title, message, actions, onCancel, cancelLabel = '
   );
 }
 
+/* ── Alert ──────────────────────────────────────────────────────────────── */
+
+/**
+ * A centred alert, for a fact that needs acknowledging rather than a choice
+ * that needs confirming. The action sheet rises from the bottom for the
+ * irreversible; this sits in the middle, as UIAlertController does, for
+ * "that is already here". Two buttons sit side by side; more than two stack.
+ *
+ * The scrim does not dismiss it. An alert is answered, not waved away, so the
+ * caller always supplies the button that closes it (the default is one OK).
+ */
+export function Alert({ title, message, actions, onClose }) {
+  useOverlay();
+  const btns = actions?.length ? actions : [{ label: 'OK', bold: true }];
+  return overlay(
+    <div className="alert-scrim">
+      <div className="alert" role="alertdialog" aria-modal="true">
+        <div className="alert-body">
+          {title && <b>{title}</b>}
+          {message && <div>{message}</div>}
+        </div>
+        <div className={`alert-btns${btns.length > 2 ? ' stacked' : ''}`}>
+          {btns.map((a) => (
+            <button key={a.label}
+                    className={`alert-btn${a.bold ? ' bold' : ''}${a.destructive ? ' destructive' : ''}`}
+                    onClick={() => { onClose(); a.onSelect?.(); }}>
+              {a.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>,
+  );
+}
+
 /* ── HUD ────────────────────────────────────────────────────────────────── */
 
 /** Transient status. Work in progress keeps its spinner until it is replaced. */

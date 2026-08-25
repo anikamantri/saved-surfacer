@@ -117,6 +117,25 @@ async function runIngest(req, res, body) {
   // handle nor the /photo/ vs /video/ distinction the hydration path turns on.
   send('resolved', post);
 
+  // A post already in the corpus is a duplicate, not a job. Say so and stop,
+  // before the harvest list is touched and before any stage runs — a second
+  // pass over a finished post costs a rebundle for nothing and, on a stale
+  // cache, a vision call. An explicit re-run is the one way a known post is
+  // meant to come back through here, so `refresh` goes past this.
+  if (!body.refresh) {
+    const known = (readJson(PATHS.entities, { posts: [] }).posts || []).find((p) => p.id === post.id);
+    if (known) {
+      send('duplicate', {
+        id: post.id,
+        url: known.source?.url || post.url,
+        author: known.source?.author || null,
+        saved_at: known.source?.saved_at || null,
+        entities: (known.entities || []).length,
+      });
+      return res.end();
+    }
+  }
+
   // Re-runs clear caches BEFORE the stages start, which is the whole mechanism:
   // every stage skips when its own output already exists, so deleting a prefix
   // of that chain is what makes real work happen again.

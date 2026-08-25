@@ -18,7 +18,7 @@ import { isNative } from './native/permissions.js';
 import { loadCorpus, syncCorpus, flatten } from './data.js';
 import * as server from './net/server.js';
 
-import { Hud } from './ui/kit.jsx';
+import { Hud, Alert } from './ui/kit.jsx';
 import Library from './screens/Library.jsx';
 import MapView from './screens/MapView.jsx';
 import Nudges from './screens/Nudges.jsx';
@@ -88,6 +88,12 @@ function applyIngestEvent(prev, event, payload) {
   return prev;
 }
 
+/** What the "already saved" alert needs to know about a post in the corpus. */
+const summariseSave = (p) => ({
+  id: p.id, url: p.source.url, author: p.source.author,
+  saved_at: p.source.saved_at, entities: p.entities.length,
+});
+
 export default function App() {
   const [tab, setTab] = useState('library');
   // Which post the library has open. Lifted out of Library because the map can
@@ -115,6 +121,9 @@ export default function App() {
   // Transient status: deleting a post and re-running a model both need the Mac,
   // and both should say so while they are happening rather than freeze a screen.
   const [hud, setHud] = useState(null);
+  // A share that turned out to be a post already in the corpus. Answered with
+  // an alert rather than a dim note under a pipeline that then runs anyway.
+  const [duplicate, setDuplicate] = useState(null);
   const [corpus, setCorpus] = useState(() => loadCorpus());
   const [snapshot, setSnapshot] = useState({ ...cue.state });
   const [ingesting, setIngesting] = useState(null);
@@ -127,6 +136,11 @@ export default function App() {
 
   const posts = corpus.bundle.posts;
   postIds.current = new Set(posts.map((p) => p.id));
+  // The same, for the paths that need the post and not just its id: `ingest`
+  // can be reached from the mount effect's clipboard check, whose closure is
+  // the first render's.
+  const postsRef = useRef(posts);
+  postsRef.current = posts;
 
   // Latched once the map has been opened, so it can stay mounted from then on.
   const visitedMap = useRef(false);
@@ -240,6 +254,16 @@ export default function App() {
 
   async function ingest(url, opts = {}) {
     if (!url) return;
+    // Known before the Mac is asked. A direct link carries the post's id and
+    // the corpus is on the phone, so "already saved" needs no round trip. The
+    // Mac repeats the check after resolving short links, which this cannot
+    // read — this is the instant answer, that is the sure one. A re-run is a
+    // known post on purpose, so it goes past both.
+    if (!opts.refresh) {
+      const id = (url.match(/\/(?:video|photo)\/(\d+)/) || [])[1];
+      const known = id && postsRef.current.find((p) => p.id === id);
+      if (known) return setDuplicate(summariseSave(known));
+    }
     setIngesting({
       url, startedAt: Date.now(), refresh: opts.refresh || null,
       resolved: null, queued: null, cleared: null, stages: [], prelines: [],
@@ -249,6 +273,12 @@ export default function App() {
       const done = await server.ingest(url, (event, payload) => {
         setIngesting((prev) => applyIngestEvent(prev, event, payload));
       }, opts);
+      // The Mac recognised it and ran nothing. Clear the pipeline view — there
+      // was no pipeline — and say so where it cannot be missed.
+      if (done?.duplicate) {
+        setIngesting(null);
+        return setDuplicate(done.duplicate);
+      }
       const bundle = await syncCorpus();
       setCorpus({ bundle, source: 'synced' });
       cue.state.entities = flatten(bundle);
@@ -359,6 +389,17 @@ export default function App() {
     navigate({ tab: 'map' });
   }, [navigate]);
 
+  /**
+   * The same, for a whole post — what "see it on the map" means straight
+   * after an ingest. The map fits everything the post put on it, opens the
+   * first pin's card and pulses the new pins, so the thing just added is the
+   * thing you are looking at rather than one more dot among a hundred.
+   */
+  const showPostOnMap = useCallback((postId) => {
+    setMapFocus({ post: postId, seq: ++focusSeq.current });
+    navigate({ tab: 'map', post: null });
+  }, [navigate]);
+
   // The general settings are reachable from every trigger editor, wherever it
   // was opened from — the precedence between the two is easier to understand
   // when you can get from one to the other.
@@ -437,7 +478,13 @@ export default function App() {
         {tab === 'add' && (
           <Add initialUrl={shared} state={ingesting} onIngest={ingest}
                backLabel={backLabel}
-               onClose={(to) => { if (to) { setIngesting(null); navigate({ tab: to, post: null }); } else goBack(); }} />
+               onClose={(to) => {
+                 const added = ingesting?.done?.post?.id;
+                 setIngesting(null);
+                 if (to === 'map' && added) showPostOnMap(added);
+                 else if (to) navigate({ tab: to, post: null });
+                 else goBack();
+               }} />
         )}
         {tab === 'debug' && (
           <Debug cue={snapshot} corpusSource={corpus.source} status={status}
@@ -446,6 +493,24 @@ export default function App() {
       </main>
 
       {hud && <Hud {...hud} />}
+
+      {/* The post is already here. Offer the save itself, or the one honest
+          way to run it again — the same re-run the library's menu offers. */}
+      {duplicate && (
+        <Alert
+          title="Already saved"
+          message={`${duplicate.author ? `@${duplicate.author}'s post` : 'This post'} is already in your library`
+            + (duplicate.entities != null
+              ? ` — ${duplicate.entities} ${duplicate.entities === 1 ? 'thing' : 'things'} extracted.`
+              : '.')}
+          actions={[
+            { label: 'Open the save', onSelect: () => navigate({ tab: 'library', post: duplicate.id }) },
+            { label: 'Re-run the model', onSelect: () => ingest(duplicate.url, { refresh: 'model' }) },
+            { label: 'OK', bold: true },
+          ]}
+          onClose={() => setDuplicate(null)}
+        />
+      )}
 
       {/* A floating capsule rather than a full-width bar. The content runs
           under it and the glass samples what is passing beneath, which is what

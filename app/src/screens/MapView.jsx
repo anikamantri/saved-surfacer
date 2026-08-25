@@ -259,6 +259,7 @@ function MapView({ entities, position, armed, retiredKey = '', overridesKey = ''
   const layer = useRef(null);      // the corpus: dots + armed radii
   const me = useRef(null);         // the you-dot and its re-arm perimeter
   const halo = useRef(null);       // the ring around the pin you tapped
+  const pulses = useRef(null);     // the swelling rings over a post just added
   const renderer = useRef(null);
 
   /**
@@ -333,6 +334,7 @@ function MapView({ entities, position, armed, retiredKey = '', overridesKey = ''
 
     layer.current = L.layerGroup().addTo(map.current);
     halo.current = L.layerGroup().addTo(map.current);
+    pulses.current = L.layerGroup().addTo(map.current);
     me.current = L.layerGroup().addTo(map.current);
 
     /**
@@ -490,23 +492,76 @@ function MapView({ entities, position, armed, retiredKey = '', overridesKey = ''
   }, [position]);
 
   /**
-   * "See on map" from a post page. Street zoom, no animation — the tab has just
-   * switched, and a fly-in from wherever the map last was would cross tiles
-   * that were never baked. Then the same selection a tap on the pin makes, so
-   * the card opens and the pin is lifted out from under it. Declared after the
-   * reveal's layout effect on purpose: Leaflet has re-measured by the time this
-   * runs, so the centre is the centre of the visible map.
+   * The new pins, announced. Straight after an ingest, "see it on the map"
+   * lands among a hundred-odd dots that all look alike; a ring that swells and
+   * fades three times over the pins this post added is what makes the new
+   * thing the visible one. Canvas markers cannot be CSS-animated, so the
+   * radius is driven frame by frame — a handful of rings is nothing, and it
+   * stops on its own.
    */
+  const pulseRaf = useRef(0);
+  const pulse = (list) => {
+    cancelAnimationFrame(pulseRaf.current);
+    pulses.current.clearLayers();
+    const rings = list.map((e) => L.circleMarker(e.place.coords, {
+      renderer: renderer.current, radius: 8, fill: false,
+      color: TYPE_COLOR[e.type] || '#888', weight: 2, opacity: 0.9,
+    }).addTo(pulses.current));
+    const PERIOD_MS = 1100;
+    const TIMES = 3;
+    const t0 = performance.now();
+    const frame = (now) => {
+      const t = (now - t0) / PERIOD_MS;
+      if (t >= TIMES) return pulses.current?.clearLayers();
+      const k = t % 1;
+      for (const r of rings) { r.setRadius(8 + 24 * k); r.setStyle({ opacity: 0.9 * (1 - k) }); }
+      pulseRaf.current = requestAnimationFrame(frame);
+    };
+    pulseRaf.current = requestAnimationFrame(frame);
+  };
+  useEffect(() => () => cancelAnimationFrame(pulseRaf.current), []);
+
+  /**
+   * "See on map" — from a post page (one entity) or straight after an ingest
+   * (a whole post). Street zoom, no animation — the tab has just switched, and
+   * a fly-in from wherever the map last was would cross tiles that were never
+   * baked. Then the same selection a tap on the pin makes, so the card opens
+   * and the pin is lifted out from under it. Declared after the reveal's
+   * layout effect on purpose: Leaflet has re-measured by the time this runs,
+   * so the centre is the centre of the visible map.
+   *
+   * Keyed on the request's `seq` and re-tried as the corpus changes: a post
+   * that has just been ingested can reach here a render before its entities
+   * do, and a request that found nothing must wait for them rather than be
+   * lost — while one that has been honoured must not fire again when a
+   * verdict later changes the corpus under it.
+   */
+  const honoured = useRef(0);
   useEffect(() => {
-    if (!focus || !map.current) return;
-    const e = entities.find((x) => x.id === focus.id);
-    if (!e?.place?.coords) return;
-    map.current.setView(e.place.coords, 15, { animate: false });
+    if (!focus || !map.current || honoured.current === focus.seq) return;
+    const placed = entities.filter((x) => x.place?.coords
+      && (focus.post ? x.post?.id === focus.post : x.id === focus.id));
+    if (!placed.length) return;
+    honoured.current = focus.seq;
     // A fix arriving after this must not pull the view away from the pin
     // someone deliberately asked for.
     centred.current = true;
-    select.current(e.id);
-  }, [focus]);
+    if (placed.length === 1) {
+      map.current.setView(placed[0].place.coords, 15, { animate: false });
+      select.current(placed[0].id);
+    } else {
+      // Everything the post put on the map, kept to the top half — the first
+      // pin's card covers the bottom — rather than one pin centred and the
+      // rest of the post off the edge.
+      const size = map.current.getSize();
+      map.current.fitBounds(placed.map((x) => x.place.coords), {
+        paddingTopLeft: [40, 90], paddingBottomRight: [40, Math.round(size.y * 0.5)],
+        maxZoom: 15, animate: false,
+      });
+      setSelectedId(placed[0].id);
+    }
+    if (focus.post) pulse(placed);
+  }, [focus, entities]);
 
   /**
    * Keep Leaflet's idea of the container in sync with the real one.

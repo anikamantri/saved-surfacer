@@ -501,6 +501,34 @@ input.field.mono { font-size: 14px; }
 .sheet-btn.cancel { font-weight: 600; }
 .sheet-group.solid { background: #ffffff; }
 
+/* ── Alert ─────────────────────────────────────────────────────────────── */
+.alert-scrim {
+  position: fixed; inset: 0; z-index: 1100; background: rgba(0, 0, 0, 0.4);
+  display: grid; place-items: center; padding: 24px;
+  animation: ctx-fade 0.2s ease both;
+}
+.alert {
+  width: 270px; border-radius: var(--r-menu); overflow: hidden; text-align: center;
+  background: rgba(250, 250, 250, 0.96);
+  animation: ctx-pop 0.24s cubic-bezier(0.2, 0.9, 0.2, 1) both;
+}
+.alert-body { padding: 19px 16px 16px; font-size: 13px; line-height: 18px; color: var(--label); }
+.alert-body b {
+  display: block; font-size: 17px; font-weight: 600; letter-spacing: -0.4px;
+  line-height: 22px; margin-bottom: 4px;
+}
+.alert-btns { display: flex; box-shadow: inset 0 var(--hairline) 0 rgba(60, 60, 67, 0.29); }
+.alert-btn {
+  flex: 1; min-height: 44px; border: 0; background: none; padding: 11px 8px;
+  font-size: 17px; letter-spacing: -0.4px; color: var(--tint-ink);
+}
+.alert-btn + .alert-btn { box-shadow: inset var(--hairline) 0 0 rgba(60, 60, 67, 0.29); }
+.alert-btn:active { background: rgba(0, 0, 0, 0.06); }
+.alert-btn.bold { font-weight: 600; }
+.alert-btn.destructive { color: var(--red); }
+.alert-btns.stacked { flex-direction: column; }
+.alert-btns.stacked .alert-btn + .alert-btn { box-shadow: inset 0 var(--hairline) 0 rgba(60, 60, 67, 0.29); }
+
 /* ── HUD / toast ──────────────────────────────────────────────────────── */
 .hud {
   position: fixed; z-index: 1200; left: 50%; transform: translateX(-50%);
