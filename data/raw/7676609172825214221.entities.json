@@ -1,0 +1,45 @@
+{
+  "id": "7676609172825214221",
+  "model": "gpt-5.6-terra",
+  "frames_used": 5,
+  "transcript_kind": "silent",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3798,
+    "completion_tokens": 503,
+    "total_tokens": 4301,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 391,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-24T21:31:25.243Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Unnamed rooftop restaurant and bar",
+      "category": "rooftop restaurant/bar",
+      "neighborhood": null,
+      "city": "Pasadena",
+      "country": "United States",
+      "hook": "Sunset rooftop dining with mountain views—saved for a date night or girls’ night.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.62,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

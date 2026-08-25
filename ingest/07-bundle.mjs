@@ -43,11 +43,17 @@ export default async function bundle() {
     // Frames are copied into the app too: the Extract screen shows the model's actual
     // inputs beside its output, which is the whole point of that screen.
     const frameDir = ensureDir(resolve(PATHS.frames, id));
+    const frames = [];
     for (const [n, f] of (mediaRec?.frames || []).entries()) {
       if (!existsSync(f)) continue;
-      const dest = resolve(frameDir, `frame-${String(n + 1).padStart(2, '0')}.jpg`);
+      const name = `frame-${String(n + 1).padStart(2, '0')}.jpg`;
+      const dest = resolve(frameDir, name);
       copyFileSync(f, dest);
       try { await exec('sips', ['-Z', '320', dest]); } catch { /* keep full size */ }
+      // Listed, not inferred: frames_used is what the extractor was told to
+      // sample, and a carousel slide that failed to copy would leave the post
+      // page rendering broken images from a count that was never a file list.
+      frames.push(`frames/${id}/${name}`);
     }
 
     posts.push({
@@ -69,6 +75,7 @@ export default async function bundle() {
         transcript_kind: tr.kind,
         transcript_was_useful: ex?.transcript_was_useful ?? false,
         transcript: tr.text || '',
+        frames,
       },
       extraction: { model: ex?.model, signals: ex?.signals || [], run_at: ex?.run_at, usage: ex?.usage },
       entities: tg.entities.map((e, i) => ({

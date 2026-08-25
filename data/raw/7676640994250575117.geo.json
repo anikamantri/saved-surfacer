@@ -1,0 +1,578 @@
+{
+  "id": "7676640994250575117",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJnSUscnnHwoARB1l-E6bZMVk",
+      "resolved_name": "Alchemist Coffee Project",
+      "address": "698 S Vermont Ave Ste 103, Los Angeles, CA 90005, USA",
+      "coords": [
+        34.060227,
+        -118.29140679999999
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 7:30 AM – 8:00 PM",
+        "Sunday: 7:30 AM – 8:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 2
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJv2If9eXHwoARjg98zt8-lgU",
+      "resolved_name": "Mi Alma Cafe",
+      "address": "1933 S Broadway, Los Angeles, CA 90007, USA",
+      "coords": [
+        34.031276999999996,
+        -118.26674659999999
+      ],
+      "primary_type": "cafe",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 7:00 AM – 4:00 PM",
+        "Tuesday: 7:00 AM – 4:00 PM",
+        "Wednesday: 7:00 AM – 4:00 PM",
+        "Thursday: 7:00 AM – 4:00 PM",
+        "Friday: 7:00 AM – 4:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 3
+    },
+    {
+      "index": 2,
+      "geocoded": true,
+      "place_id": "ChIJrb6lXQC_woARKnHs9948ve0",
+      "resolved_name": "Established Today",
+      "address": "7707 Melrose Ave, Los Angeles, CA 90046, USA",
+      "coords": [
+        34.083889899999996,
+        -118.35773
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": null,
+      "periods": null,
+      "business_status": "CLOSED_PERMANENTLY",
+      "rating": 4.3,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 3,
+      "geocoded": true,
+      "place_id": "ChIJb-mnh4rHwoAR5laOvrdlxE8",
+      "resolved_name": "Awesome Coffee DTLA",
+      "address": "1200 S Grand Ave, Los Angeles, CA 90015, USA",
+      "coords": [
+        34.0399715,
+        -118.2632712
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 7:00 AM – 9:00 PM",
+        "Tuesday: 7:00 AM – 9:00 PM",
+        "Wednesday: 7:00 AM – 9:00 PM",
+        "Thursday: 7:00 AM – 9:00 PM",
+        "Friday: 7:00 AM – 9:00 PM",
+        "Saturday: 7:00 AM – 9:00 PM",
+        "Sunday: 7:00 AM – 9:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.3,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 2
+    },
+    {
+      "index": 4,
+      "geocoded": true,
+      "place_id": "ChIJNc_VIZDHwoARqHPD4WZJr0s",
+      "resolved_name": "Kaffee Bohnen",
+      "address": "2800 W Olympic Blvd Ste A, Los Angeles, CA 90006, USA",
+      "coords": [
+        34.0523281,
+        -118.29507389999999
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.8,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 5,
+      "geocoded": true,
+      "place_id": "ChIJO-dNEgDHwoARbkkifoDgHH8",
+      "resolved_name": "Good Friend Coffee",
+      "address": "874 Virgil Ave, Los Angeles, CA 90029, USA",
+      "coords": [
+        34.0875451,
+        -118.28668780000001
+      ],
+      "primary_type": "coffee_shop",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 7:00 AM – 4:00 PM",
+        "Tuesday: 7:00 AM – 4:00 PM",
+        "Wednesday: 7:00 AM – 4:00 PM",
+        "Thursday: 7:00 AM – 4:00 PM",
+        "Friday: 7:00 AM – 4:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 7:00 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    }
+  ]
+}

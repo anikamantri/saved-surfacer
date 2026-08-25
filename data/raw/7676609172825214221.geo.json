@@ -1,0 +1,120 @@
+{
+  "id": "7676609172825214221",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJs4Pdw-_DwoARUhTnXkSZaXQ",
+      "resolved_name": "Osa Rooftop",
+      "address": "540 E Colorado Blvd, Pasadena, CA 91101, USA",
+      "coords": [
+        34.145668799999996,
+        -118.13914729999999
+      ],
+      "primary_type": "restaurant",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 4:00 – 9:30 PM",
+        "Tuesday: 4:00 – 9:30 PM",
+        "Wednesday: 4:00 – 9:30 PM",
+        "Thursday: 4:00 – 9:30 PM",
+        "Friday: 4:00 – 9:30 PM",
+        "Saturday: 12:00 – 9:30 PM",
+        "Sunday: 10:00 AM – 9:30 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 30
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4,
+      "source": "google-places",
+      "confidence": 0.5,
+      "city_match": true,
+      "alias_suspected": true,
+      "candidates_considered": 3
+    }
+  ]
+}

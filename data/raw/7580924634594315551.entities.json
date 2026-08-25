@@ -1,0 +1,183 @@
+{
+  "id": "7580924634594315551",
+  "model": "gpt-5.6-terra",
+  "frames_used": 12,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 42080,
+    "completion_tokens": 1062,
+    "total_tokens": 43142,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 283,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-24T23:41:45.225Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Pho N Mor",
+      "category": "Vietnamese restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Delicious Vietnamese food at good prices near USC.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Ebaes - Ramen & Sushi",
+      "category": "Ramen and sushi restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Decent-priced ramen and sushi; recommended for big groups.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Caveman's Kitchen",
+      "category": "Caribbean restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Underrated spot with especially delicious plantains.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Rock & Reilly's",
+      "category": "Comfort-food restaurant and bar",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Go here for comfort food, including a grilled cheese and milkshake.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Dulce",
+      "category": "Bakery and café",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Blueberry matcha and croissant combo.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "CAVA",
+      "category": "Mediterranean fast-casual restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Order the kids meal.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Bacari",
+      "category": "Italian-inspired small-plates restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "An LA staple with notably great food.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Yogurtland",
+      "category": "Frozen yogurt shop",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Build-your-own frozen yogurt with candy, cookie, and sprinkle toppings.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "SunLife Organics",
+      "category": "Smoothie and açaí bowl shop",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "A bowl can be redeemed free through ClassPass every month.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Lasso My Taco",
+      "category": "Taco stand",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Creator's absolute favorite among taco stands by USC.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

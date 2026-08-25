@@ -1,0 +1,96 @@
+{
+  "id": "7663636435349540110",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJkZW6A57DwoARxn42TuWiIpI",
+      "resolved_name": "Norton Simon Museum",
+      "address": "411 W Colorado Blvd, Pasadena, CA 91105, USA",
+      "coords": [
+        34.1463464,
+        -118.1592625
+      ],
+      "primary_type": "art_museum",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 12:00 – 5:00 PM",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 12:00 – 5:00 PM",
+        "Friday: 12:00 – 7:00 PM",
+        "Saturday: 12:00 – 7:00 PM",
+        "Sunday: 12:00 – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.8,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    }
+  ]
+}

@@ -10,12 +10,21 @@
  *   z12-15 street detail, but only in a small box around each actual cluster
  */
 
-import { existsSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { PATHS, TUNING, USER_AGENT } from './config.mjs';
 import { ensureDir, sleep, log } from './util.mjs';
 
-const TILE_URL = (z, x, y) => `https://basemaps.cartocdn.com/dark_all/${z}/${x}/${y}.png`;
+/**
+ * Positron, not dark_all.
+ *
+ * The app is a light-appearance app now, and a dark basemap under it was the
+ * one screen that still looked like a different product. Positron is also the
+ * right *kind* of light: almost no colour of its own, so the only saturated
+ * things on the map are the entity dots and the geofence radii — which is
+ * exactly what the map is for.
+ */
+const TILE_URL = (z, x, y) => `https://basemaps.cartocdn.com/light_all/${z}/${x}/${y}.png`;
 
 export const lon2x = (lon, z) => Math.floor(((lon + 180) / 360) * 2 ** z);
 export const lat2y = (lat, z) => Math.floor(
@@ -71,9 +80,29 @@ export function planTiles(coords) {
   return [...new Map(wanted.map((t) => [t.join('/'), t])).values()];
 }
 
+/**
+ * The style marker, or how 439 dark tiles survived the light redesign.
+ *
+ * "Skip what exists" is the right cache for a corpus that only grows — but the
+ * file's existence says nothing about which BASEMAP it came from. When the app
+ * went light, every tile a previous bake had already fetched was silently kept
+ * as dark_all, and the map showed patches of the old black basemap only at the
+ * zooms and boxes an earlier corpus had covered — a bug indistinguishable from
+ * a rendering glitch. The marker names the style the cache belongs to; a bake
+ * against a different style ignores the cache wholesale.
+ */
+const STYLE = 'light_all';
+const styleMarker = () => resolve(PATHS.tiles, '.basemap');
+const cacheIsCurrentStyle = () => {
+  try { return readFileSync(styleMarker(), 'utf8').trim() === STYLE; } catch { return false; }
+};
+
 export async function fetchTiles(coords) {
   const plan = planTiles(coords);
-  const todo = plan.filter(([z, x, y]) => !existsSync(resolve(PATHS.tiles, String(z), String(x), `${y}.png`)));
+  const reusable = cacheIsCurrentStyle();
+  if (!reusable) log('tiles', `cache is not ${STYLE} — refetching everything`);
+  const todo = plan.filter(([z, x, y]) =>
+    !reusable || !existsSync(resolve(PATHS.tiles, String(z), String(x), `${y}.png`)));
   let got = 0, failed = 0;
 
   // Modest concurrency against a CDN. Still bounded and still identifies itself —
@@ -93,5 +122,7 @@ export async function fetchTiles(coords) {
     }
   });
   await Promise.all(workers);
+  ensureDir(PATHS.tiles);
+  writeFileSync(styleMarker(), STYLE + '\n');
   log('tiles', `${plan.length} planned · ${got} fetched · ${plan.length - todo.length - got - failed} already present · ${failed} failed`);
 }

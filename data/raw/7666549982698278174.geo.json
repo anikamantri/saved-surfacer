@@ -1,0 +1,635 @@
+{
+  "id": "7666549982698278174",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJRcAbQHPHwoARJHNaphd5bXA",
+      "resolved_name": "Photo Booth Museum by Photomatica Los Angeles",
+      "address": "3827 Sunset Blvd Unit A, Los Angeles, CA 90026, USA",
+      "coords": [
+        34.091674499999996,
+        -118.2793143
+      ],
+      "primary_type": "service",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 11:00 PM",
+        "Saturday: 11:00 AM – 11:00 PM",
+        "Sunday: 11:00 AM – 9:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.3,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": true,
+      "place_id": "ChIJ7YJ_IkrGwoARNak4CDihkYU",
+      "resolved_name": "The Last Bookstore",
+      "address": "453 S Spring St Ground Floor, Los Angeles, CA 90013, USA",
+      "coords": [
+        34.0476964,
+        -118.24989640000001
+      ],
+      "primary_type": "book_store",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 11:00 AM – 8:00 PM",
+        "Tuesday: 11:00 AM – 8:00 PM",
+        "Wednesday: 11:00 AM – 11:00 PM",
+        "Thursday: 11:00 AM – 11:00 PM",
+        "Friday: 11:00 AM – 11:00 PM",
+        "Saturday: 11:00 AM – 11:00 PM",
+        "Sunday: 11:00 AM – 11:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.7,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 2,
+      "geocoded": true,
+      "place_id": "ChIJ7fFCOiq6woARXKCVsBpvmuw",
+      "resolved_name": "The Museum of Jurassic Technology",
+      "address": "9341 Venice Blvd., Culver City, CA 90232, USA",
+      "coords": [
+        34.02588370000001,
+        -118.39506299999998
+      ],
+      "primary_type": "museum",
+      "granularity": "venue",
+      "hours": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 2:00 – 8:00 PM",
+        "Friday: 2:00 – 8:00 PM",
+        "Saturday: 12:00 – 6:00 PM",
+        "Sunday: 12:00 – 6:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.4,
+      "source": "google-places",
+      "confidence": 0.35,
+      "city_match": false,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 3,
+      "geocoded": true,
+      "place_id": "ChIJUaGIWMy-woARzibcuEy2L7o",
+      "resolved_name": "BRAIN DEAD STUDIOS",
+      "address": "611 N Fairfax Ave, Los Angeles, CA 90036, USA",
+      "coords": [
+        34.082018399999995,
+        -118.3617556
+      ],
+      "primary_type": "movie_theater",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 12:00 – 8:00 PM",
+        "Tuesday: 12:00 – 8:00 PM",
+        "Wednesday: 12:00 – 8:00 PM",
+        "Thursday: 12:00 – 8:00 PM",
+        "Friday: 12:00 – 8:00 PM",
+        "Saturday: 12:00 – 8:00 PM",
+        "Sunday: 12:00 – 8:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.6,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 4,
+      "geocoded": true,
+      "place_id": "ChIJJ4ZLAZO_woARhwgdGEtZt4s",
+      "resolved_name": "Charmed LA",
+      "address": "7967 Melrose Ave, Los Angeles, CA 90046, USA",
+      "coords": [
+        34.0839188,
+        -118.3633168
+      ],
+      "primary_type": "jewelry_store",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 11:00 AM – 5:00 PM",
+        "Tuesday: 11:00 AM – 5:00 PM",
+        "Wednesday: 11:00 AM – 5:00 PM",
+        "Thursday: 11:00 AM – 5:00 PM",
+        "Friday: 11:00 AM – 5:00 PM",
+        "Saturday: 11:00 AM – 5:00 PM",
+        "Sunday: 11:00 AM – 5:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.9,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 5,
+      "geocoded": true,
+      "place_id": "ChIJ4SupuZHDwoARIBx521DVXec",
+      "resolved_name": "The Plushie Workshop LA / Pasadena",
+      "address": "12 S Fair Oaks Ave, Pasadena, CA 91105, USA",
+      "coords": [
+        34.1454932,
+        -118.15030979999999
+      ],
+      "primary_type": "art_studio",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 3:00 – 8:00 PM",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 3:00 – 8:00 PM",
+        "Friday: 3:00 – 8:00 PM",
+        "Saturday: 10:00 AM – 8:00 PM",
+        "Sunday: 10:00 AM – 8:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 5,
+      "source": "google-places",
+      "confidence": 0.8,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    }
+  ]
+}

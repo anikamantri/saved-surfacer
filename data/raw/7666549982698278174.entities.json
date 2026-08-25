@@ -1,0 +1,125 @@
+{
+  "id": "7666549982698278174",
+  "model": "gpt-5.6-terra",
+  "frames_used": 7,
+  "transcript_kind": "music",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 14669,
+    "completion_tokens": 499,
+    "total_tokens": 15168,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-24T21:55:03.409Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Photo Booth Museum by Photomatica Los Angeles",
+      "category": "photo booth museum",
+      "neighborhood": "Silver Lake",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Vintage photo booths from the 1930s for a nostalgic photo-strip date.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "The Last Bookstore",
+      "category": "bookstore",
+      "neighborhood": "Historic Core",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Browse the book tunnel, dig through vinyl, and visit upstairs art galleries.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Museum of Jurassic Technology",
+      "category": "museum",
+      "neighborhood": "Palms",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "A weird, surreal museum to puzzle over together, followed by its rooftop tea garden.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Brain Dead Studios",
+      "category": "indie cinema and cafe",
+      "neighborhood": "Melrose",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Indie-film screenings in a retro theater with a cafe.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "calendar",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Charmed LA",
+      "category": "jewelry-making workshop",
+      "neighborhood": "Melrose",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Make custom jewelry together and leave with something you created.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Plushumi The Plushie Workshop LA / Pasadena",
+      "category": "plush-making workshop",
+      "neighborhood": "Old Pasadena",
+      "city": "Pasadena",
+      "country": "United States",
+      "hook": "A hands-on workshop where you make your own plushie from scratch.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "activity",
+      "decay": "contextual"
+    }
+  ]
+}

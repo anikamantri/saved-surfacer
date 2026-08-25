@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-24T20:47:08.666Z",
+  "generated_at": "2026-08-25T02:41:21.313Z",
   "totals": {
-    "posts": 16,
-    "entities": 116,
-    "nudge_eligible": 70,
-    "geocoded": 95,
-    "with_hours": 70
+    "posts": 18,
+    "entities": 111,
+    "nudge_eligible": 72,
+    "geocoded": 97,
+    "with_hours": 74
   },
   "hydration": {
-    "generated_at": "2026-08-24T20:40:18.521Z",
+    "generated_at": "2026-08-25T02:38:32.400Z",
     "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
     "totals": {
       "posts": 1,
@@ -17,15 +17,15 @@
     },
     "posts": [
       {
-        "id": "7673673926156881166",
-        "url": "https://www.tiktok.com/@rajandroh/video/7673673926156881166",
+        "id": "7617201795487632653",
+        "url": "https://www.tiktok.com/@jessabethh_/video/7617201795487632653",
         "kind": "video",
         "oembed": "ok",
         "ytdlp": "ok",
         "caption_source": "yt-dlp.description",
-        "caption_chars": 116,
+        "caption_chars": 365,
         "has_video": true,
-        "audio_seconds": 28,
+        "audio_seconds": 24,
         "audio_kind": "narration"
       }
     ]
@@ -49,7 +49,14 @@
         "frames_used": 5,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": "I'm on the verge of getting in our own back to the top. Now I'm the sticker, it's my fucking Pablo Escobar. My friends are saying, ‘Chill up, Jenny, just get in the car.’ I just wanna be right where you are. In the end, I hope it's you and me. In the darkness, I would never leave. It's hardest moment coming from my heart. Now here we are, run from the sunlight, Dracula. Run from the sunlight, Dracula. Run from the sunlight, Dracula. Isn't the view spectacular?"
+        "transcript": "I'm on the verge of getting in our own back to the top. Now I'm the sticker, it's my fucking Pablo Escobar. My friends are saying, ‘Chill up, Jenny, just get in the car.’ I just wanna be right where you are. In the end, I hope it's you and me. In the darkness, I would never leave. It's hardest moment coming from my heart. Now here we are, run from the sunlight, Dracula. Run from the sunlight, Dracula. Run from the sunlight, Dracula. Isn't the view spectacular?",
+        "frames": [
+          "frames/7645972278043364630/frame-01.jpg",
+          "frames/7645972278043364630/frame-02.jpg",
+          "frames/7645972278043364630/frame-03.jpg",
+          "frames/7645972278043364630/frame-04.jpg",
+          "frames/7645972278043364630/frame-05.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -746,7 +753,19 @@
         "frames_used": 10,
         "transcript_kind": "narration",
         "transcript_was_useful": false,
-        "transcript": "Someday we will dream about today. Look back, wonder how it slipped away. Driving out of L.A., skin is young and gold, '60 Chevrolet. Thinking on the past makes me wonder what would happen if we would have stayed. Someday we will dream about today."
+        "transcript": "Someday we will dream about today. Look back, wonder how it slipped away. Driving out of L.A., skin is young and gold, '60 Chevrolet. Thinking on the past makes me wonder what would happen if we would have stayed. Someday we will dream about today.",
+        "frames": [
+          "frames/7649063171847638294/frame-01.jpg",
+          "frames/7649063171847638294/frame-02.jpg",
+          "frames/7649063171847638294/frame-03.jpg",
+          "frames/7649063171847638294/frame-04.jpg",
+          "frames/7649063171847638294/frame-05.jpg",
+          "frames/7649063171847638294/frame-06.jpg",
+          "frames/7649063171847638294/frame-07.jpg",
+          "frames/7649063171847638294/frame-08.jpg",
+          "frames/7649063171847638294/frame-09.jpg",
+          "frames/7649063171847638294/frame-10.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -3637,7 +3656,10 @@
         "frames_used": 1,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": ""
+        "transcript": "",
+        "frames": [
+          "frames/7629768609082002710/frame-01.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -4223,7 +4245,20 @@
         "frames_used": 11,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": "Baby, my Valentine. Can I get the making with somebody? If you leave me, I go die. I swear, you are like the oxygen I need to survive, I'll be honest. Your loving dey totori me, I am so obsessed. I want to chop your nkwobi. Abeg, dey carry my simi. Open am, make I see. Give me love, want. Make I bad man sing. ... Baby, no follow. ... Without you, I go feel lose my mind. Without you, I go feel fall and die. Without you, I go give up my life. Without you. ... To me, you don ... to me. Your violent things fascinate me. I, I, I, I love you. I, I, I, no one above you. ... You just love nobody. ... I wanna be your lover forever, forever. Yeah, yeah, yeah."
+        "transcript": "Baby, my Valentine. Can I get the making with somebody? If you leave me, I go die. I swear, you are like the oxygen I need to survive, I'll be honest. Your loving dey totori me, I am so obsessed. I want to chop your nkwobi. Abeg, dey carry my simi. Open am, make I see. Give me love, want. Make I bad man sing. ... Baby, no follow. ... Without you, I go feel lose my mind. Without you, I go feel fall and die. Without you, I go give up my life. Without you. ... To me, you don ... to me. Your violent things fascinate me. I, I, I, I love you. I, I, I, no one above you. ... You just love nobody. ... I wanna be your lover forever, forever. Yeah, yeah, yeah.",
+        "frames": [
+          "frames/7646794537930657056/frame-01.jpg",
+          "frames/7646794537930657056/frame-02.jpg",
+          "frames/7646794537930657056/frame-03.jpg",
+          "frames/7646794537930657056/frame-04.jpg",
+          "frames/7646794537930657056/frame-05.jpg",
+          "frames/7646794537930657056/frame-06.jpg",
+          "frames/7646794537930657056/frame-07.jpg",
+          "frames/7646794537930657056/frame-08.jpg",
+          "frames/7646794537930657056/frame-09.jpg",
+          "frames/7646794537930657056/frame-10.jpg",
+          "frames/7646794537930657056/frame-11.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -5276,7 +5311,16 @@
         "frames_used": 7,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": "The world is not in your books and maps. It's out there. Can you promise that I will come back? No. And if you do, you will not be the same."
+        "transcript": "The world is not in your books and maps. It's out there. Can you promise that I will come back? No. And if you do, you will not be the same.",
+        "frames": [
+          "frames/7652947896815455510/frame-01.jpg",
+          "frames/7652947896815455510/frame-02.jpg",
+          "frames/7652947896815455510/frame-03.jpg",
+          "frames/7652947896815455510/frame-04.jpg",
+          "frames/7652947896815455510/frame-05.jpg",
+          "frames/7652947896815455510/frame-06.jpg",
+          "frames/7652947896815455510/frame-07.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -5617,7 +5661,14 @@
         "frames_used": 5,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": ""
+        "transcript": "",
+        "frames": [
+          "frames/7413407442161110305/frame-01.jpg",
+          "frames/7413407442161110305/frame-02.jpg",
+          "frames/7413407442161110305/frame-03.jpg",
+          "frames/7413407442161110305/frame-04.jpg",
+          "frames/7413407442161110305/frame-05.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -5949,338 +6000,6 @@
       ]
     },
     {
-      "id": "7644138021582818581",
-      "source": {
-        "url": "https://www.tiktok.com/@abbeysadleir/video/7644138021582818581",
-        "kind": "video",
-        "author": "abbeysadleir",
-        "author_url": "https://www.tiktok.com/@abbeysadleir",
-        "saved_at": "2026-05-26",
-        "saved_at_is_estimate": true,
-        "thumbnail": "thumbnails/7644138021582818581.jpg",
-        "caption": "oh so you wanna know what the girls are wearing in the Dolomites? photo credit to @trina thomas and others if you lmk who hehe x 🇮🇹 The girls in the Dolomites! Welcome to Italy! 🇮🇹🏔️ #dolomites #Hiking #italy #hikingtrip #travel  Dolomites Lago Di braise Dolomites hotel  Dolomites outfit "
-      },
-      "evidence": {
-        "hydrated_via": "oembed + yt-dlp",
-        "oembed_worked": true,
-        "frames_used": 5,
-        "transcript_kind": "narration",
-        "transcript_was_useful": true,
-        "transcript": "The girls and the Dolomites are wearing Arc'teryx jackets and North Face fleeces. They're either in bike shorts with white crew socks, or they are wearing parachute cargo pants. You can get them from Jaded London. I think they have a really trendy one like these. They're in neutral earth tones, and they're adding a pop of color from their beanies that they got at the hiking shop. They're wearing wraparound sunglasses with a silver frame. It's very Y2K vibes, usually Oakley. And they're wearing a headband or a cap, sometimes a bandana. They look gorgeous all the time."
-      },
-      "extraction": {
-        "model": "gpt-5.6-terra",
-        "signals": [
-          "caption",
-          "audio",
-          "frames"
-        ],
-        "run_at": "2026-08-23T21:09:54.743Z",
-        "usage": {
-          "prompt_tokens": 3967,
-          "completion_tokens": 1069,
-          "total_tokens": 5036,
-          "prompt_tokens_details": {
-            "cached_tokens": 0,
-            "audio_tokens": 0
-          },
-          "completion_tokens_details": {
-            "reasoning_tokens": 349,
-            "audio_tokens": 0,
-            "accepted_prediction_tokens": 0,
-            "rejected_prediction_tokens": 0
-          }
-        }
-      },
-      "entities": [
-        {
-          "id": "7644138021582818581-0",
-          "type": "place",
-          "name": "Dolomites",
-          "category": "mountain region / hiking destination",
-          "hook": "Hiking-trip outfit inspiration for the Italian Dolomites.",
-          "neighborhood": null,
-          "city": null,
-          "country": "Italy",
-          "found_in": [
-            "caption",
-            "audio",
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "city",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
-          "confidence": {
-            "extraction": 0.96,
-            "geocode": 1,
-            "overall": 0.96
-          },
-          "place": {
-            "place_id": "ChIJMRTS-V9DeEcRu9n4gwcnT2c",
-            "resolved_name": "Dolomites",
-            "address": "Dolomites, 32023 Rocca Pietore, Province of Belluno, Italy",
-            "coords": [
-              46.4102117,
-              11.8440351
-            ],
-            "granularity": "area",
-            "hours": null,
-            "periods": null,
-            "rating": 4.8,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7644138021582818581-1",
-          "type": "place",
-          "name": "Lago di Braies",
-          "category": "lake / landmark",
-          "hook": "Scenic Dolomites lake mentioned as part of the Italy hiking trip.",
-          "neighborhood": null,
-          "city": "Braies",
-          "country": "Italy",
-          "found_in": [
-            "caption"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "city",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "area, not a venue — cannot be \"4 minutes away\"",
-          "confidence": {
-            "extraction": 0.88,
-            "geocode": 0.4,
-            "overall": 0.35
-          },
-          "place": {
-            "place_id": "ChIJ5-06In4veEcR9cJfTfG0Lb0",
-            "resolved_name": "Pragser Wildsee",
-            "address": "Pragser Wildsee, 39030 Prags, Autonomous Province of Bolzano – South Tyrol, Italy",
-            "coords": [
-              46.694333,
-              12.0854273
-            ],
-            "granularity": "area",
-            "hours": null,
-            "periods": null,
-            "rating": 4.7,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7644138021582818581-2",
-          "type": "product",
-          "name": "Arc'teryx jackets",
-          "category": "outdoor jacket",
-          "hook": "Core Dolomites hiking-girl outerwear piece, styled in neutral earth tones.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.94,
-            "geocode": null,
-            "overall": 0.94
-          },
-          "place": null
-        },
-        {
-          "id": "7644138021582818581-3",
-          "type": "product",
-          "name": "The North Face fleeces",
-          "category": "outdoor fleece",
-          "hook": "Fleece layer recommended for the Dolomites hiking look.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio",
-            "frames"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.96,
-            "geocode": null,
-            "overall": 0.96
-          },
-          "place": null
-        },
-        {
-          "id": "7644138021582818581-4",
-          "type": "product",
-          "name": "Jaded London parachute cargo pants",
-          "category": "cargo pants",
-          "hook": "Trendy parachute cargos suggested as an alternative to bike shorts for a hiking outfit.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio",
-            "frames"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.93,
-            "geocode": null,
-            "overall": 0.93
-          },
-          "place": null
-        },
-        {
-          "id": "7644138021582818581-5",
-          "type": "product",
-          "name": "Bike shorts with white crew socks",
-          "category": "hiking outfit combination",
-          "hook": "Sporty alternative base outfit for the Dolomites look.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.85,
-            "geocode": null,
-            "overall": 0.85
-          },
-          "place": null
-        },
-        {
-          "id": "7644138021582818581-6",
-          "type": "product",
-          "name": "Oakley silver-frame wraparound sunglasses",
-          "category": "sport sunglasses",
-          "hook": "Y2K-style wraparound sunglasses with a silver frame.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio",
-            "frames"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.94,
-            "geocode": null,
-            "overall": 0.94
-          },
-          "place": null
-        },
-        {
-          "id": "7644138021582818581-7",
-          "type": "product",
-          "name": "Colorful hiking beanie",
-          "category": "outdoor headwear",
-          "hook": "A pop-of-color beanie paired with otherwise neutral, earth-tone hiking clothes.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio",
-            "frames"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.8,
-            "geocode": null,
-            "overall": 0.8
-          },
-          "place": null
-        },
-        {
-          "id": "7644138021582818581-8",
-          "type": "product",
-          "name": "Hiking headwear: headband, cap, or bandana",
-          "category": "outdoor headwear",
-          "hook": "Finish the hiking look with a headband, cap, or bandana.",
-          "neighborhood": null,
-          "city": null,
-          "country": null,
-          "found_in": [
-            "audio",
-            "frames"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "commerce",
-            "scope": "unwired",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "commerce triggers are modelled but not wired in this build",
-          "confidence": {
-            "extraction": 0.86,
-            "geocode": null,
-            "overall": 0.86
-          },
-          "place": null
-        }
-      ]
-    },
-    {
       "id": "7662261740402494733",
       "source": {
         "url": "https://www.tiktok.com/@elizlovesfood/video/7662261740402494733",
@@ -6298,7 +6017,23 @@
         "frames_used": 14,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": ""
+        "transcript": "",
+        "frames": [
+          "frames/7662261740402494733/frame-01.jpg",
+          "frames/7662261740402494733/frame-02.jpg",
+          "frames/7662261740402494733/frame-03.jpg",
+          "frames/7662261740402494733/frame-04.jpg",
+          "frames/7662261740402494733/frame-05.jpg",
+          "frames/7662261740402494733/frame-06.jpg",
+          "frames/7662261740402494733/frame-07.jpg",
+          "frames/7662261740402494733/frame-08.jpg",
+          "frames/7662261740402494733/frame-09.jpg",
+          "frames/7662261740402494733/frame-10.jpg",
+          "frames/7662261740402494733/frame-11.jpg",
+          "frames/7662261740402494733/frame-12.jpg",
+          "frames/7662261740402494733/frame-13.jpg",
+          "frames/7662261740402494733/frame-14.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-sol",
@@ -6483,7 +6218,14 @@
         "frames_used": 5,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": ""
+        "transcript": "",
+        "frames": [
+          "frames/7660592980708871437/frame-01.jpg",
+          "frames/7660592980708871437/frame-02.jpg",
+          "frames/7660592980708871437/frame-03.jpg",
+          "frames/7660592980708871437/frame-04.jpg",
+          "frames/7660592980708871437/frame-05.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -6644,7 +6386,10 @@
         "frames_used": 1,
         "transcript_kind": "narration",
         "transcript_was_useful": false,
-        "transcript": ""
+        "transcript": "",
+        "frames": [
+          "frames/7652702090954935574/frame-01.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -7237,7 +6982,23 @@
         "frames_used": 14,
         "transcript_kind": "narration",
         "transcript_was_useful": true,
-        "transcript": "When you understand that the lat pulldown goes to the chin and not the chest, the lats will come. When you understand that the elbows and the biceps are not behind but a little bit forward, the biceps will grow. When you understand that the rope tricep extensions don't go to the body but to the floor, the triceps will come. When you understand that for the lateral raise, you don't have to go all the way up here but to shoulder height, the shoulders will pop. When you understand that your seated cable row doesn't go to your chest but to your waist, the lats will come. And most importantly, when you follow me, your muscles will grow."
+        "transcript": "When you understand that the lat pulldown goes to the chin and not the chest, the lats will come. When you understand that the elbows and the biceps are not behind but a little bit forward, the biceps will grow. When you understand that the rope tricep extensions don't go to the body but to the floor, the triceps will come. When you understand that for the lateral raise, you don't have to go all the way up here but to shoulder height, the shoulders will pop. When you understand that your seated cable row doesn't go to your chest but to your waist, the lats will come. And most importantly, when you follow me, your muscles will grow.",
+        "frames": [
+          "frames/7673673926156881166/frame-01.jpg",
+          "frames/7673673926156881166/frame-02.jpg",
+          "frames/7673673926156881166/frame-03.jpg",
+          "frames/7673673926156881166/frame-04.jpg",
+          "frames/7673673926156881166/frame-05.jpg",
+          "frames/7673673926156881166/frame-06.jpg",
+          "frames/7673673926156881166/frame-07.jpg",
+          "frames/7673673926156881166/frame-08.jpg",
+          "frames/7673673926156881166/frame-09.jpg",
+          "frames/7673673926156881166/frame-10.jpg",
+          "frames/7673673926156881166/frame-11.jpg",
+          "frames/7673673926156881166/frame-12.jpg",
+          "frames/7673673926156881166/frame-13.jpg",
+          "frames/7673673926156881166/frame-14.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -7458,7 +7219,10 @@
         "frames_used": 1,
         "transcript_kind": "narration",
         "transcript_was_useful": false,
-        "transcript": ""
+        "transcript": "",
+        "frames": [
+          "frames/7662423778449837342/frame-01.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -7675,7 +7439,23 @@
         "frames_used": 14,
         "transcript_kind": "narration",
         "transcript_was_useful": false,
-        "transcript": "Got a long list of ex-lovers, they'll tell you I'm insane, 'cause you know I love the players, and you love the game. 'Cause we're young and we're reckless, we'll take this way too far, it'll leave you breathless, or with a nasty scar."
+        "transcript": "Got a long list of ex-lovers, they'll tell you I'm insane, 'cause you know I love the players, and you love the game. 'Cause we're young and we're reckless, we'll take this way too far, it'll leave you breathless, or with a nasty scar.",
+        "frames": [
+          "frames/7654368777370373406/frame-01.jpg",
+          "frames/7654368777370373406/frame-02.jpg",
+          "frames/7654368777370373406/frame-03.jpg",
+          "frames/7654368777370373406/frame-04.jpg",
+          "frames/7654368777370373406/frame-05.jpg",
+          "frames/7654368777370373406/frame-06.jpg",
+          "frames/7654368777370373406/frame-07.jpg",
+          "frames/7654368777370373406/frame-08.jpg",
+          "frames/7654368777370373406/frame-09.jpg",
+          "frames/7654368777370373406/frame-10.jpg",
+          "frames/7654368777370373406/frame-11.jpg",
+          "frames/7654368777370373406/frame-12.jpg",
+          "frames/7654368777370373406/frame-13.jpg",
+          "frames/7654368777370373406/frame-14.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -7756,7 +7536,10 @@
         "frames_used": 1,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": "Goodbye is just know that I will find my way from you. Like flowers from a tunnel, you decide who you are, and I can see right through. Ooh, like shadows on the moon, I saw bad news. Yeah, I, I, I hate that I made you love me. Sorry if I made me type, yeah, I, I hate that I made you love me, 'cause I barely tried. Yeah, I, I, I. What's happening now? You studied my ground and borrowed my body. One kiss by the sun and called like a wind, a beast that..."
+        "transcript": "Goodbye is just know that I will find my way from you. Like flowers from a tunnel, you decide who you are, and I can see right through. Ooh, like shadows on the moon, I saw bad news. Yeah, I, I, I hate that I made you love me. Sorry if I made me type, yeah, I, I hate that I made you love me, 'cause I barely tried. Yeah, I, I, I. What's happening now? You studied my ground and borrowed my body. One kiss by the sun and called like a wind, a beast that...",
+        "frames": [
+          "frames/7648532889188994335/frame-01.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
@@ -8978,41 +8761,44 @@
       ]
     },
     {
-      "id": "7637582878204808478",
+      "id": "7676640994250575117",
       "source": {
-        "url": "https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478",
+        "url": "https://www.tiktok.com/@getcultured.la/photo/7676640994250575117",
         "kind": "photo",
-        "author": "tiffanyfoodreview",
-        "author_url": "https://www.tiktok.com/@tiffanyfoodreview",
-        "saved_at": "2026-05-08",
-        "saved_at_is_estimate": true,
-        "thumbnail": "thumbnails/7637582878204808478.jpg",
-        "caption": "i’ve tried way more places i just don’t have pics #usc #uscfood #uscvillage #laeats #collegefood "
+        "author": "getcultured.la",
+        "author_url": "https://www.tiktok.com/@getcultured.la",
+        "saved_at": "2026-08-24",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7676640994250575117.jpg",
+        "caption": "cafes where you can actually camp out for hours without feeling guilty about ordering one drink. wifi passwords on the wall, outlets everywhere, and nobody's giving you the look. 📍 Alchemist Coffee Project 📍 Mi CAFÉ 📍 Established Today 📍 Awesome Coffee 📍 Kaffee Bohnen 📍 Good Friend Coffee #losangeles #lacafes #studyspots #workfromcafe #laptopfriendly "
       },
       "evidence": {
         "hydrated_via": "yt-dlp only (oEmbed 400)",
         "oembed_worked": false,
-        "frames_used": 14,
+        "frames_used": 1,
         "transcript_kind": "music",
         "transcript_was_useful": false,
-        "transcript": "Baby, please get off the gram. I like you better in the stands. I upgrade my OnlyFans. It do it don't need a cam. This right here my new modern jam. I'm on fire, new burning man. She paid the view, that's a hard demand. He keep man, brought him on for friends. This shit punk, put it on the Bible. I like a bad girl on a bad cycle. Then I bought a car, now she feeling entitled. I dig so hard, poking like the Eiffel. But this new world ain't hard to please. Where I keep the knowledge, think I'm Socrates. I got 'em levitating way off the knees. The way I make it jump, I make it hard to breathe. It's like... Denial, forever favor. True upgrader. You a shaker. Club breaker. Baby, don't you know I got to go? Got the glow and it got to show. Know it's been a year since I seen the road. Had me inside like I'm on parole."
+        "transcript": "",
+        "frames": [
+          "frames/7676640994250575117/frame-01.jpg"
+        ]
       },
       "extraction": {
         "model": "gpt-5.6-terra",
         "signals": [
-          "frames"
+          "caption"
         ],
-        "run_at": "2026-08-24T01:57:15.503Z",
+        "run_at": "2026-08-24T20:56:45.425Z",
         "usage": {
-          "prompt_tokens": 76428,
-          "completion_tokens": 1335,
-          "total_tokens": 77763,
+          "prompt_tokens": 2812,
+          "completion_tokens": 533,
+          "total_tokens": 3345,
           "prompt_tokens_details": {
             "cached_tokens": 0,
             "audio_tokens": 0
           },
           "completion_tokens_details": {
-            "reasoning_tokens": 232,
+            "reasoning_tokens": 0,
             "audio_tokens": 0,
             "accepted_prediction_tokens": 0,
             "rejected_prediction_tokens": 0
@@ -9021,16 +8807,16 @@
       },
       "entities": [
         {
-          "id": "7637582878204808478-0",
+          "id": "7676640994250575117-0",
           "type": "place",
-          "name": "USC Gould School of Law",
-          "category": "campus café",
-          "hook": "Salmon bowl; healthy but a little sauce-heavy and pricey (8.3/10).",
+          "name": "Alchemist Coffee Project",
+          "category": "laptop-friendly café",
+          "hook": "A café where you can work for hours without pressure to order more; Wi‑Fi password displayed and outlets readily available.",
           "neighborhood": null,
           "city": "Los Angeles",
           "country": "United States",
           "found_in": [
-            "frames"
+            "caption"
           ],
           "trigger_class": "spatial",
           "decay": "contextual",
@@ -9046,25 +8832,163 @@
           "nudge_eligible": true,
           "why_not": null,
           "confidence": {
-            "extraction": 0.93,
+            "extraction": 0.98,
             "geocode": 1,
-            "overall": 0.93
+            "overall": 0.98
           },
           "place": {
-            "place_id": "ChIJ7aVxnOTHwoARksAnB1bKfHw",
-            "resolved_name": "USC Gould School of Law",
-            "address": "699 W Exposition Blvd, Los Angeles, CA 90089, USA",
+            "place_id": "ChIJnSUscnnHwoARB1l-E6bZMVk",
+            "resolved_name": "Alchemist Coffee Project",
+            "address": "698 S Vermont Ave Ste 103, Los Angeles, CA 90005, USA",
             "coords": [
-              34.018675099999996,
-              -118.2842727
+              34.060227,
+              -118.29140679999999
             ],
             "granularity": "venue",
             "hours": [
-              "Monday: 9:00 AM – 5:00 PM",
-              "Tuesday: 9:00 AM – 5:00 PM",
-              "Wednesday: 9:00 AM – 5:00 PM",
-              "Thursday: 9:00 AM – 5:00 PM",
-              "Friday: 9:00 AM – 5:00 PM",
+              "Monday: 7:00 AM – 8:00 PM",
+              "Tuesday: 7:00 AM – 8:00 PM",
+              "Wednesday: 7:00 AM – 8:00 PM",
+              "Thursday: 7:00 AM – 8:00 PM",
+              "Friday: 7:00 AM – 8:00 PM",
+              "Saturday: 7:30 AM – 8:00 PM",
+              "Sunday: 7:30 AM – 8:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 20,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7676640994250575117-1",
+          "type": "place",
+          "name": "Mi CAFÉ",
+          "category": "laptop-friendly café",
+          "hook": "A café where you can work for hours without pressure to order more; Wi‑Fi password displayed and outlets readily available.",
+          "neighborhood": null,
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJv2If9eXHwoARjg98zt8-lgU",
+            "resolved_name": "Mi Alma Cafe",
+            "address": "1933 S Broadway, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.031276999999996,
+              -118.26674659999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 4:00 PM",
+              "Tuesday: 7:00 AM – 4:00 PM",
+              "Wednesday: 7:00 AM – 4:00 PM",
+              "Thursday: 7:00 AM – 4:00 PM",
+              "Friday: 7:00 AM – 4:00 PM",
               "Saturday: Closed",
               "Sunday: Closed"
             ],
@@ -9072,60 +8996,243 @@
               {
                 "open": {
                   "day": 1,
-                  "hour": 9,
+                  "hour": 7,
                   "minute": 0
                 },
                 "close": {
                   "day": 1,
-                  "hour": 17,
+                  "hour": 16,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 2,
-                  "hour": 9,
+                  "hour": 7,
                   "minute": 0
                 },
                 "close": {
                   "day": 2,
-                  "hour": 17,
+                  "hour": 16,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 3,
-                  "hour": 9,
+                  "hour": 7,
                   "minute": 0
                 },
                 "close": {
                   "day": 3,
-                  "hour": 17,
+                  "hour": 16,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 4,
-                  "hour": 9,
+                  "hour": 7,
                   "minute": 0
                 },
                 "close": {
                   "day": 4,
-                  "hour": 17,
+                  "hour": 16,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 5,
-                  "hour": 9,
+                  "hour": 7,
                   "minute": 0
                 },
                 "close": {
                   "day": 5,
-                  "hour": 17,
+                  "hour": 16,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7676640994250575117-2",
+          "type": "place",
+          "name": "Established Today",
+          "category": "laptop-friendly café",
+          "hook": "A café where you can work for hours without pressure to order more; Wi‑Fi password displayed and outlets readily available.",
+          "neighborhood": null,
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJrb6lXQC_woARKnHs9948ve0",
+            "resolved_name": "Established Today",
+            "address": "7707 Melrose Ave, Los Angeles, CA 90046, USA",
+            "coords": [
+              34.083889899999996,
+              -118.35773
+            ],
+            "granularity": "venue",
+            "hours": null,
+            "periods": null,
+            "rating": 4.3,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7676640994250575117-3",
+          "type": "place",
+          "name": "Awesome Coffee",
+          "category": "laptop-friendly café",
+          "hook": "A café where you can work for hours without pressure to order more; Wi‑Fi password displayed and outlets readily available.",
+          "neighborhood": null,
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJb-mnh4rHwoAR5laOvrdlxE8",
+            "resolved_name": "Awesome Coffee DTLA",
+            "address": "1200 S Grand Ave, Los Angeles, CA 90015, USA",
+            "coords": [
+              34.0399715,
+              -118.2632712
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 9:00 PM",
+              "Tuesday: 7:00 AM – 9:00 PM",
+              "Wednesday: 7:00 AM – 9:00 PM",
+              "Thursday: 7:00 AM – 9:00 PM",
+              "Friday: 7:00 AM – 9:00 PM",
+              "Saturday: 7:00 AM – 9:00 PM",
+              "Sunday: 7:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
                   "minute": 0
                 }
               }
@@ -9135,12 +9242,1937 @@
           }
         },
         {
-          "id": "7637582878204808478-1",
+          "id": "7676640994250575117-4",
           "type": "place",
-          "name": "Seeds Marketplace",
-          "category": "salad café",
-          "hook": "Chicken Caesar salad with cilantro sauce and small toppings; highly rated 9.1/10.",
+          "name": "Kaffee Bohnen",
+          "category": "laptop-friendly café",
+          "hook": "A café where you can work for hours without pressure to order more; Wi‑Fi password displayed and outlets readily available.",
           "neighborhood": null,
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJNc_VIZDHwoARqHPD4WZJr0s",
+            "resolved_name": "Kaffee Bohnen",
+            "address": "2800 W Olympic Blvd Ste A, Los Angeles, CA 90006, USA",
+            "coords": [
+              34.0523281,
+              -118.29507389999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 5:00 PM",
+              "Tuesday: 8:00 AM – 5:00 PM",
+              "Wednesday: 8:00 AM – 5:00 PM",
+              "Thursday: 8:00 AM – 5:00 PM",
+              "Friday: 8:00 AM – 5:00 PM",
+              "Saturday: 8:00 AM – 5:00 PM",
+              "Sunday: 8:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.8,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7676640994250575117-5",
+          "type": "place",
+          "name": "Good Friend Coffee",
+          "category": "laptop-friendly café",
+          "hook": "A café where you can work for hours without pressure to order more; Wi‑Fi password displayed and outlets readily available.",
+          "neighborhood": null,
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJO-dNEgDHwoARbkkifoDgHH8",
+            "resolved_name": "Good Friend Coffee",
+            "address": "874 Virgil Ave, Los Angeles, CA 90029, USA",
+            "coords": [
+              34.0875451,
+              -118.28668780000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 4:00 PM",
+              "Tuesday: 7:00 AM – 4:00 PM",
+              "Wednesday: 7:00 AM – 4:00 PM",
+              "Thursday: 7:00 AM – 4:00 PM",
+              "Friday: 7:00 AM – 4:00 PM",
+              "Saturday: 7:00 AM – 5:00 PM",
+              "Sunday: 7:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7676609172825214221",
+      "source": {
+        "url": "https://www.tiktok.com/@mrs.passengerprincess/video/7676609172825214221",
+        "kind": "video",
+        "author": "mrs.passengerprincess",
+        "author_url": "https://www.tiktok.com/@mrs.passengerprincess",
+        "saved_at": "2026-08-24",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7676609172825214221.jpg",
+        "caption": "you found the cutest rooftop bar for date nights or with the girls 🍹🌅  #thingstodoinpasadenaca #rooftoprestaurant #rooftopbar #girlsnight #lafoodie "
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "silent",
+        "transcript_was_useful": false,
+        "transcript": "",
+        "frames": [
+          "frames/7676609172825214221/frame-01.jpg",
+          "frames/7676609172825214221/frame-02.jpg",
+          "frames/7676609172825214221/frame-03.jpg",
+          "frames/7676609172825214221/frame-04.jpg",
+          "frames/7676609172825214221/frame-05.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-24T21:31:25.243Z",
+        "usage": {
+          "prompt_tokens": 3798,
+          "completion_tokens": 503,
+          "total_tokens": 4301,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 391,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7676609172825214221-0",
+          "type": "place",
+          "name": "Unnamed rooftop restaurant and bar",
+          "category": "rooftop restaurant/bar",
+          "hook": "Sunset rooftop dining with mountain views—saved for a date night or girls’ night.",
+          "neighborhood": null,
+          "city": "Pasadena",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.31 below 0.7",
+          "confidence": {
+            "extraction": 0.62,
+            "geocode": 0.5,
+            "overall": 0.31
+          },
+          "place": {
+            "place_id": "ChIJs4Pdw-_DwoARUhTnXkSZaXQ",
+            "resolved_name": "Osa Rooftop",
+            "address": "540 E Colorado Blvd, Pasadena, CA 91101, USA",
+            "coords": [
+              34.145668799999996,
+              -118.13914729999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 4:00 – 9:30 PM",
+              "Tuesday: 4:00 – 9:30 PM",
+              "Wednesday: 4:00 – 9:30 PM",
+              "Thursday: 4:00 – 9:30 PM",
+              "Friday: 4:00 – 9:30 PM",
+              "Saturday: 12:00 – 9:30 PM",
+              "Sunday: 10:00 AM – 9:30 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 16,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7666549982698278174",
+      "source": {
+        "url": "https://www.tiktok.com/@corner.la/photo/7666549982698278174",
+        "kind": "photo",
+        "author": "corner.la",
+        "author_url": "https://www.tiktok.com/@corner.la",
+        "saved_at": "2026-08-24",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7666549982698278174.jpg",
+        "caption": "friend plans that aren't just dinner or drinks 📍 Photo Booth Museum by Photomatica Los Angeles — silver lake 📍 The Last Bookstore — historic core 📍 The Museum of Jurassic Technology — palms 📍 BRAIN DEAD STUDIOS — melrose 📍 Charmed LA — melrose 📍 Plushumi The Plushie Workshop LA / Pasadena — old pasadena #losangeles #thingstodola #dateideala #laactivities #uniquela "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 7,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "",
+        "frames": [
+          "frames/7666549982698278174/frame-01.jpg",
+          "frames/7666549982698278174/frame-02.jpg",
+          "frames/7666549982698278174/frame-03.jpg",
+          "frames/7666549982698278174/frame-04.jpg",
+          "frames/7666549982698278174/frame-05.jpg",
+          "frames/7666549982698278174/frame-06.jpg",
+          "frames/7666549982698278174/frame-07.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-24T21:55:03.409Z",
+        "usage": {
+          "prompt_tokens": 14669,
+          "completion_tokens": 499,
+          "total_tokens": 15168,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7666549982698278174-0",
+          "type": "place",
+          "name": "Photo Booth Museum by Photomatica Los Angeles",
+          "category": "photo booth museum",
+          "hook": "Vintage photo booths from the 1930s for a nostalgic photo-strip date.",
+          "neighborhood": "Silver Lake",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJRcAbQHPHwoARJHNaphd5bXA",
+            "resolved_name": "Photo Booth Museum by Photomatica Los Angeles",
+            "address": "3827 Sunset Blvd Unit A, Los Angeles, CA 90026, USA",
+            "coords": [
+              34.091674499999996,
+              -118.2793143
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 9:00 PM",
+              "Tuesday: 11:00 AM – 9:00 PM",
+              "Wednesday: 11:00 AM – 9:00 PM",
+              "Thursday: 11:00 AM – 9:00 PM",
+              "Friday: 11:00 AM – 11:00 PM",
+              "Saturday: 11:00 AM – 11:00 PM",
+              "Sunday: 11:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 23,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.3,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7666549982698278174-1",
+          "type": "place",
+          "name": "The Last Bookstore",
+          "category": "bookstore",
+          "hook": "Browse the book tunnel, dig through vinyl, and visit upstairs art galleries.",
+          "neighborhood": "Historic Core",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJ7YJ_IkrGwoARNak4CDihkYU",
+            "resolved_name": "The Last Bookstore",
+            "address": "453 S Spring St Ground Floor, Los Angeles, CA 90013, USA",
+            "coords": [
+              34.0476964,
+              -118.24989640000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 8:00 PM",
+              "Tuesday: 11:00 AM – 8:00 PM",
+              "Wednesday: 11:00 AM – 11:00 PM",
+              "Thursday: 11:00 AM – 11:00 PM",
+              "Friday: 11:00 AM – 11:00 PM",
+              "Saturday: 11:00 AM – 11:00 PM",
+              "Sunday: 11:00 AM – 11:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 23,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7666549982698278174-2",
+          "type": "place",
+          "name": "Museum of Jurassic Technology",
+          "category": "museum",
+          "hook": "A weird, surreal museum to puzzle over together, followed by its rooftop tea garden.",
+          "neighborhood": "Palms",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.35 below 0.7",
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 0.35,
+            "overall": 0.35
+          },
+          "place": {
+            "place_id": "ChIJ7fFCOiq6woARXKCVsBpvmuw",
+            "resolved_name": "The Museum of Jurassic Technology",
+            "address": "9341 Venice Blvd., Culver City, CA 90232, USA",
+            "coords": [
+              34.02588370000001,
+              -118.39506299999998
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Closed",
+              "Tuesday: Closed",
+              "Wednesday: Closed",
+              "Thursday: 2:00 – 8:00 PM",
+              "Friday: 2:00 – 8:00 PM",
+              "Saturday: 12:00 – 6:00 PM",
+              "Sunday: 12:00 – 6:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 14,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 14,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7666549982698278174-3",
+          "type": "place",
+          "name": "Brain Dead Studios",
+          "category": "indie cinema and cafe",
+          "hook": "Indie-film screenings in a retro theater with a cafe.",
+          "neighborhood": "Melrose",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "calendar",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJUaGIWMy-woARzibcuEy2L7o",
+            "resolved_name": "BRAIN DEAD STUDIOS",
+            "address": "611 N Fairfax Ave, Los Angeles, CA 90036, USA",
+            "coords": [
+              34.082018399999995,
+              -118.3617556
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 12:00 – 8:00 PM",
+              "Tuesday: 12:00 – 8:00 PM",
+              "Wednesday: 12:00 – 8:00 PM",
+              "Thursday: 12:00 – 8:00 PM",
+              "Friday: 12:00 – 8:00 PM",
+              "Saturday: 12:00 – 8:00 PM",
+              "Sunday: 12:00 – 8:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 20,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.6,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7666549982698278174-4",
+          "type": "place",
+          "name": "Charmed LA",
+          "category": "jewelry-making workshop",
+          "hook": "Make custom jewelry together and leave with something you created.",
+          "neighborhood": "Melrose",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJJ4ZLAZO_woARhwgdGEtZt4s",
+            "resolved_name": "Charmed LA",
+            "address": "7967 Melrose Ave, Los Angeles, CA 90046, USA",
+            "coords": [
+              34.0839188,
+              -118.3633168
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 5:00 PM",
+              "Tuesday: 11:00 AM – 5:00 PM",
+              "Wednesday: 11:00 AM – 5:00 PM",
+              "Thursday: 11:00 AM – 5:00 PM",
+              "Friday: 11:00 AM – 5:00 PM",
+              "Saturday: 11:00 AM – 5:00 PM",
+              "Sunday: 11:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.9,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7666549982698278174-5",
+          "type": "place",
+          "name": "Plushumi The Plushie Workshop LA / Pasadena",
+          "category": "plush-making workshop",
+          "hook": "A hands-on workshop where you make your own plushie from scratch.",
+          "neighborhood": "Old Pasadena",
+          "city": "Pasadena",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "activity",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 0.8,
+            "overall": 0.78
+          },
+          "place": {
+            "place_id": "ChIJ4SupuZHDwoARIBx521DVXec",
+            "resolved_name": "The Plushie Workshop LA / Pasadena",
+            "address": "12 S Fair Oaks Ave, Pasadena, CA 91105, USA",
+            "coords": [
+              34.1454932,
+              -118.15030979999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 3:00 – 8:00 PM",
+              "Tuesday: Closed",
+              "Wednesday: Closed",
+              "Thursday: 3:00 – 8:00 PM",
+              "Friday: 3:00 – 8:00 PM",
+              "Saturday: 10:00 AM – 8:00 PM",
+              "Sunday: 10:00 AM – 8:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 15,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 15,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 15,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 20,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 5,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7663636435349540110",
+      "source": {
+        "url": "https://www.tiktok.com/@chrissy015_/video/7663636435349540110",
+        "kind": "video",
+        "author": "chrissy015_",
+        "author_url": "https://www.tiktok.com/@chrissy015_",
+        "saved_at": "2026-08-24",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7663636435349540110.jpg",
+        "caption": "anytime i visit somewhere without having to face LA traffic is wonderful. there were so many pieces from a variety of artists including picasso, rembrandt, degas, & van gogh! ‼️ alsooo FREE entry for students (and free parking for everyone) is a HUGE win #pasadena ##museum #lacounty "
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "narration",
+        "transcript_was_useful": false,
+        "transcript": "I can hear the bells ring, reminding us why we're still here. It's Father's time, we're stuck in the past, living. I'm not afraid to die.",
+        "frames": [
+          "frames/7663636435349540110/frame-01.jpg",
+          "frames/7663636435349540110/frame-02.jpg",
+          "frames/7663636435349540110/frame-03.jpg",
+          "frames/7663636435349540110/frame-04.jpg",
+          "frames/7663636435349540110/frame-05.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-24T23:23:36.490Z",
+        "usage": {
+          "prompt_tokens": 3849,
+          "completion_tokens": 108,
+          "total_tokens": 3957,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7663636435349540110-0",
+          "type": "place",
+          "name": "Norton Simon Museum",
+          "category": "art museum",
+          "hook": "Broad collection with works by Picasso, Rembrandt, Degas, and Van Gogh; free student admission and free parking.",
+          "neighborhood": null,
+          "city": "Pasadena",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJkZW6A57DwoARxn42TuWiIpI",
+            "resolved_name": "Norton Simon Museum",
+            "address": "411 W Colorado Blvd, Pasadena, CA 91105, USA",
+            "coords": [
+              34.1463464,
+              -118.1592625
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 12:00 – 5:00 PM",
+              "Tuesday: Closed",
+              "Wednesday: Closed",
+              "Thursday: 12:00 – 5:00 PM",
+              "Friday: 12:00 – 7:00 PM",
+              "Saturday: 12:00 – 7:00 PM",
+              "Sunday: 12:00 – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 19,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.8,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7580924634594315551",
+      "source": {
+        "url": "https://www.tiktok.com/@olivia.eatsss/photo/7580924634594315551",
+        "kind": "photo",
+        "author": "olivia.eatsss",
+        "author_url": "https://www.tiktok.com/@olivia.eatsss",
+        "saved_at": "2026-08-24",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7580924634594315551.jpg",
+        "caption": "Lmk if I’m missing any!! @CAVA @Ebaes - Ramen & Sushi in LA @Yogurtland @Pho N Mor  #usc #uscfood #southla #collegemeals #laeats "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 12,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "Do you want a bite? I'm on a diet, but thank you. No need to lose any weight. You're kidding, right? You look great. Very fit. You can always be thinner. Look better.",
+        "frames": [
+          "frames/7580924634594315551/frame-01.jpg",
+          "frames/7580924634594315551/frame-02.jpg",
+          "frames/7580924634594315551/frame-03.jpg",
+          "frames/7580924634594315551/frame-04.jpg",
+          "frames/7580924634594315551/frame-05.jpg",
+          "frames/7580924634594315551/frame-06.jpg",
+          "frames/7580924634594315551/frame-07.jpg",
+          "frames/7580924634594315551/frame-08.jpg",
+          "frames/7580924634594315551/frame-09.jpg",
+          "frames/7580924634594315551/frame-10.jpg",
+          "frames/7580924634594315551/frame-11.jpg",
+          "frames/7580924634594315551/frame-12.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames"
+        ],
+        "run_at": "2026-08-24T23:41:45.225Z",
+        "usage": {
+          "prompt_tokens": 42080,
+          "completion_tokens": 1062,
+          "total_tokens": 43142,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 283,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7580924634594315551-0",
+          "type": "place",
+          "name": "Pho N Mor",
+          "category": "Vietnamese restaurant",
+          "hook": "Delicious Vietnamese food at good prices near USC.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJu1AzR5vHwoAR7TcmgGf5fBE",
+            "resolved_name": "Pho N Mor | Vietnamese Restaurant",
+            "address": "3335 S Figueroa St Unit P, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.023326499999996,
+              -118.2793454
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 12:00 – 9:00 PM",
+              "Tuesday: 12:00 – 9:00 PM",
+              "Wednesday: 12:00 – 9:00 PM",
+              "Thursday: 12:00 – 9:00 PM",
+              "Friday: 12:00 – 10:00 PM",
+              "Saturday: 12:00 – 10:00 PM",
+              "Sunday: 12:00 – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 3.9,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7580924634594315551-1",
+          "type": "place",
+          "name": "Ebaes - Ramen & Sushi",
+          "category": "Ramen and sushi restaurant",
+          "hook": "Decent-priced ramen and sushi; recommended for big groups.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.49 below 0.7",
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 0.5,
+            "overall": 0.49
+          },
+          "place": {
+            "place_id": "ChIJn7GRXOzHwoARNOHThxF8Kp4",
+            "resolved_name": "Ebaes",
+            "address": "2314 S Union Ave, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0344289,
+              -118.2836357
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 10:00 PM",
+              "Tuesday: 11:00 AM – 10:00 PM",
+              "Wednesday: 11:00 AM – 10:00 PM",
+              "Thursday: 11:00 AM – 10:00 PM",
+              "Friday: 11:00 AM – 10:00 PM",
+              "Saturday: 11:00 AM – 10:00 PM",
+              "Sunday: 12:00 – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 12,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.3,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7580924634594315551-2",
+          "type": "place",
+          "name": "Caveman's Kitchen",
+          "category": "Caribbean restaurant",
+          "hook": "Underrated spot with especially delicious plantains.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.63 below 0.7",
+          "confidence": {
+            "extraction": 0.94,
+            "geocode": 0.67,
+            "overall": 0.63
+          },
+          "place": {
+            "place_id": "ChIJa3otz4zHwoARFqsH5J7XZBI",
+            "resolved_name": "Caveman Kitchen",
+            "address": "2215 S Vermont Ave #101, 102, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0359537,
+              -118.29162269999998
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 3:30 PM",
+              "Tuesday: 10:00 AM – 9:00 PM",
+              "Wednesday: 10:00 AM – 9:00 PM",
+              "Thursday: 10:00 AM – 9:00 PM",
+              "Friday: 10:00 AM – 9:00 PM",
+              "Saturday: 10:00 AM – 9:00 PM",
+              "Sunday: 10:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7580924634594315551-3",
+          "type": "place",
+          "name": "Rock & Reilly's",
+          "category": "Comfort-food restaurant and bar",
+          "hook": "Go here for comfort food, including a grilled cheese and milkshake.",
+          "neighborhood": "University Park",
           "city": "Los Angeles",
           "country": "United States",
           "found_in": [
@@ -9160,104 +11192,267 @@
           "nudge_eligible": true,
           "why_not": null,
           "confidence": {
-            "extraction": 0.9,
+            "extraction": 0.94,
             "geocode": 1,
-            "overall": 0.9
+            "overall": 0.94
           },
           "place": {
-            "place_id": "ChIJscVzaePHwoARaN_58rEJlac",
-            "resolved_name": "Seeds Marketplace",
-            "address": "Ronald Tutor Campus Center, 3607 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+            "place_id": "ChIJTUtPz1bHwoARxfhZXhvzisU",
+            "resolved_name": "Rock & Reilly's USC - Restaurant and Bar",
+            "address": "3201 S Hoover St, Los Angeles, CA 90089, USA",
             "coords": [
-              34.020529499999995,
-              -118.2860132
+              34.024279199999995,
+              -118.2841299
             ],
             "granularity": "venue",
             "hours": [
-              "Monday: 7:00 AM – 8:00 PM",
-              "Tuesday: 7:00 AM – 8:00 PM",
-              "Wednesday: 7:00 AM – 8:00 PM",
-              "Thursday: 7:00 AM – 8:00 PM",
-              "Friday: 7:00 AM – 6:00 PM",
-              "Saturday: Closed",
-              "Sunday: Closed"
+              "Monday: 10:30 AM – 11:00 PM",
+              "Tuesday: 10:30 AM – 11:00 PM",
+              "Wednesday: 10:30 AM – 12:00 AM",
+              "Thursday: 10:30 AM – 12:00 AM",
+              "Friday: 10:30 AM – 12:00 AM",
+              "Saturday: 10:30 AM – 12:00 AM",
+              "Sunday: 10:30 AM – 11:00 PM"
             ],
             "periods": [
               {
                 "open": {
-                  "day": 1,
-                  "hour": 7,
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 23,
                   "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 30
                 },
                 "close": {
                   "day": 1,
-                  "hour": 20,
+                  "hour": 23,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 2,
-                  "hour": 7,
-                  "minute": 0
+                  "hour": 10,
+                  "minute": 30
                 },
                 "close": {
                   "day": 2,
-                  "hour": 20,
+                  "hour": 23,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 3,
-                  "hour": 7,
-                  "minute": 0
+                  "hour": 10,
+                  "minute": 30
                 },
                 "close": {
-                  "day": 3,
-                  "hour": 20,
+                  "day": 4,
+                  "hour": 0,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 4,
-                  "hour": 7,
-                  "minute": 0
+                  "hour": 10,
+                  "minute": 30
                 },
                 "close": {
-                  "day": 4,
-                  "hour": 20,
+                  "day": 5,
+                  "hour": 0,
                   "minute": 0
                 }
               },
               {
                 "open": {
                   "day": 5,
-                  "hour": 7,
-                  "minute": 0
+                  "hour": 10,
+                  "minute": 30
                 },
                 "close": {
-                  "day": 5,
-                  "hour": 18,
+                  "day": 6,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 0,
                   "minute": 0
                 }
               }
             ],
-            "rating": 3.7,
+            "rating": 4.2,
             "source": "google-places"
           }
         },
         {
-          "id": "7637582878204808478-2",
+          "id": "7580924634594315551-4",
           "type": "place",
-          "name": "CAVA",
-          "category": "fast-casual Mediterranean restaurant",
-          "hook": "Kids' meal bowls are worth it, though the chicken can include an unappealing stringy piece (7.2/10).",
-          "neighborhood": null,
+          "name": "Dulce",
+          "category": "Bakery and café",
+          "hook": "Blueberry matcha and croissant combo.",
+          "neighborhood": "University Park",
           "city": "Los Angeles",
           "country": "United States",
           "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.94,
+            "geocode": 1,
+            "overall": 0.94
+          },
+          "place": {
+            "place_id": "ChIJW-W3cuXHwoARybuUzJ-ussE",
+            "resolved_name": "Cafe Dulce (USC Village)",
+            "address": "3096 McClintock Ave Ste 1420, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0254145,
+              -118.28536509999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 7:00 PM",
+              "Tuesday: 8:00 AM – 7:00 PM",
+              "Wednesday: 8:00 AM – 7:00 PM",
+              "Thursday: 8:00 AM – 7:00 PM",
+              "Friday: 8:00 AM – 7:00 PM",
+              "Saturday: 8:00 AM – 7:00 PM",
+              "Sunday: 8:00 AM – 7:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 19,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7580924634594315551-5",
+          "type": "place",
+          "name": "CAVA",
+          "category": "Mediterranean fast-casual restaurant",
+          "hook": "Order the kids meal.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
             "frames"
           ],
           "trigger_class": "spatial",
@@ -9387,12 +11582,12 @@
           }
         },
         {
-          "id": "7637582878204808478-3",
+          "id": "7580924634594315551-6",
           "type": "place",
-          "name": "USC Village Dining Hall",
-          "category": "university dining hall",
-          "hook": "Decent rotating variety; desserts are the highlight (6.1/10).",
-          "neighborhood": null,
+          "name": "Bacari",
+          "category": "Italian-inspired small-plates restaurant",
+          "hook": "An LA staple with notably great food.",
+          "neighborhood": "University Park",
           "city": "Los Angeles",
           "country": "United States",
           "found_in": [
@@ -9412,1715 +11607,9 @@
           "nudge_eligible": true,
           "why_not": null,
           "confidence": {
-            "extraction": 0.96,
+            "extraction": 0.93,
             "geocode": 1,
-            "overall": 0.96
-          },
-          "place": {
-            "place_id": "ChIJ_WDnaOXHwoARdSx3xACgThk",
-            "resolved_name": "USC Village Honors Dining Hall",
-            "address": "3122-3168 McClintock Ave, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0256626,
-              -118.2862265
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 7:00 AM – 10:00 PM",
-              "Tuesday: 7:00 AM – 10:00 PM",
-              "Wednesday: 7:00 AM – 10:00 PM",
-              "Thursday: 7:00 AM – 10:00 PM",
-              "Friday: 7:00 AM – 10:00 PM",
-              "Saturday: 9:00 AM – 10:00 PM",
-              "Sunday: 9:00 AM – 10:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 22,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.2,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-4",
-          "type": "place",
-          "name": "Parkside Restaurant and Grill",
-          "category": "university dining hall",
-          "hook": "Rotating food selection, ice cream machine, and desserts; reviewer says the food is fire (8.6/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.94,
-            "geocode": 1,
-            "overall": 0.94
-          },
-          "place": {
-            "place_id": "ChIJndgeXPzHwoAReI7iEd05Lh4",
-            "resolved_name": "Parkside Restaurant and Grill",
-            "address": "3771 McClintock Ave, Los Angeles, CA 90089, USA",
-            "coords": [
-              34.0193849,
-              -118.29050470000001
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 7:00 AM – 10:00 PM",
-              "Tuesday: 7:00 AM – 10:00 PM",
-              "Wednesday: 7:00 AM – 10:00 PM",
-              "Thursday: 7:00 AM – 10:00 PM",
-              "Friday: 7:00 AM – 10:00 PM",
-              "Saturday: 8:30 AM – 10:00 PM",
-              "Sunday: 8:30 AM – 10:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 8,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 8,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 22,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.2,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-5",
-          "type": "place",
-          "name": "Rock & Reilly's USC",
-          "category": "pub and restaurant",
-          "hook": "Iced matcha latte and everything bagel with cream cheese; overall good but bagels can be stale (7.7/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.91,
-            "geocode": 1,
-            "overall": 0.91
-          },
-          "place": {
-            "place_id": "ChIJTUtPz1bHwoARxfhZXhvzisU",
-            "resolved_name": "Rock & Reilly's USC - Restaurant and Bar",
-            "address": "3201 S Hoover St, Los Angeles, CA 90089, USA",
-            "coords": [
-              34.024279199999995,
-              -118.2841299
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 10:30 AM – 11:00 PM",
-              "Tuesday: 10:30 AM – 11:00 PM",
-              "Wednesday: 10:30 AM – 12:00 AM",
-              "Thursday: 10:30 AM – 12:00 AM",
-              "Friday: 10:30 AM – 12:00 AM",
-              "Saturday: 10:30 AM – 12:00 AM",
-              "Sunday: 10:30 AM – 11:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 0,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.2,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-6",
-          "type": "place",
-          "name": "Central Kitchen at Lorenzo",
-          "category": "campus café",
-          "hook": "Breakfast burrito is especially good despite an otherwise just-okay rating (7.0/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.92,
-            "geocode": 1,
-            "overall": 0.92
-          },
-          "place": {
-            "place_id": "ChIJT_xrAN3HwoARY8vLmaTF8aA",
-            "resolved_name": "Central Kitchen at The Lorenzo",
-            "address": "325 W Adams Blvd Ste A, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0287682,
-              -118.2719853
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 9:00 AM – 9:00 PM",
-              "Tuesday: 9:00 AM – 9:00 PM",
-              "Wednesday: 9:00 AM – 9:00 PM",
-              "Thursday: 9:00 AM – 9:00 PM",
-              "Friday: 9:00 AM – 9:00 PM",
-              "Saturday: 9:00 AM – 9:00 PM",
-              "Sunday: 9:00 AM – 9:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 9,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 21,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.4,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-7",
-          "type": "place",
-          "name": "Fertitta Café",
-          "category": "campus café",
-          "hook": "Dumplings, but the reviewer is not a fan of the food overall (5.5/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.95,
-            "geocode": 1,
-            "overall": 0.95
-          },
-          "place": {
-            "place_id": "ChIJP6dYIOLHwoAR1QK-53XvyW0",
-            "resolved_name": "Fertitta Cafe",
-            "address": "3601 S Figueroa St, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.018711599999996,
-              -118.28245249999999
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 10:30 AM – 6:00 PM",
-              "Tuesday: 10:30 AM – 6:00 PM",
-              "Wednesday: 10:30 AM – 6:00 PM",
-              "Thursday: 10:30 AM – 6:00 PM",
-              "Friday: Closed",
-              "Saturday: Closed",
-              "Sunday: Closed"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 18,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 18,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 18,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 10,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 18,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.3,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-8",
-          "type": "place",
-          "name": "Thai by Trio",
-          "category": "Thai restaurant",
-          "hook": "Chicken pad see ew is a repeat order and rated 9.2/10.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJk0qjEVzHwoARt-etgu-IpGg",
-            "resolved_name": "Thai by Trio",
-            "address": "2700 S Figueroa St #101, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.026933899999996,
-              -118.27655170000001
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 11:00 AM – 10:00 PM",
-              "Tuesday: 11:00 AM – 10:00 PM",
-              "Wednesday: 11:00 AM – 10:00 PM",
-              "Thursday: 11:00 AM – 10:00 PM",
-              "Friday: 11:00 AM – 10:00 PM",
-              "Saturday: 11:00 AM – 10:00 PM",
-              "Sunday: 11:00 AM – 10:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 22,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.3,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-9",
-          "type": "place",
-          "name": "Egg Tuck",
-          "category": "breakfast sandwich restaurant",
-          "hook": "Classic egg sandwich is savory but has watery eggs (5.1/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJsQwfTwDHwoARSNvMDQAwq90",
-            "resolved_name": "Egg Tuck",
-            "address": "2528 S Figueroa St, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0282921,
-              -118.2751481
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 7:30 AM – 3:30 PM",
-              "Tuesday: 7:30 AM – 3:30 PM",
-              "Wednesday: 7:30 AM – 3:30 PM",
-              "Thursday: 7:30 AM – 3:30 PM",
-              "Friday: 7:30 AM – 3:30 PM",
-              "Saturday: 7:30 AM – 3:30 PM",
-              "Sunday: 7:30 AM – 3:30 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 15,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 15,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 15,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 15,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 15,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 15,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 7,
-                  "minute": 30
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 15,
-                  "minute": 30
-                }
-              }
-            ],
-            "rating": 4.2,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-10",
-          "type": "place",
-          "name": "Yogurtland",
-          "category": "frozen yogurt shop",
-          "hook": "Affordable self-serve frozen yogurt; a personal favorite (9.0/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJG29JN-HHwoARzrA2dyLJnKk",
-            "resolved_name": "Yogurtland USC",
-            "address": "3335 S Figueroa St Unit K, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0227748,
-              -118.2798221
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 11:00 AM – 12:00 AM",
-              "Tuesday: 11:00 AM – 12:00 AM",
-              "Wednesday: 11:00 AM – 12:00 AM",
-              "Thursday: 11:00 AM – 12:00 AM",
-              "Friday: 11:00 AM – 12:00 AM",
-              "Saturday: 11:00 AM – 12:00 AM",
-              "Sunday: 11:00 AM – 12:00 AM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 0,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 0,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.4,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-11",
-          "type": "place",
-          "name": "Softies",
-          "category": "bakery and café",
-          "hook": "Chocolate chip cookie plus a notably good, affordable breakfast burrito (8.3/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.95,
-            "geocode": 1,
-            "overall": 0.95
-          },
-          "place": {
-            "place_id": "ChIJ0ZpNhG_HwoARq0U2CUhe248",
-            "resolved_name": "Softies Burger - USC Village",
-            "address": "835 W Jefferson Blvd Suite 1710, Los Angeles, CA 90089, USA",
-            "coords": [
-              34.0247564,
-              -118.2846458
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 10:00 AM – 9:00 PM",
-              "Tuesday: 10:00 AM – 9:00 PM",
-              "Wednesday: 10:00 AM – 9:00 PM",
-              "Thursday: 10:00 AM – 9:00 PM",
-              "Friday: 10:00 AM – 9:00 PM",
-              "Saturday: 10:00 AM – 9:00 PM",
-              "Sunday: 10:00 AM – 9:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 21,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 21,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.5,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7637582878204808478-12",
-          "type": "place",
-          "name": "sweetgreen",
-          "category": "fast-casual salad restaurant",
-          "hook": "Build-your-own grain-and-salad bowls; sometimes has really good deals (8.0/10).",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "commerce",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJrzv_CMvHwoARqv-ICl4Qc7I",
-            "resolved_name": "sweetgreen",
-            "address": "929 W Jefferson Blvd, Los Angeles, CA 90089, USA",
-            "coords": [
-              34.0247532,
-              -118.2852983
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 10:00 AM – 8:00 PM",
-              "Tuesday: 10:00 AM – 8:00 PM",
-              "Wednesday: 10:00 AM – 8:00 PM",
-              "Thursday: 10:00 AM – 8:00 PM",
-              "Friday: 10:00 AM – 8:00 PM",
-              "Saturday: 10:00 AM – 8:00 PM",
-              "Sunday: 10:00 AM – 8:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 20,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 20,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 20,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 20,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 20,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 20,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 10,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 20,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.2,
-            "source": "google-places"
-          }
-        }
-      ]
-    },
-    {
-      "id": "7515944299708681518",
-      "source": {
-        "url": "https://www.tiktok.com/@ssimoneangelica/photo/7515944299708681518",
-        "kind": "photo",
-        "author": "ssimoneangelica",
-        "author_url": "https://www.tiktok.com/@ssimoneangelica",
-        "saved_at": "2025-06-14",
-        "saved_at_is_estimate": true,
-        "thumbnail": "thumbnails/7515944299708681518.jpg",
-        "caption": "what i eat as a college student at usc!! 🍽️😋 #usc #trojan #losangeles #fighton #dininghall #whatieatinaday #whatieat #uscfood #lafoodie #larecs "
-      },
-      "evidence": {
-        "hydrated_via": "yt-dlp only (oEmbed 400)",
-        "oembed_worked": false,
-        "frames_used": 8,
-        "transcript_kind": "music",
-        "transcript_was_useful": false,
-        "transcript": "I can see it in your eyes. Know you feel the same. Million dollar bitch, dripping on it like brown."
-      },
-      "extraction": {
-        "model": "gpt-5.6-terra",
-        "signals": [
-          "frames"
-        ],
-        "run_at": "2026-08-24T01:57:22.337Z",
-        "usage": {
-          "prompt_tokens": 29812,
-          "completion_tokens": 639,
-          "total_tokens": 30451,
-          "prompt_tokens_details": {
-            "cached_tokens": 0,
-            "audio_tokens": 0
-          },
-          "completion_tokens_details": {
-            "reasoning_tokens": 87,
-            "audio_tokens": 0,
-            "accepted_prediction_tokens": 0,
-            "rejected_prediction_tokens": 0
-          }
-        }
-      },
-      "entities": [
-        {
-          "id": "7515944299708681518-0",
-          "type": "place",
-          "name": "Little Pan USC",
-          "category": "Chinese restaurant",
-          "hook": "Try any of the juicy pan-fried buns and the Thai tea.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJb5x-nGHJwoARyrEKSSboT8c",
-            "resolved_name": "Little Pan USC",
-            "address": "555 N Spring St, Los Angeles, CA 90012, USA",
-            "coords": [
-              34.0574276,
-              -118.2406609
-            ],
-            "granularity": "venue",
-            "hours": null,
-            "periods": null,
-            "rating": 4.4,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7515944299708681518-1",
-          "type": "place",
-          "name": "Cafe Dulce USC",
-          "category": "cafe and bakery",
-          "hook": "Blueberry matcha plus good-value food and pastries.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJW-W3cuXHwoARybuUzJ-ussE",
-            "resolved_name": "Cafe Dulce (USC Village)",
-            "address": "3096 McClintock Ave Ste 1420, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0254145,
-              -118.28536509999999
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 8:00 AM – 7:00 PM",
-              "Tuesday: 8:00 AM – 7:00 PM",
-              "Wednesday: 8:00 AM – 7:00 PM",
-              "Thursday: 8:00 AM – 7:00 PM",
-              "Friday: 8:00 AM – 7:00 PM",
-              "Saturday: 8:00 AM – 7:00 PM",
-              "Sunday: 8:00 AM – 7:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 19,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 19,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 19,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 19,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 19,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 19,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 19,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.4,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7515944299708681518-2",
-          "type": "place",
-          "name": "Ebae's",
-          "category": "Asian fusion restaurant",
-          "hook": "Asian-fusion options; the sushi boat is the creator's personal favorite.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "city",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "confidence 0.48 below 0.7",
-          "confidence": {
-            "extraction": 0.97,
-            "geocode": 0.5,
-            "overall": 0.48
-          },
-          "place": {
-            "place_id": "ChIJn7GRXOzHwoARNOHThxF8Kp4",
-            "resolved_name": "Ebaes",
-            "address": "2314 S Union Ave, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0344289,
-              -118.2836357
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 11:00 AM – 10:00 PM",
-              "Tuesday: 11:00 AM – 10:00 PM",
-              "Wednesday: 11:00 AM – 10:00 PM",
-              "Thursday: 11:00 AM – 10:00 PM",
-              "Friday: 11:00 AM – 10:00 PM",
-              "Saturday: 11:00 AM – 10:00 PM",
-              "Sunday: 12:00 – 10:00 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 12,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 22,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 22,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.3,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7515944299708681518-3",
-          "type": "place",
-          "name": "Bacari W. Adams",
-          "category": "tapas restaurant",
-          "hook": "Tapas-style menu with something for everyone; the Margherita pizza was described as divine.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
+            "overall": 0.93
           },
           "place": {
             "place_id": "ChIJNRRxXezHwoARycaDMem45cQ",
@@ -11255,149 +11744,16 @@
           }
         },
         {
-          "id": "7515944299708681518-4",
+          "id": "7580924634594315551-7",
           "type": "place",
-          "name": "Jack's N Joe",
-          "category": "breakfast restaurant",
-          "hook": "Classic breakfast joint; especially recommended for French toast.",
-          "neighborhood": null,
+          "name": "Yogurtland",
+          "category": "Frozen yogurt shop",
+          "hook": "Build-your-own frozen yogurt with candy, cookie, and sprinkle toppings.",
+          "neighborhood": "University Park",
           "city": "Los Angeles",
           "country": "United States",
           "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "city",
-            "requires": []
-          },
-          "nudge_eligible": false,
-          "why_not": "confidence 0.49 below 0.7",
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 0.5,
-            "overall": 0.49
-          },
-          "place": {
-            "place_id": "ChIJeWOdT93HwoARDKMAvCc5HIc",
-            "resolved_name": "Jacks N Joe",
-            "address": "2498 S Figueroa St, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.0287607,
-              -118.27499229999998
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 7:00 AM – 1:30 PM",
-              "Tuesday: 7:00 AM – 1:30 PM",
-              "Wednesday: 7:00 AM – 1:30 PM",
-              "Thursday: 7:00 AM – 1:30 PM",
-              "Friday: 7:00 AM – 1:30 PM",
-              "Saturday: 8:00 AM – 2:30 PM",
-              "Sunday: 8:00 AM – 2:30 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 14,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 13,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 13,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 13,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 13,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 7,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 13,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 8,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 14,
-                  "minute": 30
-                }
-              }
-            ],
-            "rating": 4.5,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7515944299708681518-5",
-          "type": "place",
-          "name": "Northern Cafe",
-          "category": "Chinese restaurant",
-          "hook": "Many options; staple order is beef roll, mapo tofu, and spicy wontons.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
+            "caption",
             "frames"
           ],
           "trigger_class": "spatial",
@@ -11414,147 +11770,9 @@
           "nudge_eligible": true,
           "why_not": null,
           "confidence": {
-            "extraction": 0.98,
+            "extraction": 0.94,
             "geocode": 1,
-            "overall": 0.98
-          },
-          "place": {
-            "place_id": "ChIJeUtcbefHwoAR4LUUWvXFBCo",
-            "resolved_name": "Northern Cafe",
-            "address": "2904 S Figueroa St, Los Angeles, CA 90007, USA",
-            "coords": [
-              34.025505599999995,
-              -118.27737219999999
-            ],
-            "granularity": "venue",
-            "hours": [
-              "Monday: 11:00 AM – 11:00 PM",
-              "Tuesday: 11:00 AM – 11:00 PM",
-              "Wednesday: 11:00 AM – 11:00 PM",
-              "Thursday: 11:00 AM – 11:00 PM",
-              "Friday: 11:00 AM – 11:00 PM",
-              "Saturday: 11:00 AM – 11:00 PM",
-              "Sunday: 11:00 AM – 9:30 PM"
-            ],
-            "periods": [
-              {
-                "open": {
-                  "day": 0,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 0,
-                  "hour": 21,
-                  "minute": 30
-                }
-              },
-              {
-                "open": {
-                  "day": 1,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 1,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 2,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 2,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 3,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 3,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 4,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 4,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 5,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 5,
-                  "hour": 23,
-                  "minute": 0
-                }
-              },
-              {
-                "open": {
-                  "day": 6,
-                  "hour": 11,
-                  "minute": 0
-                },
-                "close": {
-                  "day": 6,
-                  "hour": 23,
-                  "minute": 0
-                }
-              }
-            ],
-            "rating": 4.4,
-            "source": "google-places"
-          }
-        },
-        {
-          "id": "7515944299708681518-6",
-          "type": "place",
-          "name": "Yogurtland USC",
-          "category": "frozen yogurt shop",
-          "hook": "Go-to spot for sweet-treat runs near USC.",
-          "neighborhood": null,
-          "city": "Los Angeles",
-          "country": "United States",
-          "found_in": [
-            "frames"
-          ],
-          "trigger_class": "spatial",
-          "decay": "contextual",
-          "trigger": {
-            "kind": "spatial",
-            "scope": "proximity",
-            "radius_m": 500,
-            "requires": [
-              "open_now",
-              "calendar_gap"
-            ]
-          },
-          "nudge_eligible": true,
-          "why_not": null,
-          "confidence": {
-            "extraction": 0.98,
-            "geocode": 1,
-            "overall": 0.98
+            "overall": 0.94
           },
           "place": {
             "place_id": "ChIJG29JN-HHwoARzrA2dyLJnKk",
@@ -11661,6 +11879,282 @@
               }
             ],
             "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7580924634594315551-8",
+          "type": "place",
+          "name": "SunLife Organics",
+          "category": "Smoothie and açaí bowl shop",
+          "hook": "A bowl can be redeemed free through ClassPass every month.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.95,
+            "geocode": 1,
+            "overall": 0.95
+          },
+          "place": {
+            "place_id": "ChIJQ2YOBuXHwoARuzmwJB3aSU4",
+            "resolved_name": "Sunlife Organics",
+            "address": "929 W Jefferson Blvd #1640, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.024924299999995,
+              -118.28513189999998
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 8:00 AM – 5:00 PM",
+              "Tuesday: 8:00 AM – 5:00 PM",
+              "Wednesday: 8:00 AM – 5:00 PM",
+              "Thursday: 8:00 AM – 5:00 PM",
+              "Friday: 8:00 AM – 5:00 PM",
+              "Saturday: 8:00 AM – 5:00 PM",
+              "Sunday: 8:00 AM – 5:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 8,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7580924634594315551-9",
+          "type": "place",
+          "name": "Lasso My Taco",
+          "category": "Taco stand",
+          "hook": "Creator's absolute favorite among taco stands by USC.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": 1,
+            "overall": 0.96
+          },
+          "place": {
+            "place_id": "ChIJi-sslifHwoARfHyhF0bIBXo",
+            "resolved_name": "Lasso My Taco",
+            "address": "2821, 1/2 S Vermont Ave, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0284303,
+              -118.29188269999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 PM – 1:00 AM",
+              "Tuesday: 7:00 PM – 1:00 AM",
+              "Wednesday: 7:00 PM – 1:00 AM",
+              "Thursday: 7:00 PM – 1:00 AM",
+              "Friday: 7:00 PM – 3:00 AM",
+              "Saturday: 7:00 PM – 3:00 AM",
+              "Sunday: 7:00 PM – 1:00 AM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 1,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 1,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 1,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 1,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 1,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 3,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 19,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 3,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.7,
             "source": "google-places"
           }
         }

@@ -20,7 +20,6 @@ https://www.tiktok.com/@norwegianbackroad/photo/7629768609082002710
 https://www.tiktok.com/@planetsecretw/photo/7646794537930657056
 https://www.tiktok.com/@jassetgo/photo/7652947896815455510
 https://www.tiktok.com/@thegingerwanderlust/video/7413407442161110305
-https://www.tiktok.com/@abbeysadleir/video/7644138021582818581
 https://www.tiktok.com/@elizlovesfood/video/7662261740402494733
 https://www.tiktok.com/@sensitive.vtg/video/7660592980708871437
 https://www.tiktok.com/@atelierbrochman/photo/7652702090954935574
@@ -28,5 +27,8 @@ https://www.tiktok.com/@rajandroh/video/7673673926156881166
 https://www.tiktok.com/@spotsyoumissed/photo/7662423778449837342
 https://www.tiktok.com/@szesze.fertitta/video/7654368777370373406
 https://www.tiktok.com/@smallbellybigworld/photo/7648532889188994335
-https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478?q=usc%20recommendations%20&t=1787530231721
-https://www.tiktok.com/@ssimoneangelica/photo/7515944299708681518?q=usc%20recommendations%20&t=1787530231721
+https://www.tiktok.com/@getcultured.la/photo/7676640994250575117	2026-08-24
+https://www.tiktok.com/@mrs.passengerprincess/video/7676609172825214221	2026-08-24
+https://www.tiktok.com/@corner.la/photo/7666549982698278174	2026-08-24
+https://www.tiktok.com/@chrissy015_/video/7663636435349540110	2026-08-24
+https://www.tiktok.com/@olivia.eatsss/photo/7580924634594315551	2026-08-24

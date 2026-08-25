@@ -1,0 +1,45 @@
+{
+  "id": "7663636435349540110",
+  "model": "gpt-5.6-terra",
+  "frames_used": 5,
+  "transcript_kind": "narration",
+  "transcript_was_useful": false,
+  "signals": [
+    "caption",
+    "frames"
+  ],
+  "usage": {
+    "prompt_tokens": 3849,
+    "completion_tokens": 108,
+    "total_tokens": 3957,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-24T23:23:36.490Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Norton Simon Museum",
+      "category": "art museum",
+      "neighborhood": null,
+      "city": "Pasadena",
+      "country": "United States",
+      "hook": "Broad collection with works by Picasso, Rembrandt, Degas, and Van Gogh; free student admission and free parking.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

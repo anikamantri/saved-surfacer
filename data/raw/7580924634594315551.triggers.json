@@ -1,0 +1,1445 @@
+{
+  "id": "7580924634594315551",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Pho N Mor",
+      "category": "Vietnamese restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Delicious Vietnamese food at good prices near USC.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJu1AzR5vHwoAR7TcmgGf5fBE",
+        "resolved_name": "Pho N Mor | Vietnamese Restaurant",
+        "address": "3335 S Figueroa St Unit P, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.023326499999996,
+          -118.2793454
+        ],
+        "primary_type": "vietnamese_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 12:00 – 9:00 PM",
+          "Tuesday: 12:00 – 9:00 PM",
+          "Wednesday: 12:00 – 9:00 PM",
+          "Thursday: 12:00 – 9:00 PM",
+          "Friday: 12:00 – 10:00 PM",
+          "Saturday: 12:00 – 10:00 PM",
+          "Sunday: 12:00 – 9:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 3.9,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.98
+    },
+    {
+      "type": "place",
+      "name": "Ebaes - Ramen & Sushi",
+      "category": "Ramen and sushi restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Decent-priced ramen and sushi; recommended for big groups.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 1,
+        "geocoded": true,
+        "place_id": "ChIJn7GRXOzHwoARNOHThxF8Kp4",
+        "resolved_name": "Ebaes",
+        "address": "2314 S Union Ave, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.0344289,
+          -118.2836357
+        ],
+        "primary_type": "ramen_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 11:00 AM – 10:00 PM",
+          "Tuesday: 11:00 AM – 10:00 PM",
+          "Wednesday: 11:00 AM – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 12:00 – 10:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 12,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "source": "google-places",
+        "confidence": 0.5,
+        "city_match": true,
+        "alias_suspected": true,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.49 below 0.7",
+      "overall": 0.49
+    },
+    {
+      "type": "place",
+      "name": "Caveman's Kitchen",
+      "category": "Caribbean restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Underrated spot with especially delicious plantains.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 2,
+        "geocoded": true,
+        "place_id": "ChIJa3otz4zHwoARFqsH5J7XZBI",
+        "resolved_name": "Caveman Kitchen",
+        "address": "2215 S Vermont Ave #101, 102, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.0359537,
+          -118.29162269999998
+        ],
+        "primary_type": "peruvian_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:00 AM – 3:30 PM",
+          "Tuesday: 10:00 AM – 9:00 PM",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 9:00 PM",
+          "Sunday: 10:00 AM – 9:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "source": "google-places",
+        "confidence": 0.67,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 2
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.63 below 0.7",
+      "overall": 0.63
+    },
+    {
+      "type": "place",
+      "name": "Rock & Reilly's",
+      "category": "Comfort-food restaurant and bar",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Go here for comfort food, including a grilled cheese and milkshake.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 3,
+        "geocoded": true,
+        "place_id": "ChIJTUtPz1bHwoARxfhZXhvzisU",
+        "resolved_name": "Rock & Reilly's USC - Restaurant and Bar",
+        "address": "3201 S Hoover St, Los Angeles, CA 90089, USA",
+        "coords": [
+          34.024279199999995,
+          -118.2841299
+        ],
+        "primary_type": "american_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:30 AM – 11:00 PM",
+          "Tuesday: 10:30 AM – 11:00 PM",
+          "Wednesday: 10:30 AM – 12:00 AM",
+          "Thursday: 10:30 AM – 12:00 AM",
+          "Friday: 10:30 AM – 12:00 AM",
+          "Saturday: 10:30 AM – 12:00 AM",
+          "Sunday: 10:30 AM – 11:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.2,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.94
+    },
+    {
+      "type": "place",
+      "name": "Dulce",
+      "category": "Bakery and café",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Blueberry matcha and croissant combo.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 4,
+        "geocoded": true,
+        "place_id": "ChIJW-W3cuXHwoARybuUzJ-ussE",
+        "resolved_name": "Cafe Dulce (USC Village)",
+        "address": "3096 McClintock Ave Ste 1420, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.0254145,
+          -118.28536509999999
+        ],
+        "primary_type": "cafe",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 8:00 AM – 7:00 PM",
+          "Tuesday: 8:00 AM – 7:00 PM",
+          "Wednesday: 8:00 AM – 7:00 PM",
+          "Thursday: 8:00 AM – 7:00 PM",
+          "Friday: 8:00 AM – 7:00 PM",
+          "Saturday: 8:00 AM – 7:00 PM",
+          "Sunday: 8:00 AM – 7:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.94
+    },
+    {
+      "type": "place",
+      "name": "CAVA",
+      "category": "Mediterranean fast-casual restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Order the kids meal.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 5,
+        "geocoded": true,
+        "place_id": "ChIJ1xoiveXHwoARC-qY17itdWk",
+        "resolved_name": "CAVA",
+        "address": "3201 S Hoover St Suite 1840, Los Angeles, CA 90089, USA",
+        "coords": [
+          34.0251334,
+          -118.28459900000001
+        ],
+        "primary_type": "mediterranean_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 10:30 AM – 10:00 PM",
+          "Tuesday: 10:30 AM – 10:00 PM",
+          "Wednesday: 10:30 AM – 10:00 PM",
+          "Thursday: 10:30 AM – 10:00 PM",
+          "Friday: 10:30 AM – 10:00 PM",
+          "Saturday: 10:30 AM – 10:00 PM",
+          "Sunday: 10:30 AM – 10:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.7,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.98
+    },
+    {
+      "type": "place",
+      "name": "Bacari",
+      "category": "Italian-inspired small-plates restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "An LA staple with notably great food.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.93,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 6,
+        "geocoded": true,
+        "place_id": "ChIJNRRxXezHwoARycaDMem45cQ",
+        "resolved_name": "Bacari W. Adams",
+        "address": "2308 S Union Ave, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.034501399999996,
+          -118.2834681
+        ],
+        "primary_type": "italian_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 5:00 – 10:00 PM",
+          "Tuesday: 5:00 – 10:00 PM",
+          "Wednesday: 5:00 – 10:00 PM",
+          "Thursday: 5:00 – 10:00 PM",
+          "Friday: 5:00 – 10:00 PM",
+          "Saturday: 10:30 AM – 3:00 PM, 5:00 – 10:00 PM",
+          "Sunday: 10:30 AM – 3:00 PM, 5:00 – 10:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 2
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.93
+    },
+    {
+      "type": "place",
+      "name": "Yogurtland",
+      "category": "Frozen yogurt shop",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Build-your-own frozen yogurt with candy, cookie, and sprinkle toppings.",
+      "found_in": [
+        "caption",
+        "frames"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 7,
+        "geocoded": true,
+        "place_id": "ChIJG29JN-HHwoARzrA2dyLJnKk",
+        "resolved_name": "Yogurtland USC",
+        "address": "3335 S Figueroa St Unit K, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.0227748,
+          -118.2798221
+        ],
+        "primary_type": "dessert_shop",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 11:00 AM – 12:00 AM",
+          "Tuesday: 11:00 AM – 12:00 AM",
+          "Wednesday: 11:00 AM – 12:00 AM",
+          "Thursday: 11:00 AM – 12:00 AM",
+          "Friday: 11:00 AM – 12:00 AM",
+          "Saturday: 11:00 AM – 12:00 AM",
+          "Sunday: 11:00 AM – 12:00 AM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.94
+    },
+    {
+      "type": "place",
+      "name": "SunLife Organics",
+      "category": "Smoothie and açaí bowl shop",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "A bowl can be redeemed free through ClassPass every month.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.95,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 8,
+        "geocoded": true,
+        "place_id": "ChIJQ2YOBuXHwoARuzmwJB3aSU4",
+        "resolved_name": "Sunlife Organics",
+        "address": "929 W Jefferson Blvd #1640, Los Angeles, CA 90089, USA",
+        "coords": [
+          34.024924299999995,
+          -118.28513189999998
+        ],
+        "primary_type": "juice_shop",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: 8:00 AM – 5:00 PM",
+          "Sunday: 8:00 AM – 5:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.95
+    },
+    {
+      "type": "place",
+      "name": "Lasso My Taco",
+      "category": "Taco stand",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Creator's absolute favorite among taco stands by USC.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 9,
+        "geocoded": true,
+        "place_id": "ChIJi-sslifHwoARfHyhF0bIBXo",
+        "resolved_name": "Lasso My Taco",
+        "address": "2821, 1/2 S Vermont Ave, Los Angeles, CA 90007, USA",
+        "coords": [
+          34.0284303,
+          -118.29188269999999
+        ],
+        "primary_type": "mexican_restaurant",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 7:00 PM – 1:00 AM",
+          "Tuesday: 7:00 PM – 1:00 AM",
+          "Wednesday: 7:00 PM – 1:00 AM",
+          "Thursday: 7:00 PM – 1:00 AM",
+          "Friday: 7:00 PM – 3:00 AM",
+          "Saturday: 7:00 PM – 3:00 AM",
+          "Sunday: 7:00 PM – 1:00 AM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 1,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 1,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 1,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 1,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 1,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 3,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 3,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.7,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.96
+    }
+  ]
+}

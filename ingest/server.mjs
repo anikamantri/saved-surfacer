@@ -10,10 +10,16 @@
  * second pipeline: what runs live on camera is the same code that produced all
  * 53 entities offline.
  *
- *   POST /ingest    { url }  -> SSE stream of real stage output, then the entities
+ *   POST /ingest    { url, refresh } -> SSE stream of real stage output, then the entities
+ *   POST /delete    { id }   -> remove a post and everything derived from it, rebundle
  *   GET  /entities           -> the whole corpus, for launch sync
  *   GET  /media/...          -> thumbnails and frames for posts newer than the build
  *   GET  /health             -> so the app can say whether the Mac is reachable
+ *
+ * `refresh` is what the library's hold-to-act menu sends. "model" drops the
+ * extraction cache and re-runs the vision call against the frames already on
+ * disk; "all" re-hydrates from TikTok. Both go down the same code path as a
+ * first ingest, so there is one pipeline and no demo-only branch.
  *
  * Stages 01-06 run scoped to the shared post. Stage 07 runs UNSCOPED on purpose:
  * the bundle has to see the entire corpus to rebuild entities.json and the tiles.
@@ -23,7 +29,9 @@ import { createServer } from 'node:http';
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve, extname, basename } from 'node:path';
 import { PATHS, SERVER } from './lib/config.mjs';
-import { only, allPosts, resolveShareUrl, addUrl, readJson, rawPath } from './lib/util.mjs';
+import {
+  only, allPosts, resolveShareUrl, addUrl, readJson, rawPath, clearCaches, deletePost,
+} from './lib/util.mjs';
 
 import hydrate from './01-hydrate.mjs';
 import media from './02-media.mjs';
@@ -33,14 +41,27 @@ import geocode from './05-geocode.mjs';
 import triggers from './06-triggers.mjs';
 import bundle from './07-bundle.mjs';
 
+/**
+ * Each stage, and the artifact it must leave behind for THIS post.
+ *
+ * The artifact is not decoration. Stages are written for batch runs, where one
+ * bad post must not abort the other nineteen — so they catch per-post errors,
+ * log them, and return normally. In a batch that is right. For a single share
+ * from the phone, that one post *is* the run, and a stage that quietly produced
+ * nothing was still reporting `done`: the whole seven-stage list showed ticks
+ * while extraction had actually failed on an exhausted OpenAI balance.
+ *
+ * Checking for the artifact catches that generically, for every stage, instead
+ * of teaching the server to recognise one API's error text.
+ */
 const STAGES = [
-  ['01 hydrate',    hydrate,    'caption, author, cover'],
-  ['02 media',      media,      'frames + audio'],
-  ['03 transcribe', transcribe, 'speech to text'],
-  ['04 extract',    extract,    'typed entities'],
-  ['05 geocode',    geocode,    'coords + opening hours'],
-  ['06 triggers',   triggers,   'wake-up conditions'],
-  ['07 bundle',     bundle,     'thumbnails, tiles, corpus'],
+  ['01 hydrate',    hydrate,    'caption, author, cover',      'post.json'],
+  ['02 media',      media,      'frames + audio',              'media.json'],
+  ['03 transcribe', transcribe, 'speech to text',              'transcript.json'],
+  ['04 extract',    extract,    'typed entities',              'entities.json'],
+  ['05 geocode',    geocode,    'coords + opening hours',      'geo.json'],
+  ['06 triggers',   triggers,   'wake-up conditions',          'triggers.json'],
+  ['07 bundle',     bundle,     'thumbnails, tiles, corpus',   null],
 ];
 
 // One post at a time. Two concurrent yt-dlp runs writing the same cache is a
@@ -96,6 +117,14 @@ async function runIngest(req, res, body) {
   // handle nor the /photo/ vs /video/ distinction the hydration path turns on.
   send('resolved', post);
 
+  // Re-runs clear caches BEFORE the stages start, which is the whole mechanism:
+  // every stage skips when its own output already exists, so deleting a prefix
+  // of that chain is what makes real work happen again.
+  if (body.refresh) {
+    const cleared = clearCaches(post.id, body.refresh === 'all' ? 'all' : 'model');
+    send('refresh', { scope: body.refresh, cleared });
+  }
+
   const added = addUrl(post.url, body.saved_at || null);
   send('queued', { url: post.url, id: post.id, added, note: added ? 'added to docs/saved-posts.md' : 'already in the harvest list' });
 
@@ -104,12 +133,21 @@ async function runIngest(req, res, body) {
   const started = Date.now();
 
   try {
-    for (const [name, stage, what] of STAGES) {
+    for (const [name, stage, what, artifact] of STAGES) {
       send('stage', { name, what, status: 'running' });
       // 07 must see everything — it rebuilds the whole corpus and bakes tiles.
       if (name.startsWith('07')) allPosts(); else only(post.id);
       const t = Date.now();
       await stage();
+
+      // A stage that swallowed its own error leaves no artifact. Say so, on the
+      // stage that actually failed, rather than ticking all seven and finishing
+      // with an empty corpus entry.
+      if (artifact && !existsSync(rawPath(post.id, artifact))) {
+        send('stage', { name, what, status: 'failed', ms: Date.now() - t });
+        throw new Error(
+          `${name} produced no ${artifact} for ${post.id} — see its log lines above for the cause.`);
+      }
       send('stage', { name, what, status: 'done', ms: Date.now() - t });
     }
 
@@ -183,6 +221,38 @@ const server = createServer(async (req, res) => {
     if (!existsSync(PATHS.entities)) return json(res, 404, { error: 'no corpus yet — run the pipeline' });
     res.writeHead(200, { 'content-type': 'application/json', 'access-control-allow-origin': '*' });
     return res.end(readFileSync(PATHS.entities));
+  }
+
+  /**
+   * Delete a post.
+   *
+   * A real deletion, not a hidden flag: the post leaves docs/saved-posts.md,
+   * its stage caches and media go, and stage 07 rebuilds the corpus without it.
+   * "Never" in the nudge card silences ONE entity; this removes the save. They
+   * are different promises and the app should not blur them.
+   */
+  if (pathname === '/delete' && req.method === 'POST') {
+    if (busy) return json(res, 409, { error: 'ingesting a post — try again in a moment' });
+    let raw = '';
+    for await (const chunk of req) raw += chunk;
+    let body;
+    try { body = JSON.parse(raw || '{}'); } catch { return json(res, 400, { error: 'body must be JSON' }); }
+    const id = String(body.id || '').trim();
+    if (!/^\d+$/.test(id)) return json(res, 400, { error: 'body must be { id }' });
+
+    busy = true;
+    try {
+      const result = deletePost(id);
+      // Rebundle so entities.json and the app's copy agree with the filesystem.
+      allPosts();
+      await bundle();
+      const corpus = readJson(PATHS.entities, { totals: {} });
+      return json(res, 200, { id, ...result, totals: corpus.totals });
+    } catch (err) {
+      return json(res, 500, { error: err.message });
+    } finally {
+      busy = false;
+    }
   }
 
   if (pathname === '/ingest' && req.method === 'POST') {
