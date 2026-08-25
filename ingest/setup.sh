@@ -24,10 +24,10 @@ echo "→ checking .env"
 grep -q OPENAI_API_KEY .env      || { echo "  .env is missing OPENAI_API_KEY"; exit 1; }
 grep -q GOOGLE_MAPS_API_KEY .env || { echo "  .env is missing GOOGLE_MAPS_API_KEY"; exit 1; }
 
-echo "→ installing prototype dependencies"
-npm --prefix prototype install --silent
+echo "→ installing workspace dependencies (engine, ingest, app)"
+npm install --silent
 
 echo
 echo "Setup complete. Next:"
 echo "  npm run ingest    # runs the pipeline (needs both API keys)"
-echo "  npm run dev       # serves the prototype"
+echo "  npm run dev       # serves the phone app in the browser"
