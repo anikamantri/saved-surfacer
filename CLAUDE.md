@@ -432,6 +432,20 @@ see `docs/native-plan.md` for how that risk is managed instead.
   floating circle hid the app's single input behind a guess. So it is a plain iOS large title
   with capture in the trailing corner, plus the floating button — the one that survives a
   scroll. The runtime status stays on the map, next to the dot it describes.
+- **The library has two shapes, and the list is the places, not the posts.** A Grid / List
+  segmented control sits under the large title. The grid stays the dumb reverse-chron
+  graveyard. The list is the corpus flattened to everything with a pin, **nearest first** by
+  default (`travelTo()` against the live fix; newest-first with a note until there is one),
+  with the three filters a person actually reaches for — open now, what it is allowed to do
+  (the same three-colour `nudgeState()`), and city — plus Newest / A to Z sorts. The strip
+  under the toggle shows the sort and whatever is currently narrowing the list; the full set
+  lives in a sheet whose footer counts what the current choice leaves. Tapping a row goes to
+  the MAP with that pin's card open (`showOnMap`, the same path as the post page's "See on
+  map") — the list is a list of places to go, and the card is where the walk, hours and
+  directions are; the post is one more tap from there. The dot opens the trigger editor;
+  press-and-hold gives the tile's menu. View and filters
+  persist in `cue.library.v1` because the Library unmounts on a tab switch. No search box:
+  87 places, and a sort plus three filters reaches any of them in two taps.
 - **The tab bar is a floating glass capsule, not a full-width strip.** Content scrolls under
   it, which is what the blur has to sample; the selection is one pill that slides rather than
   four colours changing independently. It is a layer of the phone rather than a band of

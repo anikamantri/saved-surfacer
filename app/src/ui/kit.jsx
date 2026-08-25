@@ -64,6 +64,7 @@ export function Overlay({ children }) {
 const PATHS = {
   'chevron.right': <path d="m9 5 7 7-7 7" />,
   'chevron.left': <path d="m15 5-7 7 7 7" />,
+  'chevron.down': <path d="m5 9 7 7 7-7" />,
   plus: <path d="M12 5v14M5 12h14" />,
   xmark: <path d="M6 6l12 12M18 6L6 18" />,
   play: <path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor" stroke="none" />,

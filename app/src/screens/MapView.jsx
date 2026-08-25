@@ -249,8 +249,8 @@ function PinCard({ entity, position, onOpenPost, onEdit, onVerdict, onClose }) {
   );
 }
 
-function MapView({ entities, position, armed, retiredKey = '', overridesKey = '', status, hidden = false,
-                   onOpenPost, onVerdict, onChanged, onOpenSettings }) {
+function MapView({ entities, position, armed, retiredKey = '', overridesKey = '', focus = null,
+                   status, hidden = false, onOpenPost, onVerdict, onChanged, onOpenSettings }) {
   const [selectedId, setSelectedId] = useState(null);
   const [editing, setEditing] = useState(null);
   const el = useRef(null);
@@ -488,6 +488,25 @@ function MapView({ entities, position, armed, retiredKey = '', overridesKey = ''
       centred.current = true;
     }
   }, [position]);
+
+  /**
+   * "See on map" from a post page. Street zoom, no animation — the tab has just
+   * switched, and a fly-in from wherever the map last was would cross tiles
+   * that were never baked. Then the same selection a tap on the pin makes, so
+   * the card opens and the pin is lifted out from under it. Declared after the
+   * reveal's layout effect on purpose: Leaflet has re-measured by the time this
+   * runs, so the centre is the centre of the visible map.
+   */
+  useEffect(() => {
+    if (!focus || !map.current) return;
+    const e = entities.find((x) => x.id === focus.id);
+    if (!e?.place?.coords) return;
+    map.current.setView(e.place.coords, 15, { animate: false });
+    // A fix arriving after this must not pull the view away from the pin
+    // someone deliberately asked for.
+    centred.current = true;
+    select.current(e.id);
+  }, [focus]);
 
   /**
    * Keep Leaflet's idea of the container in sync with the real one.

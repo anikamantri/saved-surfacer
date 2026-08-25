@@ -22,7 +22,7 @@
  */
 
 import React, { useState } from 'react';
-import { DEFAULTS } from '@cue/engine';
+import { DEFAULTS, RETIRING } from '@cue/engine';
 import * as store from '../state/store.js';
 import { nudgeState, nudgeReason, nudgeOptions, suggestedKeywords } from '../data.js';
 import { Sheet, Segmented, Glyph, StatusDot } from './kit.jsx';
@@ -57,7 +57,19 @@ export default function NudgeSheet({ entity, onClose, onChanged, onOpenSettings 
   const canBeNearby = options.find((o) => o.mode === 'nearby').available;
   const state = nudgeState(entity, { overrides: store.loadOverrides(), feedback: store.loadFeedback() });
 
+  /**
+   * A verdict outranks any trigger. The engine checks "went" and "never" before
+   * the trigger is even read, so a place you have retired is silent whatever is
+   * set below — and this sheet used to commit a rule on one anyway, close, and
+   * change nothing, with the dot on the post page staying red. Setting a
+   * trigger on a retired save is a way of taking the verdict back, so it does
+   * exactly that, and the button says so rather than doing it quietly.
+   */
+  const verdict = store.loadFeedback()[entity.id];
+  const retired = !!RETIRING[verdict];
+
   function commit() {
+    if (retired) store.setFeedback(entity.id, null);
     if (mode === 'default') store.setOverride(entity.id, null);
     else if (mode === 'nearby') store.setOverride(entity.id, { mode: 'nearby', max_walk_min: walk });
     else if (mode === 'event') {
@@ -71,15 +83,21 @@ export default function NudgeSheet({ entity, onClose, onChanged, onOpenSettings 
     onClose();
   }
 
-  const dirty = mode !== (saved?.mode || 'default')
+  // A retired save always has something to commit: the verdict itself.
+  const dirty = retired
+    || mode !== (saved?.mode || 'default')
     || (mode === 'nearby' && walk !== (saved?.max_walk_min ?? prefs.max_walk_min))
     || (mode === 'event' && (words !== (saved?.match || []).join(', ') || lead !== (saved?.lead_min ?? prefs.lead_min)));
+
+  const action = mode === 'default' ? 'use what was inferred' : 'set this trigger';
 
   return (
     <Sheet title={entity.name} subtitle={entity.category || entity.type} onClose={onClose}
            footer={
              <button className="btn primary wide" disabled={!dirty} onClick={commit}>
-               {mode === 'default' ? 'Use what was inferred' : 'Set this trigger'}
+               {retired
+                 ? `Take back “${verdict}” and ${action}`
+                 : action[0].toUpperCase() + action.slice(1)}
              </button>
            }>
       {/* Where it stands right now, in the same three colours the library and
@@ -93,6 +111,21 @@ export default function NudgeSheet({ entity, onClose, onChanged, onOpenSettings 
           })}</div>
         </div>
       </div>
+
+      {/* Said before the picker, because until the verdict is taken back the
+          picker decides nothing — and a control that looks live and is not is
+          the kind of lie this sheet exists to avoid. */}
+      {retired && (
+        <div className="explain">
+          <Glyph name={verdict === 'went' ? 'checkmark' : 'bell.slash'} size={18} />
+          <div>
+            {verdict === 'went'
+              ? 'You went, so this one is done — nothing set below can bring it back on its own.'
+              : 'You said never, so nothing set below applies on its own.'}
+            {' '}Choosing a trigger here takes that back.
+          </div>
+        </div>
+      )}
 
       <Segmented
         value={mode}

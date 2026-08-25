@@ -14,7 +14,7 @@
 const KEYS = {
   feedback: 'cue.feedback.v1', fired: 'cue.fired.v1',
   log: 'cue.log.v1', overrides: 'cue.overrides.v1', prefs: 'cue.prefs.v1',
-  handled: 'cue.handled.v1',
+  handled: 'cue.handled.v1', library: 'cue.library.v1',
 };
 const today = () => new Date().toISOString().slice(0, 10);
 
@@ -102,6 +102,16 @@ export const overrideFor = (entityId) => loadOverrides()[entityId] || null;
 
 /** Hand every entity back to the extractor's judgement. */
 export const clearOverrides = () => write(KEYS.overrides, {});
+
+/**
+ * How the library was last being looked at — grid or list, and the list's sort
+ * and filters. Display state, not an engine input, but it still has to outlive
+ * a tab switch: the Library unmounts when you leave it, and coming back from
+ * the map to find "open now in Oslo" silently reset to the grid reads as the
+ * app forgetting what you were doing.
+ */
+export const loadLibraryView = () => read(KEYS.library, {});
+export const saveLibraryView = (next) => write(KEYS.library, next);
 
 /** Ids fired today. Anything from an earlier day is dropped on read. */
 export function firedToday() {

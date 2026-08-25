@@ -364,6 +364,66 @@ input.field.mono { font-size: 14px; }
 .tile.hidden { opacity: 0; }
 .tile .fallback { padding: 8px; font-size: 11px; color: var(--label-2); }
 
+/* ── Library list — the same saves, as places ─────────────────────────────
+   Nearest first, filtered by what a person actually asks: is it open, can it
+   nudge me, is it in this city. The strip under the toggle carries the sort
+   and whatever is currently narrowing the list; the sheet carries the rest. */
+.view-toggle { padding: 0 0 10px; }
+
+.filters {
+  display: flex; align-items: center; gap: 7px;
+  padding: 2px 16px 12px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+.filters::-webkit-scrollbar { display: none; }
+.filters > * { flex: none; }
+.fchip {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 7px 12px; border-radius: 17px; border: 0;
+  background: var(--fill); color: var(--label);
+  font-size: 14px; font-weight: 500; letter-spacing: -0.15px; white-space: nowrap;
+}
+.fchip.on { background: var(--tint-soft); color: var(--tint-ink); font-weight: 600; }
+.fchip:active { opacity: 0.6; }
+.fchip svg { opacity: 0.75; }
+
+/* A row is the dot, the place, the distance, and the way in. The dot is its
+   own button, outside the press-and-hold region, so tapping it edits the
+   trigger and never also opens the post. */
+.place { display: flex; align-items: center; padding-left: 10px; position: relative; }
+.place + .place::before {
+  content: ''; position: absolute; left: 16px; right: 0; top: 0;
+  height: var(--hairline); background: var(--separator);
+}
+.place-main {
+  flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px 10px 4px; min-height: 58px;
+  -webkit-touch-callout: none; user-select: none; -webkit-user-select: none;
+  transition: background 0.12s ease;
+}
+.place-main.holding { background: var(--fill-soft); }
+.place-text { flex: 1; min-width: 0; }
+.place .name {
+  font-size: 17px; font-weight: 600; letter-spacing: -0.43px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.place .line {
+  font-size: 13px; line-height: 18px; color: var(--label-2); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.place .line > span + span::before { content: ' · '; color: var(--label-3); }
+.place .facts {
+  font-size: 12px; line-height: 16px; color: var(--label-3); margin-top: 1px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+/* Tabular, because when the list is sorted by this column it is the column
+   being read — and a proportional "1.2 km" over "980m" does not line up. */
+.place .dist {
+  flex: none; font-size: 15px; letter-spacing: -0.23px; color: var(--label-2);
+  font-variant-numeric: tabular-nums;
+}
+.place-main > svg { flex: none; }
+
 /* ── Context menu — press and hold ────────────────────────────────────────
    The iOS shape: the thing you pressed floats above a blurred backdrop, the
    actions sit under it, destructive last and red. Nothing here is a web
@@ -525,6 +585,16 @@ input.field.mono { font-size: 14px; }
    colours are things the app is choosing NOT to do, and they should read as
    deliberate rather than as errors — so it is a line of text, not a red pill. */
 .entity .why-line { font-size: 12px; line-height: 16px; margin-top: 5px; font-weight: 500; }
+/* The way from a place to its pin. A tinted line of text, not a fourth column:
+   the row already has two icon buttons and a third would crowd the name. The
+   negative margin keeps the 44pt target without opening up the row. */
+.entity .maplink {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin: 4px 0 -8px -4px; padding: 6px 4px; border: 0; background: none;
+  color: var(--tint-ink); font-size: 13px; font-weight: 500; line-height: 18px;
+}
+.entity .maplink .dim { color: var(--label-2); font-weight: 400; }
+.entity .maplink:active { opacity: 0.4; }
 
 .statusbtn, .edgebtn {
   background: none; border: 0; padding: 6px; margin: -2px 0 0; flex: none;
@@ -824,6 +894,7 @@ input.host::placeholder { color: var(--label-3); }
   font-size: 14px; font-weight: 500; letter-spacing: -0.15px;
 }
 .chips button.on { background: var(--tint); color: #fff; font-weight: 600; }
+.chips button .sdot { display: inline-block; vertical-align: -0.5px; margin-right: 5px; }
 .chips button .tag {
   position: absolute; top: -6px; right: -4px;
   background: var(--label-2); color: #fff; border-radius: 8px;

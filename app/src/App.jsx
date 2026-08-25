@@ -345,6 +345,20 @@ export default function App() {
 
   const openPost = useCallback((id) => navigate({ tab: 'library', post: id }), [navigate]);
 
+  /**
+   * The post page's way onto the map: go to the tab, then ask the map to
+   * centre one pin and open its card. The request is a fresh object each time
+   * so the memoised map sees it even when the same place is asked for twice;
+   * it is not part of the location, because "which pin was focused" is not
+   * somewhere back should return to.
+   */
+  const [mapFocus, setMapFocus] = useState(null);
+  const focusSeq = useRef(0);
+  const showOnMap = useCallback((entityId) => {
+    setMapFocus({ id: entityId, seq: ++focusSeq.current });
+    navigate({ tab: 'map' });
+  }, [navigate]);
+
   // The general settings are reachable from every trigger editor, wherever it
   // was opened from — the precedence between the two is easier to understand
   // when you can get from one to the other.
@@ -397,11 +411,13 @@ export default function App() {
           next to the dot it describes. */}
       <main className={`body${tab === 'map' ? ' flush' : ''}`}>
         {tab === 'library' && (
-          <Library posts={posts} onRefresh={refresh} onDelete={remove}
+          <Library posts={posts} position={snapshot.position}
+                   onRefresh={refresh} onDelete={remove}
                    onCapture={() => navigate({ tab: 'add' })}
                    openId={openPostId} onOpen={(id) => navigate({ post: id })}
                    onBack={goBack} backLabel={backLabel}
-                   onChanged={rulesChanged} onOpenSettings={openSettings} />
+                   onChanged={rulesChanged} onOpenSettings={openSettings}
+                   onShowOnMap={showOnMap} />
         )}
         {/* Mounted on the first visit and kept alive thereafter, hidden rather
             than unmounted. Rebuilding Leaflet on every tab switch meant tiles
@@ -409,7 +425,7 @@ export default function App() {
             not changed — the most visible stutter in the app. */}
         {(tab === 'map' || visitedMap.current) && (
           <MapView entities={snapshot.entities} position={snapshot.position} armed={snapshot.armed}
-                   retiredKey={retiredKey} overridesKey={overridesKey}
+                   retiredKey={retiredKey} overridesKey={overridesKey} focus={mapFocus}
                    status={status} hidden={tab !== 'map'}
                    onOpenPost={openPost} onVerdict={verdict} onChanged={rulesChanged}
                    onOpenSettings={openSettings} />
