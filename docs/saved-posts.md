@@ -31,4 +31,3 @@ https://www.tiktok.com/@getcultured.la/photo/7676640994250575117	2026-08-24
 https://www.tiktok.com/@mrs.passengerprincess/video/7676609172825214221	2026-08-24
 https://www.tiktok.com/@corner.la/photo/7666549982698278174	2026-08-24
 https://www.tiktok.com/@chrissy015_/video/7663636435349540110	2026-08-24
-https://www.tiktok.com/@olivia.eatsss/photo/7580924634594315551	2026-08-24
