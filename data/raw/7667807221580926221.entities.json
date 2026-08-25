@@ -1,0 +1,47 @@
+{
+  "id": "7667807221580926221",
+  "model": "gpt-5.6-terra",
+  "frames_used": 5,
+  "transcript_kind": "music",
+  "transcript_was_useful": true,
+  "signals": [
+    "caption",
+    "frames",
+    "audio"
+  ],
+  "usage": {
+    "prompt_tokens": 3955,
+    "completion_tokens": 200,
+    "total_tokens": 4155,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 82,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-25T23:14:43.294Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Rockii Studios",
+      "category": "custom jewelry-making workshop",
+      "neighborhood": "Silver Lake",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Design custom jewelry or keychains from a large selection of beads and charms in a whimsical, fairy-treehouse-like studio.",
+      "found_in": [
+        "caption",
+        "frames",
+        "audio"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    }
+  ]
+}

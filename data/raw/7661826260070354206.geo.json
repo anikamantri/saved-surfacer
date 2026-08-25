@@ -1,0 +1,130 @@
+{
+  "id": "7661826260070354206",
+  "results": [
+    {
+      "index": 0,
+      "geocoded": true,
+      "place_id": "ChIJl-M_BEXHwoAR4s2juEejGBM",
+      "resolved_name": "ELOREA",
+      "address": "3511 W 6th St TOWER (3rd, Los Angeles, CA 90020, USA",
+      "coords": [
+        34.0636955,
+        -118.2983884
+      ],
+      "primary_type": "clothing_store",
+      "granularity": "venue",
+      "hours": [
+        "Monday: 11:00 AM – 6:00 PM",
+        "Tuesday: 11:00 AM – 6:00 PM",
+        "Wednesday: 11:00 AM – 6:00 PM",
+        "Thursday: 11:00 AM – 6:00 PM",
+        "Friday: 11:00 AM – 7:00 PM",
+        "Saturday: 11:00 AM – 7:00 PM",
+        "Sunday: 11:00 AM – 7:00 PM"
+      ],
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "business_status": "OPERATIONAL",
+      "rating": 4.5,
+      "source": "google-places",
+      "confidence": 1,
+      "city_match": true,
+      "alias_suspected": false,
+      "candidates_considered": 1
+    },
+    {
+      "index": 1,
+      "geocoded": false,
+      "reason": "not a place"
+    },
+    {
+      "index": 2,
+      "geocoded": false,
+      "reason": "not a place"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "id": "7661826260070354206",
+  "entities": [
+    {
+      "type": "place",
+      "name": "ELOREA",
+      "category": "Korean perfumery and rooftop café",
+      "neighborhood": "Koreatown",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Date-friendly rooftop Korean perfumery where fragrance-inspired drinks come with matching scent cards.",
+      "found_in": [
+        "caption",
+        "frames",
+        "audio"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJl-M_BEXHwoAR4s2juEejGBM",
+        "resolved_name": "ELOREA",
+        "address": "3511 W 6th St TOWER (3rd, Los Angeles, CA 90020, USA",
+        "coords": [
+          34.0636955,
+          -118.2983884
+        ],
+        "primary_type": "clothing_store",
+        "granularity": "venue",
+        "hours": [
+          "Monday: 11:00 AM – 6:00 PM",
+          "Tuesday: 11:00 AM – 6:00 PM",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 6:00 PM",
+          "Friday: 11:00 AM – 7:00 PM",
+          "Saturday: 11:00 AM – 7:00 PM",
+          "Sunday: 11:00 AM – 7:00 PM"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "source": "google-places",
+        "confidence": 1,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 1
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "proximity",
+        "radius_m": 500,
+        "requires": [
+          "open_now",
+          "calendar_gap"
+        ]
+      },
+      "nudge_eligible": true,
+      "why_not": null,
+      "overall": 0.99
+    },
+    {
+      "type": "product",
+      "name": "Jeong",
+      "category": "ELOREA café drink",
+      "neighborhood": "Koreatown",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Iced cold brew with soy-sauce cold foam; praised as a balanced sweet-and-salty coffee drink.",
+      "found_in": [
+        "audio"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.9
+    },
+    {
+      "type": "product",
+      "name": "Heaven",
+      "category": "ELOREA café drink",
+      "neighborhood": "Koreatown",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Rich, creamy matcha topped with jasmine cream, paired with its matching fragrance card.",
+      "found_in": [
+        "frames",
+        "audio"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "commerce",
+      "decay": "contextual",
+      "geo": null,
+      "trigger": {
+        "kind": "commerce",
+        "scope": "unwired",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "commerce triggers are modelled but not wired in this build",
+      "overall": 0.94
+    }
+  ]
+}

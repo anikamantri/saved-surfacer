@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-25T19:42:56.382Z",
+  "generated_at": "2026-08-25T23:33:38.182Z",
   "totals": {
-    "posts": 17,
-    "entities": 101,
-    "nudge_eligible": 64,
-    "geocoded": 87,
-    "with_hours": 64
+    "posts": 19,
+    "entities": 105,
+    "nudge_eligible": 65,
+    "geocoded": 89,
+    "with_hours": 66
   },
   "hydration": {
-    "generated_at": "2026-08-25T02:38:32.400Z",
+    "generated_at": "2026-08-25T23:29:21.602Z",
     "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
     "totals": {
       "posts": 1,
@@ -17,16 +17,16 @@
     },
     "posts": [
       {
-        "id": "7617201795487632653",
-        "url": "https://www.tiktok.com/@jessabethh_/video/7617201795487632653",
+        "id": "7647308158058106126",
+        "url": "https://www.tiktok.com/@building.asia/video/7647308158058106126",
         "kind": "video",
         "oembed": "ok",
         "ytdlp": "ok",
         "caption_source": "yt-dlp.description",
-        "caption_chars": 365,
+        "caption_chars": 42,
         "has_video": true,
-        "audio_seconds": 24,
-        "audio_kind": "narration"
+        "audio_seconds": 57,
+        "audio_kind": "music"
       }
     ]
   },
@@ -10697,6 +10697,379 @@
             "rating": 4.8,
             "source": "google-places"
           }
+        }
+      ]
+    },
+    {
+      "id": "7667807221580926221",
+      "source": {
+        "url": "https://www.tiktok.com/@likeafriendsaid/video/7667807221580926221",
+        "kind": "video",
+        "author": "likeafriendsaid",
+        "author_url": "https://www.tiktok.com/@likeafriendsaid",
+        "saved_at": "2026-08-25",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7667807221580926221.jpg",
+        "caption": "One of the most whimsical activities that you can do in Los Angeles!! Custom jewelry-making at @@rockiistudiosfeels like you’ve stumbled into a fairy treehouse in Silver Lake 🧚🌳🍄  ##latodo##lalife##lalifestyle##silverlake##laworkshop"
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 5,
+        "transcript_kind": "music",
+        "transcript_was_useful": true,
+        "transcript": "This is one of the most whimsical things you can do in Los Angeles. This is Rocky Studios, tucked away inside of an enchanting treehouse studio in Silver Lake. They have workshops where you can design your own jewelry, keychains, and more with their incredible selection of beads and charms. You can spend hours creating your own custom pieces in the most peaceful, whimsical space surrounded by beautiful charms, pearls, and beads. It is the perfect excuse to unplug and get creative and heal your inner child. And of course, you can purchase pre-made or commission a custom piece. This is an activity that should be on everyone's Los Angeles bucket list. It is one of the most magical experiences you'll find in Los Angeles.",
+        "frames": [
+          "frames/7667807221580926221/frame-01.jpg",
+          "frames/7667807221580926221/frame-02.jpg",
+          "frames/7667807221580926221/frame-03.jpg",
+          "frames/7667807221580926221/frame-04.jpg",
+          "frames/7667807221580926221/frame-05.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames",
+          "audio"
+        ],
+        "run_at": "2026-08-25T23:14:43.294Z",
+        "usage": {
+          "prompt_tokens": 3955,
+          "completion_tokens": 200,
+          "total_tokens": 4155,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 82,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7667807221580926221-0",
+          "type": "place",
+          "name": "Rockii Studios",
+          "category": "custom jewelry-making workshop",
+          "hook": "Design custom jewelry or keychains from a large selection of beads and charms in a whimsical, fairy-treehouse-like studio.",
+          "neighborhood": "Silver Lake",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames",
+            "audio"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.49 below 0.7",
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 0.5,
+            "overall": 0.49
+          },
+          "place": {
+            "place_id": "ChIJ8yzVYkLHwoARdaILSkhbGG8",
+            "resolved_name": "PIRATE.COM - Rehearsal & Recording Studios",
+            "address": "Basement Level, 2807 Sunset Blvd Ste 100, Los Angeles, CA 90026, USA",
+            "coords": [
+              34.0820381,
+              -118.27157389999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: Open 24 hours",
+              "Tuesday: Open 24 hours",
+              "Wednesday: Open 24 hours",
+              "Thursday: Open 24 hours",
+              "Friday: Open 24 hours",
+              "Saturday: Open 24 hours",
+              "Sunday: Open 24 hours"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 0,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7661826260070354206",
+      "source": {
+        "url": "https://www.tiktok.com/@samm.young/video/7661826260070354206",
+        "kind": "video",
+        "author": "samm.young",
+        "author_url": "https://www.tiktok.com/@samm.young",
+        "saved_at": "2026-08-25",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7661826260070354206.jpg",
+        "caption": "perfect for a date or something to do with a friend 🍵⭐️ @ELOREA #thingstodoinla #thingstodoinktown #elorea #perfumerecommendation #lacafe "
+      },
+      "evidence": {
+        "hydrated_via": "oembed + yt-dlp",
+        "oembed_worked": true,
+        "frames_used": 14,
+        "transcript_kind": "music",
+        "transcript_was_useful": true,
+        "transcript": "If you're into unique fragrances, rooftops, and matcha, this is exactly the spot for you. I finally got to check out Oloria, which is a Korean perfumery located on a rooftop in K-Town. It's in this beautiful historic building, and the architecture is just so stunning to look at. All of their scents draw inspiration from Korean nature and culture, and I feel like they really have something for everyone. They have such a wide variety of different scents. I loved how unique all of these scents were. It was like stuff that we had never smelled before, and as people who collect fragrance, that definitely says a lot. The workers were also super helpful at walking us through which scents they thought would be best for us based on our preferences. But I'd have to say these two are my favorite because I am a gourmand girl. They also have a cafe that serves drinks that go with each scent that they sell, which I think is so genius and unique. We decided to go with Jeong, which was an iced cold brew served with soy sauce cold foam. We also ordered Heaven, which is a matcha with a jasmine cream top. They also give you these little scent cards of the scent that goes with the drink, so you're supposed to smell it and then take a sip, which I think is really fun and immersive. It was such a nice day out, so we enjoyed our drinks on this rooftop that they have connected to the store. And I'm not gonna lie, because these drinks were $10 each, I wanted to hate them so bad, but these were actually some of the best matcha and coffee drinks I have had in a minute. I'm very picky when it comes to my matcha, and this one was a 10 out of 10. It was so rich and so creamy, and I would also recommend the coffee. It was a perfect balance of sweet and salty. Even if you don't like perfume and you just want a good drink with a nice view, I definitely recommend this spot.",
+        "frames": [
+          "frames/7661826260070354206/frame-01.jpg",
+          "frames/7661826260070354206/frame-02.jpg",
+          "frames/7661826260070354206/frame-03.jpg",
+          "frames/7661826260070354206/frame-04.jpg",
+          "frames/7661826260070354206/frame-05.jpg",
+          "frames/7661826260070354206/frame-06.jpg",
+          "frames/7661826260070354206/frame-07.jpg",
+          "frames/7661826260070354206/frame-08.jpg",
+          "frames/7661826260070354206/frame-09.jpg",
+          "frames/7661826260070354206/frame-10.jpg",
+          "frames/7661826260070354206/frame-11.jpg",
+          "frames/7661826260070354206/frame-12.jpg",
+          "frames/7661826260070354206/frame-13.jpg",
+          "frames/7661826260070354206/frame-14.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "caption",
+          "frames",
+          "audio"
+        ],
+        "run_at": "2026-08-25T23:17:34.937Z",
+        "usage": {
+          "prompt_tokens": 9209,
+          "completion_tokens": 278,
+          "total_tokens": 9487,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7661826260070354206-0",
+          "type": "place",
+          "name": "ELOREA",
+          "category": "Korean perfumery and rooftop café",
+          "hook": "Date-friendly rooftop Korean perfumery where fragrance-inspired drinks come with matching scent cards.",
+          "neighborhood": "Koreatown",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "caption",
+            "frames",
+            "audio"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.99,
+            "geocode": 1,
+            "overall": 0.99
+          },
+          "place": {
+            "place_id": "ChIJl-M_BEXHwoAR4s2juEejGBM",
+            "resolved_name": "ELOREA",
+            "address": "3511 W 6th St TOWER (3rd, Los Angeles, CA 90020, USA",
+            "coords": [
+              34.0636955,
+              -118.2983884
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 6:00 PM",
+              "Tuesday: 11:00 AM – 6:00 PM",
+              "Wednesday: 11:00 AM – 6:00 PM",
+              "Thursday: 11:00 AM – 6:00 PM",
+              "Friday: 11:00 AM – 7:00 PM",
+              "Saturday: 11:00 AM – 7:00 PM",
+              "Sunday: 11:00 AM – 7:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 19,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 19,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7661826260070354206-1",
+          "type": "product",
+          "name": "Jeong",
+          "category": "ELOREA café drink",
+          "hook": "Iced cold brew with soy-sauce cold foam; praised as a balanced sweet-and-salty coffee drink.",
+          "neighborhood": "Koreatown",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "audio"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.9,
+            "geocode": null,
+            "overall": 0.9
+          },
+          "place": null
+        },
+        {
+          "id": "7661826260070354206-2",
+          "type": "product",
+          "name": "Heaven",
+          "category": "ELOREA café drink",
+          "hook": "Rich, creamy matcha topped with jasmine cream, paired with its matching fragrance card.",
+          "neighborhood": "Koreatown",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames",
+            "audio"
+          ],
+          "trigger_class": "commerce",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "commerce",
+            "scope": "unwired",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "commerce triggers are modelled but not wired in this build",
+          "confidence": {
+            "extraction": 0.94,
+            "geocode": null,
+            "overall": 0.94
+          },
+          "place": null
         }
       ]
     }

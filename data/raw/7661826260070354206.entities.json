@@ -1,0 +1,78 @@
+{
+  "id": "7661826260070354206",
+  "model": "gpt-5.6-terra",
+  "frames_used": 14,
+  "transcript_kind": "music",
+  "transcript_was_useful": true,
+  "signals": [
+    "caption",
+    "frames",
+    "audio"
+  ],
+  "usage": {
+    "prompt_tokens": 9209,
+    "completion_tokens": 278,
+    "total_tokens": 9487,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "run_at": "2026-08-25T23:17:34.937Z",
+  "entities": [
+    {
+      "type": "place",
+      "name": "ELOREA",
+      "category": "Korean perfumery and rooftop café",
+      "neighborhood": "Koreatown",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Date-friendly rooftop Korean perfumery where fragrance-inspired drinks come with matching scent cards.",
+      "found_in": [
+        "caption",
+        "frames",
+        "audio"
+      ],
+      "extraction_confidence": 0.99,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Jeong",
+      "category": "ELOREA café drink",
+      "neighborhood": "Koreatown",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Iced cold brew with soy-sauce cold foam; praised as a balanced sweet-and-salty coffee drink.",
+      "found_in": [
+        "audio"
+      ],
+      "extraction_confidence": 0.9,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    },
+    {
+      "type": "product",
+      "name": "Heaven",
+      "category": "ELOREA café drink",
+      "neighborhood": "Koreatown",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Rich, creamy matcha topped with jasmine cream, paired with its matching fragrance card.",
+      "found_in": [
+        "frames",
+        "audio"
+      ],
+      "extraction_confidence": 0.94,
+      "trigger_class": "commerce",
+      "decay": "contextual"
+    }
+  ]
+}

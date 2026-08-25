@@ -9026,5 +9026,1715 @@
       "primaryType": "aquarium",
       "_source": "google-places"
     }
+  ],
+  "Rockii Studios, Silver Lake, Los Angeles, United States": [
+    {
+      "id": "ChIJ8yzVYkLHwoARdaILSkhbGG8",
+      "types": [
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Basement Level, 2807 Sunset Blvd Ste 100, Los Angeles, CA 90026, USA",
+      "location": {
+        "latitude": 34.0820381,
+        "longitude": -118.27157389999999
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "PIRATE.COM - Rehearsal & Recording Studios",
+        "languageCode": "en"
+      },
+      "primaryType": "store",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJX8XXmzjHwoARbSlNz3Xh1cQ",
+      "types": [
+        "hair_salon",
+        "barber_shop",
+        "gift_shop",
+        "hair_care",
+        "art_gallery",
+        "beauty_salon",
+        "event_venue",
+        "health",
+        "store",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "1176 Glendale Blvd, Los Angeles, CA 90026, USA",
+      "location": {
+        "latitude": 34.077906,
+        "longitude": -118.2604117
+      },
+      "rating": 3.9,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 7:00 PM",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 7:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 11:00 AM – 6:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Silver Lake Studio",
+        "languageCode": "en"
+      },
+      "primaryType": "hair_salon",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJXxztnvfHwoAR_8tf3q9ARaA",
+      "types": [
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Sanborn Ave, Los Angeles, CA 90029, USA",
+      "location": {
+        "latitude": 34.0898593,
+        "longitude": -118.28238329999999
+      },
+      "rating": 5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 23,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 23,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 11:30 PM",
+          "Tuesday: 9:00 AM – 11:30 PM",
+          "Wednesday: 9:00 AM – 11:30 PM",
+          "Thursday: 9:00 AM – 11:30 PM",
+          "Friday: 9:00 AM – 11:30 PM",
+          "Saturday: 9:00 AM – 11:30 PM",
+          "Sunday: 9:00 AM – 11:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Silverlake Recording Studios",
+        "languageCode": "en"
+      },
+      "primaryType": "store",
+      "_source": "google-places"
+    }
+  ],
+  "ELOREA, Koreatown, Los Angeles, United States": [
+    {
+      "id": "ChIJl-M_BEXHwoAR4s2juEejGBM",
+      "types": [
+        "clothing_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3511 W 6th St TOWER (3rd, Los Angeles, CA 90020, USA",
+      "location": {
+        "latitude": 34.0636955,
+        "longitude": -118.2983884
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 6:00 PM",
+          "Tuesday: 11:00 AM – 6:00 PM",
+          "Wednesday: 11:00 AM – 6:00 PM",
+          "Thursday: 11:00 AM – 6:00 PM",
+          "Friday: 11:00 AM – 7:00 PM",
+          "Saturday: 11:00 AM – 7:00 PM",
+          "Sunday: 11:00 AM – 7:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "ELOREA",
+        "languageCode": "en"
+      },
+      "primaryType": "clothing_store",
+      "_source": "google-places"
+    }
+  ],
+  "USC Annenberg Café, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJkbbNUOPHwoARmvmoueabYgE",
+      "types": [
+        "academic_department",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3630 Watt Way, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020776999999995,
+        "longitude": -118.28697580000001
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 9:00 PM",
+          "Tuesday: 7:00 AM – 9:00 PM",
+          "Wednesday: 7:00 AM – 9:00 PM",
+          "Thursday: 7:00 AM – 9:00 PM",
+          "Friday: 7:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Wallis Annenberg Hall",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJQ8tcan3HwoARgJsU7rVp9UQ",
+      "types": [
+        "academic_department",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3502 Watt Way, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0220167,
+        "longitude": -118.2865969
+      },
+      "rating": 3.3,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Annenberg School for Communication and Journalism",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJW-W3cuXHwoARybuUzJ-ussE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3096 McClintock Ave Ste 1420, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0254145,
+        "longitude": -118.28536509999999
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 19,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 19,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 7:00 PM",
+          "Tuesday: 8:00 AM – 7:00 PM",
+          "Wednesday: 8:00 AM – 7:00 PM",
+          "Thursday: 8:00 AM – 7:00 PM",
+          "Friday: 8:00 AM – 7:00 PM",
+          "Saturday: 8:00 AM – 7:00 PM",
+          "Sunday: 8:00 AM – 7:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Cafe Dulce (USC Village)",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Ronald Tutor Campus Center (TCC), University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJW-yJPuPHwoAR-8-j-F2Imhs",
+      "types": [
+        "academic_department",
+        "event_venue",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3607 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0203463,
+        "longitude": -118.2863545
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 12:00 AM",
+          "Tuesday: 7:00 AM – 12:00 AM",
+          "Wednesday: 7:00 AM – 12:00 AM",
+          "Thursday: 7:00 AM – 12:00 AM",
+          "Friday: 7:00 AM – 12:00 AM",
+          "Saturday: 10:00 AM – 12:00 AM",
+          "Sunday: 10:00 AM – 12:00 AM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Ronald Tutor Campus Center",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    }
+  ],
+  "USC Student Union (STU), University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJoU3tEuPHwoARaf9YfmNy11M",
+      "types": [
+        "academic_department",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Student Union, 3601 Trousdale Pkwy Ste 101, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020222499999996,
+        "longitude": -118.2856428
+      },
+      "rating": 5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 6:00 PM",
+          "Tuesday: 8:00 AM – 6:00 PM",
+          "Wednesday: 8:00 AM – 6:00 PM",
+          "Thursday: 8:00 AM – 6:00 PM",
+          "Friday: 8:00 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Student Union",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    }
+  ],
+  "USC Career Center, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJm7V0EuPHwoARanFHVo504BM",
+      "types": [
+        "employment_agency",
+        "government_office",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Student Union, Student Union, 3601 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020265699999996,
+        "longitude": -118.2857791
+      },
+      "rating": 4.1,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Career Center",
+        "languageCode": "en"
+      },
+      "primaryType": "employment_agency",
+      "_source": "google-places"
+    }
+  ],
+  "Koertschak Center for Learning and Creativity, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJlWgfE-PHwoARx4-cuSDhFkM",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3601 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0202303,
+        "longitude": -118.2857495
+      },
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Kortschak Center",
+        "languageCode": "en"
+      },
+      "_source": "google-places"
+    }
+  ],
+  "La CASA, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJm7V0EuPHwoARanFHVo504BM",
+      "types": [
+        "employment_agency",
+        "government_office",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "formattedAddress": "Student Union, Student Union, 3601 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020265699999996,
+        "longitude": -118.2857791
+      },
+      "rating": 4.1,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Career Center",
+        "languageCode": "en"
+      },
+      "primaryType": "employment_agency",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0223519,
+        "longitude": -118.285117
+      },
+      "rating": 4.7,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "University of Southern California",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJoWIbwuPHwoAR9AM2WjeLbNY",
+      "types": [
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3551 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020939399999996,
+        "longitude": -118.28315339999999
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McCarthy Quad",
+        "languageCode": "en"
+      },
+      "primaryType": "park",
+      "_source": "google-places"
+    }
+  ],
+  "CBCSA, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0223519,
+        "longitude": -118.285117
+      },
+      "rating": 4.7,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "University of Southern California",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ5TPWEuPHwoARXt2jkt29298",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Student Union, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0202885,
+        "longitude": -118.2856877
+      },
+      "rating": 1,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Student Affairs",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJoWIbwuPHwoAR9AM2WjeLbNY",
+      "types": [
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3551 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020939399999996,
+        "longitude": -118.28315339999999
+      },
+      "rating": 4.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McCarthy Quad",
+        "languageCode": "en"
+      },
+      "primaryType": "park",
+      "_source": "google-places"
+    }
+  ],
+  "APASS, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJffZKP9_FwoARl5dNoLqxJks",
+      "types": [
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3601 Trousdale Pkwy STU 410, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0203051,
+        "longitude": -118.2857987
+      },
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Asian Pacific American Student Services",
+        "languageCode": "en"
+      },
+      "primaryType": "association_or_organization",
+      "_source": "google-places"
+    }
+  ],
+  "USC School of Cinematic Arts (SCA), University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJDcIm7eTHwoARAbescWkwKrk",
+      "types": [
+        "academic_department",
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "formattedAddress": "900 W 34th St, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.023578199999996,
+        "longitude": -118.2865012
+      },
+      "rating": 4.8,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC School of Cinematic Arts",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    }
+  ],
+  "The Coffee Bean & Tea Leaf at USC School of Cinematic Arts, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJDcIm7eTHwoARAbescWkwKrk",
+      "types": [
+        "academic_department",
+        "university",
+        "educational_institution",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "900 W 34th St, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.023578199999996,
+        "longitude": -118.2865012
+      },
+      "rating": 4.8,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC School of Cinematic Arts",
+        "languageCode": "en"
+      },
+      "primaryType": "academic_department",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJg8_0t-PHwoAR1y8KH4CjUuQ",
+      "types": [
+        "tea_house",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3550 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0201147,
+        "longitude": -118.283316
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 15,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 8,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 15,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM – 3:00 PM",
+          "Tuesday: 8:00 AM – 3:00 PM",
+          "Wednesday: 8:00 AM – 3:00 PM",
+          "Thursday: 8:00 AM – 3:00 PM",
+          "Friday: 8:00 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Literatea",
+        "languageCode": "en"
+      },
+      "primaryType": "tea_house",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJ7aVxnOTHwoARxKIntFtakKo",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0223519,
+        "longitude": -118.285117
+      },
+      "rating": 4.7,
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "University of Southern California",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    }
   ]
 }

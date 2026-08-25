@@ -1,0 +1,68 @@
+{
+  "id": "7667807221580926221",
+  "entities": [
+    {
+      "type": "place",
+      "name": "Rockii Studios",
+      "category": "custom jewelry-making workshop",
+      "neighborhood": "Silver Lake",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "Design custom jewelry or keychains from a large selection of beads and charms in a whimsical, fairy-treehouse-like studio.",
+      "found_in": [
+        "caption",
+        "frames",
+        "audio"
+      ],
+      "extraction_confidence": 0.98,
+      "trigger_class": "spatial",
+      "decay": "contextual",
+      "geo": {
+        "index": 0,
+        "geocoded": true,
+        "place_id": "ChIJ8yzVYkLHwoARdaILSkhbGG8",
+        "resolved_name": "PIRATE.COM - Rehearsal & Recording Studios",
+        "address": "Basement Level, 2807 Sunset Blvd Ste 100, Los Angeles, CA 90026, USA",
+        "coords": [
+          34.0820381,
+          -118.27157389999999
+        ],
+        "primary_type": "store",
+        "granularity": "venue",
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "business_status": "OPERATIONAL",
+        "rating": 4.2,
+        "source": "google-places",
+        "confidence": 0.5,
+        "city_match": true,
+        "alias_suspected": false,
+        "candidates_considered": 3
+      },
+      "trigger": {
+        "kind": "spatial",
+        "scope": "city",
+        "requires": []
+      },
+      "nudge_eligible": false,
+      "why_not": "confidence 0.49 below 0.7",
+      "overall": 0.49
+    }
+  ]
+}
