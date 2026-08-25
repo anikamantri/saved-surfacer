@@ -11,7 +11,11 @@
  * whenever the OS feels like it is not a budget.
  */
 
-const KEYS = { feedback: 'cue.feedback.v1', fired: 'cue.fired.v1', log: 'cue.log.v1' };
+const KEYS = {
+  feedback: 'cue.feedback.v1', fired: 'cue.fired.v1',
+  log: 'cue.log.v1', overrides: 'cue.overrides.v1', prefs: 'cue.prefs.v1',
+  handled: 'cue.handled.v1',
+};
 const today = () => new Date().toISOString().slice(0, 10);
 
 const read = (k, fallback) => {
@@ -22,10 +26,82 @@ const write = (k, v) => { localStorage.setItem(k, JSON.stringify(v)); return v; 
 export const loadFeedback = () => read(KEYS.feedback, {});
 export const saveFeedback = (next) => write(KEYS.feedback, next);
 
+/**
+ * Verdicts toggle rather than latch. Tapping "I went" on a place already marked
+ * went UNMARKS it — you were wrong, or you changed your mind, and a verdict you
+ * cannot take back turns an honest signal into something people avoid giving.
+ * Clearing hands the entity back to whatever its trigger says.
+ */
 export function setFeedback(entityId, verdict) {
-  const next = { ...loadFeedback(), [entityId]: verdict };
+  const next = { ...loadFeedback() };
+  if (verdict == null || next[entityId] === verdict) delete next[entityId];
+  else next[entityId] = verdict;
   return saveFeedback(next);
 }
+
+/**
+ * Links this app has already acted on, so it acts on each of them exactly once.
+ *
+ * This has to survive termination, which is the whole reason it is here and not
+ * a ref. The share extension leaves the link on the CLIPBOARD — iOS will not
+ * let it foreground its container — and the clipboard keeps it indefinitely.
+ * An in-memory guard is therefore reset by the very event it is guarding
+ * against: every cold launch read the same link, decided it was new, and threw
+ * the user onto the capture screen mid-ingest. Once is a share. Twice is a bug.
+ */
+export const handledLinks = () => read(KEYS.handled, []);
+
+export const wasHandled = (url) => handledLinks().includes(url);
+
+export function markHandled(url) {
+  // Bounded: the clipboard only ever holds one, and this is a phone.
+  return write(KEYS.handled, [url, ...handledLinks().filter((u) => u !== url)].slice(0, 30));
+}
+
+/**
+ * The user's own settings — what "nearby" means, how many nudges a day, and
+ * whether the hours and calendar gates apply at all.
+ *
+ * Only the keys the user actually changed are stored. The engine merges these
+ * over `DEFAULTS`, so a setting nobody has touched keeps tracking the default
+ * rather than freezing whatever it happened to be the day the app first ran.
+ */
+export const loadPrefs = () => read(KEYS.prefs, {});
+
+export const savePrefs = (next) => write(KEYS.prefs, next);
+
+export function setPref(key, value) {
+  const next = { ...loadPrefs() };
+  if (value === null || value === undefined) delete next[key]; else next[key] = value;
+  return savePrefs(next);
+}
+
+export const resetPrefs = () => savePrefs({});
+
+/**
+ * Hand-set triggers, keyed by entity id.
+ *
+ * Separate from feedback on purpose: feedback is a verdict on a nudge that
+ * already happened, an override is a rule about ones that have not. Blurring
+ * them would mean "not now" quietly rewriting a trigger the user set by hand.
+ *
+ * The engine is what interprets these — see `applyOverride`. Nothing here
+ * decides anything; it only remembers.
+ */
+export const loadOverrides = () => read(KEYS.overrides, {});
+
+export function setOverride(entityId, override) {
+  const next = { ...loadOverrides() };
+  // Clearing means "use what the extractor decided again", which is a real
+  // choice and not the same as switching the nudge off.
+  if (!override) delete next[entityId]; else next[entityId] = override;
+  return write(KEYS.overrides, next);
+}
+
+export const overrideFor = (entityId) => loadOverrides()[entityId] || null;
+
+/** Hand every entity back to the extractor's judgement. */
+export const clearOverrides = () => write(KEYS.overrides, {});
 
 /** Ids fired today. Anything from an earlier day is dropped on read. */
 export function firedToday() {

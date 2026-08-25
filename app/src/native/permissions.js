@@ -54,10 +54,26 @@ export async function requestAll(onStep = () => {}) {
   onStep('location (always)');
   await BackgroundGeolocation.requestPermissions({ permissions: ['backgroundLocation'] }).catch(() => {});
 
-  // Read-only: Cue never writes to the calendar, and iOS 17+ grants read-only
-  // access without the full-access prompt's scarier wording.
-  onStep('calendar (read only)');
-  await CapacitorCalendar.requestReadOnlyCalendarAccess().catch(() => {});
+  // Calendar. This MUST be requestFullCalendarAccess, not the read-only variant:
+  //
+  //   1. iOS 17 removed read-only access to events. The only requests Apple offers
+  //      are requestFullAccessToEvents (read+write) and requestWriteOnlyAccessToEvents
+  //      (write, cannot read). Reading the calendar therefore requires full access.
+  //   2. The plugin's requestReadOnlyCalendarAccess is `call.unimplemented(...)` on
+  //      iOS — it throws the moment it is called.
+  //
+  // Together those meant the prompt never appeared and the status sat at "prompt"
+  // forever, while today() quietly fell back to a fixture containing a Gym event —
+  // so the gym beat looked like it worked. Cue still never writes; the scope is
+  // enforced by the code, not by the prompt.
+  onStep('calendar');
+  try {
+    await CapacitorCalendar.requestFullCalendarAccess();
+  } catch (err) {
+    // Never swallow this again. A silent catch is what hid the bug above.
+    onStep(`calendar failed: ${err.message}`);
+    console.warn('[permissions] calendar request failed:', err.message);
+  }
 
   return readPermissions();
 }

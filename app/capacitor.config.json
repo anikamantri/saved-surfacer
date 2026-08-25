@@ -4,14 +4,14 @@
   "webDir": "dist",
   "ios": {
     "contentInset": "never",
-    "backgroundColor": "#0b0b0d",
+    "backgroundColor": "#ffffff",
     "scrollEnabled": false
   },
   "plugins": {
     "LocalNotifications": {
       "smallIcon": "ic_stat_icon_config_sample",
-      "iconColor": "#ff8a3d"
+      "iconColor": "#3fa9f5"
     }
   },
-  "backgroundColor": "#0b0b0d"
+  "backgroundColor": "#ffffff"
 }

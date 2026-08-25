@@ -30,22 +30,47 @@ class ShareViewController: UIViewController {
 
     private var handled = false
 
+    private let status = UILabel()
+    private let detail = UILabel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // A share sheet with no UI reads as a glitch. A dark card matching the app
-        // makes the hand-off look deliberate for the moment it is on screen.
         view.backgroundColor = UIColor(red: 0.043, green: 0.043, blue: 0.051, alpha: 1)
 
-        let label = UILabel()
-        label.text = "Sending to Cue…"
-        label.textColor = .white
-        label.font = .systemFont(ofSize: 16, weight: .medium)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
+        status.text = "Sending to Cue…"
+        status.textColor = .white
+        status.font = .systemFont(ofSize: 17, weight: .semibold)
+        status.textAlignment = .center
+        status.numberOfLines = 0
+
+        detail.textColor = UIColor(white: 0.6, alpha: 1)
+        detail.font = .systemFont(ofSize: 13)
+        detail.textAlignment = .center
+        detail.numberOfLines = 0
+
+        let stack = UIStackView(arrangedSubviews: [status, detail])
+        stack.axis = .vertical
+        stack.spacing = 10
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stack)
         NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 28),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
         ])
+    }
+
+    /// Never claim success that has not happened. The previous version showed
+    /// "Sending to Cue…" the instant the sheet appeared, so a total failure and a
+    /// clean hand-off looked identical — which is exactly how a share that did
+    /// nothing at all read as working.
+    private func report(_ headline: String, _ note: String, dismissAfter: TimeInterval?) {
+        status.text = headline
+        detail.text = note
+        if let delay = dismissAfter {
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { self.finish() }
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -120,21 +145,33 @@ class ShareViewController: UIViewController {
         // completed context can no longer open anything.
         guard let context = extensionContext else { return }
 
+        // The clipboard is written FIRST and unconditionally. Launching the
+        // container app from a share extension is not reliably permitted —
+        // `extensionContext.open` is documented for Today and iMessage
+        // extensions only, and the responder-chain `openURL:` trick has been
+        // clamped on recent iOS. So the link is put somewhere the app can always
+        // reach it, and opening the app is treated as a bonus rather than the
+        // mechanism. A share that cannot open Cue still captures the save.
+        UIPasteboard.general.string = sharedURL
+        os_log("copied to pasteboard: %{public}@", log: cueLog, type: .info, sharedURL)
+
         context.open(deepLink) { opened in
             os_log("extensionContext.open -> %{public}@", log: cueLog, type: .info,
                    opened ? "opened" : "refused")
             DispatchQueue.main.async {
-                if opened {
-                    context.completeRequest(returningItems: [], completionHandler: nil)
-                    return
-                }
-                context.completeRequest(returningItems: []) { _ in
-                    DispatchQueue.main.async {
-                        let ok = self.openViaResponderChain(deepLink)
-                        os_log("responder-chain fallback -> %{public}@", log: cueLog, type: ok ? .info : .error,
-                               ok ? "opened" : "no responder answered openURL:")
-                    }
-                }
+                // Try the fallback too, but do NOT describe either as success.
+                // Neither call reports whether the app actually came forward:
+                // `open` can return true without foregrounding anything, and the
+                // responder-chain helper only proves some object answers the
+                // selector. Saying "Opening Cue…" on that basis was a guess
+                // dressed as a fact, and it was wrong.
+                if !opened { _ = self.openViaResponderChain(deepLink) }
+
+                // The clipboard hop is the part that genuinely always works, so
+                // that is what the message promises.
+                self.report("Saved to Cue",
+                            "Open Cue to run it — the link is ready.",
+                            dismissAfter: 1.4)
             }
         }
     }

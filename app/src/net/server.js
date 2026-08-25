@@ -98,11 +98,13 @@ export async function fetchCorpus() {
  *
  * Parsed by hand rather than with EventSource because EventSource cannot POST.
  */
-export async function ingest(url, onEvent) {
+export async function ingest(url, onEvent, opts = {}) {
   const res = await fetch(`${serverHost()}/ingest`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ url }),
+    // `refresh` re-runs a post already in the corpus: "model" redoes the
+    // extraction against frames already on disk, "all" re-hydrates from TikTok.
+    body: JSON.stringify({ url, refresh: opts.refresh || undefined }),
   });
   if (!res.ok || !res.body) throw new Error(`server said ${res.status}`);
 
@@ -130,4 +132,23 @@ export async function ingest(url, onEvent) {
     }
   }
   return result;
+}
+
+/**
+ * Delete a post and everything derived from it.
+ *
+ * This needs the Mac, and that is not a limitation worth hiding: the post lives
+ * in docs/saved-posts.md and its frames live on disk, so a phone-only deletion
+ * would be a lie that the next sync quietly undoes. When the server is
+ * unreachable the app says exactly that instead of pretending.
+ */
+export async function removePost(id) {
+  const res = await fetch(`${serverHost()}/delete`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ id }),
+  });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(body.error || `server said ${res.status}`);
+  return body;
 }

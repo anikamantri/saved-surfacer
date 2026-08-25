@@ -1,159 +1,1132 @@
-/* Cue on the phone. Dark, dense, and built around the safe areas — this is a
-   real app on a real device, not a phone-shaped div on a laptop. */
+/**
+ * Cue on the phone — Apple HIG, light.
+ *
+ * The palette is Apple's own system colours (systemBackground,
+ * systemGroupedBackground, label/secondaryLabel, separator) rather than an
+ * invented one, because everything around this app on the device already uses
+ * them: a nudge that arrives on the lock screen and a card that opens from it
+ * should not look like they come from different operating systems.
+ *
+ * The accent is the app icon's blue, and it is two values, not one. #3FA9F5 is
+ * the icon; at 12px on white it fails contrast, so text and glyphs use a
+ * darkened #0A78CC and only fills, dots and selected states use the light one.
+ * One token would have meant either an off-brand tint or unreadable captions.
+ */
 
 :root {
-  --bg: #0b0b0d;
-  --panel: #151519;
-  --panel-2: #1d1d23;
-  --line: #2a2a32;
-  --text: #f2f2f4;
-  --dim: #8b8b96;
-  --accent: #ff8a3d;
-  --good: #4ade80;
-  --bad: #f87171;
+  color-scheme: light;
+
+  /* Apple system colours, light appearance */
+  --bg: #ffffff;                       /* systemBackground */
+  --bg-grouped: #f2f2f7;               /* systemGroupedBackground */
+  --bg-raised: #ffffff;                /* secondarySystemGroupedBackground */
+  --fill: rgba(120, 120, 128, 0.12);   /* secondarySystemFill */
+  --fill-soft: rgba(120, 120, 128, 0.08);
+  --label: #000000;
+  --label-2: rgba(60, 60, 67, 0.6);    /* secondaryLabel */
+  --label-3: rgba(60, 60, 67, 0.3);    /* tertiaryLabel */
+  --separator: rgba(60, 60, 67, 0.29);
+  --separator-opaque: #c6c6c8;
+
+  /* The icon's blue */
+  --tint: #3fa9f5;
+  --tint-ink: #0a78cc;                 /* the same hue, dark enough to read as text */
+  --tint-soft: rgba(63, 169, 245, 0.13);
+  --tint-line: rgba(63, 169, 245, 0.35);
+
+  --green: #34c759;
+  --green-ink: #248a3d;
+  --red: #ff3b30;
+  --red-ink: #d70015;
+  --orange: #ff9500;
+  --purple: #af52de;
+  --pink: #ff2d55;
+
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* iOS corner radii: 10 for controls, 12 for grouped lists, 14 for menus */
+  --r-control: 10px;
+  --r-group: 12px;
+  --r-menu: 14px;
+
+  --hairline: 0.5px;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-html, body, #root { height: 100%; margin: 0; background: var(--bg); }
+html, body, #root { height: 100%; margin: 0; background: var(--bg-grouped); }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font: 15px/1.45 -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  background: var(--bg-grouped);
+  color: var(--label);
+  font: 17px/1.29 -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
 }
 
+button, input { font-family: inherit; }
+
+/* ── Type scale ─────────────────────────────────────────────────────────── */
+.t-large   { font-size: 34px; line-height: 41px; font-weight: 700; letter-spacing: -0.4px; }
+.t-title   { font-size: 22px; line-height: 28px; font-weight: 700; letter-spacing: -0.26px; }
+.t-title3  { font-size: 20px; line-height: 25px; font-weight: 600; letter-spacing: -0.2px; }
+.t-head    { font-size: 17px; line-height: 22px; font-weight: 600; letter-spacing: -0.43px; }
+.t-body    { font-size: 17px; line-height: 22px; letter-spacing: -0.43px; }
+.t-sub     { font-size: 15px; line-height: 20px; letter-spacing: -0.23px; }
+.t-foot    { font-size: 13px; line-height: 18px; letter-spacing: -0.08px; }
+.t-cap     { font-size: 12px; line-height: 16px; }
+.t-cap2    { font-size: 11px; line-height: 13px; letter-spacing: 0.06px; }
+.dim  { color: var(--label-2); }
+.dim3 { color: var(--label-3); }
+.tint { color: var(--tint-ink); }
+.mono { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-variant-numeric: tabular-nums; }
+
 .app {
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: column; position: relative;
   /* dvh, not %: the webview's reported height excludes the home-indicator area,
      which left a white band under the tab bar on device. */
-  height: 100dvh; background: var(--bg);
+  height: 100dvh; background: var(--bg-grouped);
 }
 
-.head {
-  padding: calc(var(--safe-top) + 12px) 16px 10px;
-  border-bottom: 1px solid var(--line);
-  display: flex; align-items: baseline; gap: 10px;
-}
-.head h1 { font-size: 17px; margin: 0; letter-spacing: -0.01em; }
-.head .sub { flex: 1; }
-/* Capture is one tap from anywhere: sharing a save is the app's whole input. */
-.addbtn {
-  background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
-  width: 30px; height: 30px; border-radius: 15px; font-size: 19px; line-height: 1;
-  padding: 0; flex: none;
-}
-.addbtn:active { background: var(--accent); color: #17110a; }
-.head .sub {
-  color: var(--dim); font-size: 12px;
-  /* Status must never push the + off screen, and never wrap the header. */
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
+/* A flex child defaults to min-height: auto — its CONTENT size — so .body could
+   grow past its share of the screen, and any percentage height inside it then
+   resolved against the wrong number. That is what made the map render as a
+   horizontal strip some launches and fill the screen on others. */
+.body { flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.body { position: relative; }
+/* The bar is fixed over the content, so scrolling surfaces need room to bring
+   their last row out from under it. The map (flush) needs none: it is the
+   background layer by design and runs full-bleed behind the bar. */
+.body > * { padding-bottom: calc(var(--safe-bottom) + 78px); }
+.body.flush > * { padding-bottom: 0; }
+/* The map is the one surface that must not scroll: it fills its share exactly
+   and does its own panning. Flex here rather than height: 100% because a
+   percentage needs a definite parent height and a flex item has none until
+   after layout — WebKit is the browser that actually holds you to that. */
+.body.flush { display: flex; flex-direction: column; overflow: hidden; }
 
-.body { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+/* ── Navigation bar ───────────────────────────────────────────────────────
+   Large title on the root of a stack, inline title with a back chevron one
+   level down — the same two states iOS itself has. */
+.nav {
+  padding: calc(var(--safe-top) + 20px) 16px 8px;
+  background: var(--bg-grouped);
+  display: flex; align-items: flex-end; gap: 10px;
+}
+.nav.on-white { background: var(--bg); }
+.nav h1 { margin: 0; flex: 1; font-size: 34px; line-height: 41px; font-weight: 700; letter-spacing: -0.4px; }
+.nav .trailing { display: flex; gap: 8px; align-items: center; padding-bottom: 6px; }
+.nav-sub { padding: 0 16px 10px; color: var(--label-2); font-size: 13px; letter-spacing: -0.08px; }
 
-/* Tab bar — thumb-reachable, four surfaces, no hamburger. */
+/* Inline bar: 44pt tall, title centred, controls at the edges. */
+.navbar {
+  position: sticky; top: 0; z-index: 40;
+  padding: calc(var(--safe-top) + 4px) 8px 4px;
+  min-height: calc(var(--safe-top) + 44px);
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+  background: rgba(249, 249, 249, 0.88);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: inset 0 calc(-1 * var(--hairline)) 0 var(--separator);
+}
+.navbar .title { font-size: 17px; font-weight: 600; letter-spacing: -0.43px; text-align: center; }
+.navbar .right { justify-self: end; }
+.navbar.transparent { background: transparent; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+
+.backbtn {
+  background: none; border: 0; padding: 6px 8px; margin: 0;
+  color: var(--tint-ink); font-size: 17px; letter-spacing: -0.43px;
+  display: inline-flex; align-items: center; gap: 3px; justify-self: start;
+}
+.backbtn:active { opacity: 0.4; }
+
+/* ── Tab bar — a floating capsule ─────────────────────────────────────── */
+
+/* While an overlay is up the bar fully stands down: no blur, no compositing
+   layer, no z-index worth having. A portalled sheet must beat it without a
+   fight — a promoted capsule is exactly the kind of layer that jumps a queue
+   on WebKit, and it is what hid a sheet's Cancel button on device while
+   looking correct on the Mac. */
+body.overlay-open .tabs { z-index: 1; }
+body.overlay-open .tabs-glass {
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  transform: none;
+  background: rgba(252, 252, 254, 0.92);
+}
+/* THE LAYER ORDER ON THE MAP TAB IS A PRODUCT DECISION: the map is the
+   background, the navigation and the status float over it, and the pin card
+   floats over those. It was tried, failed on device four times, retreated to an
+   in-flow bar, and is now rebuilt on different footing — every earlier round
+   leaned on z-index (a rule the compositor weighs against its own layers) and
+   `overflow: hidden` (a clip a composited descendant escapes). Both were
+   heuristics WebKit was free to lose. The current stack is two guarantees the
+   spec does not let an engine reinterpret:
+
+     1. `.map` has `contain: paint` — Leaflet cannot draw one pixel outside its
+        box, and its whole subtree is one stacking context. The measured 127px
+        tile overhang that was physically covering the bar is clipped at the
+        source.
+     2. The bar is `position: fixed` on the viewport with its own compositing
+        layer (`translateZ(0)` on the capsule) — it is not a sibling of the map
+        pane in any stacking context Leaflet participates in, and it is never
+        the non-composited party in a paint fight again.
+
+   If this STILL misbehaves on some future WebKit: the fallback that cannot
+   fail is `.tabs { position: static; flex: none }` plus removing the flush
+   padding override below — the in-flow bar overlaps nothing and worked. */
 .tabs {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--line);
-  background: var(--panel);
-  padding-bottom: var(--safe-bottom);
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 900;
+  padding: 0 14px calc(var(--safe-bottom) + 8px);
+  pointer-events: none;   /* only the capsule itself is tappable */
+}
+.tabs-glass {
+  pointer-events: auto;
+  position: relative;
+  /* PROMOTED, and this is the fix for "the nav vanishes on the map".
+     z-index settles paint order only among things the compositor treats alike.
+     The map pane is a composited layer (`will-change: transform`, below), and
+     WebKit will paint a composited layer over a NON-composited sibling whatever
+     z-index says — then flicker it back on a zoom, when the tree recomposites.
+     The two overlays that already float over the map (`.map-status`,
+     `.map-card`) carry the same `translateZ(0)` and have never had the problem;
+     the tab bar only started overlapping the map when it began to float, and it
+     did not inherit the trick. This is that trick. */
+  transform: translateZ(0);
+  display: grid; grid-template-columns: repeat(var(--n), 1fr);
+  border-radius: 30px;
+  /* Opaque enough to survive the blur failing. iOS drops backdrop-filter in
+     several situations it does not report — over a large canvas, under an
+     animated ancestor — and a bar whose only substance is its blur becomes an
+     invisible bar rather than a plain one. 0.82 reads as glass over the map and
+     as a bar without it. */
+  background: rgba(252, 252, 254, 0.82);
+  backdrop-filter: saturate(190%) blur(26px);
+  -webkit-backdrop-filter: saturate(190%) blur(26px);
+  box-shadow:
+    0 0 0 var(--hairline) rgba(60, 60, 67, 0.18),
+    inset 0 var(--hairline) 0 rgba(255, 255, 255, 0.85),
+    0 10px 30px rgba(0, 0, 0, 0.14),
+    0 2px 6px rgba(0, 0, 0, 0.06);
+  padding: 5px;
+}
+
+/* The selected pill. One element that moves, so switching tabs is a gesture the
+   bar makes rather than four colours changing independently. */
+.tabs-glass .knob {
+  position: absolute; top: 5px; bottom: 5px; left: 5px;
+  width: calc((100% - 10px) / var(--n));
+  transform: translateX(calc(var(--i) * 100%));
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 var(--hairline) rgba(60, 60, 67, 0.06);
+  transition: transform 0.34s cubic-bezier(0.32, 0.9, 0.2, 1);
 }
 .tabs button {
-  background: none; border: 0; color: var(--dim);
-  padding: 10px 4px 12px; font-size: 11px; font-weight: 500;
+  position: relative; z-index: 1;
+  background: none; border: 0; color: var(--label-2);
+  padding: 8px 2px 7px; font-size: 10px; font-weight: 500; letter-spacing: 0.05px;
   display: flex; flex-direction: column; align-items: center; gap: 3px;
+  transition: color 0.2s ease;
 }
 .tabs button .glyph { display: flex; line-height: 0; }
-.tabs button.on { color: var(--accent); }
+.tabs button.on { color: var(--tint-ink); }
 .tabs button .badge {
-  position: absolute; transform: translate(14px, -4px);
-  background: var(--accent); color: #000; border-radius: 8px;
-  font-size: 10px; font-weight: 700; padding: 0 5px;
+  position: absolute; top: 2px; left: 50%; margin-left: 6px;
+  background: var(--red); color: #fff; border-radius: 9px;
+  font-size: 11px; font-weight: 600; padding: 1px 5px; min-width: 17px; line-height: 15px;
 }
 
-/* Library — the graveyard. Reverse-chron, undifferentiated, on purpose. */
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; padding: 2px; }
-.tile { position: relative; aspect-ratio: 9 / 16; background: var(--panel-2); overflow: hidden; }
+/* ── Grouped lists ────────────────────────────────────────────────────── */
+.group { margin: 0 16px 22px; }
+.group-title {
+  margin: 0 0 7px; padding: 0 16px;
+  font-size: 13px; line-height: 18px; color: var(--label-2); letter-spacing: -0.08px;
+}
+.group-title.upper {
+  text-transform: uppercase; letter-spacing: 0.06em; font-size: 12px; font-weight: 400;
+}
+.group-foot { margin: -14px 16px 22px; padding: 0 16px; color: var(--label-2); font-size: 13px; line-height: 18px; }
+
+.list {
+  background: var(--bg-raised); border-radius: var(--r-group); overflow: hidden;
+}
+.row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 11px 16px; min-height: 44px; position: relative;
+  background: var(--bg-raised); width: 100%; border: 0; text-align: left;
+  font-size: 17px; letter-spacing: -0.43px; color: var(--label);
+}
+/* Separators inset to the text, as iOS insets them — the leading edge lines up
+   with the label, not the card. */
+.row + .row::before {
+  content: ''; position: absolute; left: 16px; right: 0; top: 0;
+  height: var(--hairline); background: var(--separator);
+}
+.row .val { margin-left: auto; color: var(--label-2); text-align: right; }
+button.row:active { background: var(--fill-soft); }
+.row.stack { flex-direction: column; align-items: stretch; gap: 4px; padding-top: 12px; padding-bottom: 12px; }
+
+/* ── Controls ─────────────────────────────────────────────────────────── */
+.btn {
+  padding: 9px 16px; border-radius: var(--r-control); border: 0;
+  background: var(--fill); color: var(--tint-ink);
+  font-size: 15px; font-weight: 500; letter-spacing: -0.23px;
+  transition: transform 0.08s ease, opacity 0.12s ease;
+}
+.btn:active { transform: scale(0.97); opacity: 0.6; }
+.btn[disabled] { opacity: 0.35; }
+.btn.primary { background: var(--tint); color: #fff; font-weight: 600; }
+.btn.plain { background: none; padding-left: 6px; padding-right: 6px; }
+.btn.destructive { color: var(--red-ink); }
+.btn.wide { width: 100%; }
+.btnrow { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 16px; }
+
+/* Capture is one tap from anywhere: sharing a save is the app's whole input. */
+.addbtn {
+  background: var(--tint); border: 0; color: #fff;
+  width: 32px; height: 32px; border-radius: 16px; font-size: 21px; line-height: 1;
+  padding: 0; flex: none; display: grid; place-items: center;
+  box-shadow: 0 2px 8px rgba(63, 169, 245, 0.35);
+}
+.addbtn:active { transform: scale(0.94); }
+
+/* Capture, floating OVER the grid rather than sitting at the end of it.
+   Anchored to the viewport, not the scroll content: a button you have to scroll
+   nineteen rows of saves to reach is not a floating button, it is a footer. It
+   clears the tab capsule so the two never overlap on a small phone. */
+.fab {
+  position: fixed; right: 18px; bottom: calc(var(--safe-bottom) + 84px); z-index: 850;
+  width: 54px; height: 54px; border-radius: 27px; border: 0;
+  background: var(--tint); color: #fff; display: grid; place-items: center;
+  box-shadow: 0 8px 22px rgba(10, 120, 204, 0.36), 0 2px 6px rgba(0, 0, 0, 0.12);
+  /* Promoted for the same reason the tab capsule is — it floats over scrolling
+     content and must not be something the compositor is free to paint under. */
+  transform: translateZ(0);
+  transition: transform 0.12s ease;
+}
+.fab:active { transform: translateZ(0) scale(0.92); }
+
+/* A round icon button, the shape iOS uses for close and for a nav-bar action. */
+.round-btn {
+  width: 30px; height: 30px; border-radius: 15px; border: 0; flex: none;
+  background: var(--fill); color: var(--label-2);
+  display: grid; place-items: center; padding: 0;
+}
+.round-btn.big { width: 34px; height: 34px; border-radius: 17px; color: var(--tint-ink); }
+.round-btn:active { opacity: 0.55; }
+
+.pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12px; line-height: 16px; font-weight: 500;
+  padding: 3px 9px; border-radius: 20px;
+  background: var(--fill); color: var(--label-2);
+}
+.pill.tint { background: var(--tint-soft); color: var(--tint-ink); }
+.pill.good { background: rgba(52, 199, 89, 0.14); color: var(--green-ink); }
+.pill.bad  { background: rgba(255, 59, 48, 0.12); color: var(--red-ink); }
+.chip {
+  display: inline-block; font-size: 12px; padding: 3px 9px; border-radius: 20px;
+  background: var(--fill); color: var(--label-2); margin: 0 6px 6px 0;
+}
+
+input.field {
+  width: 100%; padding: 11px 14px; border-radius: var(--r-control);
+  border: 0; background: var(--fill); color: var(--label);
+  font-size: 17px; letter-spacing: -0.43px;
+}
+input.field::placeholder { color: var(--label-3); }
+input.field.mono { font-size: 14px; }
+
+/* ── Library grid — the graveyard ─────────────────────────────────────────
+   Reverse-chronological, uniform, no grouping. It is the saved folder as it
+   actually is, and establishing that in five seconds is its whole job. */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; padding: 0 2px; }
+.tile {
+  position: relative; aspect-ratio: 9 / 16; background: var(--fill);
+  overflow: hidden; border: 0; padding: 0;
+  /* iOS's own press-and-hold callout would fight the context menu. */
+  -webkit-touch-callout: none; user-select: none; -webkit-user-select: none;
+  transition: transform 0.22s cubic-bezier(0.2, 0, 0, 1), opacity 0.2s ease;
+}
 .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .tile .when {
   position: absolute; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,.85));
-  color: #ddd; font-size: 10px; padding: 12px 5px 4px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: rgba(255, 255, 255, 0.92); font-size: 10px; padding: 14px 6px 5px; text-align: left;
 }
 .tile .count {
-  position: absolute; top: 4px; right: 4px;
-  background: rgba(0,0,0,.7); border-radius: 9px; font-size: 10px; padding: 1px 6px;
+  position: absolute; top: 5px; right: 5px;
+  background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(8px);
+  color: #fff; border-radius: 9px; font-size: 11px; font-weight: 600; padding: 1px 6px;
+}
+.tile.holding { transform: scale(0.94); }
+.tile.hidden { opacity: 0; }
+.tile .fallback { padding: 8px; font-size: 11px; color: var(--label-2); }
+
+/* ── Context menu — press and hold ────────────────────────────────────────
+   The iOS shape: the thing you pressed floats above a blurred backdrop, the
+   actions sit under it, destructive last and red. Nothing here is a web
+   dropdown wearing a costume. */
+.ctx-scrim {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; padding: calc(var(--safe-top) + 20px) 16px calc(var(--safe-bottom) + 20px);
+  animation: ctx-fade 0.22s ease both;
+}
+.ctx-scrim.closing { animation: ctx-fade 0.16s ease both reverse; }
+@keyframes ctx-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.ctx-stage { display: flex; flex-direction: column; align-items: center; gap: 12px; animation: ctx-pop 0.26s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes ctx-pop { from { opacity: 0; transform: scale(0.86); } to { opacity: 1; transform: scale(1); } }
+
+.ctx-preview {
+  border-radius: var(--r-menu); overflow: hidden; background: #000;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+  max-height: 42vh; aspect-ratio: 9 / 16;
+}
+.ctx-preview img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ctx-caption {
+  max-width: 260px; text-align: center; color: #fff; font-size: 13px; line-height: 17px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-.note { color: var(--dim); font-size: 12px; padding: 12px 16px; }
-
-/* Cards */
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; margin: 10px 12px; overflow: hidden; }
-.card .pad { padding: 12px 14px; }
-.card h3 { margin: 0 0 2px; font-size: 16px; }
-.card .why {
-  font-size: 12px; color: var(--accent);
-  background: rgba(255,138,61,.1); border-top: 1px solid var(--line);
-  padding: 8px 14px;
+.ctx-menu {
+  width: 250px; border-radius: var(--r-menu); overflow: hidden;
+  background: rgba(249, 249, 249, 0.76);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
 }
-.prov { display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
-.prov img { width: 44px; height: 58px; object-fit: cover; border-radius: 6px; }
-.prov .meta { font-size: 11px; color: var(--dim); line-height: 1.4; }
-
-.verdicts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px 14px; }
-.verdicts button {
-  padding: 11px 6px; border-radius: 10px; border: 1px solid var(--line);
-  background: var(--panel-2); color: var(--text); font-size: 13px; font-weight: 500;
+.ctx-item {
+  width: 100%; border: 0; background: none; color: var(--label);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 16px; font-size: 17px; letter-spacing: -0.43px; text-align: left;
+  min-height: 44px;
 }
-.verdicts button.went { border-color: var(--good); color: var(--good); }
-.verdicts button.never { border-color: var(--bad); color: var(--bad); }
+.ctx-item + .ctx-item { box-shadow: inset 0 var(--hairline) 0 rgba(60, 60, 67, 0.22); }
+.ctx-item:active { background: rgba(0, 0, 0, 0.06); }
+.ctx-item .sub { display: block; font-size: 12px; line-height: 15px; color: var(--label-2); }
+.ctx-item.destructive { color: var(--red); }
+.ctx-item svg { flex: none; }
 
-.chip {
-  display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 20px;
-  border: 1px solid var(--line); color: var(--dim); margin-right: 5px;
+/* ── Action sheet ─────────────────────────────────────────────────────── */
+.sheet-scrim {
+  position: fixed; inset: 0; z-index: 1100; background: rgba(0, 0, 0, 0.4);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 0 8px calc(var(--safe-bottom) + 8px);
+  animation: ctx-fade 0.2s ease both;
+}
+.sheet { animation: sheet-up 0.3s cubic-bezier(0.2, 0.9, 0.2, 1) both; }
+@keyframes sheet-up { from { transform: translateY(40px); opacity: 0.6; } to { transform: translateY(0); opacity: 1; } }
+/* Nearly opaque rather than blurred: the sheet animates in, and an animated
+   ancestor isolates the backdrop, so backdrop-filter on these groups has nothing
+   to sample and silently renders as plain transparency over the photos below. */
+.sheet-group {
+  border-radius: var(--r-menu); overflow: hidden; margin-top: 8px;
+  background: rgba(250, 250, 250, 0.96);
+}
+.sheet-head { padding: 14px 16px; text-align: center; color: var(--label-2); font-size: 13px; line-height: 18px; box-shadow: inset 0 calc(-1 * var(--hairline)) 0 rgba(60, 60, 67, 0.22); }
+.sheet-head b { display: block; color: var(--label); font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+.sheet-btn {
+  width: 100%; border: 0; background: none; padding: 16px; min-height: 57px;
+  font-size: 20px; letter-spacing: -0.45px; color: var(--tint-ink);
+}
+.sheet-btn + .sheet-btn { box-shadow: inset 0 var(--hairline) 0 rgba(60, 60, 67, 0.22); }
+.sheet-btn:active { background: rgba(0, 0, 0, 0.06); }
+.sheet-btn.destructive { color: var(--red); }
+.sheet-btn.cancel { font-weight: 600; }
+.sheet-group.solid { background: #ffffff; }
+
+/* ── HUD / toast ──────────────────────────────────────────────────────── */
+.hud {
+  position: fixed; z-index: 1200; left: 50%; transform: translateX(-50%);
+  bottom: calc(var(--safe-bottom) + 74px);
+  max-width: 86%; padding: 11px 16px; border-radius: 22px;
+  background: rgba(28, 28, 30, 0.92); color: #fff;
+  font-size: 14px; letter-spacing: -0.15px; text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  animation: hud-in 0.24s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  display: flex; align-items: center; gap: 9px;
+}
+@keyframes hud-in { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.hud.bad { background: rgba(215, 0, 21, 0.94); }
+.spinner {
+  width: 15px; height: 15px; border-radius: 50%; flex: none;
+  border: 2px solid rgba(255, 255, 255, 0.3); border-top-color: #fff;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Post detail ──────────────────────────────────────────────────────── */
+.hero { position: relative; background: #000; }
+.hero img { width: 100%; display: block; max-height: 62vh; object-fit: cover; }
+.hero .veil {
+  position: absolute; inset: auto 0 0 0; padding: 60px 16px 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  color: #fff;
+}
+.hero .handle { font-size: 20px; font-weight: 600; letter-spacing: -0.2px; }
+.hero .when { font-size: 13px; color: rgba(255, 255, 255, 0.75); margin-top: 2px; }
+/* The bar floats over the image, so it needs its own contrast, not the page's. */
+.hero-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 20; padding: calc(var(--safe-top) + 6px) 8px 6px; display: flex; justify-content: space-between; align-items: center; }
+.glass-btn {
+  border: 0; border-radius: 18px; min-height: 36px; padding: 0 14px;
+  background: rgba(0, 0, 0, 0.35); backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px); color: #fff;
+  font-size: 15px; font-weight: 500; letter-spacing: -0.23px;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.glass-btn:active { background: rgba(0, 0, 0, 0.55); }
+
+.watch {
+  display: flex; align-items: center; justify-content: center; gap: 7px;
+  margin: 14px 16px 20px; padding: 13px; border-radius: var(--r-control);
+  background: var(--tint); color: #fff; text-decoration: none;
+  font-size: 17px; font-weight: 600; letter-spacing: -0.43px;
+  box-shadow: 0 4px 14px rgba(63, 169, 245, 0.3);
+}
+.watch:active { opacity: 0.8; }
+
+/* The clamp lives on an inner element: with padding on the same box, WebKit
+   measures the fifth line into the padding and cuts it in half. */
+.caption { padding: 14px 16px; font-size: 15px; line-height: 21px; letter-spacing: -0.23px; color: var(--label); }
+.caption .clamped {
+  display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.more {
+  background: none; border: 0; color: var(--tint-ink); font-size: 15px;
+  padding: 0 16px 14px; font-weight: 500;
 }
 
-/* Map */
-.map { height: 100%; width: 100%; background: #0b0b0d; }
-.leaflet-container { background: #0b0b0d; font-family: inherit; }
+/* An entity, as the model returned it. */
+/* An entity row is three columns: the traffic light, the thing itself, and the
+   way to change its trigger. The dot is a button because the state it shows is
+   the state you would want to argue with. */
+.entity { display: flex; align-items: flex-start; gap: 2px; padding: 12px 8px 12px 10px; position: relative; }
+.entity + .entity::before {
+  content: ''; position: absolute; left: 16px; right: 0; top: 0;
+  height: var(--hairline); background: var(--separator);
+}
+.entity-main { flex: 1; min-width: 0; padding: 0 4px; }
+.entity .top { display: flex; align-items: baseline; gap: 8px; }
+.entity .name { font-size: 17px; font-weight: 600; letter-spacing: -0.43px; }
+.entity .hook {
+  color: var(--label-2); font-size: 13px; line-height: 18px; margin-top: 2px;
+}
+.entity .facts {
+  color: var(--label-3); font-size: 12px; line-height: 16px; margin-top: 4px;
+}
+/* The reason it is in its state, tinted to match the dot. Two of the three
+   colours are things the app is choosing NOT to do, and they should read as
+   deliberate rather than as errors — so it is a line of text, not a red pill. */
+.entity .why-line { font-size: 12px; line-height: 16px; margin-top: 5px; font-weight: 500; }
 
-/* Debug — deliberately ugly and information-dense. It is instrumentation. */
-.kv { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 10px 14px; font-size: 13px; }
-.kv .k { color: var(--dim); }
-.kv .v { font-variant-numeric: tabular-nums; text-align: right; }
-.kv .v.ok { color: var(--good); }
-.kv .v.no { color: var(--bad); }
+.statusbtn, .edgebtn {
+  background: none; border: 0; padding: 6px; margin: -2px 0 0; flex: none;
+  min-width: 34px; min-height: 34px; display: grid; place-items: center;
+  color: var(--label-3);
+}
+.statusbtn:active, .edgebtn:active { opacity: 0.4; }
+
+/* ── The traffic light ────────────────────────────────────────────────────
+   Green can interrupt you, amber is on the map and stays quiet, red cannot
+   nudge at all. The ring is what makes a 12px dot legible against a white row
+   and against a map tile alike. */
+.sdot {
+  display: inline-block; border-radius: 50%; flex: none;
+  background: var(--sdot);
+}
+.sdot.ring { box-shadow: 0 0 0 3px color-mix(in srgb, var(--sdot) 22%, transparent); }
+
+/* Never wraps. space-between puts the slack in the gaps instead of a fixed
+   gutter, so the row still fits at 320px and still looks deliberate at 430. */
+.legend {
+  display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 8px;
+  padding: 0 16px 9px; margin: -3px 0 0;
+  font-size: 12px; line-height: 16px; color: var(--label-2);
+  white-space: nowrap;
+}
+.legend span { display: inline-flex; align-items: center; gap: 5px; min-width: 0; }
+.legend span.none { opacity: 0.4; }
+
+.dot { width: 9px; height: 9px; border-radius: 5px; flex: none; align-self: center; }
+
+/* Disclosure — the model's receipts, folded away until asked for. */
+.disclose { width: 100%; }
+.disclose summary {
+  list-style: none; cursor: default;
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 16px; min-height: 44px;
+  font-size: 17px; letter-spacing: -0.43px; color: var(--label);
+}
+.disclose summary::-webkit-details-marker { display: none; }
+.disclose summary .chev { margin-left: auto; color: var(--label-3); transition: transform 0.2s ease; }
+.disclose[open] summary .chev { transform: rotate(90deg); }
+.disclose[open] summary { box-shadow: inset 0 calc(-1 * var(--hairline)) 0 var(--separator); }
+.disclose .inner { padding: 4px 0 6px; }
+
+/* ── Key/value — used by Debug and by the folded metadata ─────────────── */
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; padding: 12px 16px; font-size: 15px; letter-spacing: -0.23px; }
+.kv .k { color: var(--label-2); }
+.kv .v { font-variant-numeric: tabular-nums; text-align: right; color: var(--label); overflow-wrap: anywhere; }
+.kv .v.ok { color: var(--green-ink); }
+.kv .v.no { color: var(--red-ink); }
+
+.note { color: var(--label-2); font-size: 13px; line-height: 18px; padding: 10px 16px; }
+.note.loud { color: var(--label); }
+.note.bad { color: var(--red-ink); }
 
 .trace {
-  font: 11px/1.5 ui-monospace, 'SF Mono', Menlo, monospace;
-  color: var(--dim); padding: 8px 14px; white-space: pre-wrap; word-break: break-word;
+  font: 11px/1.55 ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--label-2); padding: 10px 16px; white-space: pre-wrap; word-break: break-word;
 }
-.trace b { color: var(--text); font-weight: 400; }
+.trace b { color: var(--label); font-weight: 500; }
 
-.btnrow { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 14px; }
-.btn {
-  padding: 9px 12px; border-radius: 9px; border: 1px solid var(--line);
-  background: var(--panel-2); color: var(--text); font-size: 13px;
-  transition: transform .06s ease, background .12s ease;
+/* ── Cards — nudges, capture ──────────────────────────────────────────── */
+.card {
+  background: var(--bg-raised); border-radius: var(--r-group);
+  margin: 0 16px 16px; overflow: hidden;
 }
-/* `-webkit-tap-highlight-color: transparent` on * removes iOS's default tap
-   flash, so without this a working button and a dead one look identical. */
-.btn:active { background: var(--accent); color: #17110a; transform: scale(.96); }
-.verdicts button:active { background: var(--accent); color: #17110a; }
-.btn[disabled] { opacity: .5; }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #17110a; font-weight: 600; }
+.card .pad { padding: 14px 16px; }
+.card h3 { margin: 0 0 3px; font-size: 20px; font-weight: 600; letter-spacing: -0.2px; }
+.card .why {
+  font-size: 13px; line-height: 18px; color: var(--tint-ink);
+  background: var(--tint-soft);
+  padding: 10px 16px;
+}
+.card .why.bad { color: var(--red-ink); background: rgba(255, 59, 48, 0.08); }
+.card .why.quiet { color: var(--label-2); background: var(--fill-soft); }
 
-input.host {
-  width: 100%; padding: 10px 12px; border-radius: 9px;
-  border: 1px solid var(--line); background: var(--panel-2); color: var(--text);
-  font: 13px ui-monospace, monospace;
+.prov { display: flex; gap: 12px; align-items: center; padding: 12px 16px; box-shadow: inset 0 var(--hairline) 0 var(--separator); }
+.prov img { width: 46px; height: 61px; object-fit: cover; border-radius: 8px; flex: none; }
+.prov .meta { font-size: 13px; line-height: 18px; color: var(--label-2); }
+.prov .meta b { color: var(--label); font-weight: 600; }
+
+.verdicts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px 16px; }
+.verdicts button {
+  padding: 12px 6px; border-radius: var(--r-control); border: 0;
+  background: var(--fill); color: var(--tint-ink); font-size: 15px; font-weight: 500;
+}
+.verdicts button:active { transform: scale(0.97); opacity: 0.6; }
+.verdicts button.went { background: rgba(52, 199, 89, 0.14); color: var(--green-ink); }
+.verdicts button.never { background: rgba(255, 59, 48, 0.1); color: var(--red-ink); }
+
+/* ── Map ──────────────────────────────────────────────────────────────── */
+
+/* Fills its flex share, and is the containing block for the status pill, the
+   card and the Leaflet canvas — all of which fill it absolutely, so no
+   percentage height is resolved anywhere in this subtree. */
+.map-wrap { flex: 1 1 auto; min-height: 0; position: relative; padding: 0; }
+.map-wrap.hidden { display: none; }
+.map {
+  position: absolute; inset: 0; background: var(--bg-grouped);
+
+  /**
+   * `contain: paint` is the declaration that actually fixes the tab bar, and
+   * `overflow: hidden` is not a substitute for it.
+   *
+   * Leaflet deliberately draws outside the viewport — a tile grid rounded up to
+   * 256px cells plus `keepBuffer`, measured here at 127px of overhang past the
+   * container's bottom edge. That is exactly the strip the tab bar occupies, and
+   * it is only invisible while something clips it.
+   *
+   * `.leaflet-container` has `overflow: hidden`, which is enough on Chromium and
+   * is not on WebKit: Leaflet positions the map pane with `translate3d` whenever
+   * `Browser.any3d` is true — always, on a phone — and a 3d-transformed element
+   * is composited, and a composited descendant escapes an ancestor's overflow
+   * clip. Removing `will-change: transform` from the pane does not help, because
+   * the transform Leaflet sets itself is what promotes it.
+   *
+   * `contain: paint` is a promise to the engine that no descendant may paint
+   * outside this box — a clip it must honour rather than an overflow rule it may
+   * optimise around. Unlike `transform: translateZ(0)`, which was tried here and
+   * made things worse, it does not create a layer for the subtree; it only
+   * constrains one.
+   */
+  contain: paint;
+}
+.leaflet-container { background: var(--bg-grouped); font-family: inherit; }
+
+/**
+ * NOT promoted, and this is the fix for "the nav doesn't work on the map tab".
+ *
+ * `will-change: transform` was here to make a pan a composited transform rather
+ * than a repaint. What it actually did was hand the whole pane — tiles, buffer
+ * and vector canvas — a compositing layer that then IGNORED
+ * `.leaflet-container`'s `overflow: hidden`. Leaflet deliberately draws beyond
+ * the viewport (`padding` on the canvas renderer, `keepBuffer: 3` on the tiles),
+ * so the escaping layer overhung the container by ~157px — measured — which is
+ * precisely the strip the tab bar occupies. The bar was not being painted over
+ * by the map's z-index. It was being painted over by pixels drawn outside the
+ * map's box that nothing was clipping.
+ *
+ * Leaflet sets a `transform` on this pane during a pan, and browsers promote a
+ * transforming element for the duration anyway; the explicit hint bought a
+ * layer that persisted between gestures and cost the tab bar. Panning is still
+ * smooth without it.
+ */
+.leaflet-map-pane { will-change: auto; }
+
+/* The map's own furniture is hidden outright rather than out-numbered.
+   Relying on z-index to put a sheet over these is what let the armed summary
+   paint through the trigger editor. Not drawing them is a rule no compositor
+   gets to reinterpret. */
+body.overlay-open .map-status,
+body.overlay-open .map-card { display: none; }
+
+/* Both map overlays are promoted to their own compositing layer so a pan
+   repaints the map and not them. See `.map-wrap.moving` for the blur.
+
+   `pointer-events: none` because neither is tappable and both are large: the
+   armed summary sits across the bottom fifth of the map and was quietly eating
+   every tap on a pin behind it, which reads as "some pins do not work". Nothing
+   informational should be able to do that. */
+.map-status, .map-card { transform: translateZ(0); pointer-events: none; }
+.map-wrap.moving .map-status,
+.map-wrap.moving .map-card {
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  background: rgba(255, 255, 255, 0.94);
 }
 
+/* The tab capsule floats over the map, so its blur is sampling the moving tiles
+   as well — and being full-width, it is the most expensive one on the screen.
+   The flag lives on <html> because the bar is not inside the map's subtree.
+   Without this, panning the map paid for three simultaneous full-width blurs. */
+.map-moving .tabs-glass {
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  background: rgba(250, 250, 252, 0.96);
+}
+.leaflet-popup-content-wrapper { border-radius: 12px; }
+.leaflet-popup-content { font-size: 13px; margin: 10px 12px; }
+.map-card {
+  /* Clears the floating tab capsule. The bar is a layer over the map, not a
+     strip beside it, so anything anchored to the bottom has to account for it. */
+  /* Clears the fixed tab capsule: the map runs full-bleed behind it. */
+  position: absolute; left: 12px; right: 12px; bottom: calc(var(--safe-bottom) + 76px); z-index: 800;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-radius: var(--r-group); padding: 11px 14px;
+  font-size: 13px; line-height: 18px; color: var(--label-2);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+.map-card b { color: var(--label); font-weight: 600; }
+
+/* Grouped-list section headers, the shape iOS gives them: uppercase, small,
+   secondary, hugging the group below. Debug, Nudges and Capture all use these. */
 h4.section {
-  margin: 18px 14px 4px; font-size: 11px; letter-spacing: .08em;
-  text-transform: uppercase; color: var(--dim); font-weight: 600;
+  margin: 24px 16px 7px; padding: 0 16px;
+  font-size: 12px; line-height: 16px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--label-2); font-weight: 400;
 }
+
+/* The Debug host field and the Capture URL field are the same control. */
+input.host {
+  width: 100%; padding: 11px 14px; border-radius: var(--r-control);
+  border: 0; background: var(--fill); color: var(--label);
+  font: 14px ui-monospace, 'SF Mono', Menlo, monospace;
+}
+input.host::placeholder { color: var(--label-3); }
+
+/* Debug's key/value tables and traces sit on cards like everything else, so the
+   surfaces they are drawn on have to be white rather than the grouped grey. */
+.panel { background: var(--bg-raised); border-radius: var(--r-group); margin: 0 16px 8px; overflow: hidden; }
+
+/* The runtime status used to live in an app-wide header. It belongs here, over
+   the map, next to the dot it is describing. */
+.map-status {
+  position: absolute; top: calc(var(--safe-top) + 10px); left: 12px; right: 12px; z-index: 800;
+  display: flex; align-items: center; gap: 7px;
+  padding: 8px 12px; border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-size: 13px; letter-spacing: -0.08px; color: var(--label-2);
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.map-status .live { width: 8px; height: 8px; border-radius: 4px; background: var(--green); flex: none; }
+.map-status .live.off { background: var(--label-3); }
+
+/* Debug is deliberately dense — it is instrumentation, not a product surface.
+   Scoping the card treatment here rather than to .kv globally keeps the same
+   markup readable inside the post page's folded metadata, where it sits on a
+   card already. */
+.debug > .kv, .debug > .trace {
+  background: var(--bg-raised); border-radius: var(--r-group); margin: 0 16px 8px;
+}
+.debug > .btnrow { padding: 4px 16px 12px; }
+
+
+/* ── Sheets that are about one thing ──────────────────────────────────────
+   Opaque, never frosted: this animates in, and an animated ancestor isolates
+   the backdrop root, so a backdrop-filter here would silently render as plain
+   transparency over whatever is behind it. */
+.modal {
+  background: var(--bg-grouped); border-radius: 20px 20px 0 0;
+  margin: 0 -8px calc(-1 * var(--safe-bottom) - 8px);
+  padding-bottom: calc(var(--safe-bottom) + 10px);
+  max-height: 84dvh; display: flex; flex-direction: column;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.18);
+  animation: sheet-up 0.32s cubic-bezier(0.2, 0.9, 0.2, 1) both;
+}
+.modal .grabber {
+  width: 36px; height: 5px; border-radius: 3px; background: var(--label-3);
+  margin: 7px auto 2px; flex: none;
+}
+.modal-head {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 8px 16px 12px; flex: none;
+}
+.modal-head > div:first-child { flex: 1; min-width: 0; }
+.modal-body { overflow-y: auto; -webkit-overflow-scrolling: touch; padding-bottom: 6px; }
+.modal-foot { padding: 10px 16px 4px; flex: none; }
+
+/* Where a thing stands, in the same three colours as everywhere else. */
+.status-banner {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin: 0 16px 14px; padding: 11px 13px; border-radius: var(--r-group);
+}
+.status-banner b { font-size: 15px; letter-spacing: -0.23px; }
+
+/* ── Segmented control ──────────────────────────────────────────────────── */
+.segmented {
+  position: relative; display: grid; grid-template-columns: repeat(var(--n), 1fr);
+  margin: 0 16px; padding: 2px; border-radius: 9px; background: var(--fill);
+}
+.segmented .knob {
+  position: absolute; top: 2px; bottom: 2px; left: 2px;
+  width: calc((100% - 4px) / var(--n));
+  background: var(--bg); border-radius: 7px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 0 var(--hairline) rgba(0, 0, 0, 0.04);
+  transition: transform 0.26s cubic-bezier(0.32, 0.9, 0.2, 1);
+}
+.segmented button {
+  position: relative; z-index: 1; background: none; border: 0;
+  padding: 7px 4px; font-size: 13px; font-weight: 500; letter-spacing: -0.08px;
+  color: var(--label);
+}
+.segmented button[disabled] { color: var(--label-3); }
+.segmented button.on { font-weight: 600; }
+
+/* ── Chips — a small closed set of values ───────────────────────────────── */
+.chips { display: flex; flex-wrap: wrap; gap: 7px; padding: 8px 16px 12px; }
+.chips.tight { padding: 2px 0 0; }
+.chips button {
+  position: relative;
+  padding: 8px 13px; border-radius: 18px; border: 0;
+  background: var(--fill); color: var(--label);
+  font-size: 14px; font-weight: 500; letter-spacing: -0.15px;
+}
+.chips button.on { background: var(--tint); color: #fff; font-weight: 600; }
+.chips button .tag {
+  position: absolute; top: -6px; right: -4px;
+  background: var(--label-2); color: #fff; border-radius: 8px;
+  font-size: 9px; font-weight: 600; padding: 1px 5px; letter-spacing: 0.02em;
+}
+.chips button.on .tag { background: var(--tint-ink); }
+
+.field-label {
+  padding: 14px 16px 0; font-size: 13px; color: var(--label-2); letter-spacing: -0.08px;
+}
+.modal input.host { width: calc(100% - 32px); margin: 8px 16px 0; }
+
+/* A short explanation with an icon — used where the app has to say why it is
+   refusing something, which it should do in prose rather than by greying out. */
+.explain {
+  display: flex; gap: 11px; align-items: flex-start;
+  margin: 14px 16px 4px; padding: 12px 14px;
+  background: var(--bg-raised); border-radius: var(--r-group);
+  font-size: 13px; line-height: 18px; color: var(--label-2);
+}
+.explain svg { flex: none; color: var(--label-3); margin-top: 1px; }
+.explain b { color: var(--label); font-weight: 600; }
+.explain.bad { background: rgba(255, 59, 48, 0.07); color: var(--red-ink); }
+.explain.bad svg { color: var(--red); }
+
+/* ── Settings rows ──────────────────────────────────────────────────────── */
+.row.setting { gap: 12px; }
+.toggle {
+  width: 51px; height: 31px; border-radius: 16px; border: 0; flex: none; padding: 2px;
+  background: rgba(120, 120, 128, 0.16); transition: background 0.22s ease;
+  display: flex; align-items: center;
+}
+.toggle span {
+  width: 27px; height: 27px; border-radius: 14px; background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18); transition: transform 0.22s cubic-bezier(0.32, 0.9, 0.2, 1);
+}
+.toggle.on { background: var(--green); }
+.toggle.on span { transform: translateX(20px); }
+
+/* ── The pin card ─────────────────────────────────────────────────────────
+   Sits where the armed summary sits, and replaces it: two frosted panels
+   arguing over the same corner is worse than either alone. */
+/* A bottom sheet, anchored to the bottom EDGE — over the tab capsule, not above
+   it. Two floating things stacked in the same corner is a pile, not a layer;
+   and while you are reading about one place, switching tabs is not the next
+   thing you want to do. Closing it is what brings the bar back, which is why
+   the X is where your thumb already is. 950 puts it over the capsule's 900. */
+.pin-card {
+  /* fixed, not absolute: this is portalled onto <body>, precisely so it can
+     never be a compositing sibling of the Leaflet panes. See PinCard. */
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 950;
+  /* Snaps between detents; the .dragging class hands control to the finger. */
+  transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.2, 1);
+
+  background: var(--bg); border-radius: 20px 20px 0 0;
+  padding-bottom: calc(var(--safe-bottom) + 6px);
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.2), 0 0 0 var(--hairline) rgba(60, 60, 67, 0.12);
+  /* It has to clear a composited map AND a composited tab bar, so it is one too. */
+  will-change: transform;
+  /* `backwards`, NOT `both`: a filling animation owns `transform` forever and
+     beats inline styles in the cascade — with `both`, the entrance kept
+     applying translateY(0) after it finished, so the drag moved the card in
+     state only, never on screen. `backwards` releases the property at the end. */
+  animation: sheet-up 0.28s cubic-bezier(0.2, 0.9, 0.2, 1) backwards;
+  max-height: calc(100dvh - var(--safe-top) - 80px); overflow-y: auto;
+}
+.pin-card.dragging { transition: none; }
+
+/* The gesture strip. Wider than the grabber it draws, because a 36x5px pill is
+   a target for eyes, not thumbs — and touch-action: none or iOS claims the
+   drag for page scrolling and the sheet never moves. */
+.pin-drag { padding: 7px 0 2px; touch-action: none; cursor: grab; }
+.pin-drag .grabber {
+  display: block; width: 36px; height: 5px; border-radius: 3px;
+  background: var(--label-3); margin: 0 auto;
+}
+
+/* The peek is the same card translated down, NOT a layout with sections
+   hidden — that is what makes the drag continuous: every position between the
+   detents is defined, so the card can track the finger 1:1 and settle from
+   wherever it was released. The rest of the card sits below the screen edge,
+   which hides it and makes it untappable in the same stroke. */
+
+/* Becoming the page: the card grows to the viewport, then IS the post page.
+   An explicit start height is set inline first — height: auto cannot animate. */
+.pin-card.expanding {
+  transition: height 0.24s cubic-bezier(0.3, 0.8, 0.3, 1), border-radius 0.24s ease;
+  border-radius: 0; max-height: 100dvh; overflow: hidden;
+}
+.pin-head { display: flex; align-items: flex-start; gap: 10px; padding: 10px 16px 9px; }
+.pin-facts, .pin-actions { padding-left: 16px; padding-right: 16px; }
+.pin-status, .pin-prov { padding-left: 16px; padding-right: 16px; }
+.pin-verdicts { padding-left: 16px; padding-right: 16px; }
+
+.pin-facts { padding: 0 14px 12px; display: grid; gap: 7px; }
+.pin-facts > div {
+  display: flex; align-items: center; gap: 9px;
+  font-size: 13px; line-height: 18px; color: var(--label);
+}
+.pin-facts svg { flex: none; color: var(--label-3); }
+.pin-facts b { font-weight: 600; }
+.pin-facts .dim { color: var(--label-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.pin-actions { display: flex; gap: 8px; padding: 0 14px 12px; }
+.pin-actions .btn {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  text-decoration: none; padding: 11px 10px;
+}
+
+/* The trigger, one tap from the pin — the same sheet the library opens, so the
+   two surfaces cannot drift into disagreeing about what a place will do. */
+.pin-status {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  padding: 11px 14px; border: 0; background: var(--fill-soft);
+  box-shadow: inset 0 var(--hairline) 0 var(--separator);
+}
+.pin-status b { font-size: 14px; letter-spacing: -0.2px; }
+.pin-status:active { background: var(--fill); }
+
+.pin-verdicts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 14px; }
+.pin-verdicts button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 11px 8px; border-radius: var(--r-control); border: 0;
+  background: var(--fill); color: var(--label-2); font-size: 14px; font-weight: 500;
+}
+.pin-verdicts button.on.went { background: rgba(52, 199, 89, 0.16); color: var(--green-ink); }
+.pin-verdicts button.on.never { background: rgba(255, 59, 48, 0.12); color: var(--red-ink); }
+
+.pin-prov {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  padding: 10px 14px; border: 0; background: none;
+  box-shadow: inset 0 var(--hairline) 0 var(--separator);
+  font-size: 12px; line-height: 16px; color: var(--label-2);
+}
+.pin-prov img { width: 30px; height: 40px; object-fit: cover; border-radius: 5px; flex: none; }
+.pin-prov b { color: var(--label); font-weight: 600; }
+
+/* ── Notifications ────────────────────────────────────────────────────────
+   The shape iOS actually draws: app icon and name in small caps, the time on
+   the trailing edge, a bold title over two lines of body. The card here and the
+   banner on the lock screen have to be the same object, or the nudge that
+   summoned you and the screen it opens look like two products. */
+.notif {
+  background: var(--bg-raised); border-radius: 16px; margin: 0 16px 10px; overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+/* Firing right now gets the tint edge. Everything else is history and reads it. */
+.notif.live { box-shadow: 0 0 0 1.5px var(--tint-line), 0 8px 24px rgba(10, 120, 204, 0.14); }
+
+.notif-head {
+  display: flex; align-items: center; gap: 6px;
+  padding: 9px 13px 0; color: var(--label-2);
+  font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.notif-head .appicon {
+  width: 17px; height: 17px; border-radius: 5px; flex: none;
+  background: linear-gradient(160deg, #5fc0ff, var(--tint));
+  color: #fff; display: grid; place-items: center;
+}
+.notif-head .notif-when { margin-left: auto; font-weight: 500; letter-spacing: 0; text-transform: none; }
+
+.notif-body { display: flex; gap: 12px; padding: 5px 13px 12px; }
+.notif-title { font-size: 16px; font-weight: 600; letter-spacing: -0.31px; }
+.notif-text { font-size: 14px; line-height: 19px; color: var(--label); margin-top: 1px; }
+.notif-prov { font-size: 12px; line-height: 16px; color: var(--label-2); margin-top: 6px; }
+.notif-prov b { color: var(--label); font-weight: 600; }
+.notif-thumb { width: 42px; height: 56px; object-fit: cover; border-radius: 7px; flex: none; }
+
+/* The verdict lives inside the notification, because it is an answer to it. */
+.notif-verdicts {
+  display: flex; gap: 6px; padding: 9px 10px 10px;
+  box-shadow: inset 0 var(--hairline) 0 var(--separator);
+}
+.notif-verdicts button {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  padding: 9px 4px; border-radius: 9px; border: 0;
+  background: var(--fill-soft); color: var(--label-2);
+  font-size: 13px; font-weight: 500; letter-spacing: -0.08px;
+}
+.notif-verdicts button.on.went { background: rgba(52, 199, 89, 0.16); color: var(--green-ink); font-weight: 600; }
+.notif-verdicts button.on.not_now { background: var(--fill); color: var(--label); font-weight: 600; }
+.notif-verdicts button.on.never { background: rgba(255, 59, 48, 0.12); color: var(--red-ink); font-weight: 600; }
+.notif-verdicts button.tune { flex: none; width: 38px; color: var(--label-3); }
+
+/* An empty state that is a statement, not a blank card. */
+.empty {
+  display: flex; gap: 13px; align-items: flex-start;
+  background: var(--bg-raised); border-radius: var(--r-group);
+  margin: 0 16px 10px; padding: 15px 16px;
+}
+.empty > svg { flex: none; color: var(--label-3); margin-top: 1px; }
+
+/* ── The layering ladder, in one place ────────────────────────────────────
+   Leaflet ships its own z-indexes (panes 200–700, controls 800+) and they sit
+   in the same stacking context as everything else here, so the app's own
+   overlays have to be numbered ABOVE them rather than at the double digits that
+   read as "high" elsewhere. Getting this wrong is silent: the tab bar renders
+   perfectly and simply stops receiving taps on the map screen.
+
+   AND z-index alone is not enough on WebKit. Anything that overlaps the map
+   must ALSO be composited (`transform: translateZ(0)` / `will-change`), because
+   the map pane is composited and WebKit paints a composited layer over a
+   non-composited sibling regardless of z-index — appearing and disappearing as
+   the tree recomposites on zoom. Every entry below that overlaps the map is
+   promoted for that reason, not for performance.
+
+     40    sticky navigation bars, inside a scroll container
+     800   the map's own overlays: status pill, armed summary
+     850   the floating capture button
+     900   the tab capsule — fixed on the viewport, composited, over a
+           paint-contained map (see the note above .tabs)
+     950   the pin card — portalled to <body>, covers the bar while open
+     1000  press-and-hold menu
+     1100  sheets — the trigger editor, destructive confirmations
+     1200  the HUD
+*/
+
+
+/* ── The pipeline stepper — capture's progress UI ─────────────────────────
+   The whole plan is visible from the first moment: done, running, and still
+   to come, joined by a rail. The running stage carries its thinking — one
+   line of what it is for, then its own live log tail, teed from the Mac's
+   real console. Done stages fold their lines into a disclosure: receipts
+   stay checkable without burying the step below. */
+.steps {
+  background: var(--bg-raised); border-radius: var(--r-group);
+  margin: 0 16px; padding: 6px 0; overflow: hidden;
+}
+.step {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 9px 14px; position: relative;
+}
+/* The rail: a segment up to the dot and one below it, skipped at the ends.
+   Two segments rather than one through-line so the dot never sits on top of
+   a line showing through its transparent middle. */
+.step::before, .step::after {
+  content: ''; position: absolute; left: 24.5px; width: 2px;
+  background: var(--fill); border-radius: 1px;
+}
+.step::before { top: 0; height: 8px; }
+.step::after { top: 34px; bottom: 0; }
+.step.first::before, .step.last::after { display: none; }
+.step.done::before, .step.done::after,
+.step.running::before { background: rgba(52, 199, 89, 0.35); }
+
+/* The dot: pending is an outline, running is a live spinner, done is the
+   green check, failed is the red cross. 22px, centred on the rail. */
+.ind {
+  width: 22px; height: 22px; border-radius: 11px; flex: none;
+  display: grid; place-items: center; position: relative; z-index: 1;
+  background: var(--bg-raised);
+}
+.ind.pending { box-shadow: inset 0 0 0 2px var(--fill); }
+.ind.done { background: var(--green); color: #fff; }
+.ind.failed { background: var(--red); color: #fff; }
+.ind.running span {
+  width: 16px; height: 16px; border-radius: 8px;
+  border: 2px solid var(--tint-soft); border-top-color: var(--tint);
+  animation: spin 0.9s linear infinite;
+}
+
+.step-main { flex: 1; min-width: 0; padding-top: 2px; }
+.step-title { font-size: 15px; letter-spacing: -0.23px; line-height: 19px; }
+.step-title b { font-weight: 600; }
+.step.pending .step-title { color: var(--label-3); }
+.step.pending .step-title .dim { color: var(--label-3); }
+
+/* What this stage is FOR, in a sentence — shown only while it runs. */
+.step-why {
+  margin-top: 3px; font-size: 13px; line-height: 18px;
+  letter-spacing: -0.08px; color: var(--label-2);
+}
+
+/* The stage's own log tail. Mono because these are the pipeline's real lines,
+   and the newest line is the most opaque — reading direction matches time. */
+.step-think {
+  margin-top: 7px; padding: 8px 11px; border-radius: 8px;
+  background: var(--fill-soft);
+  font: 11px/1.6 ui-monospace, 'SF Mono', Menlo, monospace;
+  color: var(--label); overflow-wrap: anywhere;
+}
+.step-think.bad { background: rgba(255, 59, 48, 0.07); color: var(--red-ink); }
+
+/* Folded receipts on a finished stage. */
+.step-log summary {
+  margin-top: 4px; font-size: 12px; color: var(--label-3);
+  list-style: none; cursor: pointer; -webkit-user-select: none; user-select: none;
+}
+.step-log summary::-webkit-details-marker { display: none; }
+.step-log summary::before { content: '▸ '; }
+.step-log[open] summary::before { content: '▾ '; }
+.step-log .step-think { max-height: 180px; overflow-y: auto; }
+
+.step-time {
+  flex: none; padding-top: 4px; min-width: 34px; text-align: right;
+  font-size: 12px; color: var(--label-3); font-variant-numeric: tabular-nums;
+}
+
+/* Preflight facts: what the link resolved to, what was written where. */
+.preflight {
+  display: flex; flex-wrap: wrap; gap: 4px 14px;
+  margin: 0 16px 8px; padding: 10px 14px;
+  background: var(--bg-raised); border-radius: var(--r-group);
+  font-size: 12px; line-height: 17px; color: var(--label);
+}
+.preflight b { font-weight: 600; text-transform: capitalize; }

@@ -6,10 +6,15 @@
  * with no branch in the product code. It reads Anika's actual calendar — a real
  * "Gym" event, not a fixture.
  *
- * Read-only is a deliberate scope: Cue never writes an event, so the iOS 17+
- * prompt is the gentler read-only one. Note that iOS 17 RENAMED the Info.plist
- * key — `NSCalendarsUsageDescription` is now ignored, and the app crashes on
- * first access without `NSCalendarsFullAccessUsageDescription`.
+ * Cue never writes an event, but it must still ask for FULL access: iOS 17
+ * removed read-only access to events entirely. Apple offers only full access
+ * (read+write) or write-only (which cannot read), so reading a calendar means
+ * requesting full access. The read-only scope is enforced by this file — there
+ * is no write path anywhere in the app — not by the permission prompt.
+ *
+ * iOS 17 also RENAMED the Info.plist key: `NSCalendarsUsageDescription` is now
+ * ignored, and the app crashes on first access without
+ * `NSCalendarsFullAccessUsageDescription`.
  */
 
 import { CapacitorCalendar, CalendarPermissionScope } from '@ebarooni/capacitor-calendar';

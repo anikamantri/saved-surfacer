@@ -59,11 +59,11 @@ let centre = null;
  * changes what is eligible. Clearing first is cheaper than diffing 20 regions
  * and avoids the case where a stale region survives a corpus reload.
  */
-export async function arm(entities, position, log = () => {}, feedback = {}) {
+export async function arm(entities, position, log = () => {}, feedback = {}, overrides = {}) {
   if (!isNative()) { log('web — geofences not armed (this is the part that needs native)'); return []; }
   if (!position) { log('no position yet — cannot choose which 19 to arm'); return []; }
 
-  const picks = armable(entities, position, { feedback });
+  const picks = armable(entities, position, { feedback, overrides });
   await BackgroundGeolocation.removeAllGeofences().catch(() => {});
 
   for (const { entity, metres } of picks) {
@@ -132,5 +132,5 @@ export const armedNow = () => ({ armed, centre });
  * re-registering 20 regions on every update would thrash CoreLocation and burn
  * the battery the geofences exist to save.
  */
-export const stale = (entities, position, feedback = {}) =>
-  needsRearm(armed.map((a) => a.id), entities, position, { feedback });
+export const stale = (entities, position, feedback = {}, overrides = {}) =>
+  needsRearm(armed.map((a) => a.id), entities, position, { feedback, overrides });

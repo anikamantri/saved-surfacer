@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Light appearance is a product decision, not a system one: the app is
+         pinned to Light in Info.plist so a phone in Dark Mode does not paint
+         white status-bar text over a white navigation bar. -->
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f2f2f7" />
     <title>Cue</title>
   </head>
   <body>

@@ -60,14 +60,19 @@ export function trace(line) {
 }
 
 /** The context the engine evaluates against. Assembled, never invented. */
-export function context(overrides = {}) {
+export function context(patch = {}) {
   return {
     now: new Date(),
     position: state.position,
     calendar: state.calendar,
     feedback: store.loadFeedback(),
+    // Two layers of user intent, and the engine keeps them in order: `prefs` is
+    // what "nearby" means for the whole corpus, `overrides` is what it means for
+    // one saved thing. The second wins. See `DEFAULTS` in the engine.
+    prefs: store.loadPrefs(),
+    overrides: store.loadOverrides(),
     firedToday: store.firedToday(),
-    ...overrides,
+    ...patch,
   };
 }
 
@@ -122,10 +127,11 @@ export async function onGeofenceEnter(entityId) {
 /** Re-arm when the perimeter is crossed, so the nearest 19 stay the nearest 19. */
 export async function rearm({ force = false } = {}) {
   const feedback = store.loadFeedback();
-  if (!force && state.armed.length && !geofences.stale(state.entities, state.position, feedback)) {
+  const overrides = store.loadOverrides();
+  if (!force && state.armed.length && !geofences.stale(state.entities, state.position, feedback, overrides)) {
     return trace('perimeter crossed but the nearest venues are unchanged — not re-arming');
   }
-  state.armed = await geofences.arm(state.entities, state.position, trace, feedback);
+  state.armed = await geofences.arm(state.entities, state.position, trace, feedback, overrides);
   emit();
 }
 

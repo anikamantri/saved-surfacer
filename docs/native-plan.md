@@ -316,3 +316,39 @@ If phase 5 fights Xcode signing, everything else is already recorded.
 6. **Gym** — real "Gym" event, walk into Lyon Center, workout notification fires.
 7. **Share Extension** — from TikTok, Share → Cue, pin lands on the map.
 8. **Offline** — with the Mac unreachable, map, library and nudges still work; only new ingest is blocked, and it says so.
+
+
+---
+
+## 10. The interface pass — 2026-08-24
+
+The app was dark, dense and header-first; it is now Apple HIG in light appearance, built
+around the icon's blue. What changed, and why each one was not cosmetic:
+
+| Change | Reason |
+|---|---|
+| Apple system colours + HIG type scale (`app/src/styles.css`) | The nudge lands on the lock screen. The card that opens from it must not look like a different product from the notification that summoned it. |
+| Two accent tokens, `--tint` / `--tint-ink` | The icon blue (#3FA9F5) fails contrast as 13px text on white. Fills use the icon colour, text uses #0A78CC. |
+| `UIUserInterfaceStyle = Light` in Info.plist | Without it a phone in Dark Mode paints white status-bar text over a white navigation bar. |
+| Library header removed | A title bar over the graveyard is the app talking about itself over the thing it is criticising. Capture became a floating button; the runtime status moved onto the map, beside the dot it describes. |
+| Press-and-hold context menu (`app/src/ui/kit.jsx`) | Re-run the model, re-hydrate, delete — the three things a real library needs, in the gesture iOS already uses for them. Destructive delete confirms through an action sheet. |
+| Post page rebuilt | The saved thing is a video; it now opens at full width with one tap back to TikTok. The extraction receipts fold into "How this was extracted" at the bottom — still checkable, no longer the subject. |
+| Entities as one quiet meta line instead of chip stacks | Six entities × three pills was a wall of grey lozenges. |
+| Basemap re-baked to Positron | A dark map under a light app. 4121 tiles, ~54 MB, committed. |
+
+New server routes, both wired to that menu and both going down the ordinary pipeline:
+
+- `POST /ingest { url, refresh: 'model' \| 'all' }` — clears a **prefix of the cache chain**
+  and re-runs. `model` costs one vision call against frames already on disk; `all` re-fetches
+  from TikTok first.
+- `POST /delete { id }` — removes the post's artifacts, media, thumbnail, frames and its line
+  in `docs/saved-posts.md`, then re-runs stage 07. Verified against an unknown id (route,
+  rebundle, corpus untouched) and against synthetic artifacts (every file removed, harvest
+  list intact). The live model re-run has not been spent on the real corpus — the code path
+  is a normal ingest with the cache cleared first.
+
+**A real bug fell out of this.** `docs/saved-posts.md` had no trailing newline, so `addUrl`
+appended a shared post onto the end of the previous line, and `readUrls` — matching one URL
+per line — never saw it. `@sageandsaber/video/7676560508702444830` was written to the harvest
+list on 24 Aug and never hydrated, with no error anywhere. The writer and the reader are both
+fixed; the list now reads **18 posts**, and that one still needs an ingest run to catch up.

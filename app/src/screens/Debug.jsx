@@ -18,8 +18,9 @@ import * as geofences from '../native/geofences.js';
 import * as server from '../net/server.js';
 import * as store from '../state/store.js';
 import { fmtDistance } from '@cue/engine';
+import { LargeTitle } from '../ui/kit.jsx';
 
-export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource }) {
+export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource, status }) {
   const [p, setP] = useState(null);
   const [regions, setRegions] = useState([]);
   const [reach, setReach] = useState(null);
@@ -49,7 +50,12 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
   const yes = (v) => ['granted', 'always', 'web'].includes(v);
 
   return (
-    <div>
+    // `debug` scopes the card treatment: on this screen every kv table and trace
+    // is its own white group, which is what makes a dense instrumentation
+    // surface readable on a grey grouped background.
+    <div className="debug">
+      <LargeTitle title="Debug" subtitle={status} />
+
       <h4 className="section">permissions — read back from iOS, not assumed</h4>
       <div className="kv">
         <span className="k">native platform</span><span className={`v ${p?.native ? 'ok' : 'no'}`}>{String(p?.native ?? '…')}</span>
@@ -68,7 +74,7 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
 
       <h4 className="section">position</h4>
       {cue.blocked && (
-        <div className="note" style={{ color: 'var(--bad)', paddingTop: 0 }}>{cue.blocked}</div>
+        <div className="note bad" style={{ paddingTop: 0 }}>{cue.blocked}</div>
       )}
       <div className="kv">
         <span className="k">source</span><span className="v">{cue.source || 'none'}</span>
@@ -98,14 +104,14 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource 
       </div>
 
       <h4 className="section">the Mac — yt-dlp and ffmpeg cannot run on iOS</h4>
-      <div style={{ padding: '0 14px' }}>
+      <div style={{ padding: '0 16px 8px' }}>
         <input className="host" value={host} onChange={(e) => setHost(e.target.value)}
                placeholder="http://100.x.y.z:4321  (Tailscale)" autoCapitalize="off" autoCorrect="off" />
       </div>
       {/* "localhost" on a phone means the phone itself, which is the single most
           likely reason this ever reads false. Say so rather than making it a puzzle. */}
       {p?.native && /localhost|127\.0\.0\.1/.test(host) && (
-        <div className="note" style={{ color: 'var(--bad)' }}>
+        <div className="note bad">
           localhost is <i>this phone</i>, not the Mac. Use the Mac's Tailscale (100.x) or
           Wi-Fi address here.
         </div>
