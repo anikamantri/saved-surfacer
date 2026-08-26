@@ -145,3 +145,17 @@ export function recordFire(candidate) {
 export function reset() {
   Object.values(KEYS).forEach((k) => localStorage.removeItem(k));
 }
+
+/**
+ * Give today back — the budget and what fired today, nothing else.
+ *
+ * For testing a walk twice. `reset()` is the sledgehammer: it also takes the
+ * verdicts, the hand-set triggers, the settings and the library view, which
+ * is not what "let it fire again" means. Earlier days' history stays, so the
+ * Nudges screen still reads as a record rather than a blank.
+ */
+export function resetToday() {
+  localStorage.removeItem(KEYS.fired);
+  const day = today();
+  write(KEYS.log, history().filter((e) => !(e.at || '').startsWith(day)));
+}

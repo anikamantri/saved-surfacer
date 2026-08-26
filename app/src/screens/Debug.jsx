@@ -148,6 +148,7 @@ export default function Debug({ cue, onEvaluate, onIngest, onSync, corpusSource,
       <div className="btnrow">
         <button className="btn primary" onClick={() => onEvaluate({ deliver: true, reason: 'force' })}>force-fire (real gate)</button>
         <button className="btn" onClick={() => onEvaluate({ deliver: false, reason: 'dry run' })}>dry run</button>
+        <button className="btn" onClick={() => { store.resetToday(); location.reload(); }}>reset today's nudges</button>
         <button className="btn" onClick={() => { store.reset(); location.reload(); }}>reset feedback + budget</button>
       </div>
       <div className="note" style={{ paddingTop: 0 }}>
