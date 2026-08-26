@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-25T23:29:21.602Z",
+  "generated_at": "2026-08-26T04:23:24.964Z",
   "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
   "totals": {
     "posts": 1,
-    "oembed_ok": 1,
+    "oembed_ok": 0,
     "ytdlp_ok": 1
   },
   "posts": [
     {
-      "id": "7647308158058106126",
-      "url": "https://www.tiktok.com/@building.asia/video/7647308158058106126",
-      "kind": "video",
-      "oembed": "ok",
+      "id": "7637582878204808478",
+      "url": "https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478",
+      "kind": "photo",
+      "oembed": "fail (400)",
       "ytdlp": "ok",
       "caption_source": "yt-dlp.description",
-      "caption_chars": 42,
-      "has_video": true,
-      "audio_seconds": 57,
+      "caption_chars": 97,
+      "has_video": false,
+      "audio_seconds": 56,
       "audio_kind": "music"
     }
   ]

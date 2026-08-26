@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-08-25T23:33:38.182Z",
+  "generated_at": "2026-08-26T04:24:14.112Z",
   "totals": {
-    "posts": 19,
-    "entities": 105,
-    "nudge_eligible": 65,
-    "geocoded": 89,
-    "with_hours": 66
+    "posts": 20,
+    "entities": 118,
+    "nudge_eligible": 77,
+    "geocoded": 102,
+    "with_hours": 79
   },
   "hydration": {
-    "generated_at": "2026-08-25T23:29:21.602Z",
+    "generated_at": "2026-08-26T04:23:24.964Z",
     "finding": "The public keyless endpoint (oEmbed) fails on every photo carousel — half this corpus. yt-dlp reaches all of them, and is also the only source of the untruncated caption. Hydration, not extraction, is what limits coverage.",
     "totals": {
       "posts": 1,
-      "oembed_ok": 1,
+      "oembed_ok": 0,
       "ytdlp_ok": 1
     },
     "posts": [
       {
-        "id": "7647308158058106126",
-        "url": "https://www.tiktok.com/@building.asia/video/7647308158058106126",
-        "kind": "video",
-        "oembed": "ok",
+        "id": "7637582878204808478",
+        "url": "https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478",
+        "kind": "photo",
+        "oembed": "fail (400)",
         "ytdlp": "ok",
         "caption_source": "yt-dlp.description",
-        "caption_chars": 42,
-        "has_video": true,
-        "audio_seconds": 57,
+        "caption_chars": 97,
+        "has_video": false,
+        "audio_seconds": 56,
         "audio_kind": "music"
       }
     ]
@@ -11070,6 +11070,1773 @@
             "overall": 0.94
           },
           "place": null
+        }
+      ]
+    },
+    {
+      "id": "7637582878204808478",
+      "source": {
+        "url": "https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478",
+        "kind": "photo",
+        "author": "tiffanyfoodreview",
+        "author_url": "https://www.tiktok.com/@tiffanyfoodreview",
+        "saved_at": "2026-08-26",
+        "saved_at_is_estimate": false,
+        "thumbnail": "thumbnails/7637582878204808478.jpg",
+        "caption": "i’ve tried way more places i just don’t have pics #usc #uscfood #uscvillage #laeats #collegefood "
+      },
+      "evidence": {
+        "hydrated_via": "yt-dlp only (oEmbed 400)",
+        "oembed_worked": false,
+        "frames_used": 14,
+        "transcript_kind": "music",
+        "transcript_was_useful": false,
+        "transcript": "Baby, please get off the gram. I like you better in the stands. I upgrade my OnlyFans. They do it, don't need a cam. This right here my new modern jam. I'm on fire, new burning man. She paid the view, that's a hard demand. The game man brought 'em on for friends. This shit punk, put it on the Bible. I like a bad girl on a bicycle. Then I bought a car, now she feeling entitled. I dig so hard, poking like the Eiffel. This new world ain't hard to please. Where I keep the knowledge, think I'm Socrates. I got 'em levitating way off the knees. The way I make it jump, I make it hard to breathe. It's like... Denial, forever favor. True upgrader. You a shaker. Club breaker. Baby, don't you know I got to go? Got the glow and it got to show. Know it's been years since I seen the road. Had me inside like I'm on parole.",
+        "frames": [
+          "frames/7637582878204808478/frame-01.jpg",
+          "frames/7637582878204808478/frame-02.jpg",
+          "frames/7637582878204808478/frame-03.jpg",
+          "frames/7637582878204808478/frame-04.jpg",
+          "frames/7637582878204808478/frame-05.jpg",
+          "frames/7637582878204808478/frame-06.jpg",
+          "frames/7637582878204808478/frame-07.jpg",
+          "frames/7637582878204808478/frame-08.jpg",
+          "frames/7637582878204808478/frame-09.jpg",
+          "frames/7637582878204808478/frame-10.jpg",
+          "frames/7637582878204808478/frame-11.jpg",
+          "frames/7637582878204808478/frame-12.jpg",
+          "frames/7637582878204808478/frame-13.jpg",
+          "frames/7637582878204808478/frame-14.jpg"
+        ]
+      },
+      "extraction": {
+        "model": "gpt-5.6-terra",
+        "signals": [
+          "frames"
+        ],
+        "run_at": "2026-08-26T04:24:06.860Z",
+        "usage": {
+          "prompt_tokens": 76426,
+          "completion_tokens": 1237,
+          "total_tokens": 77663,
+          "prompt_tokens_details": {
+            "cached_tokens": 75136,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 164,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        }
+      },
+      "entities": [
+        {
+          "id": "7637582878204808478-0",
+          "type": "place",
+          "name": "The Law School",
+          "category": "USC campus food spot",
+          "hook": "8.3/10 salmon bowl; healthy but somewhat pricey due to added sauce.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.9,
+            "geocode": 1,
+            "overall": 0.9
+          },
+          "place": {
+            "place_id": "ChIJ7aVxnOTHwoARksAnB1bKfHw",
+            "resolved_name": "USC Gould School of Law",
+            "address": "699 W Exposition Blvd, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.018675099999996,
+              -118.2842727
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 9:00 AM – 5:00 PM",
+              "Tuesday: 9:00 AM – 5:00 PM",
+              "Wednesday: 9:00 AM – 5:00 PM",
+              "Thursday: 9:00 AM – 5:00 PM",
+              "Friday: 9:00 AM – 5:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 17,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 17,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.3,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-1",
+          "type": "place",
+          "name": "Seeds Salads",
+          "category": "salad restaurant",
+          "hook": "9.1/10 chicken Caesar salad with cilantro sauce and lots of toppings.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "city",
+            "requires": []
+          },
+          "nudge_eligible": false,
+          "why_not": "confidence 0.47 below 0.7",
+          "confidence": {
+            "extraction": 0.95,
+            "geocode": 0.5,
+            "overall": 0.47
+          },
+          "place": {
+            "place_id": "ChIJscVzaePHwoARaN_58rEJlac",
+            "resolved_name": "Seeds Marketplace",
+            "address": "Ronald Tutor Campus Center, 3607 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.020529499999995,
+              -118.2860132
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 8:00 PM",
+              "Tuesday: 7:00 AM – 8:00 PM",
+              "Wednesday: 7:00 AM – 8:00 PM",
+              "Thursday: 7:00 AM – 8:00 PM",
+              "Friday: 7:00 AM – 6:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 20,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 3.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-2",
+          "type": "place",
+          "name": "CAVA",
+          "category": "Mediterranean fast-casual restaurant",
+          "hook": "7.2/10; kids' meal is worthwhile, though chicken can have a stringy piece.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.97,
+            "geocode": 1,
+            "overall": 0.97
+          },
+          "place": {
+            "place_id": "ChIJ1xoiveXHwoARC-qY17itdWk",
+            "resolved_name": "CAVA",
+            "address": "3201 S Hoover St Suite 1840, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.0251334,
+              -118.28459900000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:30 AM – 10:00 PM",
+              "Tuesday: 10:30 AM – 10:00 PM",
+              "Wednesday: 10:30 AM – 10:00 PM",
+              "Thursday: 10:30 AM – 10:00 PM",
+              "Friday: 10:30 AM – 10:00 PM",
+              "Saturday: 10:30 AM – 10:00 PM",
+              "Sunday: 10:30 AM – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.7,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-3",
+          "type": "place",
+          "name": "USC Village Dining Hall",
+          "category": "university dining hall",
+          "hook": "6.1/10; decent food variety, with notably good desserts.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": 1,
+            "overall": 0.96
+          },
+          "place": {
+            "place_id": "ChIJ_WDnaOXHwoARdSx3xACgThk",
+            "resolved_name": "USC Village Honors Dining Hall",
+            "address": "3122-3168 McClintock Ave, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0256626,
+              -118.2862265
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 10:00 PM",
+              "Tuesday: 7:00 AM – 10:00 PM",
+              "Wednesday: 7:00 AM – 10:00 PM",
+              "Thursday: 7:00 AM – 10:00 PM",
+              "Friday: 7:00 AM – 10:00 PM",
+              "Saturday: 9:00 AM – 10:00 PM",
+              "Sunday: 9:00 AM – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-4",
+          "type": "place",
+          "name": "Parkside Restaurant & Grill",
+          "category": "university dining hall",
+          "hook": "8.6/10; rotating food selection, ice-cream machine, and fun desserts.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.91,
+            "geocode": 1,
+            "overall": 0.91
+          },
+          "place": {
+            "place_id": "ChIJndgeXPzHwoAReI7iEd05Lh4",
+            "resolved_name": "Parkside Restaurant and Grill",
+            "address": "3771 McClintock Ave, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.0193849,
+              -118.29050470000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:00 AM – 10:00 PM",
+              "Tuesday: 7:00 AM – 10:00 PM",
+              "Wednesday: 7:00 AM – 10:00 PM",
+              "Thursday: 7:00 AM – 10:00 PM",
+              "Friday: 7:00 AM – 10:00 PM",
+              "Saturday: 8:30 AM – 10:00 PM",
+              "Sunday: 8:30 AM – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 8,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-5",
+          "type": "place",
+          "name": "Rock & Reilly's",
+          "category": "pub and restaurant",
+          "hook": "7.7/10; iced matcha latte and everything bagel with cream cheese, though bagels can be stale.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.96,
+            "geocode": 1,
+            "overall": 0.96
+          },
+          "place": {
+            "place_id": "ChIJTUtPz1bHwoARxfhZXhvzisU",
+            "resolved_name": "Rock & Reilly's USC - Restaurant and Bar",
+            "address": "3201 S Hoover St, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.024279199999995,
+              -118.2841299
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:30 AM – 11:00 PM",
+              "Tuesday: 10:30 AM – 11:00 PM",
+              "Wednesday: 10:30 AM – 12:00 AM",
+              "Thursday: 10:30 AM – 12:00 AM",
+              "Friday: 10:30 AM – 12:00 AM",
+              "Saturday: 10:30 AM – 12:00 AM",
+              "Sunday: 10:30 AM – 11:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 23,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 0,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-6",
+          "type": "place",
+          "name": "Central Kitchen at Lorenzo",
+          "category": "residential dining / café",
+          "hook": "7.0/10; breakfast burrito is especially good.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.91,
+            "geocode": 1,
+            "overall": 0.91
+          },
+          "place": {
+            "place_id": "ChIJT_xrAN3HwoARY8vLmaTF8aA",
+            "resolved_name": "Central Kitchen at The Lorenzo",
+            "address": "325 W Adams Blvd Ste A, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0287682,
+              -118.2719853
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 9:00 AM – 9:00 PM",
+              "Tuesday: 9:00 AM – 9:00 PM",
+              "Wednesday: 9:00 AM – 9:00 PM",
+              "Thursday: 9:00 AM – 9:00 PM",
+              "Friday: 9:00 AM – 9:00 PM",
+              "Saturday: 9:00 AM – 9:00 PM",
+              "Sunday: 9:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 9,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-7",
+          "type": "place",
+          "name": "Fertitta Cafe",
+          "category": "café",
+          "hook": "5.5/10; dumplings were not a favorite.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.92,
+            "geocode": 1,
+            "overall": 0.92
+          },
+          "place": {
+            "place_id": "ChIJP6dYIOLHwoAR1QK-53XvyW0",
+            "resolved_name": "Fertitta Cafe",
+            "address": "3601 S Figueroa St, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.018711599999996,
+              -118.28245249999999
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:30 AM – 6:00 PM",
+              "Tuesday: 10:30 AM – 6:00 PM",
+              "Wednesday: 10:30 AM – 6:00 PM",
+              "Thursday: 10:30 AM – 6:00 PM",
+              "Friday: Closed",
+              "Saturday: Closed",
+              "Sunday: Closed"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 18,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 18,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.3,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-8",
+          "type": "place",
+          "name": "Thai by Trio",
+          "category": "Thai restaurant",
+          "hook": "9.2/10; chicken pad see ew is a repeat order and \"so good.\"",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJk0qjEVzHwoARt-etgu-IpGg",
+            "resolved_name": "Thai by Trio",
+            "address": "2700 S Figueroa St #101, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.026933899999996,
+              -118.27655170000001
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 10:00 PM",
+              "Tuesday: 11:00 AM – 10:00 PM",
+              "Wednesday: 11:00 AM – 10:00 PM",
+              "Thursday: 11:00 AM – 10:00 PM",
+              "Friday: 11:00 AM – 10:00 PM",
+              "Saturday: 11:00 AM – 10:00 PM",
+              "Sunday: 11:00 AM – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.3,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-9",
+          "type": "place",
+          "name": "Egg Tuck",
+          "category": "egg-sandwich restaurant",
+          "hook": "5.1/10 classic egg sandwich; savory but eggs are watery.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJsQwfTwDHwoARSNvMDQAwq90",
+            "resolved_name": "Egg Tuck",
+            "address": "2528 S Figueroa St, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0282921,
+              -118.2751481
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 7:30 AM – 3:30 PM",
+              "Tuesday: 7:30 AM – 3:30 PM",
+              "Wednesday: 7:30 AM – 3:30 PM",
+              "Thursday: 7:30 AM – 3:30 PM",
+              "Friday: 7:30 AM – 3:30 PM",
+              "Saturday: 7:30 AM – 3:30 PM",
+              "Sunday: 7:30 AM – 3:30 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 15,
+                  "minute": 30
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 7,
+                  "minute": 30
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 15,
+                  "minute": 30
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-10",
+          "type": "place",
+          "name": "Yogurtland",
+          "category": "frozen-yogurt shop",
+          "hook": "9.0/10 affordable self-serve froyo; creator used to get it daily.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJG29JN-HHwoARzrA2dyLJnKk",
+            "resolved_name": "Yogurtland USC",
+            "address": "3335 S Figueroa St Unit K, Los Angeles, CA 90007, USA",
+            "coords": [
+              34.0227748,
+              -118.2798221
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 11:00 AM – 12:00 AM",
+              "Tuesday: 11:00 AM – 12:00 AM",
+              "Wednesday: 11:00 AM – 12:00 AM",
+              "Thursday: 11:00 AM – 12:00 AM",
+              "Friday: 11:00 AM – 12:00 AM",
+              "Saturday: 11:00 AM – 12:00 AM",
+              "Sunday: 11:00 AM – 12:00 AM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 0,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 11,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 0,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.4,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-11",
+          "type": "place",
+          "name": "Softies",
+          "category": "bakery / dessert shop",
+          "hook": "8.3/10 chocolate-chip cookie; also praised for affordable, very good breakfast burritos.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.93,
+            "geocode": 1,
+            "overall": 0.93
+          },
+          "place": {
+            "place_id": "ChIJ0ZpNhG_HwoARq0U2CUhe248",
+            "resolved_name": "Softies Burger - USC Village",
+            "address": "835 W Jefferson Blvd Suite 1710, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.0247564,
+              -118.2846458
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 9:00 PM",
+              "Tuesday: 10:00 AM – 9:00 PM",
+              "Wednesday: 10:00 AM – 9:00 PM",
+              "Thursday: 10:00 AM – 9:00 PM",
+              "Friday: 10:00 AM – 9:00 PM",
+              "Saturday: 10:00 AM – 9:00 PM",
+              "Sunday: 10:00 AM – 9:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 21,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 21,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.5,
+            "source": "google-places"
+          }
+        },
+        {
+          "id": "7637582878204808478-12",
+          "type": "place",
+          "name": "sweetgreen",
+          "category": "salad and grain-bowl restaurant",
+          "hook": "8.0/10 bowls; sometimes has really good deals.",
+          "neighborhood": "University Park",
+          "city": "Los Angeles",
+          "country": "United States",
+          "found_in": [
+            "frames"
+          ],
+          "trigger_class": "spatial",
+          "decay": "contextual",
+          "trigger": {
+            "kind": "spatial",
+            "scope": "proximity",
+            "radius_m": 500,
+            "requires": [
+              "open_now",
+              "calendar_gap"
+            ]
+          },
+          "nudge_eligible": true,
+          "why_not": null,
+          "confidence": {
+            "extraction": 0.98,
+            "geocode": 1,
+            "overall": 0.98
+          },
+          "place": {
+            "place_id": "ChIJrzv_CMvHwoARqv-ICl4Qc7I",
+            "resolved_name": "sweetgreen",
+            "address": "929 W Jefferson Blvd, Los Angeles, CA 90089, USA",
+            "coords": [
+              34.0247532,
+              -118.2852983
+            ],
+            "granularity": "venue",
+            "hours": [
+              "Monday: 10:00 AM – 10:00 PM",
+              "Tuesday: 10:00 AM – 10:00 PM",
+              "Wednesday: 10:00 AM – 10:00 PM",
+              "Thursday: 10:00 AM – 10:00 PM",
+              "Friday: 10:00 AM – 10:00 PM",
+              "Saturday: 10:00 AM – 10:00 PM",
+              "Sunday: 10:00 AM – 10:00 PM"
+            ],
+            "periods": [
+              {
+                "open": {
+                  "day": 0,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 0,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 1,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 1,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 2,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 2,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 3,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 3,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 4,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 4,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 5,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 5,
+                  "hour": 22,
+                  "minute": 0
+                }
+              },
+              {
+                "open": {
+                  "day": 6,
+                  "hour": 10,
+                  "minute": 0
+                },
+                "close": {
+                  "day": 6,
+                  "hour": 22,
+                  "minute": 0
+                }
+              }
+            ],
+            "rating": 4.2,
+            "source": "google-places"
+          }
         }
       ]
     }

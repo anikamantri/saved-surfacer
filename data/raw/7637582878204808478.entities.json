@@ -8,45 +8,30 @@
     "frames"
   ],
   "usage": {
-    "prompt_tokens": 76428,
-    "completion_tokens": 1335,
-    "total_tokens": 77763,
+    "prompt_tokens": 76426,
+    "completion_tokens": 1237,
+    "total_tokens": 77663,
     "prompt_tokens_details": {
-      "cached_tokens": 0,
+      "cached_tokens": 75136,
       "audio_tokens": 0
     },
     "completion_tokens_details": {
-      "reasoning_tokens": 232,
+      "reasoning_tokens": 164,
       "audio_tokens": 0,
       "accepted_prediction_tokens": 0,
       "rejected_prediction_tokens": 0
     }
   },
-  "run_at": "2026-08-24T01:57:15.503Z",
+  "run_at": "2026-08-26T04:24:06.860Z",
   "entities": [
     {
       "type": "place",
-      "name": "USC Gould School of Law",
-      "category": "campus café",
-      "neighborhood": null,
+      "name": "The Law School",
+      "category": "USC campus food spot",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Salmon bowl; healthy but a little sauce-heavy and pricey (8.3/10).",
-      "found_in": [
-        "frames"
-      ],
-      "extraction_confidence": 0.93,
-      "trigger_class": "spatial",
-      "decay": "contextual"
-    },
-    {
-      "type": "place",
-      "name": "Seeds Marketplace",
-      "category": "salad café",
-      "neighborhood": null,
-      "city": "Los Angeles",
-      "country": "United States",
-      "hook": "Chicken Caesar salad with cilantro sauce and small toppings; highly rated 9.1/10.",
+      "hook": "8.3/10 salmon bowl; healthy but somewhat pricey due to added sauce.",
       "found_in": [
         "frames"
       ],
@@ -56,87 +41,12 @@
     },
     {
       "type": "place",
-      "name": "CAVA",
-      "category": "fast-casual Mediterranean restaurant",
-      "neighborhood": null,
+      "name": "Seeds Salads",
+      "category": "salad restaurant",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Kids' meal bowls are worth it, though the chicken can include an unappealing stringy piece (7.2/10).",
-      "found_in": [
-        "frames"
-      ],
-      "extraction_confidence": 0.98,
-      "trigger_class": "spatial",
-      "decay": "contextual"
-    },
-    {
-      "type": "place",
-      "name": "USC Village Dining Hall",
-      "category": "university dining hall",
-      "neighborhood": null,
-      "city": "Los Angeles",
-      "country": "United States",
-      "hook": "Decent rotating variety; desserts are the highlight (6.1/10).",
-      "found_in": [
-        "frames"
-      ],
-      "extraction_confidence": 0.96,
-      "trigger_class": "spatial",
-      "decay": "contextual"
-    },
-    {
-      "type": "place",
-      "name": "Parkside Restaurant and Grill",
-      "category": "university dining hall",
-      "neighborhood": null,
-      "city": "Los Angeles",
-      "country": "United States",
-      "hook": "Rotating food selection, ice cream machine, and desserts; reviewer says the food is fire (8.6/10).",
-      "found_in": [
-        "frames"
-      ],
-      "extraction_confidence": 0.94,
-      "trigger_class": "spatial",
-      "decay": "contextual"
-    },
-    {
-      "type": "place",
-      "name": "Rock & Reilly's USC",
-      "category": "pub and restaurant",
-      "neighborhood": null,
-      "city": "Los Angeles",
-      "country": "United States",
-      "hook": "Iced matcha latte and everything bagel with cream cheese; overall good but bagels can be stale (7.7/10).",
-      "found_in": [
-        "frames"
-      ],
-      "extraction_confidence": 0.91,
-      "trigger_class": "spatial",
-      "decay": "contextual"
-    },
-    {
-      "type": "place",
-      "name": "Central Kitchen at Lorenzo",
-      "category": "campus café",
-      "neighborhood": null,
-      "city": "Los Angeles",
-      "country": "United States",
-      "hook": "Breakfast burrito is especially good despite an otherwise just-okay rating (7.0/10).",
-      "found_in": [
-        "frames"
-      ],
-      "extraction_confidence": 0.92,
-      "trigger_class": "spatial",
-      "decay": "contextual"
-    },
-    {
-      "type": "place",
-      "name": "Fertitta Café",
-      "category": "campus café",
-      "neighborhood": null,
-      "city": "Los Angeles",
-      "country": "United States",
-      "hook": "Dumplings, but the reviewer is not a fan of the food overall (5.5/10).",
+      "hook": "9.1/10 chicken Caesar salad with cilantro sauce and lots of toppings.",
       "found_in": [
         "frames"
       ],
@@ -146,12 +56,102 @@
     },
     {
       "type": "place",
-      "name": "Thai by Trio",
-      "category": "Thai restaurant",
-      "neighborhood": null,
+      "name": "CAVA",
+      "category": "Mediterranean fast-casual restaurant",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Chicken pad see ew is a repeat order and rated 9.2/10.",
+      "hook": "7.2/10; kids' meal is worthwhile, though chicken can have a stringy piece.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.97,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "USC Village Dining Hall",
+      "category": "university dining hall",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "6.1/10; decent food variety, with notably good desserts.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Parkside Restaurant & Grill",
+      "category": "university dining hall",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "8.6/10; rotating food selection, ice-cream machine, and fun desserts.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Rock & Reilly's",
+      "category": "pub and restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "7.7/10; iced matcha latte and everything bagel with cream cheese, though bagels can be stale.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.96,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Central Kitchen at Lorenzo",
+      "category": "residential dining / café",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "7.0/10; breakfast burrito is especially good.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.91,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Fertitta Cafe",
+      "category": "café",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "5.5/10; dumplings were not a favorite.",
+      "found_in": [
+        "frames"
+      ],
+      "extraction_confidence": 0.92,
+      "trigger_class": "spatial",
+      "decay": "contextual"
+    },
+    {
+      "type": "place",
+      "name": "Thai by Trio",
+      "category": "Thai restaurant",
+      "neighborhood": "University Park",
+      "city": "Los Angeles",
+      "country": "United States",
+      "hook": "9.2/10; chicken pad see ew is a repeat order and \"so good.\"",
       "found_in": [
         "frames"
       ],
@@ -162,11 +162,11 @@
     {
       "type": "place",
       "name": "Egg Tuck",
-      "category": "breakfast sandwich restaurant",
-      "neighborhood": null,
+      "category": "egg-sandwich restaurant",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Classic egg sandwich is savory but has watery eggs (5.1/10).",
+      "hook": "5.1/10 classic egg sandwich; savory but eggs are watery.",
       "found_in": [
         "frames"
       ],
@@ -177,11 +177,11 @@
     {
       "type": "place",
       "name": "Yogurtland",
-      "category": "frozen yogurt shop",
-      "neighborhood": null,
+      "category": "frozen-yogurt shop",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Affordable self-serve frozen yogurt; a personal favorite (9.0/10).",
+      "hook": "9.0/10 affordable self-serve froyo; creator used to get it daily.",
       "found_in": [
         "frames"
       ],
@@ -192,31 +192,31 @@
     {
       "type": "place",
       "name": "Softies",
-      "category": "bakery and café",
-      "neighborhood": null,
+      "category": "bakery / dessert shop",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Chocolate chip cookie plus a notably good, affordable breakfast burrito (8.3/10).",
+      "hook": "8.3/10 chocolate-chip cookie; also praised for affordable, very good breakfast burritos.",
       "found_in": [
         "frames"
       ],
-      "extraction_confidence": 0.95,
+      "extraction_confidence": 0.93,
       "trigger_class": "spatial",
       "decay": "contextual"
     },
     {
       "type": "place",
       "name": "sweetgreen",
-      "category": "fast-casual salad restaurant",
-      "neighborhood": null,
+      "category": "salad and grain-bowl restaurant",
+      "neighborhood": "University Park",
       "city": "Los Angeles",
       "country": "United States",
-      "hook": "Build-your-own grain-and-salad bowls; sometimes has really good deals (8.0/10).",
+      "hook": "8.0/10 bowls; sometimes has really good deals.",
       "found_in": [
         "frames"
       ],
       "extraction_confidence": 0.98,
-      "trigger_class": "commerce",
+      "trigger_class": "spatial",
       "decay": "contextual"
     }
   ]

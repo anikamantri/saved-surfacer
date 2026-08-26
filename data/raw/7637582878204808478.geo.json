@@ -90,7 +90,7 @@
       "confidence": 1,
       "city_match": true,
       "alias_suspected": false,
-      "candidates_considered": 1
+      "candidates_considered": 3
     },
     {
       "index": 1,
@@ -178,10 +178,10 @@
       "business_status": "OPERATIONAL",
       "rating": 3.7,
       "source": "google-places",
-      "confidence": 1,
+      "confidence": 0.5,
       "city_match": true,
       "alias_suspected": false,
-      "candidates_considered": 1
+      "candidates_considered": 2
     },
     {
       "index": 2,
@@ -296,7 +296,7 @@
       "confidence": 1,
       "city_match": true,
       "alias_suspected": false,
-      "candidates_considered": 3
+      "candidates_considered": 1
     },
     {
       "index": 3,
@@ -1065,7 +1065,7 @@
       "confidence": 1,
       "city_match": true,
       "alias_suspected": false,
-      "candidates_considered": 3
+      "candidates_considered": 1
     },
     {
       "index": 10,
@@ -1180,7 +1180,7 @@
       "confidence": 1,
       "city_match": true,
       "alias_suspected": false,
-      "candidates_considered": 3
+      "candidates_considered": 1
     },
     {
       "index": 11,
@@ -1310,13 +1310,13 @@
       "primary_type": "salad_shop",
       "granularity": "venue",
       "hours": [
-        "Monday: 10:00 AM – 8:00 PM",
-        "Tuesday: 10:00 AM – 8:00 PM",
-        "Wednesday: 10:00 AM – 8:00 PM",
-        "Thursday: 10:00 AM – 8:00 PM",
-        "Friday: 10:00 AM – 8:00 PM",
-        "Saturday: 10:00 AM – 8:00 PM",
-        "Sunday: 10:00 AM – 8:00 PM"
+        "Monday: 10:00 AM – 10:00 PM",
+        "Tuesday: 10:00 AM – 10:00 PM",
+        "Wednesday: 10:00 AM – 10:00 PM",
+        "Thursday: 10:00 AM – 10:00 PM",
+        "Friday: 10:00 AM – 10:00 PM",
+        "Saturday: 10:00 AM – 10:00 PM",
+        "Sunday: 10:00 AM – 10:00 PM"
       ],
       "periods": [
         {
@@ -1327,7 +1327,7 @@
           },
           "close": {
             "day": 0,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         },
@@ -1339,7 +1339,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         },
@@ -1351,7 +1351,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         },
@@ -1363,7 +1363,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         },
@@ -1375,7 +1375,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         },
@@ -1387,7 +1387,7 @@
           },
           "close": {
             "day": 5,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         },
@@ -1399,7 +1399,7 @@
           },
           "close": {
             "day": 6,
-            "hour": 20,
+            "hour": 22,
             "minute": 0
           }
         }
@@ -1410,7 +1410,7 @@
       "confidence": 1,
       "city_match": true,
       "alias_suspected": false,
-      "candidates_considered": 3
+      "candidates_considered": 1
     }
   ]
 }

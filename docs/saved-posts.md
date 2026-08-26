@@ -33,3 +33,4 @@ https://www.tiktok.com/@corner.la/photo/7666549982698278174	2026-08-24
 https://www.tiktok.com/@chrissy015_/video/7663636435349540110	2026-08-24
 https://www.tiktok.com/@likeafriendsaid/video/7667807221580926221	2026-08-25
 https://www.tiktok.com/@samm.young/video/7661826260070354206	2026-08-25
+https://www.tiktok.com/@tiffanyfoodreview/photo/7637582878204808478	2026-08-26

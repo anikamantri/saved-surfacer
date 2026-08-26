@@ -10736,5 +10736,1819 @@
       "primaryType": "university",
       "_source": "google-places"
     }
+  ],
+  "USC Gould School of Law, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ7aVxnOTHwoARksAnB1bKfHw",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "699 W Exposition Blvd, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.018675099999996,
+        "longitude": -118.2842727
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Gould School of Law",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    }
+  ],
+  "Seeds Salads, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJscVzaePHwoARaN_58rEJlac",
+      "types": [
+        "grocery_store",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "Ronald Tutor Campus Center, 3607 Trousdale Pkwy, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.020529499999995,
+        "longitude": -118.2860132
+      },
+      "rating": 3.7,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 20,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 8:00 PM",
+          "Tuesday: 7:00 AM – 8:00 PM",
+          "Wednesday: 7:00 AM – 8:00 PM",
+          "Thursday: 7:00 AM – 8:00 PM",
+          "Friday: 7:00 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Seeds Marketplace",
+        "languageCode": "en"
+      },
+      "primaryType": "grocery_store",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJrzv_CMvHwoARqv-ICl4Qc7I",
+      "types": [
+        "salad_shop",
+        "vegetarian_restaurant",
+        "meal_takeaway",
+        "shipping_service",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "formattedAddress": "929 W Jefferson Blvd, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0247532,
+        "longitude": -118.2852983
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 10:00 PM",
+          "Tuesday: 10:00 AM – 10:00 PM",
+          "Wednesday: 10:00 AM – 10:00 PM",
+          "Thursday: 10:00 AM – 10:00 PM",
+          "Friday: 10:00 AM – 10:00 PM",
+          "Saturday: 10:00 AM – 10:00 PM",
+          "Sunday: 10:00 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "sweetgreen",
+        "languageCode": "en"
+      },
+      "primaryType": "salad_shop",
+      "_source": "google-places"
+    }
+  ],
+  "USC Village Dining Hall, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ_WDnaOXHwoARdSx3xACgThk",
+      "types": [
+        "cafeteria",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3122-3168 McClintock Ave, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0256626,
+        "longitude": -118.2862265
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 10:00 PM",
+          "Tuesday: 7:00 AM – 10:00 PM",
+          "Wednesday: 7:00 AM – 10:00 PM",
+          "Thursday: 7:00 AM – 10:00 PM",
+          "Friday: 7:00 AM – 10:00 PM",
+          "Saturday: 9:00 AM – 10:00 PM",
+          "Sunday: 9:00 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Village Honors Dining Hall",
+        "languageCode": "en"
+      },
+      "primaryType": "cafeteria",
+      "_source": "google-places"
+    }
+  ],
+  "Parkside Restaurant and Grill, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJndgeXPzHwoAReI7iEd05Lh4",
+      "types": [
+        "cafeteria",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3771 McClintock Ave, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0193849,
+        "longitude": -118.29050470000001
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 10:00 PM",
+          "Tuesday: 7:00 AM – 10:00 PM",
+          "Wednesday: 7:00 AM – 10:00 PM",
+          "Thursday: 7:00 AM – 10:00 PM",
+          "Friday: 7:00 AM – 10:00 PM",
+          "Saturday: 8:30 AM – 10:00 PM",
+          "Sunday: 8:30 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Parkside Restaurant and Grill",
+        "languageCode": "en"
+      },
+      "primaryType": "cafeteria",
+      "_source": "google-places"
+    }
+  ],
+  "Rock & Reilly's USC, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJTUtPz1bHwoARxfhZXhvzisU",
+      "types": [
+        "american_restaurant",
+        "chicken_wings_restaurant",
+        "sports_bar",
+        "cocktail_bar",
+        "catering_service",
+        "breakfast_restaurant",
+        "hamburger_restaurant",
+        "vegetarian_restaurant",
+        "bar",
+        "food_delivery",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "formattedAddress": "3201 S Hoover St, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.024279199999995,
+        "longitude": -118.2841299
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 23,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 0,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 0,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:30 AM – 11:00 PM",
+          "Tuesday: 10:30 AM – 11:00 PM",
+          "Wednesday: 10:30 AM – 12:00 AM",
+          "Thursday: 10:30 AM – 12:00 AM",
+          "Friday: 10:30 AM – 12:00 AM",
+          "Saturday: 10:30 AM – 12:00 AM",
+          "Sunday: 10:30 AM – 11:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Rock & Reilly's USC - Restaurant and Bar",
+        "languageCode": "en"
+      },
+      "primaryType": "american_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Central Kitchen at Lorenzo, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJT_xrAN3HwoARY8vLmaTF8aA",
+      "types": [
+        "american_restaurant",
+        "hamburger_restaurant",
+        "taco_restaurant",
+        "italian_restaurant",
+        "pizza_restaurant",
+        "breakfast_restaurant",
+        "sandwich_shop",
+        "mexican_restaurant",
+        "salad_shop",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "325 W Adams Blvd Ste A, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0287682,
+        "longitude": -118.2719853
+      },
+      "rating": 4.4,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 9:00 PM",
+          "Tuesday: 9:00 AM – 9:00 PM",
+          "Wednesday: 9:00 AM – 9:00 PM",
+          "Thursday: 9:00 AM – 9:00 PM",
+          "Friday: 9:00 AM – 9:00 PM",
+          "Saturday: 9:00 AM – 9:00 PM",
+          "Sunday: 9:00 AM – 9:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Central Kitchen at The Lorenzo",
+        "languageCode": "en"
+      },
+      "primaryType": "american_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Fertitta Cafe, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJP6dYIOLHwoAR1QK-53XvyW0",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3601 S Figueroa St, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.018711599999996,
+        "longitude": -118.28245249999999
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 18,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 18,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:30 AM – 6:00 PM",
+          "Tuesday: 10:30 AM – 6:00 PM",
+          "Wednesday: 10:30 AM – 6:00 PM",
+          "Thursday: 10:30 AM – 6:00 PM",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Fertitta Cafe",
+        "languageCode": "en"
+      },
+      "primaryType": "cafe",
+      "_source": "google-places"
+    }
+  ],
+  "Thai by Trio, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJk0qjEVzHwoARt-etgu-IpGg",
+      "types": [
+        "thai_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "2700 S Figueroa St #101, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.026933899999996,
+        "longitude": -118.27655170000001
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 11,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 11:00 AM – 10:00 PM",
+          "Tuesday: 11:00 AM – 10:00 PM",
+          "Wednesday: 11:00 AM – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Thai by Trio",
+        "languageCode": "en"
+      },
+      "primaryType": "thai_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Egg Tuck, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJsQwfTwDHwoARSNvMDQAwq90",
+      "types": [
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "korean_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "2528 S Figueroa St, Los Angeles, CA 90007, USA",
+      "location": {
+        "latitude": 34.0282921,
+        "longitude": -118.2751481
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 1,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 2,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 3,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 4,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 5,
+              "hour": 15,
+              "minute": 30
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 7,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 15,
+              "minute": 30
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:30 AM – 3:30 PM",
+          "Tuesday: 7:30 AM – 3:30 PM",
+          "Wednesday: 7:30 AM – 3:30 PM",
+          "Thursday: 7:30 AM – 3:30 PM",
+          "Friday: 7:30 AM – 3:30 PM",
+          "Saturday: 7:30 AM – 3:30 PM",
+          "Sunday: 7:30 AM – 3:30 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Egg Tuck",
+        "languageCode": "en"
+      },
+      "primaryType": "breakfast_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "Softies, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ0ZpNhG_HwoARq0U2CUhe248",
+      "types": [
+        "hamburger_restaurant",
+        "american_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "835 W Jefferson Blvd Suite 1710, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0247564,
+        "longitude": -118.2846458
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 21,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 21,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 9:00 PM",
+          "Tuesday: 10:00 AM – 9:00 PM",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 9:00 PM",
+          "Sunday: 10:00 AM – 9:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Softies Burger - USC Village",
+        "languageCode": "en"
+      },
+      "primaryType": "hamburger_restaurant",
+      "_source": "google-places"
+    }
+  ],
+  "sweetgreen, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJrzv_CMvHwoARqv-ICl4Qc7I",
+      "types": [
+        "salad_shop",
+        "vegetarian_restaurant",
+        "meal_takeaway",
+        "shipping_service",
+        "restaurant",
+        "food",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "929 W Jefferson Blvd, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0247532,
+        "longitude": -118.2852983
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 10,
+              "minute": 0
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 10:00 AM – 10:00 PM",
+          "Tuesday: 10:00 AM – 10:00 PM",
+          "Wednesday: 10:00 AM – 10:00 PM",
+          "Thursday: 10:00 AM – 10:00 PM",
+          "Friday: 10:00 AM – 10:00 PM",
+          "Saturday: 10:00 AM – 10:00 PM",
+          "Sunday: 10:00 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "sweetgreen",
+        "languageCode": "en"
+      },
+      "primaryType": "salad_shop",
+      "_source": "google-places"
+    }
+  ],
+  "The Law School, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJ7aVxnOTHwoARksAnB1bKfHw",
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "699 W Exposition Blvd, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.018675099999996,
+        "longitude": -118.2842727
+      },
+      "rating": 4.3,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "USC Gould School of Law",
+        "languageCode": "en"
+      },
+      "primaryType": "university",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJTfGwYWK8woARrVRJ8xXlZMs",
+      "types": [
+        "academic_department",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "385 Charles E Young Dr E, Los Angeles, CA 90095, USA",
+      "location": {
+        "latitude": 34.0729968,
+        "longitude": -118.4384636
+      },
+      "rating": 4.6,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 17,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "UCLA School of Law",
+        "languageCode": "en"
+      },
+      "primaryType": "educational_institution",
+      "_source": "google-places"
+    },
+    {
+      "id": "ChIJZWTJgrzHwoARRtckKc9_kYE",
+      "types": [
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "919 Albany St, Los Angeles, CA 90015, USA",
+      "location": {
+        "latitude": 34.048888999999996,
+        "longitude": -118.27109850000001
+      },
+      "rating": 4.5,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 1,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 17,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 9,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 16,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Loyola Law School, Los Angeles",
+        "languageCode": "en"
+      },
+      "primaryType": "educational_institution",
+      "_source": "google-places"
+    }
+  ],
+  "Parkside Restaurant & Grill, University Park, Los Angeles, United States": [
+    {
+      "id": "ChIJndgeXPzHwoAReI7iEd05Lh4",
+      "types": [
+        "cafeteria",
+        "point_of_interest",
+        "establishment"
+      ],
+      "formattedAddress": "3771 McClintock Ave, Los Angeles, CA 90089, USA",
+      "location": {
+        "latitude": 34.0193849,
+        "longitude": -118.29050470000001
+      },
+      "rating": 4.2,
+      "regularOpeningHours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 0,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 1,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 2,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 3,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 4,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "hour": 7,
+              "minute": 0
+            },
+            "close": {
+              "day": 5,
+              "hour": 22,
+              "minute": 0
+            }
+          },
+          {
+            "open": {
+              "day": 6,
+              "hour": 8,
+              "minute": 30
+            },
+            "close": {
+              "day": 6,
+              "hour": 22,
+              "minute": 0
+            }
+          }
+        ],
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM – 10:00 PM",
+          "Tuesday: 7:00 AM – 10:00 PM",
+          "Wednesday: 7:00 AM – 10:00 PM",
+          "Thursday: 7:00 AM – 10:00 PM",
+          "Friday: 7:00 AM – 10:00 PM",
+          "Saturday: 8:30 AM – 10:00 PM",
+          "Sunday: 8:30 AM – 10:00 PM"
+        ]
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Parkside Restaurant and Grill",
+        "languageCode": "en"
+      },
+      "primaryType": "cafeteria",
+      "_source": "google-places"
+    }
   ]
 }
